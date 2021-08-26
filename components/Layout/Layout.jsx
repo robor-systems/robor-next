@@ -3,7 +3,7 @@ const { default: Header } = require("components/Header/Header");
 
 const Layout = ({ children }) => {
   return (
-    <div className="min-h-screen ">
+    <div className="min-h-screen relative">
       <Header />
       {children}
       <Footer />

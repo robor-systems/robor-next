@@ -4,7 +4,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "var(--color-primary)",
+        primary: {
+          DEFAULT: "var(--color-primary)",
+          light: "var(--color-primary-light)",
+          dark: "var(--color-primary-dark)",
+        },
       },
 
       fontFamily: {
@@ -30,6 +34,10 @@ module.exports = {
     extend: {
       borderWidth: ["hover"],
       backgroundPosition: ["hover"],
+      fontWeight: ["hover"],
+      visibility: ["group-hover"],
+      width: ["group-hover"],
+      display: ["group-hover"],
     },
   },
   plugins: [

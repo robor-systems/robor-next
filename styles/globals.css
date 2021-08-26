@@ -1,5 +1,7 @@
 :root {
-  --color-primary: #006a6f;
+  --color-primary-dark: #006a6f;
+  --color-primary: #00747a;
+  --color-primary-light: #53b2b8;
 }
 
 @tailwind base;
@@ -7,19 +9,22 @@
 @tailwind utilities;
 
 @layer base {
-  a {
+  button {
+    @apply tracking-wide focus:ring-4 p-2 focus:ring-opacity-0 focus:ring-offset-4 rounded-md shadow-md;
   }
 }
 
 @layer components {
   .navlink {
-    @apply text-gray-500 hover:text-black  transition ease-in-out duration-300 pb-1;
-  }
-
-  .navlink:hover {
-    box-shadow: 0 0.3rem 0 var(--color-primary);
+    @apply text-gray-500 group-hover:text-black font-normal  transition ease-in-out duration-300 pb-1;
   }
 }
 
 @layer utilities {
+  .btn-primary {
+    @apply bg-primary text-white   hover:bg-primary-dark  focus:ring-primary-light;
+  }
+  .btn-large {
+    @apply p-4 text-xl;
+  }
 }
