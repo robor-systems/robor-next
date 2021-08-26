@@ -3,9 +3,12 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      colors: {
+        primary: "var(--color-primary)",
+      },
+
       fontFamily: {
         sans: [
-          '"Inter"',
           "system-ui",
           "-apple-system",
           "BlinkMacSystemFont",
@@ -24,7 +27,10 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      borderWidth: ["hover"],
+      backgroundPosition: ["hover"],
+    },
   },
   plugins: [
     require("@tailwindcss/typography"),

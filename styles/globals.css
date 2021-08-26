@@ -1,13 +1,24 @@
+:root {
+  --color-primary: #006a6f;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-//Custom Base Styles
-
 @layer base {
+  a {
+  }
 }
 
 @layer components {
+  .navlink {
+    @apply text-gray-500 hover:text-black  transition ease-in-out duration-300 pb-1;
+  }
+
+  .navlink:hover {
+    box-shadow: 0 0.3rem 0 var(--color-primary);
+  }
 }
 
 @layer utilities {
