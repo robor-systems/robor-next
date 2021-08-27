@@ -1,6 +1,6 @@
 import Container from "components/Modules/Container/Container";
 import { opacityVariants } from "constants/animations/variants.constant";
-import features from "constants/features.constant";
+import features from "constants/content/features.constant";
 import { motion } from "framer-motion";
 import ReactVisibilitySensor from "react-visibility-sensor";
 import { v4 } from "uuid";
@@ -16,24 +16,23 @@ const FeaturesHome = () => {
         {({ isVisible }) => (
           <motion.div
             id="features-home"
-            className="
-        flex flex-col
-        gap-16
-        py-16
-        items-center
-        h-screen
-    "
+            className="flex flex-col gap-16 items-center py-16 h-screen"
             initial="invisible"
             animate={isVisible ? "visible" : "invisible"}
             variants={opacityVariants}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="font-semibold text-4xl">What we do</h2>
+            <h2 className="text-4xl font-semibold">Our Services</h2>
 
             <div className="h-auto">
-              <div className="flex flex-col  sm:flex-row flex-wrap w-full gap-12 min-h-full">
-                {features?.map((feature) => (
-                  <FeatureCardHome key={v4()} {...feature} />
+              <div className="flex flex-col flex-wrap gap-12 w-full min-h-full sm:flex-row">
+                {features?.map((feature, index) => (
+                  <FeatureCardHome
+                    key={v4()}
+                    {...feature}
+                    delay={index / 4}
+                    isVisible={isVisible}
+                  />
                 ))}
               </div>
             </div>

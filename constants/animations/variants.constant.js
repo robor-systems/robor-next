@@ -1,10 +1,9 @@
 export const opacityVariants = {
-  invisible: { opacity: 0 },
+  invisible: {
+    opacity: 0,
+  },
   visible: {
     opacity: 1,
-    transition: {
-      staggerChildren: 0.5,
-    },
   },
 };
 export const scaleVariants = {

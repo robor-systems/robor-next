@@ -9,55 +9,29 @@ const HeroHome = () => {
     <ReactVisibilitySensor partialVisibility offset={{ top: 400 }}>
       {({ isVisible }) => (
         <motion.div
-          className="
-      h-screen 
-      flex
-      flex-col
-      items-center
-      justify-center
-      gap-6
-      relative
-    "
+          className="relative flex flex-col gap-6 items-center justify-center h-screen"
           initial="invisible"
           animate={isVisible ? "visible" : "invisible"}
           variants={opacityVariants}
           transition={{ duration: 0.5 }}
           exit={{ opacity: 0 }}
         >
-          <h1 className="font-semibold text-7xl">Welcome to Robor</h1>
-          <h4 className="font-normal text-3xl max-w-2xl text-center">
+          <h1 className="text-7xl font-semibold">Welcome to Robor</h1>
+          <h4 className="max-w-2xl text-center text-3xl font-normal">
             We specialise at developing web applications that help you build and
             scale your business.
           </h4>
           <motion.button
-            className="btn-primary btn-large mt-4  "
+            className="btn-primary btn-large mt-4"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
             Request Appointment
           </motion.button>
 
-          <div
-            className="
-        absolute 
-        bottom-5 
-"
-          >
+          <div className="absolute bottom-5">
             <Link to="features-home" smooth offset={50}>
-              <ChevronDownIcon
-                className="
-          text-center
-      h-10 
-      w-10 
-    text-gray-500 
-      animate-pulse  
-      hover:animate-none 
-      transform-gpu 
-      cursor-pointer
-      transition-all
-      hover:scale-125
-      "
-              />
+              <ChevronDownIcon className="w-10 h-10 text-center text-gray-500 cursor-pointer transform-gpu hover:scale-125 hover:animate-none animate-pulse transition-all" />
             </Link>
           </div>
         </motion.div>
