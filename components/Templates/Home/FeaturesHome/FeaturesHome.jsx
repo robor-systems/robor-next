@@ -1,4 +1,6 @@
 import Container from "components/Modules/Container/Container";
+import { features } from "constants/features.constant";
+import { v4 } from "uuid";
 import FeatureCardHome from "./FeatureCardHome";
 
 const FeaturesHome = () => {
@@ -8,20 +10,18 @@ const FeaturesHome = () => {
         id="features-home"
         className="
         flex flex-col
-        gap-2
+        gap-12
         flex-wrap
         prose-xl
-      py-16
+        py-16
         items-center
-        bg-gray-50
-
     "
       >
-        <h2 className="font-light">What we do</h2>
-        <div className="flex w-full gap-8 bg-red-300">
-          <FeatureCardHome />
-          <FeatureCardHome />
-          <FeatureCardHome />
+        <h2 className="font-semibold">What we do</h2>
+        <div className="flex w-full gap-8 ">
+          {features?.map((feature) => (
+            <FeatureCardHome key={v4()} {...feature} />
+          ))}
         </div>
       </div>
     </Container>
