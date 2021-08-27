@@ -13,18 +13,17 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@headlessui/react": "^1.4.0",
     "@heroicons/react": "^1.0.4",
     "@tailwindcss/forms": "^0.3.3",
     "@tailwindcss/line-clamp": "^0.2.1",
     "@tailwindcss/typography": "^0.4.1",
     "clsx": "^1.1.1",
+    "framer-motion": "^4.1.17",
     "next": "11.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-scroll": "^1.8.3",
     "react-visibility-sensor": "^5.1.1",
-    "sal.js": "^0.8.5",
     "uuid": "^8.3.2"
   },
   "devDependencies": {

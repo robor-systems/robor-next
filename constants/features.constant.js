@@ -11,7 +11,7 @@ const features = [
   {
     title: "Embedded Systems",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique amet consectetur amet consectetur",
+      "Lorem ipsum dolor sit amet consectetur,  adipisicing elit. Similique amet consectetur amet consectetur",
     image: {
       src: "/assets/icons/features/embedded-icon.svg",
       alt: "Embedded Systems Icon",
