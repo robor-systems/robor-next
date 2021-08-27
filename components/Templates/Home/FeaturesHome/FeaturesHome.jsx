@@ -1,10 +1,9 @@
 import Container from "components/Modules/Container/Container";
-import { features } from "constants/features.constant";
+import features from "constants/features.constant";
 import { v4 } from "uuid";
 import FeatureCardHome from "./FeatureCardHome";
 
 const FeaturesHome = () => {
-  console.log(features);
   return (
     <Container>
       <div
@@ -12,14 +11,13 @@ const FeaturesHome = () => {
         className="
         flex flex-col
         gap-12
-        flex-wrap
-        prose-xl
         py-16
         items-center
     "
       >
-        <h2 className="font-semibold">What we do</h2>
-        <div className="flex w-full gap-8 ">
+        <h2 className="font-semibold text-4xl">What we do</h2>
+
+        <div className="flex w-full gap-8 min-h-full">
           {features?.map((feature) => (
             <FeatureCardHome key={v4()} {...feature} />
           ))}

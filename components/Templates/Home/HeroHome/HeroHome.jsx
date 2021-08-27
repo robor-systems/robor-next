@@ -24,11 +24,16 @@ const HeroHome = () => {
         Request Appointment{" "}
       </button>
 
-      <Link to="features-home" smooth offset={50}>
-        <ChevronDownIcon
-          className="
-      absolute 
-      bottom-5 
+      <div
+        className="
+        absolute 
+        bottom-5 
+"
+      >
+        <Link to="features-home" smooth offset={50}>
+          <ChevronDownIcon
+            className="
+          text-center
       h-10 
       w-10 
     text-gray-500 
@@ -39,8 +44,9 @@ const HeroHome = () => {
       transition-all
       hover:scale-125
       "
-        />
-      </Link>
+          />
+        </Link>
+      </div>
     </div>
   );
 };
