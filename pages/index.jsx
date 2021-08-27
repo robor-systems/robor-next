@@ -1,4 +1,8 @@
-import { FeaturesHome, HeroHome } from "components/Templates/Home";
+import {
+  FeaturesHome,
+  HeroHome,
+  TechStackHome,
+} from "components/Templates/Home";
 import { AnimateSharedLayout } from "framer-motion";
 import Head from "next/head";
 
@@ -15,6 +19,7 @@ const Home = () => {
         <main className="flex flex-col items-center">
           <HeroHome />
           <FeaturesHome />
+          <TechStackHome />
         </main>
       </AnimateSharedLayout>
     </div>

@@ -2,12 +2,13 @@ import { ImageNext } from "components/Elements";
 import { scaleVariants } from "constants/animations/variants.constant";
 import { motion } from "framer-motion";
 
-const FeatureCardHome = ({ image, title, description, isVisible, delay }) => {
+const CardFeaturesHome = ({ image, title, description, isVisible, delay }) => {
   return (
     <motion.div
+      layout
       className="flex flex-1 flex-col gap-7 items-center mx-auto px-8 py-12 min-w-min max-w-xs min-h-full text-center bg-gray-100 rounded-3xl"
       initial="invisible"
-      animate={isVisible ? "visible" : "invisible"}
+      animate={"visible"}
       variants={scaleVariants}
       transition={{ duration: 1, delay }}
     >
@@ -21,4 +22,4 @@ const FeatureCardHome = ({ image, title, description, isVisible, delay }) => {
   );
 };
 
-export default FeatureCardHome;
+export default CardFeaturesHome;

@@ -14,7 +14,6 @@ const HeroHome = () => {
           animate={isVisible ? "visible" : "invisible"}
           variants={opacityVariants}
           transition={{ duration: 0.5 }}
-          exit={{ opacity: 0 }}
         >
           <h1 className="text-7xl font-semibold">Welcome to Robor</h1>
           <h4 className="max-w-2xl text-center text-3xl font-normal">
