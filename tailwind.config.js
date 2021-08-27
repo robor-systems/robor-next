@@ -36,8 +36,10 @@ module.exports = {
       backgroundPosition: ["hover"],
       fontWeight: ["hover"],
       visibility: ["group-hover"],
-      width: ["group-hover"],
+      width: ["group-hover", "hover"],
+      height: ["group-hover", "hover"],
       display: ["group-hover"],
+      animation: ["hover"],
     },
   },
   plugins: [
