@@ -4,6 +4,7 @@ import { v4 } from "uuid";
 import FeatureCardHome from "./FeatureCardHome";
 
 const FeaturesHome = () => {
+  console.log(features);
   return (
     <Container>
       <div

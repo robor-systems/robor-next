@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import { ImageNext } from "components/Elements";
+import Link from "components/Elements/Link/Link";
 import Container from "../Container/Container";
 import NavLink from "./NavLink";
 
@@ -8,16 +8,12 @@ const Header = () => {
     <div className="absolute top-0 w-full">
       <Container>
         <div className="flex justify-between py-6">
-          <Link href="/" passHref>
-            <div className="flex h-6 w-auto cursor-pointer">
-              <Image
-                src="/assets/logos/robor-logo-light.png"
-                alt="Robor logo"
-                width="100%"
-                height="100%"
-                className="object-contain "
-              />
-            </div>
+          <Link href="/">
+            <ImageNext
+              className="min-h-full w-28   cursor-pointer"
+              src="/assets/logos/robor-logo-light.png"
+              alt="Robor logo"
+            />
           </Link>
 
           <div className="flex gap-16 ">
