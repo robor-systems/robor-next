@@ -1,63 +1,50 @@
-import reactLogo from "assets/icons/tech-stack/react-logo.svg";
-import reduxLogo from "assets/icons/tech-stack/redux-logo.svg";
-import nodeLogo from "assets/icons/tech-stack/nodejs-logo.svg";
-import graphqlLogo from "assets/icons/tech-stack/graphql-logo.svg";
-import nextLogo from "assets/icons/tech-stack/nextjs-logo.svg";
-import tsLogo from "assets/icons/tech-stack/typescript-logo.svg";
-import ngLogo from "assets/icons/tech-stack/angular-logo.svg";
-import awsLogo from "assets/icons/tech-stack/aws-logo.svg";
-import flutterLogo from "assets/icons/tech-stack/flutter-logo.svg";
-import pyLogo from "assets/icons/tech-stack/python-logo.svg";
-import vueLogo from "assets/icons/tech-stack/vue-logo.svg";
-import tfLogo from "assets/icons/tech-stack/tensorflow-logo.svg";
-
 const techStack = [
   {
-    src: reactLogo,
+    src: "/assets/icons/tech-stack/react-logo.svg",
     alt: "React Logo",
   },
   {
-    src: reduxLogo,
+    src: "/assets/icons/tech-stack/redux-logo.svg",
     alt: "Redux Logo",
   },
   {
-    src: nodeLogo,
+    src: "/assets/icons/tech-stack/nodejs-logo.svg",
     alt: "NodeJS Logo",
   },
   {
-    src: graphqlLogo,
+    src: "/assets/icons/tech-stack/graphql-logo.svg",
     alt: "GraphQL Logo",
   },
   {
-    src: nextLogo,
+    src: "/assets/icons/tech-stack/nextjs-logo.svg",
     alt: "NextJS Logo",
   },
   {
-    src: tsLogo,
+    src: "/assets/icons/tech-stack/typescript-logo.svg",
     alt: "TypeScript Logo",
   },
   {
-    src: ngLogo,
+    src: "/assets/icons/tech-stack/angular-logo.svg",
     alt: "Angular Logo",
   },
   {
-    src: awsLogo,
+    src: "/assets/icons/tech-stack/aws-logo.svg",
     alt: "AWS Logo",
   },
   {
-    src: flutterLogo,
+    src: "/assets/icons/tech-stack/flutter-logo.svg",
     alt: "Flutter Logo",
   },
   {
-    src: pyLogo,
+    src: "/assets/icons/tech-stack/python-logo.svg",
     alt: "Python Logo",
   },
   {
-    src: vueLogo,
+    src: "/assets/icons/tech-stack/vue-logo.svg",
     alt: "VueJS Logo",
   },
   {
-    src: tfLogo,
+    src: "/assets/icons/tech-stack/tensorflow-logo.svg",
     alt: "Tensorflow Logo",
   },
 ];
