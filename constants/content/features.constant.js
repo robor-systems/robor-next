@@ -4,7 +4,7 @@ const features = [
     description:
       "Lorem ipsum dolor sit amet consectetur amet consectetur, adipisicelit.  Similique Similique Similique Similique",
     image: {
-      src: "/assets/icons/features/saas-icon.webp",
+      src: "/assets/icons/features/saas-icon.png",
       alt: "SaaS Icon",
     },
   },
@@ -13,7 +13,7 @@ const features = [
     description:
       "Lorem ipsum dolor sit amet consectetur,  adipisicing elit. Similique amet consectetur amet consectetur",
     image: {
-      src: "/assets/icons/features/embedded-icon.webp",
+      src: "/assets/icons/features/embedded-icon.png",
       alt: "Embedded Systems Icon",
     },
   },
@@ -22,7 +22,7 @@ const features = [
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique amet consectetur, adipisic",
     image: {
-      src: "/assets/icons/features/data-icon.webp",
+      src: "/assets/icons/features/data-icon.png",
       alt: "Data Analysis Icon",
     },
   },

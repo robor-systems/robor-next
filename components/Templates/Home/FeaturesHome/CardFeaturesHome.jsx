@@ -13,10 +13,7 @@ const CardFeaturesHome = ({ image, title, description, delay }) => {
       transition={{ duration: 1, delay }}
     >
       <div className="p-7 bg-white rounded-3xl shadow-xl">
-        <ImageNext
-          src="/assets/icons/features/saas-icon.webp"
-          className="w-20 h-20"
-        />
+        <ImageNext {...image} className="w-20 h-20" />
       </div>
       <h3 className="mt-2 whitespace-nowrap text-2xl">{title}</h3>
 
