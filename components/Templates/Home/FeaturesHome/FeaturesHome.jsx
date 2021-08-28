@@ -6,9 +6,9 @@ import { useState } from "react";
 import ReactVisibilitySensor from "react-visibility-sensor";
 import { v4 } from "uuid";
 import CardFeaturesHome from "./CardFeaturesHome";
-import saasIcon from "public/assets/icons/features/saas-icon.png";
-import embeddedIcon from "public/assets/icons/features/embedded-icon.png";
-import dataIcon from "public/assets/icons/features/data-icon.png";
+import saasIcon from "/public/assets/icons/features/saas-icon.png";
+import embeddedIcon from "/public/assets/icons/features/embedded-icon.png";
+import dataIcon from "/public/assets/icons/features/data-icon.png";
 
 const FeaturesHome = () => {
   const [visible, setVisible] = useState(false);
