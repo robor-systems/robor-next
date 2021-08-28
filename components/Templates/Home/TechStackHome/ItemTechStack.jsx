@@ -14,7 +14,7 @@ const ItemTechStack = ({ visible, ...props }) => {
       animate={visible ? "visible" : "invisible"}
       transition={{ duration: 1 }}
     >
-      <ImageNext {...props} className="w-20 h-20" />
+      <ImageNext {...props} className="w-12 h-12 sm:w-20 sm:h-20" />
     </motion.div>
   );
 };

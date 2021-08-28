@@ -21,6 +21,8 @@ const Home = () => {
 
         <TechStackHome />
         <TeamHome />
+
+        <div className="w-full h-20"></div>
       </main>
     </div>
   );

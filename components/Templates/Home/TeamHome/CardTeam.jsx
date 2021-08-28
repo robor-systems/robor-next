@@ -22,8 +22,10 @@ const CardTeam = ({ image, name, position }) => {
         transition={{ duration: 0.5 }}
         onHoverStart={() => setHover(true)}
         onHoverEnd={() => setHover(false)}
-        className="border-1 relative w-full h-72 sm:h-60"
-        whileHover={{}}
+        className="border-1 relative w-full h-96 rounded-3xl overflow-hidden sm:h-72"
+        whileHover={{
+          boxShadow: "0 70px 63px -60px #000000",
+        }}
       >
         <ImageNext
           src={image}
@@ -43,9 +45,9 @@ const CardTeam = ({ image, name, position }) => {
         )}
         <motion.div
           layout
-          className="absolute top-0 flex flex-col justify-end px-4 py-2 w-full h-full"
+          className="absolute top-0 flex flex-col justify-end px-6 py-4 w-full h-full"
         >
-          <motion.h3 layout className="text-white text-2xl font-semibold">
+          <motion.h3 layout className="text-white text-xl font-semibold">
             {name}
           </motion.h3>
 

@@ -16,7 +16,7 @@ const TeamHome = () => {
       <ReactVisibilitySensor
         partialVisibility
         onChange={(isVisible) => isVisible && setVisible(isVisible)}
-        offset={{ bottom: 200 }}
+        offset={{ bottom: 0 }}
       >
         <motion.div
           id="features-home"
@@ -27,7 +27,7 @@ const TeamHome = () => {
           transition={{ duration: 1 }}
         >
           <SectionHeading>Meet Our Team</SectionHeading>
-          <div className="grid grid-cols-1 w-full max-w-xs auto-rows-auto sm:grid-cols-2 sm:max-w-lg md:grid-cols-3 md:max-w-3xl">
+          <div className="grid-cols-16 grid gap-8 w-full max-w-xs sm:grid-cols-2 sm:max-w-lg md:grid-cols-3 md:max-w-3xl">
             {team?.map((member) => (
               <CardTeam key={v4()} {...member} />
             ))}

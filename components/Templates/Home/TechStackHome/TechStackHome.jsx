@@ -16,7 +16,7 @@ const TechStackHome = () => {
       <ReactVisibilitySensor
         partialVisibility
         onChange={(isVisible) => isVisible && setVisible(isVisible)}
-        offset={{ bottom: 400 }}
+        offset={{ bottom: 300 }}
       >
         <motion.div
           id="features-home"
@@ -27,7 +27,7 @@ const TechStackHome = () => {
           transition={{ duration: 1 }}
         >
           <SectionHeading>Technologies we use</SectionHeading>
-          <div className="flex flex-wrap gap-12 max-w-screen-md sm:gap-32">
+          <div className="flex flex-wrap gap-8 px-8 sm:gap-16 sm:max-w-screen-md md:gap-20">
             {techStack.map((item) => (
               <ItemTechStack key={v4()} {...item} visible={visible} />
             ))}
