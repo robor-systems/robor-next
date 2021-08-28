@@ -2,7 +2,7 @@ import { ImageNext } from "components/Elements";
 import { scaleVariants } from "constants/animations/variants.constant";
 import { motion } from "framer-motion";
 
-const CardFeaturesHome = ({ image, title, description, isVisible, delay }) => {
+const CardFeaturesHome = ({ image, title, description, delay }) => {
   return (
     <motion.div
       layout
@@ -13,7 +13,7 @@ const CardFeaturesHome = ({ image, title, description, isVisible, delay }) => {
       transition={{ duration: 1, delay }}
     >
       <div className="p-7 bg-white rounded-3xl shadow-xl">
-        <ImageNext {...image} className="w-20 h-20" />
+        <ImageNext {...image} className="w-20 h-20" blur />
       </div>
       <h3 className="mt-2 whitespace-nowrap text-2xl">{title}</h3>
 

@@ -1,7 +1,6 @@
 import {
   existanceVariants,
   gradientVariants,
-  scaleVariants,
 } from "constants/animations/variants.constant";
 import { AnimateSharedLayout, motion } from "framer-motion";
 import { useState } from "react";
@@ -10,7 +9,7 @@ import { usePalette } from "react-palette";
 const { ImageNext } = require("components/Elements");
 
 const CardTeam = ({ image, name, position }) => {
-  const { data, loading, error } = usePalette(image);
+  const { data } = usePalette(image);
   const [hover, setHover] = useState(false);
 
   return (
