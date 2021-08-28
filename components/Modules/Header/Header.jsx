@@ -2,7 +2,7 @@ import { ImageNext } from "components/Elements";
 import { Link } from "components/Elements";
 import Container from "../Container/Container";
 import NavLink from "./NavLink";
-import logo from "public/assets/logos/robor-logo-light.png";
+import logo from "assets/logos/robor-logo-light.png";
 
 const Header = () => {
   return (

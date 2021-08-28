@@ -1,6 +1,6 @@
-import saasIcon from "public/assets/icons/features/saas-icon.svg";
-import embeddedIcon from "public/assets/icons/features/embedded-icon.svg";
-import dataIcon from "public/assets/icons/features/data-icon.svg";
+import saasIcon from "assets/icons/features/saas-icon.svg";
+import embeddedIcon from "assets/icons/features/embedded-icon.svg";
+import dataIcon from "assets/icons/features/data-icon.svg";
 
 const features = [
   {
