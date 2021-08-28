@@ -1,40 +1,45 @@
 import { ChevronDownIcon } from "@heroicons/react/outline";
 import { opacityVariants } from "constants/animations/variants.constant";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+import { useState } from "react";
 import { Link } from "react-scroll";
 import ReactVisibilitySensor from "react-visibility-sensor";
 
 const HeroHome = () => {
-  return (
-    <ReactVisibilitySensor partialVisibility offset={{ top: 400 }}>
-      {({ isVisible }) => (
-        <motion.div
-          className="relative flex flex-col gap-6 items-center justify-center h-screen"
-          initial="invisible"
-          animate={isVisible ? "visible" : "invisible"}
-          variants={opacityVariants}
-          transition={{ duration: 0.5 }}
-        >
-          <h1 className="text-7xl font-semibold">Welcome to Robor</h1>
-          <h4 className="max-w-2xl text-center text-3xl font-normal">
-            We specialise at developing web applications that help you build and
-            scale your business.
-          </h4>
-          <motion.button
-            className="btn-primary btn-large mt-4"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            Request Appointment
-          </motion.button>
+  const [visible, setVisible] = useState(false);
 
-          <div className="absolute bottom-5">
-            <Link to="features-home" smooth offset={50}>
-              <ChevronDownIcon className="w-10 h-10 text-center text-gray-500 cursor-pointer transform-gpu hover:scale-125 hover:animate-none animate-pulse transition-all" />
-            </Link>
-          </div>
-        </motion.div>
-      )}
+  return (
+    <ReactVisibilitySensor
+      partialVisibility
+      offset={{ top: 400 }}
+      onChange={(isVisible) => isVisible && setVisible(isVisible)}
+    >
+      <motion.div
+        className="relative flex flex-col gap-6 items-center justify-center h-screen"
+        initial="invisible"
+        animate={visible ? "visible" : "invisible"}
+        variants={opacityVariants}
+        transition={{ duration: 1 }}
+      >
+        <h1 className="text-7xl font-semibold">Welcome to Robor</h1>
+        <h4 className="max-w-2xl text-center text-3xl font-normal">
+          We specialise at developing web applications that help you build and
+          scale your business.
+        </h4>
+        <motion.button
+          className="btn-primary btn-large mt-4"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          Request Appointment
+        </motion.button>
+
+        <div className="absolute bottom-5">
+          <Link to="features-home" smooth offset={-50}>
+            <ChevronDownIcon className="w-10 h-10 text-center text-gray-500 cursor-pointer transform-gpu hover:scale-125 hover:animate-none animate-pulse transition-all" />
+          </Link>
+        </div>
+      </motion.div>
     </ReactVisibilitySensor>
   );
 };

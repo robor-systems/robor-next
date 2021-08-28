@@ -1,14 +1,14 @@
 import { SectionHeading } from "components/Elements";
 import Container from "components/Modules/Container/Container";
 import { opacityVariants } from "constants/animations/variants.constant";
-import techStack from "constants/content/techStack.constant";
+import team from "constants/content/team.constant";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import ReactVisibilitySensor from "react-visibility-sensor";
 import { v4 } from "uuid";
-import ItemTechStack from "./ItemTechStack";
+import CardTeam from "./CardTeam";
 
-const TechStackHome = () => {
+const TeamHome = () => {
   const [visible, setVisible] = useState(false);
 
   return (
@@ -16,7 +16,7 @@ const TechStackHome = () => {
       <ReactVisibilitySensor
         partialVisibility
         onChange={(isVisible) => isVisible && setVisible(isVisible)}
-        offset={{ bottom: 400 }}
+        offset={{ bottom: 200 }}
       >
         <motion.div
           id="features-home"
@@ -26,10 +26,10 @@ const TechStackHome = () => {
           variants={opacityVariants}
           transition={{ duration: 1 }}
         >
-          <SectionHeading>Technologies we use</SectionHeading>
-          <div className="flex flex-wrap gap-12 max-w-screen-md sm:gap-32">
-            {techStack.map((item) => (
-              <ItemTechStack key={v4()} {...item} visible={visible} />
+          <SectionHeading>Meet Our Team</SectionHeading>
+          <div className="grid grid-cols-1 w-full max-w-xs auto-rows-auto sm:grid-cols-2 sm:max-w-lg md:grid-cols-3 md:max-w-3xl">
+            {team?.map((member) => (
+              <CardTeam key={v4()} {...member} />
             ))}
           </div>
         </motion.div>
@@ -38,4 +38,4 @@ const TechStackHome = () => {
   );
 };
 
-export default TechStackHome;
+export default TeamHome;
