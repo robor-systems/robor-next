@@ -1,5 +1,5 @@
-const { default: Footer } = require("components/Footer/Footer");
-const { default: Header } = require("components/Header/Header");
+const { default: Footer } = require("components/Modules/Footer/Footer");
+const { default: Header } = require("components/Modules/Header/Header");
 
 const Layout = ({ children }) => {
   return (

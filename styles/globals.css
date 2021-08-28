@@ -10,7 +10,16 @@
 
 @layer base {
   button {
-    @apply tracking-wide focus:ring-4 p-2 focus:ring-opacity-0 focus:ring-offset-4 rounded-md shadow-md;
+    @apply tracking-wide  rounded-xl shadow-md;
+  }
+
+  ::selection {
+    @apply bg-gray-200;
+  }
+
+  * {
+    scrollbar-color: #6969dd #e0e0e0;
+    scrollbar-width: thin;
   }
 }
 
@@ -22,9 +31,9 @@
 
 @layer utilities {
   .btn-primary {
-    @apply bg-primary text-white   hover:bg-primary-dark  focus:ring-primary-light;
+    @apply bg-primary text-white   hover:bg-primary-dark;
   }
   .btn-large {
-    @apply p-4 text-xl;
+    @apply p-4 text-xl shadow-xl transition-shadow duration-300 ease-in-out hover:shadow-2xl;
   }
 }
