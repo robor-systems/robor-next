@@ -1,14 +1,10 @@
-import saasIcon from "public/assets/icons/features/saas-icon.webp";
-import embeddedIcon from "public/assets/icons/features/embedded-icon.webp";
-import dataIcon from "public/assets/icons/features/data-icon.webp";
-
 const features = [
   {
     title: "SaaS",
     description:
       "Lorem ipsum dolor sit amet consectetur amet consectetur, adipisicelit.  Similique Similique Similique Similique",
     image: {
-      src: saasIcon,
+      src: "/assets/icons/features/saas-icon.webp",
       alt: "SaaS Icon",
     },
   },
@@ -17,7 +13,7 @@ const features = [
     description:
       "Lorem ipsum dolor sit amet consectetur,  adipisicing elit. Similique amet consectetur amet consectetur",
     image: {
-      src: embeddedIcon,
+      src: "/assets/icons/features/embedded-icon.webp",
       alt: "Embedded Systems Icon",
     },
   },
@@ -26,7 +22,7 @@ const features = [
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique amet consectetur, adipisic",
     image: {
-      src: dataIcon,
+      src: "/assets/icons/features/data-icon.webp",
       alt: "Data Analysis Icon",
     },
   },
