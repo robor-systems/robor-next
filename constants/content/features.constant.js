@@ -1,7 +1,3 @@
-import saasIcon from "public/assets/icons/features/saas-icon.png";
-import embeddedIcon from "public/assets/icons/features/embedded-icon.png";
-import dataIcon from "public/assets/icons/features/data-icon.png";
-
 const features = [
   {
     title: "SaaS",
