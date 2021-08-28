@@ -13,8 +13,6 @@ const CardTeam = ({ image, name, position }) => {
   const { data, loading, error } = usePalette(image);
   const [hover, setHover] = useState(false);
 
-  console.log(data);
-
   return (
     <AnimateSharedLayout>
       <motion.div
