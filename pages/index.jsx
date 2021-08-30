@@ -3,7 +3,7 @@ import {
   HeroHome,
   TeamHome,
   TechStackHome,
-} from "components/Templates/Home";
+} from "@/components/Templates/Home";
 import Head from "next/head";
 
 const Home = () => {

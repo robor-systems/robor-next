@@ -1,51 +1,52 @@
 const techStack = [
   {
-    src: "/assets/icons/tech-stack/react-logo.png",
+    src: "https://vectorlogo.zone/logos/reactjs/reactjs-icon.svg",
     alt: "React Logo",
   },
   {
-    src: "/assets/icons/tech-stack/redux-logo.png",
+    src: "https://raw.githubusercontent.com/detain/svg-logos/master/svg/redux.svg",
     alt: "Redux Logo",
   },
   {
-    src: "/assets/icons/tech-stack/nodejs-logo.png",
-    alt: "NodeJS Logo",
+    src: "https://vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
+    alt: "Tailwind Logo",
   },
   {
-    src: "/assets/icons/tech-stack/graphql-logo.png",
-    alt: "GraphQL Logo",
+    src: "https://vectorlogo.zone/logos/sass-lang/sass-lang-icon.svg",
+    alt: "Sass Logo",
   },
   {
-    src: "/assets/icons/tech-stack/nextjs-logo.png",
+    src: "https://upload.vectorlogo.zone/logos/nextjs/images/2d3864ef-00e0-4026-ab1d-30e4a98e2899.svg",
     alt: "NextJS Logo",
   },
   {
-    src: "/assets/icons/tech-stack/typescript-logo.png",
+    src: "https://vectorlogo.zone/logos/nodejs/nodejs-icon.svg",
+    alt: "NodeJS Logo",
+  },
+  {
+    src: "https://vectorlogo.zone/logos/expressjs/expressjs-icon.svg",
+    alt: "Express Logo",
+  },
+  {
+    src: "https://vectorlogo.zone/logos/graphql/graphql-icon.svg",
+    alt: "GraphQL Logo",
+  },
+
+  {
+    src: "https://vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg",
     alt: "TypeScript Logo",
   },
   {
-    src: "/assets/icons/tech-stack/angular-logo.png",
-    alt: "Angular Logo",
+    src: "https://vectorlogo.zone/logos/mongodb/mongodb-icon.svg",
+    alt: "MongoDB Logo",
   },
   {
-    src: "/assets/icons/tech-stack/aws-logo.png",
+    src: "https://vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg",
     alt: "AWS Logo",
   },
   {
-    src: "/assets/icons/tech-stack/flutter-logo.png",
-    alt: "Flutter Logo",
-  },
-  {
-    src: "/assets/icons/tech-stack/python-logo.png",
-    alt: "Python Logo",
-  },
-  {
-    src: "/assets/icons/tech-stack/vue-logo.png",
-    alt: "VueJS Logo",
-  },
-  {
-    src: "/assets/icons/tech-stack/tensorflow-logo.png",
-    alt: "Tensorflow Logo",
+    src: "https://vectorlogo.zone/logos/jamstack/jamstack-icon.svg",
+    alt: "JAMStack Logo",
   },
 ];
 
