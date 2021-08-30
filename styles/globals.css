@@ -10,7 +10,7 @@
 
 @layer base {
   button {
-    @apply tracking-wide rounded-xl shadow-md;
+    @apply tracking-wide rounded-xl;
   }
 
   ::selection {
@@ -34,6 +34,6 @@
     @apply text-white bg-primary hover:bg-primary-dark;
   }
   .btn-large {
-    @apply p-4 text-xl hover:shadow-2xl shadow-xl transition-shadow duration-300 ease-in-out;
+    @apply p-4 text-xl;
   }
 }
