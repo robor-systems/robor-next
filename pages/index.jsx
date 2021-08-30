@@ -1,6 +1,7 @@
 import {
   FeaturesHome,
   HeroHome,
+  OurProcess,
   TeamHome,
   TechStackHome,
 } from "@/components/Templates/Home";
@@ -20,6 +21,7 @@ const Home = () => {
         <FeaturesHome />
 
         <TechStackHome />
+        <OurProcess />
         <TeamHome />
 
         <div className="w-full h-20"></div>

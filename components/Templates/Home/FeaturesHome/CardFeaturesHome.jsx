@@ -10,7 +10,7 @@ const CardFeaturesHome = ({ image, title, description, delay }) => {
       initial="invisible"
       animate={"visible"}
       variants={scaleVariants}
-      transition={{ duration: 1, delay }}
+      transition={{ duration: 1 }}
     >
       <div className="p-7 bg-white rounded-3xl shadow-xl">
         <ImageNext {...image} className="w-20 h-20" />

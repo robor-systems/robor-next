@@ -36,4 +36,8 @@
   .btn-large {
     @apply p-4 text-xl;
   }
+
+  .text-blu {
+    color: rgb(35, 45, 78);
+  }
 }

@@ -32,12 +32,7 @@ const FeaturesHome = () => {
           <div className="h-auto">
             <div className="flex flex-col flex-wrap gap-12 w-full min-h-full sm:flex-row">
               {features.map((feature, index) => (
-                <CardFeaturesHome
-                  key={v4()}
-                  {...feature}
-                  delay={index / 4}
-                  isVisible={visible}
-                />
+                <CardFeaturesHome key={v4()} {...feature} isVisible={visible} />
               ))}
             </div>
           </div>
