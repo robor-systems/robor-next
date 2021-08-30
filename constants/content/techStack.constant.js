@@ -16,7 +16,7 @@ const techStack = [
     alt: "Sass Logo",
   },
   {
-    src: "https://upload.vectorlogo.zone/logos/nextjs/images/2d3864ef-00e0-4026-ab1d-30e4a98e2899.svg",
+    src: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg",
     alt: "NextJS Logo",
   },
   {

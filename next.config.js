@@ -7,6 +7,7 @@ module.exports = {
       "vectorlogo.zone",
       "raw.githubusercontent.com",
       "svgshare.com",
+      "upload.wikimedia.org",
     ],
   },
 };
