@@ -5,9 +5,19 @@ import {
   TeamHome,
   TechStackHome,
 } from "@/components/Templates/Home";
+import { useRouter } from "next/dist/client/router";
 import Head from "next/head";
+import { useEffect } from "react";
+import { scroller } from "react-scroll";
 
 const Home = () => {
+  const router = useRouter();
+
+  useEffect(() => {
+    if (router.query?.section)
+      scroller.scrollTo(router.query?.section, { smooth: true, offset: -20 });
+  }, [router]);
+
   return (
     <div>
       <Head>
@@ -16,7 +26,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col gap-24 items-center">
+      <main className="flex flex-col gap-16 items-center sm:gap-20">
         <HeroHome />
         <FeaturesHome />
 

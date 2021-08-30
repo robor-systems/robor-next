@@ -19,7 +19,7 @@ const TeamHome = () => {
         offset={{ bottom: 400 }}
       >
         <motion.div
-          id="features-home"
+          id="team"
           className="flex flex-col gap-16 items-center"
           initial="invisible"
           animate={visible ? "visible" : "invisible"}
@@ -27,8 +27,8 @@ const TeamHome = () => {
           transition={{ duration: 1 }}
         >
           <SectionHeading>Meet Our Team</SectionHeading>
-          <div className="grid-cols-16 grid gap-8 w-full max-w-xs sm:grid-cols-2 sm:max-w-lg md:grid-cols-3 md:max-w-3xl">
-            {team?.map((member) => (
+          <div className="grid-cols-16 grid gap-8 w-full max-w-xs overflow-hidden sm:grid-cols-2 sm:max-w-lg md:grid-cols-3 md:max-w-3xl">
+            {team.map((member) => (
               <CardTeam key={v4()} {...member} />
             ))}
           </div>

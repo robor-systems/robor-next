@@ -21,15 +21,16 @@ const OurProcess = () => {
       offset={{ bottom: 300 }}
     >
       <motion.div
-        id="features-home"
-        className="text-blu flex flex-col gap-16 items-center pb-20 pt-16 w-full bg-gray-50"
+        id="projects"
+        className="text-blu flex flex-col gap-16 items-center pb-20 pt-16 w-full bg-gray-50 overflow-hidden"
         initial="invisible"
         animate={visible ? "visible" : "invisible"}
         variants={opacityVariants}
         transition={{ duration: 1 }}
       >
         <SectionHeading>Our Process</SectionHeading>
-        <div className="grid gap-3 grid-cols-7">
+
+        <div className="grid gap-12 grid-cols-2 px-16 max-w-screen-lg md:gap-3 md:grid-cols-7">
           {process.map((item, index) => (
             <ItemProcess
               key={v4()}
@@ -40,7 +41,7 @@ const OurProcess = () => {
             />
           ))}
           <motion.div
-            className="order-1"
+            className="hidden order-1 md:block"
             variants={translateVariants}
             initial="invisible"
             animate={visible ? "visible" : "invisible"}
@@ -49,7 +50,7 @@ const OurProcess = () => {
             <FiArrowRight className="mt-10 w-full text-3xl" />
           </motion.div>
           <motion.div
-            className="order-3"
+            className="hidden order-3 md:block"
             variants={translateVariants}
             initial="invisible"
             animate={visible ? "visible" : "invisible"}
@@ -58,7 +59,7 @@ const OurProcess = () => {
             <FiArrowRight className="mt-10 w-full text-3xl" />
           </motion.div>
           <motion.div
-            className="order-4"
+            className="hidden order-4 md:block"
             variants={translateVariants}
             initial="invisible"
             animate={visible ? "visible" : "invisible"}

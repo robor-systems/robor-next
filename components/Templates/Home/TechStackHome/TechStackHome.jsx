@@ -27,7 +27,7 @@ const TechStackHome = () => {
           transition={{ duration: 1 }}
         >
           <SectionHeading>Technologies we love</SectionHeading>
-          <div className="flex flex-wrap gap-8 px-8 sm:gap-16 sm:max-w-screen-md md:gap-20">
+          <div className="flex flex-wrap gap-8 px-8 w-full sm:gap-16 sm:max-w-screen-md md:gap-20">
             {techStack.map((item) => (
               <ItemTechStack key={v4()} {...item} visible={visible} />
             ))}
