@@ -2,7 +2,7 @@ import { ImageNext } from "components/Elements";
 import { scaleVariants } from "constants/animations/variants.constant";
 import { motion } from "framer-motion";
 
-const CardFeaturesHome = ({ image, title, description, isVisible, delay }) => {
+const CardFeaturesHome = ({ image, title, description, delay }) => {
   return (
     <motion.div
       layout

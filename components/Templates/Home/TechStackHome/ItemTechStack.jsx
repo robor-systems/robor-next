@@ -1,10 +1,21 @@
 import { ImageNext } from "components/Elements";
+import {
+  scaleVariants,
+  translateVariants,
+} from "constants/animations/variants.constant";
+import { motion } from "framer-motion";
 
-const ItemTechStack = (props) => {
+const ItemTechStack = ({ visible, ...props }) => {
   return (
-    <div className="flex-1">
-      <ImageNext {...props} className="w-20 h-20" />
-    </div>
+    <motion.div
+      className="flex flex-1 justify-center"
+      variants={translateVariants}
+      initial="invisible"
+      animate={visible ? "visible" : "invisible"}
+      transition={{ duration: 1 }}
+    >
+      <ImageNext {...props} className="w-12 h-12 sm:w-20 sm:h-20" />
+    </motion.div>
   );
 };
 

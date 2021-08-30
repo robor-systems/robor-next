@@ -1,9 +1,9 @@
 import {
   FeaturesHome,
   HeroHome,
+  TeamHome,
   TechStackHome,
-} from "components/Templates/Home";
-import { AnimateSharedLayout } from "framer-motion";
+} from "@/components/Templates/Home";
 import Head from "next/head";
 
 const Home = () => {
@@ -15,13 +15,15 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <AnimateSharedLayout>
-        <main className="flex flex-col items-center">
-          <HeroHome />
-          <FeaturesHome />
-          <TechStackHome />
-        </main>
-      </AnimateSharedLayout>
+      <main className="flex flex-col gap-24 items-center">
+        <HeroHome />
+        <FeaturesHome />
+
+        <TechStackHome />
+        <TeamHome />
+
+        <div className="w-full h-20"></div>
+      </main>
     </div>
   );
 };

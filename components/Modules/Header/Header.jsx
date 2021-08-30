@@ -2,6 +2,7 @@ import { ImageNext } from "components/Elements";
 import { Link } from "components/Elements";
 import Container from "../Container/Container";
 import NavLink from "./NavLink";
+import logo from "public/assets/logos/robor-logo-light.png";
 
 const Header = () => {
   return (
@@ -10,8 +11,9 @@ const Header = () => {
         <div className="flex justify-between py-6">
           <Link href="/">
             <ImageNext
+              blur={true}
               className="w-28 min-h-full cursor-pointer"
-              src="/assets/logos/robor-logo-light.png"
+              src={logo}
               alt="Robor logo"
             />
           </Link>
