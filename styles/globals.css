@@ -10,7 +10,7 @@
 
 @layer base {
   button {
-    @apply tracking-wide  rounded-xl shadow-md;
+    @apply tracking-wide rounded-xl shadow-md;
   }
 
   ::selection {
@@ -25,15 +25,15 @@
 
 @layer components {
   .navlink {
-    @apply text-gray-500 group-hover:text-black font-normal  transition ease-in-out duration-300 pb-1;
+    @apply pb-1 group-hover:text-black text-gray-500 font-normal transition duration-300 ease-in-out;
   }
 }
 
 @layer utilities {
   .btn-primary {
-    @apply bg-primary text-white   hover:bg-primary-dark;
+    @apply text-white bg-primary hover:bg-primary-dark;
   }
   .btn-large {
-    @apply p-4 text-xl shadow-xl transition-shadow duration-300 ease-in-out hover:shadow-2xl;
+    @apply p-4 text-xl hover:shadow-2xl shadow-xl transition-shadow duration-300 ease-in-out;
   }
 }

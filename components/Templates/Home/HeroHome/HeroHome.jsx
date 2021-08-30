@@ -1,6 +1,6 @@
-import { ChevronDownIcon } from "@heroicons/react/outline";
+import { BsChevronDown } from "react-icons/bs";
 import { opacityVariants } from "constants/animations/variants.constant";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { useState } from "react";
 import { Link } from "react-scroll";
 import ReactVisibilitySensor from "react-visibility-sensor";
@@ -36,7 +36,7 @@ const HeroHome = () => {
 
         <div className="absolute bottom-5">
           <Link to="features-home" smooth offset={-50}>
-            <ChevronDownIcon className="w-10 h-10 text-center text-gray-500 cursor-pointer transform-gpu hover:scale-125 hover:animate-none animate-pulse transition-all" />
+            <BsChevronDown className="text-center text-gray-500 text-4xl cursor-pointer transform-gpu hover:scale-125 hover:animate-none animate-pulse transition-all" />
           </Link>
         </div>
       </motion.div>

@@ -16,7 +16,7 @@ const TeamHome = () => {
       <ReactVisibilitySensor
         partialVisibility
         onChange={(isVisible) => isVisible && setVisible(isVisible)}
-        offset={{ bottom: 0 }}
+        offset={{ bottom: 400 }}
       >
         <motion.div
           id="features-home"
