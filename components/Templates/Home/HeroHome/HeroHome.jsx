@@ -36,7 +36,6 @@ const HeroHome = () => {
               className="btn-primary btn-large mt-4"
               whileHover={{
                 scale: 1.1,
-                boxShadow: `0 20px 60px -20px var(--color-primary-dark)`,
               }}
               whileTap={{ scale: 0.9 }}
             >

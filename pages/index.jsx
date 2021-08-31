@@ -29,7 +29,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col gap-16 items-center sm:gap-20">
+      <main className="flex flex-col  items-center ">
         <HeroHome />
         <FeaturesHome />
 
@@ -39,8 +39,6 @@ const Home = () => {
         <OurClients />
         <JoinTeam />
         <Feedback />
-
-        <div className="w-full h-20"></div>
       </main>
     </div>
   );

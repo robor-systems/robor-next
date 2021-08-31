@@ -20,7 +20,7 @@ const TechStackHome = () => {
       >
         <motion.div
           id="features-home"
-          className="flex flex-col gap-16 items-center"
+          className="flex flex-col gap-16 items-center pb-20 pt-16"
           initial="invisible"
           animate={visible ? "visible" : "invisible"}
           variants={opacityVariants}

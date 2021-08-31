@@ -21,7 +21,7 @@ const FeaturesHome = () => {
         <motion.div
           layout
           id="features-home"
-          className="flex flex-col gap-16 items-center"
+          className="flex flex-col gap-16 items-center  pt-10"
           initial={"invisible"}
           animate={visible ? "visible" : "invisible"}
           variants={opacityVariants}
