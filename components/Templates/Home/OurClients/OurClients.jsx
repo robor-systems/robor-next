@@ -1,14 +1,10 @@
 import { SectionHeading } from "components/Elements";
-import {
-  opacityVariants,
-  translateVariants,
-} from "constants/animations/variants.constant";
+import { opacityVariants } from "constants/animations/variants.constant";
 import process from "constants/content/process.constant";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import ReactVisibilitySensor from "react-visibility-sensor";
 import { v4 } from "uuid";
-import { FiArrowRight } from "react-icons/fi";
 import ItemClients from "./ItemClients";
 
 const OurClients = () => {
@@ -22,7 +18,7 @@ const OurClients = () => {
     >
       <motion.div
         id="projects"
-        className="text-blu flex flex-col gap-16 items-center -mt-20 pb-20 pt-16 w-full bg-gray-50 overflow-hidden"
+        className="text-blu flex flex-col gap-16 items-center -mt-20 pb-20 pt-16 w-full bg-gradient-to-b from-gray-50 to-gray-100 overflow-hidden"
         initial="invisible"
         animate={visible ? "visible" : "invisible"}
         variants={opacityVariants}

@@ -40,8 +40,17 @@
     @apply p-4 text-xl;
   }
 
+  .bg-hero {
+    background-image: url(https://svgshare.com/i/_hs.svg);
+
+    @apply mt-12 bg-cover bg-center;
+  }
   .text-blu {
     color: rgb(35, 45, 78);
+  }
+
+  .text-shadow {
+    /* @apply bg-white rounded-full; */
   }
 
   .shadow-skew {
