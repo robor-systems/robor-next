@@ -12,7 +12,7 @@ const Header = () => {
           <Link href="/">
             <ImageNext
               blur={true}
-              className="w-32 h-8 cursor-pointer"
+              className="w-32 h-6 cursor-pointer"
               src={logo}
               alt="Robor logo"
             />

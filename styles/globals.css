@@ -10,7 +10,7 @@
 
 @layer base {
   button {
-    @apply tracking-wide rounded-xl transition-shadow duration-300;
+    @apply tracking-wide rounded-xl;
   }
 
   ::selection {

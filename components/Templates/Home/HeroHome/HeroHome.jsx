@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Link } from "react-scroll";
 import ReactVisibilitySensor from "react-visibility-sensor";
 import Container from "@/components/Modules/Container/Container";
+import NextLink from "next/link";
 
 const HeroHome = () => {
   const [visible, setVisible] = useState(false);
@@ -32,15 +33,17 @@ const HeroHome = () => {
               We specialise at developing web applications that help you build
               and scale your business.
             </h4>
-            <motion.button
-              className="btn-primary btn-large mt-4"
-              whileHover={{
-                scale: 1.1,
-              }}
-              whileTap={{ scale: 0.9 }}
-            >
-              Request Appointment
-            </motion.button>
+            <NextLink href="/contact">
+              <motion.button
+                className="btn-primary btn-large mt-4"
+                whileHover={{
+                  scale: 1.1,
+                }}
+                whileTap={{ scale: 0.9 }}
+              >
+                Request Appointment
+              </motion.button>
+            </NextLink>
 
             <div className="absolute bottom-5">
               <Link to="features-home" smooth offset={-50}>

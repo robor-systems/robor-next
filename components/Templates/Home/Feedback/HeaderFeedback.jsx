@@ -5,7 +5,7 @@ const HeaderFeedback = () => {
         We would love to hear from you.
       </h1>
 
-      <p className="text-xl sm:text-2xl lg:text-3xl">
+      <p className="text-lg sm:text-2xl lg:text-3xl">
         Whether you have questions about features, demos or trials, we are here
         to help you meet your business needs.
       </p>

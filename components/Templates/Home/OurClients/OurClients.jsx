@@ -27,12 +27,7 @@ const OurClients = () => {
 
         <div className="grid gap-12 grid-cols-2 px-12 max-w-screen-lg md:gap-16 md:grid-cols-4">
           {clients.map((item, index) => (
-            <ItemClients
-              key={v4()}
-              {...item}
-              visible={visible}
-              delay={index / 4}
-            />
+            <ItemClients key={v4()} {...item} visible={visible} />
           ))}
         </div>
       </motion.div>

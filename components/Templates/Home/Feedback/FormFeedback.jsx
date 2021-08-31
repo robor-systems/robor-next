@@ -1,5 +1,5 @@
 import { TextArea, TextField } from "@/components/Elements";
-import { motion } from "framer-motion";
+import { AnimateSharedLayout, motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
@@ -24,7 +24,7 @@ const FormFeedback = () => {
   return (
     <motion.div
       layout
-      className="w-full flex-1 min-h-full  rounded-2xl shadow-xl border border-gray-100  bg-white  "
+      className="w-full flex-1 min-h-full  rounded-2xl shadow-xl border border-gray-100  bg-white "
     >
       <form
         action=""

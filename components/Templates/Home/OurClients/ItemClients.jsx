@@ -1,14 +1,17 @@
 import { ImageNext } from "components/Elements";
-import { translateVariants } from "constants/animations/variants.constant";
+import {
+  opacityVariants,
+  translateVariants,
+} from "constants/animations/variants.constant";
 import { motion } from "framer-motion";
 
 const ItemClients = ({ visible, delay, ...props }) => {
   return (
     <motion.div
-      variants={translateVariants}
+      variants={opacityVariants}
       initial="invisible"
       animate={visible ? "visible" : "invisible"}
-      transition={{ duration: 1, delay }}
+      transition={{ duration: 1 }}
     >
       <ImageNext
         {...props}
