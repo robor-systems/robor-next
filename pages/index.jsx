@@ -1,6 +1,7 @@
 import {
   FeaturesHome,
   HeroHome,
+  OurClients,
   OurProcess,
   TeamHome,
   TechStackHome,
@@ -33,6 +34,7 @@ const Home = () => {
         <TechStackHome />
         <OurProcess />
         <TeamHome />
+        <OurClients />
 
         <div className="w-full h-20"></div>
       </main>

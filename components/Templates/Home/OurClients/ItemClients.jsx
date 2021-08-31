@@ -2,7 +2,7 @@ import { ImageNext } from "components/Elements";
 import { translateVariants } from "constants/animations/variants.constant";
 import { motion } from "framer-motion";
 
-const ItemProcess = ({ visible, delay, ...props }) => {
+const ItemClients = ({ visible, delay, ...props }) => {
   return (
     <motion.div
       variants={translateVariants}
@@ -20,7 +20,6 @@ const ItemProcess = ({ visible, delay, ...props }) => {
           boxShadow:
             "3px 3px 6px 0px #ccdbe8 inset, -3px -3px 6px 1px rgba(255, 255, 255, 0.5) inset",
         }}
-        transition={{ duration: 0.3 }}
         className="p-4 bg-gray-50 rounded-2xl"
       >
         <ImageNext src={props.image} alt={props.title} className="w-20 h-20" />
@@ -30,4 +29,4 @@ const ItemProcess = ({ visible, delay, ...props }) => {
   );
 };
 
-export default ItemProcess;
+export default ItemClients;
