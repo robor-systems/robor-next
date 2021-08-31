@@ -1,11 +1,13 @@
 import {
   FeaturesHome,
   HeroHome,
+  JoinTeam,
   OurClients,
   OurProcess,
   TeamHome,
   TechStackHome,
 } from "@/components/Templates/Home";
+import Feedback from "@/components/Templates/Home/Feedback/Feedback";
 import { useRouter } from "next/dist/client/router";
 import Head from "next/head";
 import { useEffect } from "react";
@@ -35,6 +37,8 @@ const Home = () => {
         <OurProcess />
         <TeamHome />
         <OurClients />
+        <JoinTeam />
+        <Feedback />
 
         <div className="w-full h-20"></div>
       </main>

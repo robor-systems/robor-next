@@ -21,6 +21,9 @@
     scrollbar-color: #6969dd #e0e0e0;
     scrollbar-width: thin;
   }
+  a {
+    @apply text-primary font-medium;
+  }
 }
 
 @layer components {
