@@ -27,6 +27,9 @@
   .navlink {
     @apply pb-1 group-hover:text-black text-gray-500 font-normal transition duration-300 ease-in-out;
   }
+  .menu-link {
+    @apply hover:text-primary text-2xl font-light transition-all duration-300;
+  }
 }
 
 @layer utilities {
