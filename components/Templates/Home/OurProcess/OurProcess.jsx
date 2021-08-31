@@ -41,7 +41,7 @@ const OurProcess = () => {
             />
           ))}
           <motion.div
-            className="hidden order-1 md:block"
+            className="hidden col-span-1 col-start-2 row-start-1 md:block"
             variants={translateVariants}
             initial="invisible"
             animate={visible ? "visible" : "invisible"}
@@ -50,7 +50,7 @@ const OurProcess = () => {
             <FiArrowRight className="mt-10 w-full text-3xl" />
           </motion.div>
           <motion.div
-            className="hidden order-3 md:block"
+            className="hidden col-span-1 col-start-4 row-start-1 md:block"
             variants={translateVariants}
             initial="invisible"
             animate={visible ? "visible" : "invisible"}
@@ -59,7 +59,7 @@ const OurProcess = () => {
             <FiArrowRight className="mt-10 w-full text-3xl" />
           </motion.div>
           <motion.div
-            className="hidden order-4 md:block"
+            className="hidden col-span-1 col-start-6 row-start-1 md:block"
             variants={translateVariants}
             initial="invisible"
             animate={visible ? "visible" : "invisible"}
