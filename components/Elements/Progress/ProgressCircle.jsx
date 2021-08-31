@@ -14,6 +14,7 @@ const ProgressCircle = (props) => {
         stroke="#00747a"
         fill="transparent"
         strokeWidth={stroke}
+        strokeLinecap="round"
         strokeDasharray={circumference + " " + circumference}
         style={{ strokeDashoffset }}
         r={normalizedRadius}

@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import DialogSnackbar from "./DialogSnackbar";
 import { FiMenu } from "react-icons/fi";
 import { ProgressCircle } from "@/components/Elements";
-import { scrollSpy } from "react-scroll";
 
 const Snackbar = () => {
   const [opened, setOpened] = useState(false);
@@ -22,7 +21,7 @@ const Snackbar = () => {
   const handleOpen = () => setOpened(!opened);
 
   return (
-    <motion.div className="fixed z-30 bottom-0 right-0 m-10" layout>
+    <motion.div className={"fixed z-30 bottom-10 right-10 "} layout>
       {opened ? (
         <DialogSnackbar handleOpen={handleOpen} />
       ) : (

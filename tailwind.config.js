@@ -1,4 +1,6 @@
 module.exports = {
+  mode: "jit",
+
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -30,18 +32,7 @@ module.exports = {
       },
     },
   },
-  variants: {
-    extend: {
-      borderWidth: ["hover"],
-      backgroundPosition: ["hover"],
-      fontWeight: ["hover"],
-      visibility: ["group-hover"],
-      width: ["group-hover", "hover"],
-      height: ["group-hover", "hover"],
-      display: ["group-hover"],
-      animation: ["hover"],
-    },
-  },
+
   plugins: [
     require("@tailwindcss/typography"),
     require("@tailwindcss/forms"),
