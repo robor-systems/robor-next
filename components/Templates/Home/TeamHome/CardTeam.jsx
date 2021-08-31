@@ -29,13 +29,13 @@ const CardTeam = ({ image, name, position }) => {
     <motion.div
       layout
       transition={{ duration: 0.5 }}
-      onMouseEnter={() => mounted.current && setHover(true)}
-      onMouseLeave={() => mounted.current && setHover(false)}
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
       className="border-1 relative w-full h-96 rounded-3xl overflow-hidden sm:h-72"
       animate={
         hover
           ? {
-              boxShadow: `0 60px 65px -60px ${data.darkMuted}`,
+              boxShadow: `0 60px 65px -60px ${mounted && data.darkMuted}`,
             }
           : {}
       }
@@ -46,9 +46,9 @@ const CardTeam = ({ image, name, position }) => {
         className="w-full h-full"
         objectFit="cover"
       />
-      {hover && mounted.current && (
+      {hover && mounted && (
         <motion.div
-          custom={data.darkMuted}
+          custom={mounted && data.darkMuted}
           className="absolute left-0 top-0 w-full h-full"
           variants={gradientVariants}
           initial="invisible"
@@ -57,7 +57,7 @@ const CardTeam = ({ image, name, position }) => {
         ></motion.div>
       )}
 
-      {hover && mounted.current && (
+      {hover && (
         <motion.div
           className="absolute right-0 top-0 flex flex-col gap-4 p-4 text-white text-3xl sm:gap-2 sm:text-xl"
           variants={existanceVariants}
@@ -83,7 +83,7 @@ const CardTeam = ({ image, name, position }) => {
           {name}
         </motion.h3>
 
-        {hover && mounted.current && (
+        {hover && (
           <motion.h4
             className="text-white text-xl font-normal sm:text-lg"
             variants={existanceVariants}
