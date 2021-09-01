@@ -9,7 +9,7 @@ const seo = {
     description:
       "We specialise at developing web applications that help you build and scale your business.",
 
-    images: [{ url: "/assets/logos/robor-card-img" }],
+    images: [{ url: "/assets/logos/robor-card-img.png" }],
     site_name: "Robor",
     type: "website",
   },
