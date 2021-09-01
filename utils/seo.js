@@ -1,3 +1,4 @@
+import cardImg from "public/assets/logos/robor-card-img.png";
 const seo = {
   title: "Robor",
   description:
@@ -9,7 +10,7 @@ const seo = {
     description:
       "We specialise at developing web applications that help you build and scale your business.",
 
-    images: [{ url: "/assets/logos/robor-card-img.png" }],
+    images: [{ url: cardImg }],
     site_name: "Robor",
     type: "website",
   },
