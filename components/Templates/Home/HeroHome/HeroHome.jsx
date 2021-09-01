@@ -26,7 +26,7 @@ const HeroHome = () => {
             variants={opacityVariants}
             transition={{ duration: 1 }}
           >
-            <h1 className="text-shadow text-4xl font-semibold sm:text-5xl md:text-7xl">
+            <h1 className="text-shadow text-4xl font-bold sm:text-5xl md:text-7xl">
               Welcome to Robor
             </h1>
             <h4 className="text-shadow max-w-2xl text-center text-xl font-normal sm:text-2xl md:text-3xl">
