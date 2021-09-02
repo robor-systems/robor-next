@@ -1,40 +1,36 @@
 const team = [
   {
-    name: "Michael Scott",
-    position: "Regional Manager",
+    name: "Danish Yasin",
+    position: "Founder",
     image:
-      "https://images.unsplash.com/photo-1601233749202-95d04d5b3c00?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1322&q=80",
+      "https://robor-team.s3.eu-central-1.amazonaws.com/danish-bitmoji-1.png",
+    linkedin: "https://www.linkedin.com/in/danishyasin/",
+    github: "https://github.com/danishyasin33",
   },
   {
-    name: "Dwight Schrute",
-    position: "Assistant Manager",
+    name: "Usama Habib",
+    position: "Software Engineer",
     image:
-      "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+      "https://robor-team.s3.eu-central-1.amazonaws.com/usama_habib.jpeg",
+    linkedin: "https://www.linkedin.com/in/usama-habib-chaudhry-484581177/",
+    github:"https://github.com/usamahabib95"
   },
   {
-    name: "Jim Halpert",
-    position: "Sales Executive",
+    name: "M. Ahmed",
+    position: "Front-end Engineer",
     image:
-      "https://images.unsplash.com/photo-1566753323558-f4e0952af115?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1222&q=80",
+      "https://robor-team.s3.eu-central-1.amazonaws.com/ahmed.jpeg",
+    linkedin: "https://www.linkedin.com/in/mahmedtan/",
+    github:"https://github.com/mahmedtan"
   },
   {
-    name: "Pam Beasley",
-    position: "Secretary",
+    name: "Aamna Sarosh",
+    position: "UI Designer",
     image:
-      "https://images.unsplash.com/photo-1616790876844-97c0c6057364?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=802&q=80",
-  },
-  {
-    name: "Stanley Hudson",
-    position: "Sales Manager",
-    image:
-      "https://images.unsplash.com/photo-1575709091723-d92b0f14a631?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1225&q=80",
-  },
-  {
-    name: "Angela Martin",
-    position: "Lead Accountant",
-    image:
-      "https://images.unsplash.com/photo-1533919484729-be3fa3fa0325?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80",
-  },
+      "https://robor-team.s3.eu-central-1.amazonaws.com/aamna.jpeg",
+    linkedin: "https://www.linkedin.com/in/aamnasarosh/",
+    github:"https://github.com/aamnasarosh"
+  }
 ];
 
 export default team;
