@@ -67,7 +67,7 @@ const FormFeedback = () => {
           whileTap={{ scale: 0.9 }}
           type="submit"
         >
-          Get in touch
+          Send Message
         </motion.button>
       </form>
     </motion.div>

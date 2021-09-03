@@ -26,12 +26,12 @@ const HeroHome = () => {
             variants={opacityVariants}
             transition={{ duration: 1 }}
           >
-            <h1 className="text-shadow text-4xl font-bold sm:text-5xl md:text-7xl">
-              Welcome to Robor
+            <h1 className="text-shadow text-4xl font-bold sm:text-5xl md:text-6xl text-center">
+              We Build Robust Systems
             </h1>
-            <h4 className="text-shadow max-w-2xl text-center text-xl font-normal sm:text-2xl md:text-3xl">
-              We specialise at developing web applications that help you build
-              and scale your business.
+            <h4 className="text-shadow max-w-2xl text-center text-xl font-normal sm:text-2xl md:text-2xl">
+              We specialise at developing cloud based applications that help you
+              build and scale your business.
             </h4>
             <NextLink href="/contact">
               <motion.button
@@ -41,7 +41,7 @@ const HeroHome = () => {
                 }}
                 whileTap={{ scale: 0.9 }}
               >
-                Request Appointment
+                Book Free Consultation
               </motion.button>
             </NextLink>
 

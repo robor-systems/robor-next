@@ -17,7 +17,7 @@ const OurClients = () => {
       offset={{ bottom: 300 }}
     >
       <motion.div
-        className="text-blu flex flex-col gap-8 items-center  pb-12 pt-10 w-full bg-gray-50 overflow-hidden"
+        className="text-blu flex flex-col gap-12 items-center   pb-16  pt-20 w-full  overflow-hidden"
         initial="invisible"
         animate={visible ? "visible" : "invisible"}
         variants={opacityVariants}

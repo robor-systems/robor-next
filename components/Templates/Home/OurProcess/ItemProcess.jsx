@@ -21,7 +21,7 @@ const ItemProcess = ({ visible, delay, ...props }) => {
             "3px 3px 6px 0px #ccdbe8 inset, -3px -3px 6px 1px rgba(255, 255, 255, 0.5) inset",
         }}
         transition={{ duration: 0.3 }}
-        className="p-4 bg-gray-50 rounded-2xl"
+        className="p-4 bg-white rounded-2xl"
       >
         <ImageNext src={props.image} alt={props.title} className="w-20 h-20" />
       </motion.div>

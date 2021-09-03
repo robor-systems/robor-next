@@ -28,9 +28,9 @@ const Home = () => {
         <FeaturesHome />
 
         <TechStackHome />
+        <OurClients />
         <OurProcess />
         <TeamHome />
-        <OurClients />
         <JoinTeam />
         <Feedback />
       </main>

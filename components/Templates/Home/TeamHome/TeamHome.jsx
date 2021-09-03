@@ -1,4 +1,4 @@
-import { SectionHeading } from "components/Elements";
+import { SectionHeader } from "components/Elements";
 import Container from "components/Modules/Container/Container";
 import { opacityVariants } from "constants/animations/variants.constant";
 import team from "constants/content/team.constant";
@@ -26,7 +26,10 @@ const TeamHome = () => {
           variants={opacityVariants}
           transition={{ duration: 1 }}
         >
-          <SectionHeading>Meet Our Team</SectionHeading>
+          <SectionHeader
+            title="Our Team"
+            subtitle="We are a growing and passionate team working together to achieve big things!"
+          />
           <div className="grid-cols-16 grid gap-8 w-full max-w-xs sm:grid-cols-2 sm:max-w-lg md:grid-cols-3 md:max-w-3xl">
             {team.map((member) => (
               <CardTeam key={v4()} {...member} />

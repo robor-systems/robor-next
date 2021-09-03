@@ -6,7 +6,7 @@ const CardFeaturesHome = ({ image, title, description, delay }) => {
   return (
     <motion.div
       layout
-      className="flex flex-1 flex-col gap-7 items-center mx-auto px-8 py-12 min-w-min max-w-xs min-h-full text-center bg-gray-100 rounded-3xl"
+      className="flex flex-1 flex-col gap-7 items-center mx-auto px-8 py-12 min-w-min max-w-xs min-h-full text-center bg-gray-100 rounded-3xl hover:shadow-2xl"
       initial="invisible"
       animate={"visible"}
       variants={scaleVariants}

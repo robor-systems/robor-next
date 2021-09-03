@@ -1,4 +1,4 @@
-import { SectionHeading } from "components/Elements";
+import { SectionHeader } from "components/Elements";
 import {
   opacityVariants,
   translateVariants,
@@ -22,13 +22,16 @@ const OurProcess = () => {
     >
       <motion.div
         id="projects"
-        className="text-blu flex flex-col gap-16 items-center pb-20 pt-16 w-full bg-gray-50 overflow-hidden"
+        className="text-blu flex flex-col gap-16 items-center pb-20 pt-16 w-full bg-shade overflow-hidden"
         initial="invisible"
         animate={visible ? "visible" : "invisible"}
         variants={opacityVariants}
         transition={{ duration: 1 }}
       >
-        <SectionHeading>Our Process</SectionHeading>
+        <SectionHeader
+          title="Our Process"
+          subtitle="We pay close attention to detail along every step of the way!"
+        />
 
         <div className="grid gap-6 grid-cols-1 px-16 max-w-screen-lg md:gap-3 md:grid-cols-7">
           {process.map((item, index) => (

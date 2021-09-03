@@ -11,10 +11,12 @@ module.exports = {
           light: "var(--color-primary-light)",
           dark: "var(--color-primary-dark)",
         },
+        shade: "#F3F7F9",
       },
 
       fontFamily: {
         sans: [
+          // "Poppins",
           "system-ui",
           "-apple-system",
           "BlinkMacSystemFont",

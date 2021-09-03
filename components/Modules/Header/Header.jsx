@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div className="absolute z-20 top-0 w-full">
       <Container>
-        <div className="flex justify-center py-6 sm:justify-between">
+        <div className="flex justify-center py-6 sm:justify-between ">
           <Link href="/">
             <ImageNext
               className="w-28  sm:w-32 h-6 cursor-pointer"

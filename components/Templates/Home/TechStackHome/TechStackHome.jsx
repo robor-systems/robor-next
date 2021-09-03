@@ -1,4 +1,4 @@
-import { SectionHeading } from "components/Elements";
+import { SectionHeader } from "components/Elements";
 import Container from "components/Modules/Container/Container";
 import { opacityVariants } from "constants/animations/variants.constant";
 import techStack from "constants/content/techStack.constant";
@@ -20,13 +20,17 @@ const TechStackHome = () => {
       >
         <motion.div
           id="features-home"
-          className="flex flex-col gap-16 items-center pb-20 pt-16"
+          className="flex flex-col gap-16 items-center  "
           initial="invisible"
           animate={visible ? "visible" : "invisible"}
           variants={opacityVariants}
           transition={{ duration: 1 }}
         >
-          <SectionHeading>Technologies we love</SectionHeading>
+          <SectionHeader
+            title="Our Technologies"
+            subtitle="We are excited to work with these technologies"
+          />
+
           <div className="flex flex-wrap gap-8 px-8 w-full sm:gap-16 sm:max-w-screen-md md:gap-20">
             {techStack.map((item) => (
               <ItemTechStack key={v4()} {...item} visible={visible} />
