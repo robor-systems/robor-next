@@ -2,7 +2,6 @@ import { ImageNext } from "components/Elements";
 import { Link } from "components/Elements";
 import Container from "../Container/Container";
 import NavLink from "./NavLink";
-import logo from "public/assets/logos/robor-logo-light.png";
 
 const Header = () => {
   return (
@@ -11,17 +10,20 @@ const Header = () => {
         <div className="flex justify-center py-6 sm:justify-between">
           <Link href="/">
             <ImageNext
-              blur={true}
-              className="w-32 h-6 cursor-pointer"
-              src={logo}
+              className="w-28  sm:w-32 h-6 cursor-pointer"
+              src={"https://svgshare.com/i/_oN.svg"}
               alt="Robor logo"
             />
           </Link>
 
           <div className="hidden gap-16 sm:flex">
-            <NavLink href="/?section=projects">Projects</NavLink>
-            <NavLink href="/?section=team">Team</NavLink>
-            <NavLink href="/contact">Contact</NavLink>
+            <NavLink href="projects" id>
+              Projects
+            </NavLink>
+            <NavLink href="team" id>
+              Team
+            </NavLink>
+            <NavLink href="contact">Contact</NavLink>
           </div>
         </div>
       </Container>

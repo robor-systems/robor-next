@@ -3,11 +3,14 @@ import {
   scaleVariants,
 } from "constants/animations/variants.constant";
 import { motion } from "framer-motion";
+import { useRouter } from "next/router";
 import { FiX } from "react-icons/fi";
+import { animateScroll, scroller } from "react-scroll";
 
 const { Link } = require("@/components/Elements");
 
 const DialogSnackbar = ({ handleOpen }) => {
+  const router = useRouter();
   return (
     <motion.div
       initial="invisible"
@@ -27,33 +30,45 @@ const DialogSnackbar = ({ handleOpen }) => {
       >
         <FiX />
       </motion.button>
-      <Link href="/">
-        <motion.div
-          className="menu-link"
-          whileTap={{ scale: 0.9 }}
-          onClick={handleOpen}
-        >
-          Home
-        </motion.div>
-      </Link>
-      <Link href="/?section=projects">
-        <motion.div
-          className="menu-link"
-          whileTap={{ scale: 0.9 }}
-          onClick={handleOpen}
-        >
-          Projects
-        </motion.div>
-      </Link>
-      <Link href="/?section=team">
-        <motion.div
-          className="menu-link"
-          whileTap={{ scale: 0.9 }}
-          onClick={handleOpen}
-        >
-          Team
-        </motion.div>
-      </Link>
+
+      <motion.div
+        className="menu-link "
+        whileTap={{ scale: 0.9 }}
+        onClick={() => {
+          if (router.pathname == "/")
+            animateScroll.scrollToTop({ smooth: true });
+          router.push("/");
+          handleOpen();
+        }}
+      >
+        Home
+      </motion.div>
+
+      <motion.div
+        className="menu-link"
+        whileTap={{ scale: 0.9 }}
+        onClick={() => {
+          if (router.pathname === "/")
+            scroller.scrollTo("projects", { smooth: true });
+          router.push("/#projects");
+          handleOpen();
+        }}
+      >
+        Projects
+      </motion.div>
+
+      <motion.div
+        className="menu-link"
+        whileTap={{ scale: 0.9 }}
+        onClick={() => {
+          if (router.pathname === "/")
+            scroller.scrollTo("team", { smooth: true });
+          router.push("/#team");
+          handleOpen();
+        }}
+      >
+        Team
+      </motion.div>
     </motion.div>
   );
 };
