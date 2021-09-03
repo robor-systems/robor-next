@@ -30,7 +30,7 @@ const OurProcess = () => {
       >
         <SectionHeading>Our Process</SectionHeading>
 
-        <div className="grid gap-12 grid-cols-2 px-16 max-w-screen-lg md:gap-3 md:grid-cols-7">
+        <div className="grid gap-6 grid-cols-1 px-16 max-w-screen-lg md:gap-3 md:grid-cols-7">
           {process.map((item, index) => (
             <ItemProcess
               key={v4()}
@@ -41,31 +41,31 @@ const OurProcess = () => {
             />
           ))}
           <motion.div
-            className="hidden col-span-1 col-start-2 row-start-1 md:block"
+            className=" col-span-1 col-start-1 md:col-start-2  row-start-2  md:row-start-1"
             variants={translateVariants}
             initial="invisible"
             animate={visible ? "visible" : "invisible"}
             transition={{ duration: 1, delay: 0 }}
           >
-            <FiArrowRight className="mt-10 w-full text-3xl" />
+            <FiArrowRight className="md:mt-10  w-full text-3xl rotate-90 md:transform-none" />
           </motion.div>
           <motion.div
-            className="hidden col-span-1 col-start-4 row-start-1 md:block"
+            className=" col-span-1 col-start-1 md:col-start-4 row-start-4 md:row-start-1"
             variants={translateVariants}
             initial="invisible"
             animate={visible ? "visible" : "invisible"}
             transition={{ duration: 1, delay: 0.25 }}
           >
-            <FiArrowRight className="mt-10 w-full text-3xl" />
+            <FiArrowRight className="md:mt-10 w-full text-3xl rotate-90 md:transform-none" />
           </motion.div>
           <motion.div
-            className="hidden col-span-1 col-start-6 row-start-1 md:block"
+            className=" col-span-1 col-start-1 md:col-start-6 row-start-6 md:row-start-1 "
             variants={translateVariants}
             initial="invisible"
             animate={visible ? "visible" : "invisible"}
             transition={{ duration: 1, delay: 0.5 }}
           >
-            <FiArrowRight className="mt-10 w-full text-3xl" />
+            <FiArrowRight className="md:mt-10 w-full text-3xl rotate-90 md:transform-none" />
           </motion.div>
         </div>
       </motion.div>
