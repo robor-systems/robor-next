@@ -38,6 +38,10 @@
   .menu-link {
     @apply text-black hover:text-primary text-2xl font-light transition-all duration-300 cursor-pointer;
   }
+
+  .icon-btn {
+    @apply z-20 cursor-pointer;
+  }
 }
 
 @layer utilities {

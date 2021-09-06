@@ -1,22 +1,21 @@
-import {
-  existanceVariants,
-  gradientVariants,
-  opacityVariants,
-} from "constants/animations/variants.constant";
-import { AnimateSharedLayout, motion } from "framer-motion";
+import { existanceVariants } from "constants/animations/variants.constant";
+import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import { usePalette } from "react-palette";
-import {
-  IoLogoGithub,
-  IoMail,
-  IoLogoLinkedin,
-  IoLogoTwitter,
-} from "react-icons/io5";
+import { FiGithub, FiMail, FiLinkedin, FiTwitter } from "react-icons/fi";
+import { IconButton } from "@/components/Elements";
 
-const { ImageNext } = require("components/Elements");
+const CardTeam = ({
+  name,
+  position,
+  socials: {
+    github,
+    linkedin,
+    emailAddress = "mailto:johndoe@appleseed.com",
+    twitter = "https://twitter.com",
+  },
+}) => {
+  const videoRef = useRef(null);
 
-const CardTeam = ({ image, name, position }) => {
-  const { data } = usePalette(image);
   const [hover, setHover] = useState(false);
   const mounted = useRef(false);
 
@@ -25,67 +24,109 @@ const CardTeam = ({ image, name, position }) => {
     return () => (mounted.current = false);
   });
 
+  useEffect(() => {
+    if (hover) {
+      videoRef.current.playbackRate = 1.5;
+      videoRef.current.currentTime = 1;
+      videoRef.current.play();
+    }
+  }, [hover]);
+
   return (
     <motion.div
       layout
       transition={{ duration: 0.5 }}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className="border-1 relative w-full h-96 rounded-3xl overflow-hidden sm:h-72"
+      className="border-1 relative w-full h-96 rounded-3xl overflow-hidden sm:h-72 border "
       animate={
         hover
           ? {
-              boxShadow: `0 60px 65px -60px ${mounted && data.darkMuted}`,
+              boxShadow: `0 60px 50px -70px black`,
             }
           : {}
       }
     >
-      <ImageNext
-        src={image}
-        alt={name}
-        className="w-full h-full"
-        objectFit="cover"
-      />
-      {hover && mounted && (
+      <video
+        ref={videoRef}
+        src="/assets/monkey-video.mp4"
+        preload="auto"
+        className="w-full h-full object-cover p-3"
+      ></video>
+      {/* {hover && mounted && (
         <motion.div
-          custom={mounted && data.darkMuted}
+          custom={mounted && "black"}
           className="absolute left-0 top-0 w-full h-full"
           variants={gradientVariants}
           initial="invisible"
           transition={{ duration: 0.4 }}
           animate={hover ? "visible" : "invisible"}
         ></motion.div>
-      )}
-
+      )} */}
       {hover && (
         <motion.div
-          className="absolute right-0 top-0 flex flex-col gap-4 p-4 text-white text-3xl sm:gap-2 sm:text-xl"
+          className="absolute right-0 top-0 flex flex-col gap-4 p-4 text-3xl sm:gap-3 sm:text-xl"
           variants={existanceVariants}
           initial="invisible"
           transition={{ duration: 0.5 }}
           animate={hover ? "visible" : "invisible"}
         >
-          <IoLogoGithub />
-          <IoLogoTwitter />
-          <IoMail />
-          <IoLogoLinkedin />
+          <IconButton>
+            <a
+              href={github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-black"
+            >
+              <FiGithub />
+            </a>
+          </IconButton>
+          <IconButton>
+            <a
+              href={twitter}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-black"
+            >
+              <FiTwitter />
+            </a>
+          </IconButton>
+          <IconButton>
+            <a
+              href={emailAddress}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-black"
+            >
+              <FiMail />
+            </a>
+          </IconButton>
+          <IconButton>
+            <a
+              href={linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-black"
+            >
+              <FiLinkedin />
+            </a>
+          </IconButton>
         </motion.div>
       )}
-
       <motion.div
         layout
         className="absolute top-0 flex flex-col justify-end px-6 py-4 w-full h-full"
       >
         <motion.h3
           layout
-          className="text-white text-2xl font-semibold sm:text-xl"
+          className="text-black text-2xl font-semibold sm:text-xl"
         >
           {name}
         </motion.h3>
 
         {hover && (
           <motion.h4
-            className="text-white text-xl font-normal sm:text-lg"
+            className="text-black text-xl font-normal sm:text-lg"
             variants={existanceVariants}
             initial="invisible"
             transition={{ duration: 0.5 }}

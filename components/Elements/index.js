@@ -6,3 +6,4 @@ export { default as Link } from "./Link/Link";
 export { default as ProgressCircle } from "./Progress/ProgressCircle";
 export { default as TextField } from "./Form/TextField";
 export { default as TextArea } from "./Form/TextArea";
+export { default as IconButton } from "./IconButton/IconButton";
