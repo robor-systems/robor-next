@@ -11,7 +11,9 @@ const Header = () => {
           <Link href="/">
             <ImageNext
               className="w-28  sm:w-32 h-6 cursor-pointer"
-              src={"https://svgshare.com/i/_oN.svg"}
+              src={
+                "https://robor-team.s3.eu-central-1.amazonaws.com/robor-logo.svg"
+              }
               alt="Robor logo"
             />
           </Link>

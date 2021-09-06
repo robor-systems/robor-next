@@ -1,19 +1,23 @@
 const process = [
   {
     title: "Analyse",
-    image: "https://svgshare.com/i/_fS.svg",
+    image:
+      "https://robor-team.s3.eu-central-1.amazonaws.com/process/analyse.svg",
   },
   {
     title: "Design",
-    image: "https://svgshare.com/i/_g6.svg",
+    image:
+      "https://robor-team.s3.eu-central-1.amazonaws.com/process/design.svg",
   },
   {
     title: "Develop",
-    image: "https://svgshare.com/i/_fg.svg",
+    image:
+      "https://robor-team.s3.eu-central-1.amazonaws.com/process/develop.svg",
   },
   {
     title: "Deploy",
-    image: "https://svgshare.com/i/_eY.svg",
+    image:
+      "https://robor-team.s3.eu-central-1.amazonaws.com/process/deploy.svg",
   },
 ];
 

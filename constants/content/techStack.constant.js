@@ -1,51 +1,51 @@
 const techStack = [
   {
-    src: "https://vectorlogo.zone/logos/reactjs/reactjs-icon.svg",
+    src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/reactjs-icon.svg",
     alt: "React Logo",
   },
   {
-    src: "https://raw.githubusercontent.com/detain/svg-logos/master/svg/redux.svg",
+    src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/redux-icon.svg",
     alt: "Redux Logo",
   },
   {
-    src: "https://vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
+    src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/tailwindcss-icon.svg",
     alt: "Tailwind Logo",
   },
   {
-    src: "https://vectorlogo.zone/logos/sass-lang/sass-lang-icon.svg",
+    src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/sass-lang-icon.svg",
     alt: "Sass Logo",
   },
   {
-    src: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg",
+    src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/Nextjs-logo.svg",
     alt: "NextJS Logo",
   },
   {
-    src: "https://vectorlogo.zone/logos/nodejs/nodejs-icon.svg",
+    src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/nodejs-icon.svg",
     alt: "NodeJS Logo",
   },
   {
-    src: "https://vectorlogo.zone/logos/expressjs/expressjs-icon.svg",
+    src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/expressjs-icon.svg",
     alt: "Express Logo",
   },
   {
-    src: "https://vectorlogo.zone/logos/graphql/graphql-icon.svg",
+    src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/graphql-icon.svg",
     alt: "GraphQL Logo",
   },
 
   {
-    src: "https://vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg",
+    src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/typescriptlang-icon.svg",
     alt: "TypeScript Logo",
   },
   {
-    src: "https://vectorlogo.zone/logos/mongodb/mongodb-icon.svg",
+    src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/mongodb-icon.svg",
     alt: "MongoDB Logo",
   },
   {
-    src: "https://vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg",
+    src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/amazon_aws-icon.svg",
     alt: "AWS Logo",
   },
   {
-    src: "https://vectorlogo.zone/logos/jamstack/jamstack-icon.svg",
+    src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/jamstack-icon.svg",
     alt: "JAMStack Logo",
   },
 ];

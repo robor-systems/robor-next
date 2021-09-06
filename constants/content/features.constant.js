@@ -4,7 +4,7 @@ const features = [
     description:
       "Lorem ipsum dolor sit amet consectetur amet consectetur, adipisicelit.  Similique Similique Similique Similique",
     image: {
-      src: "https://svgshare.com/i/_e0.svg",
+      src: "https://robor-team.s3.eu-central-1.amazonaws.com/features/saas.svg",
       alt: "SaaS Icon",
     },
   },
@@ -13,7 +13,7 @@ const features = [
     description:
       "Lorem ipsum dolor sit amet consectetur,  adipisicing elit. Similique amet consectetur amet consectetur",
     image: {
-      src: "https://svgshare.com/i/_eX.svg",
+      src: "https://robor-team.s3.eu-central-1.amazonaws.com/features/embedded.svg",
       alt: "Embedded Systems Icon",
     },
   },
@@ -22,7 +22,7 @@ const features = [
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique amet consectetur, adipisic",
     image: {
-      src: "https://svgshare.com/i/_ft.svg",
+      src: "https://robor-team.s3.eu-central-1.amazonaws.com/features/data.svg",
       alt: "Data Analysis Icon",
     },
   },
