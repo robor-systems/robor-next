@@ -50,7 +50,6 @@ const CardTeam = ({
       <video
         ref={videoRef}
         src="/assets/monkey-video.mp4"
-        preload="auto"
         className="w-full h-full object-cover p-3"
       ></video>
       {/* {hover && mounted && (
