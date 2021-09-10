@@ -3,7 +3,7 @@ const team = [
     name: "Danish Yasin",
     position: "Founder",
     image:
-      "https://robor-team.s3.eu-central-1.amazonaws.com/danish-bitmoji-1.png",
+      "https://robor-team.s3.eu-central-1.amazonaws.com/team/danish-final.mp4",
     socials: {
       linkedin: "https://www.linkedin.com/in/danishyasin/",
       github: "https://github.com/danishyasin33",
@@ -12,7 +12,7 @@ const team = [
   {
     name: "Usama Habib",
     position: "Software Engineer",
-    image: "https://robor-team.s3.eu-central-1.amazonaws.com/usama_habib.jpeg",
+    image: "https://robor-team.s3.eu-central-1.amazonaws.com/team/danish-final.mp4",
     socials: {
       linkedin: "https://www.linkedin.com/in/usama-habib-chaudhry-484581177/",
       github: "https://github.com/usamahabib95",
@@ -21,7 +21,7 @@ const team = [
   {
     name: "M. Ahmed",
     position: "Front-end Engineer",
-    image: "https://robor-team.s3.eu-central-1.amazonaws.com/ahmed.jpeg",
+    image: "https://robor-team.s3.eu-central-1.amazonaws.com/team/danish-final.mp4",
     socials: {
       linkedin: "https://www.linkedin.com/in/mahmedtan/",
       github: "https://github.com/mahmedtan",
@@ -30,7 +30,7 @@ const team = [
   {
     name: "Aamna Sarosh",
     position: "UI Designer",
-    image: "https://robor-team.s3.eu-central-1.amazonaws.com/aamna.jpeg",
+    image: "https://robor-team.s3.eu-central-1.amazonaws.com/team/danish-final.mp4",
     socials: {
       linkedin: "https://www.linkedin.com/in/aamnasarosh/",
       github: "https://github.com/aamnasarosh",

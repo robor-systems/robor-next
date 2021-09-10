@@ -7,11 +7,12 @@ import { IconButton } from "@/components/Elements";
 const CardTeam = ({
   name,
   position,
+  image,
   socials: {
     github,
     linkedin,
-    emailAddress = "mailto:johndoe@appleseed.com",
-    twitter = "https://twitter.com",
+    // emailAddress = "mailto:johndoe@appleseed.com",
+    // twitter = "https://twitter.com",
   },
 }) => {
   const videoRef = useRef(null);
@@ -49,7 +50,9 @@ const CardTeam = ({
     >
       <video
         ref={videoRef}
-        src="/assets/monkey-video.mp4"
+        // src="/assets/monkey-video.mp4"
+        src={image}
+        // src="https://robor-team.s3.eu-central-1.amazonaws.com/team/danish-final.mp4"
         className="w-full h-full object-cover p-3"
       ></video>
       {/* {hover && mounted && (
@@ -80,7 +83,7 @@ const CardTeam = ({
               <FiGithub />
             </a>
           </IconButton>
-          <IconButton>
+          {/* <IconButton>
             <a
               href={twitter}
               target="_blank"
@@ -99,7 +102,7 @@ const CardTeam = ({
             >
               <FiMail />
             </a>
-          </IconButton>
+          </IconButton> */}
           <IconButton>
             <a
               href={linkedin}
