@@ -24,7 +24,7 @@ const JoinTeam = () => {
         <SectionHeading>Join us</SectionHeading>
 
         <div className="text-center text-xl">
-          Want to be part of our team? <br />
+          Want to be a part of our team? <br />
           Send your resumé for future opening at{" "}
           <a href="mailto:talent@robor.tech" target="_blank" rel="noreferrer">
             talent@robor.tech

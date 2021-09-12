@@ -15,21 +15,21 @@ const Footer = () => {
       </div>
 
       <div className="text-xl flex  items-center gap-5">
-        <IconFooter>
+        <IconFooter link="https://github.com/robor-systems">
           <FiGithub />
         </IconFooter>
-        <IconFooter>
+        <IconFooter link="https://www.linkedin.com/company/robor-systems">
           <FiLinkedin />
         </IconFooter>
-        <IconFooter>
+        <IconFooter link="mailto:info@robor.tech">
           <FiMail />
         </IconFooter>
-        <IconFooter>
+        {/* <IconFooter>
           <FiTwitter />
         </IconFooter>
         <IconFooter>
           <FiInstagram />
-        </IconFooter>
+        </IconFooter> */}
       </div>
     </div>
   );

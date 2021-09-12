@@ -28,7 +28,7 @@ const TeamHome = () => {
         >
           <SectionHeader
             title="Our Team"
-            subtitle="We are a growing and passionate team working together to achieve big things!"
+            subtitle="The 🧠 🧠 🧠 behind this venture:"
           />
           <div className="grid-cols-16 grid gap-8 w-full max-w-xs sm:grid-cols-2 sm:max-w-lg md:grid-cols-3 md:max-w-3xl">
             {team.map((member) => (

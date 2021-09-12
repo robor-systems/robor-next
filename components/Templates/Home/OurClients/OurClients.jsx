@@ -17,6 +17,7 @@ const OurClients = () => {
       offset={{ bottom: 300 }}
     >
       <motion.div
+        id="clients"
         className="text-blu flex flex-col gap-12 items-center   pb-16  pt-20 w-full  overflow-hidden"
         initial="invisible"
         animate={visible ? "visible" : "invisible"}

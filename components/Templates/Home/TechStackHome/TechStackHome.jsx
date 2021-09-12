@@ -28,7 +28,7 @@ const TechStackHome = () => {
         >
           <SectionHeader
             title="Our Technologies"
-            subtitle="We are excited to work with these technologies"
+            subtitle="What's in our toolbox 🧰"
           />
 
           <div className="flex flex-wrap gap-8 px-8 w-full sm:gap-16 sm:max-w-screen-md md:gap-20">

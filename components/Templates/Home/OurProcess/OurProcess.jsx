@@ -30,7 +30,7 @@ const OurProcess = () => {
       >
         <SectionHeader
           title="Our Process"
-          subtitle="We pay close attention to detail along every step of the way!"
+          subtitle="We lead your idea from inception to completion."
         />
 
         <div className="grid gap-6 grid-cols-1 px-16 max-w-screen-lg md:gap-3 md:grid-cols-7">

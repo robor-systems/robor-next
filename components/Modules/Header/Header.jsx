@@ -19,8 +19,11 @@ const Header = () => {
           </Link>
 
           <div className="hidden gap-16 sm:flex">
-            <NavLink href="projects" id>
-              Projects
+            <NavLink href="services" id>
+              Services
+            </NavLink>
+            <NavLink href="clients" id>
+              Clients
             </NavLink>
             <NavLink href="team" id>
               Team

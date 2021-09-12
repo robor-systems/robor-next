@@ -27,11 +27,12 @@ const HeroHome = () => {
             transition={{ duration: 1 }}
           >
             <h1 className="text-shadow text-4xl font-bold sm:text-5xl md:text-6xl text-center">
-              We Build Robust Systems
+              Building Robust Systems &#9829;
             </h1>
             <h4 className="text-shadow max-w-2xl text-center text-xl font-normal sm:text-2xl md:text-2xl">
-              We specialise at developing cloud based applications that help you
-              build and scale your business.
+              We can help you build your next great idea.
+              {/* We specialise in developing cloud based applications that help you
+              build and scale your business. */}
             </h4>
             <NextLink href="/contact">
               <motion.button
@@ -41,7 +42,7 @@ const HeroHome = () => {
                 }}
                 whileTap={{ scale: 0.9 }}
               >
-                Book Free Consultation
+                Let&apos;s Talk!
               </motion.button>
             </NextLink>
 

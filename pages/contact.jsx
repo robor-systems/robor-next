@@ -33,8 +33,7 @@ const Contact = () => {
               </h1>
 
               <h2 className="text-xl sm:text-2xl lg:text-2xl font-light text-center">
-                Whether you have questions about features, demos or trials, we
-                are here to help you meet your business needs.
+              Whether you want to talk about ideas, get a quote for a work-item or just have a cup of joe, we&apos;re here to help.
               </h2>
             </div>
             <FormFeedback />

@@ -6,8 +6,7 @@ const HeaderFeedback = () => {
       </h1>
 
       <p className="text-lg sm:text-2xl lg:text-3xl">
-        Whether you have questions about features, demos or trials, we are here
-        to help you meet your business needs.
+        Whether you want to talk about ideas, get a quote for a work-item or just have a cup of joe, we&apos;re here to help.
       </p>
     </div>
   );

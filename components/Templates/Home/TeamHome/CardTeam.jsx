@@ -51,10 +51,8 @@ const CardTeam = ({
     >
       <video
         ref={videoRef}
-        // src="/assets/monkey-video.mp4"
         poster={image}
         src={video}
-        // src="https://robor-team.s3.eu-central-1.amazonaws.com/team/danish-final.mp4"
         className="w-full h-full object-cover p-3"
 
       ></video>

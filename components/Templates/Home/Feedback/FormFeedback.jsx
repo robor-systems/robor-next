@@ -34,28 +34,28 @@ const FormFeedback = () => {
         <TextField
           id="fullName"
           label="Name"
-          placeholder="John Doe"
+          placeholder="Tony Stark"
           register={register}
           errors={errors}
         />
         <TextField
           id="email"
           label="Email"
-          placeholder="johndoe@example.com"
+          placeholder="ironman@stark.com"
           register={register}
           errors={errors}
         />
         <TextField
           id="subject"
           label="Subject"
-          placeholder="Your subject"
+          placeholder="Working with Robor"
           register={register}
           errors={errors}
         />
         <TextArea
           id="message"
           label="Message"
-          placeholder="Your Message"
+          placeholder="Let's build another Iron Man."
           register={register}
           errors={errors}
         />

@@ -20,7 +20,7 @@ const FeaturesHome = () => {
       >
         <motion.div
           layout
-          id="features-home"
+          id="services"
           className="flex flex-col gap-16 items-center  pt-10 pb-20"
           initial={"invisible"}
           animate={visible ? "visible" : "invisible"}
