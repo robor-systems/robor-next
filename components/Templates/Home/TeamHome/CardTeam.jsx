@@ -54,7 +54,10 @@ const CardTeam = ({
         poster={image}
         src={video}
         className="w-full h-full object-cover p-3"
-
+        muted
+        autoPlay
+        playsInline
+        style={{ pointerEvents: "none" }}
       ></video>
       {/* {hover && mounted && (
         <motion.div

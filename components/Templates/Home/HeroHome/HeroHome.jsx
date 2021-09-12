@@ -47,7 +47,7 @@ const HeroHome = () => {
             </NextLink>
 
             <div className="absolute bottom-5">
-              <Link to="features-home" smooth offset={-50}>
+              <Link to="services" smooth offset={-50}>
                 <BsChevronDown className="text-center text-gray-500 text-4xl cursor-pointer transform-gpu hover:scale-125 hover:animate-none animate-pulse transition-all" />
               </Link>
             </div>
