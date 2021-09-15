@@ -22,7 +22,7 @@ const clients = [
   {
     src: "https://robor-team.s3.eu-central-1.amazonaws.com/clients/ace.png",
     alt: "Ace",
-    // link: "#",
+    link: "https://www.acehsc.com.au/",
   },
   {
     src: "https://robor-team.s3.eu-central-1.amazonaws.com/clients/libpixel.png",
