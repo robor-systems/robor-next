@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import { motion } from "framer-motion";
 
-const TextArea = ({ id, label, register, errors, placeholder }) => {
+const TextArea = ({ id, label, register, errors, placeholder, ...props }) => {
   const fieldErrors = Object.keys(errors[id] || {});
 
   return (
@@ -19,6 +19,7 @@ const TextArea = ({ id, label, register, errors, placeholder }) => {
           Object.keys(errors[id] || {}).length ? "input-invalid" : "input-valid"
         )}
         {...register(id)}
+        {...props}
       />
       {fieldErrors && <div className="text-red-400">{errors[id]?.message}</div>}
     </motion.div>

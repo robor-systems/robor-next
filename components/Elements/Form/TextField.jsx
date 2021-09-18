@@ -1,6 +1,6 @@
 import clsx from "clsx";
 
-const TextField = ({ id, label, register, errors, placeholder }) => {
+const TextField = ({ id, label, register, errors, placeholder, ...props }) => {
   const fieldErrors = Object.keys(errors[id] || {});
 
   return (
@@ -16,6 +16,7 @@ const TextField = ({ id, label, register, errors, placeholder }) => {
         placeholder={placeholder}
         className={clsx(fieldErrors.length ? "input-invalid" : "input-valid")}
         {...register(id)}
+        {...props}
       />
       {fieldErrors && <div className="text-red-400">{errors[id]?.message}</div>}
     </div>
