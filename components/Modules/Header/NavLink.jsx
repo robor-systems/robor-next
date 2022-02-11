@@ -7,7 +7,6 @@ const NavLink = ({ href, children, id }) => {
   return (
     <div
       onClick={() => {
-        console.log("hhyeyy");
         if (router.pathname === "/" && id)
           scroller.scrollTo(href, { smooth: true });
         router.push(`/${id ? `#${href}` : href}`);

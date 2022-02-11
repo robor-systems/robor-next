@@ -10,7 +10,6 @@ import CardTeam from "./CardTeam";
 
 const TeamHome = () => {
   const [visible, setVisible] = useState(false);
-
   return (
     <Container>
       <ReactVisibilitySensor

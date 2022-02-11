@@ -21,7 +21,7 @@ const Footer = () => {
         <IconFooter link="https://www.linkedin.com/company/robor-systems">
           <FiLinkedin />
         </IconFooter>
-        <IconFooter link="mailto:info@robor.tech">
+        <IconFooter link="mailto:info@robor.systems">
           <FiMail />
         </IconFooter>
         {/* <IconFooter>
