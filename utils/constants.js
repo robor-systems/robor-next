@@ -1,0 +1,6 @@
+export const PROCESS_STATE = {
+  LOADING: "LOADING",
+  SUCCESS: "SUCCESS",
+  ERROR: "ERROR",
+  IDLE: "IDLE",
+};

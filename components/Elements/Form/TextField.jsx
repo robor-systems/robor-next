@@ -4,7 +4,7 @@ const TextField = ({ id, label, register, errors, placeholder, ...props }) => {
   const fieldErrors = Object.keys(errors[id] || {});
 
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-1">
       <label htmlFor={id} className="text-gray-700 mx-1 text-lg">
         {label}
       </label>
