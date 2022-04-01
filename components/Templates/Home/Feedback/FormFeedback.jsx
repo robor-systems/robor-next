@@ -17,8 +17,6 @@ const schema = yup.object().shape({
 const FormFeedback = () => {
   const {
     register,
-    handleSubmit,
-    reset,
     formState: { errors },
   } = useForm({
     resolver: yupResolver(schema),
@@ -29,37 +27,7 @@ const FormFeedback = () => {
     state: PROCESS_STATE.IDLE,
   });
 
-  const handleSubmitForm = async (data) => {
-    try {
-      setProcess({
-        message: "",
-        state: PROCESS_STATE.LOADING,
-      });
-
-      await axios.post(
-        "/",
-        Object.keys(data)
-          .map(
-            (key) =>
-              encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-          )
-          .join("&"),
-        {
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        }
-      );
-
-      setProcess({
-        message: "Response sent! Someone will contact you shortly.",
-        state: PROCESS_STATE.SUCCESS,
-      });
-
-      reset();
-    } catch (error) {
-      setProcess({ message: error.message, state: PROCESS_STATE.ERROR });
-    }
-  };
-
+  
   return (
     <motion.div
       layout
