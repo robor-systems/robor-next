@@ -69,6 +69,7 @@ const FormFeedback = () => {
         name="feedback-form"
         className="flex flex-col gap-3 p-4 sm:p-6 lg:p-8"
         onSubmit={handleSubmit(handleSubmitForm)}
+        method='POST'
         data-netlify="true"
       >
         <input type="hidden" name="form-name" value="feedback-form" />
