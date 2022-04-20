@@ -6,6 +6,7 @@ import {
   FiTwitter,
 } from "react-icons/fi";
 import IconFooter from "./IconFooter";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -13,8 +14,8 @@ const Footer = () => {
       <div className=" text-lg sm:text-xl flex-1 whitespace-nowrap">
         © Robor {new Date().getFullYear()}, All Rights Reserved
       </div>
-
       <div className="text-xl flex  items-center gap-5">
+        <Link href="/qualityPolicy">Quality Policy</Link>
         <IconFooter link="https://github.com/robor-systems">
           <FiGithub />
         </IconFooter>
