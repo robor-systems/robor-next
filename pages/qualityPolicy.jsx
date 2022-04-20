@@ -12,8 +12,8 @@ const qualityPolicy = () => {
           set out by ISO:9001:2015 in pusuant to its primary objectives
         </p>
         <p className="mt-6">
-          The company's Quality Manual defines our quality objectives and key
-          procedures.
+          The company{`\u0027`}s Quality Manual defines our quality objectives and
+          key procedures.
         </p>
         <p>
           Delivery of Bespoke Software (Design, Coding and Testing) and the
