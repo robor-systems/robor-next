@@ -46,7 +46,7 @@ const FormFeedback = () => {
   };
 
   const handleFormSubmit = async (e) => {
-    //e.preventDefault();
+    e.preventDefault();
     setProcess({
       message: "",
       state: PROCESS_STATE.LOADING,
@@ -57,7 +57,7 @@ const FormFeedback = () => {
       body: encode({ "form-name": "feedback-form", ...formValues }),
     };
     fetch("/", options)
-      .then((res) => window.location.assign('/contact-thanks/'))
+      .then((res) => console.log(res))
       .catch((error) =>
         setProcess({ message: error.message, state: PROCESS_STATE.ERROR })
       );
