@@ -13,6 +13,7 @@ const TextField = ({ id, label, register, errors, placeholder, value, onChange, 
         name={id}
         id={id}
         placeholder={placeholder}
+        className='input-valid'
         //className={clsx(fieldErrors.length ? "input-invalid" : "input-valid")}
         value={value}
         onChange={onChange}

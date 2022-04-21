@@ -15,6 +15,7 @@ const TextArea = ({ id, label, register, errors, placeholder, ...props }) => {
         id={id}
         placeholder={placeholder}
         rows="3"
+        className="input-valid"
         // className={clsx(
         //   Object.keys(errors[id] || {}).length ? "input-invalid" : "input-valid"
         // )}

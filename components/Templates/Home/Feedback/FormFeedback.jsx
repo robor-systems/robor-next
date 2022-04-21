@@ -3,15 +3,23 @@ import { motion } from "framer-motion";
 import { set, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import axios from "axios";
 import { useState } from "react";
 import { PROCESS_STATE } from "utils/constants";
 
 const schema = yup.object().shape({
-  fullName: yup.string().min(5, "Too short").required("Required"),
-  email: yup.string().email("Invalid email").required("Required"),
-  subject: yup.string().min(5, "Too short").required("Required"),
-  message: yup.string().min(10, "Too short").required("Required"),
+  fullName: yup
+    .string()
+    .required("Name is required")
+    .min(5, "Name is too short"),
+  email: yup.string().required("Email is required").email("Invalid email"),
+  subject: yup
+    .string()
+    .required("Subject is required")
+    .min(5, "Subject is too short"),
+  message: yup
+    .string()
+    .required("Message is required")
+    .min(10, "Message is too short"),
 });
 
 const FormFeedback = () => {
@@ -23,9 +31,9 @@ const FormFeedback = () => {
   //   resolver: yupResolver(schema),
   // });
 
-  const initialValues = {fullName: '', email: '', subject: '', message: ''};
+  const initialValues = { fullName: "", email: "", subject: "", message: "" };
 
-  const [formValues, setFormValues] = useState(initialValues) 
+  const [formValues, setFormValues] = useState(initialValues);
 
   const [process, setProcess] = useState({
     message: "",
@@ -33,9 +41,13 @@ const FormFeedback = () => {
   });
 
   const handleChange = (e) => {
-    const {name, value} = e.target;
-    setFormValues({...formValues, [name]: value})
-  }
+    const { name, value } = e.target;
+    setProcess({
+      message: "",
+      state: PROCESS_STATE.IDLE,
+    });
+    setFormValues({ ...formValues, [name]: value });
+  };
 
   const encode = (data) => {
     return Object.keys(data)
@@ -56,16 +68,24 @@ const FormFeedback = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "feedback-form", ...formValues }),
     };
-    fetch("/", options)
-      .then((res) => console.log(res))
-      .catch((error) =>
-        setProcess({ message: error.message, state: PROCESS_STATE.ERROR })
-      );
+    try {
+      const valid = await schema.validate(formValues);
 
-    setProcess({
-      message: "Response sent! Someone will contact you shortly.",
-      state: PROCESS_STATE.SUCCESS,
-    });
+      fetch("/", options)
+        .then((res) => {
+          setFormValues(initialValues);
+          setProcess({
+            message: "Response sent! Someone will contact you shortly.",
+            state: PROCESS_STATE.SUCCESS,
+          });
+        })
+        .catch((error) =>
+          setProcess({ message: error.message, state: PROCESS_STATE.ERROR })
+        );
+    } catch (error) {
+      console.log(error);
+      setProcess({ message: error.message, state: PROCESS_STATE.ERROR });
+    }
   };
   return (
     <motion.div
