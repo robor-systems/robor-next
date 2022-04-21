@@ -1,6 +1,6 @@
 import { TextArea, TextField } from "@/components/Elements";
 import { motion } from "framer-motion";
-import { useForm } from "react-hook-form";
+import { set, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import axios from "axios";
@@ -15,30 +15,69 @@ const schema = yup.object().shape({
 });
 
 const FormFeedback = () => {
-  const {
-    register,
-    formState: { errors },
-  } = useForm({
-    resolver: yupResolver(schema),
-  });
+  // const {
+  //   register,
+  //   handleSubmit,
+  //   formState: { errors },
+  // } = useForm({
+  //   resolver: yupResolver(schema),
+  // });
+
+  const initialValues = {fullName: '', email: '', subject: '', message: ''};
+
+  const [formValues, setFormValues] = useState(initialValues) 
 
   const [process, setProcess] = useState({
     message: "",
     state: PROCESS_STATE.IDLE,
   });
 
-  
+  const handleChange = (e) => {
+    const {name, value} = e.target;
+    setFormValues({...formValues, [name]: value})
+  }
+
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
+
+  const handleFormSubmit = async (e) => {
+    //e.preventDefault();
+    setProcess({
+      message: "",
+      state: PROCESS_STATE.LOADING,
+    });
+    const options = {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "feedback-form", ...this.state }),
+    };
+    axios
+      .post("/", options)
+      .then((res) => console.log(res))
+      .catch((error) =>
+        setProcess({ message: error.message, state: PROCESS_STATE.ERROR })
+      );
+
+    setProcess({
+      message: "Response sent! Someone will contact you shortly.",
+      state: PROCESS_STATE.SUCCESS,
+    });
+  };
   return (
     <motion.div
       layout
-      className="w-full flex-1 min-h-full  rounded-2xl shadow-xl border border-gray-100  bg-white"
+      className="w-full flex-1 min-h-full rounded-2xl shadow-xl border border-gray-100  bg-white"
     >
       <form
         name="feedback-form"
         className="flex flex-col gap-3 p-4 sm:p-6 lg:p-8"
-        onSubmit="submit"
-        method='POST'
         data-netlify="true"
+        onSubmit={handleFormSubmit}
       >
         <input type="hidden" name="form-name" value="feedback-form" />
 
@@ -46,32 +85,40 @@ const FormFeedback = () => {
           id="fullName"
           label="Name"
           placeholder="Tony Stark"
-          register={register}
-          errors={errors}
+          //register={register}
+          //errors={errors}
+          value={formValues.fullName}
+          onChange={handleChange}
         />
 
         <TextField
           id="email"
           label="Email"
           placeholder="ironman@stark.com"
-          register={register}
-          errors={errors}
+          //register={register}
+          //errors={errors}
+          value={formValues.email}
+          onChange={handleChange}
         />
 
         <TextField
           id="subject"
           label="Subject"
           placeholder="Working with Robor"
-          register={register}
-          errors={errors}
+          //register={register}
+          //errors={errors}
+          value={formValues.subject}
+          onChange={handleChange}
         />
 
         <TextArea
           id="message"
           label="Message"
           placeholder="Let's build another Iron Man."
-          register={register}
-          errors={errors}
+          //register={register}
+          //errors={errors}
+          value={formValues.message}
+          onChange={handleChange}
         />
 
         <motion.button

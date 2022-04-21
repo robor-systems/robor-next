@@ -1,8 +1,7 @@
 import clsx from "clsx";
 
-const TextField = ({ id, label, register, errors, placeholder, ...props }) => {
-  const fieldErrors = Object.keys(errors[id] || {});
-
+const TextField = ({ id, label, register, errors, placeholder, value, onChange, ...props }) => {
+  //const fieldErrors = Object.keys(errors[id] || {});
   return (
     <div className="flex flex-col gap-1">
       <label htmlFor={id} className="text-gray-700 mx-1 text-lg">
@@ -14,11 +13,14 @@ const TextField = ({ id, label, register, errors, placeholder, ...props }) => {
         name={id}
         id={id}
         placeholder={placeholder}
-        className={clsx(fieldErrors.length ? "input-invalid" : "input-valid")}
-        {...register(id)}
+        //className={clsx(fieldErrors.length ? "input-invalid" : "input-valid")}
+        value={value}
+        onChange={onChange}
+        //{...register(id)}
         {...props}
+
       />
-      {fieldErrors && <div className="text-red-400">{errors[id]?.message}</div>}
+      {/* {fieldErrors && <div className="text-red-400">{errors[id]?.message}</div>} */}
     </div>
   );
 };
