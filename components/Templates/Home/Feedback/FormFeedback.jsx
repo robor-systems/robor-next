@@ -54,7 +54,7 @@ const FormFeedback = () => {
     const options = {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "feedback-form", ...this.state }),
+      body: encode({ "form-name": "feedback-form", ...formValues }),
     };
     axios
       .post("/", options)
