@@ -56,9 +56,8 @@ const FormFeedback = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "feedback-form", ...formValues }),
     };
-    axios
-      .post("/", options)
-      .then((res) => console.log(res))
+    fetch("/", options)
+      .then((res) => window.location.assign('/contact-thanks/'))
       .catch((error) =>
         setProcess({ message: error.message, state: PROCESS_STATE.ERROR })
       );
