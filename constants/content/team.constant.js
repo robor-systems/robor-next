@@ -13,7 +13,7 @@ const team = [
   },
   {
     name: "Usama Habib",
-    position: "Software Engineer",
+    position: "Full-Stack Engineer",
     image:
       "https://robor-team.s3.eu-central-1.amazonaws.com/team/usama-poster.jpg",
     video: "https://robor-team.s3.eu-central-1.amazonaws.com/team/usama.mp4",
@@ -47,7 +47,7 @@ const team = [
   },
   {
     name: "Hussain Rizvi",
-    position: "Software Engineer",
+    position: "Full-Stack Engineer",
     image:
       "https://robor-team.s3.eu-central-1.amazonaws.com/team/robor-logo.png",
     video:
@@ -81,18 +81,18 @@ const team = [
       github: "https://github.com/IqraFareed",
     },
   },
-  // {
-  //   name: "Zakaria Janjua",
-  //   position: "Software Engineer",
-  //   image:
-  //     "https://robor-team.s3.eu-central-1.amazonaws.com/team/robor-logo.png",
-  //   video:
-  //     "https://robor-team.s3.eu-central-1.amazonaws.com/team/robor-logo-animation.mp4",
-  //   socials: {
-  //     linkedin: "https://www.linkedin.com/in/zakriajanjua/",
-  //     github: "https://github.com/ZakriaJanjua",
-  //   },
-  // },
+  {
+    name: "Malaika Afridi",
+    position: "Front-End Engineer",
+    image:
+      "https://robor-team.s3.eu-central-1.amazonaws.com/team/robor-logo.png",
+    video:
+      "https://robor-team.s3.eu-central-1.amazonaws.com/team/robor-logo-animation.mp4",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/malaika-afridi-4799541b4/",
+      github: "https://github.com/malaika22",
+    },
+  },
   {
     name: "Aamna Sarosh",
     position: "UI Designer",
