@@ -30,7 +30,7 @@ const HeroHome = () => {
               Building Robust Systems &#9829;
             </h1>
             <h4 className="text-shadow max-w-2xl text-center text-xl font-normal sm:text-2xl md:text-2xl">
-              We can help you build your next great idea.
+              We can help build your next great idea.
               {/* We specialise in developing cloud based applications that help you
               build and scale your business. */}
             </h4>
