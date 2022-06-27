@@ -57,18 +57,18 @@ const team = [
       github: "https://github.com/Hussain-7",
     },
   },
-  {
-    name: "Haseeb Asim",
-    position: "Software Engineer",
-    image:
-      "https://robor-team.s3.eu-central-1.amazonaws.com/team/robor-logo.png",
-    video:
-      "https://robor-team.s3.eu-central-1.amazonaws.com/team/robor-logo-animation.mp4",
-    socials: {
-      linkedin: "https://www.linkedin.com/in/haseebrz/",
-      github: "https://github.com/haseebasim",
-    },
-  },
+  // {
+  //   name: "Haseeb Asim",
+  //   position: "Software Engineer",
+  //   image:
+  //     "https://robor-team.s3.eu-central-1.amazonaws.com/team/robor-logo.png",
+  //   video:
+  //     "https://robor-team.s3.eu-central-1.amazonaws.com/team/robor-logo-animation.mp4",
+  //   socials: {
+  //     linkedin: "https://www.linkedin.com/in/haseebrz/",
+  //     github: "https://github.com/haseebasim",
+  //   },
+  // },
   {
     name: "Iqra Fareed",
     position: "Front-End Engineer",
@@ -81,18 +81,18 @@ const team = [
       github: "https://github.com/IqraFareed",
     },
   },
-  {
-    name: "Zakaria Janjua",
-    position: "Software Engineer",
-    image:
-      "https://robor-team.s3.eu-central-1.amazonaws.com/team/robor-logo.png",
-    video:
-      "https://robor-team.s3.eu-central-1.amazonaws.com/team/robor-logo-animation.mp4",
-    socials: {
-      linkedin: "https://www.linkedin.com/in/zakriajanjua/",
-      github: "https://github.com/ZakriaJanjua",
-    },
-  },
+  // {
+  //   name: "Zakaria Janjua",
+  //   position: "Software Engineer",
+  //   image:
+  //     "https://robor-team.s3.eu-central-1.amazonaws.com/team/robor-logo.png",
+  //   video:
+  //     "https://robor-team.s3.eu-central-1.amazonaws.com/team/robor-logo-animation.mp4",
+  //   socials: {
+  //     linkedin: "https://www.linkedin.com/in/zakriajanjua/",
+  //     github: "https://github.com/ZakriaJanjua",
+  //   },
+  // },
   {
     name: "Aamna Sarosh",
     position: "UI Designer",
