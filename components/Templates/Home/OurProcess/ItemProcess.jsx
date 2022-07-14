@@ -1,8 +1,11 @@
-import { ImageNext } from "components/Elements";
-import { translateVariants } from "constants/animations/variants.constant";
 import { motion } from "framer-motion";
 
+import { ImageNext } from "components/Elements";
+import { translateVariants } from "constants/animations/variants.constant";
+import { useTheme } from "next-themes";
+
 const ItemProcess = ({ visible, delay, ...props }) => {
+  const { theme } = useTheme();
   return (
     <motion.div
       variants={translateVariants}
@@ -25,7 +28,9 @@ const ItemProcess = ({ visible, delay, ...props }) => {
       >
         <ImageNext src={props.image} alt={props.title} className="w-20 h-20" />
       </motion.div>
-      <h3 className="text-2xl font-light">{props.title}</h3>
+      <h3 className="text-2xl font-light text-light-content dark:text-dark-content">
+        {props.title}
+      </h3>
     </motion.div>
   );
 };

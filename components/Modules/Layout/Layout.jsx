@@ -5,7 +5,7 @@ const { default: Header } = require("components/Modules/Header/Header");
 
 const Layout = ({ children }) => {
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen bg-light-bgPrimary dark:bg-dark-bgPrimary">
       <Header />
       {children}
       <Snackbar />

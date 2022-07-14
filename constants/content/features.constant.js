@@ -1,3 +1,5 @@
+import { DataEngIcon, EmbeddedSysIcon, SaasIcon } from "@/components/Icons";
+
 const features = [
   {
     title: "SaaS",
@@ -7,6 +9,7 @@ const features = [
       src: "https://robor-team.s3.eu-central-1.amazonaws.com/features/saas.svg",
       alt: "SaaS Icon",
     },
+    child: <SaasIcon />,
   },
   {
     title: "Embedded Systems",
@@ -16,6 +19,7 @@ const features = [
       src: "https://robor-team.s3.eu-central-1.amazonaws.com/features/embedded.svg",
       alt: "Embedded Systems Icon",
     },
+    child: <EmbeddedSysIcon />,
   },
   {
     title: "Data Engineering",
@@ -25,6 +29,7 @@ const features = [
       src: "https://robor-team.s3.eu-central-1.amazonaws.com/features/data.svg",
       alt: "Data Analysis Icon",
     },
+    child: <DataEngIcon />,
   },
 ];
 

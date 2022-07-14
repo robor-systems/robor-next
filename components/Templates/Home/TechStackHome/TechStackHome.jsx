@@ -20,7 +20,7 @@ const TechStackHome = () => {
       >
         <motion.div
           id="features-home"
-          className="flex flex-col gap-16 items-center  "
+          className="flex flex-col items-center gap-16 rounded-xl p-14 bg-shade dark:bg-dark-bgSecondary"
           initial="invisible"
           animate={visible ? "visible" : "invisible"}
           variants={opacityVariants}
@@ -31,7 +31,7 @@ const TechStackHome = () => {
             subtitle="What's in our toolbox 🧰"
           />
 
-          <div className="flex flex-wrap gap-8 px-8 w-full sm:gap-16 sm:max-w-screen-md md:gap-20">
+          <div className="flex flex-wrap w-full gap-8 px-8 sm:gap-16 sm:max-w-screen-md md:gap-20">
             {techStack.map((item) => (
               <ItemTechStack key={v4()} {...item} visible={visible} />
             ))}

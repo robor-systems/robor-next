@@ -15,14 +15,14 @@ const Feedback = () => {
       onChange={(isVisible) => isVisible && setVisible(isVisible)}
       offset={{ bottom: 0 }}
     >
-      <div className="h-full w-full  bg-form ">
+      <div className="w-full h-full bg-form dark:bg-dark-bgPrimary">
         <Container>
           <motion.div
             initial="invisible"
             animate={visible ? "visible" : "invisible"}
             variants={opacityVariants}
             transition={{ duration: 1 }}
-            className="w-full flex flex-col  lg:flex-row gap-12  lg:gap-20 pt-10 pb-12  lg:py-16 h-full  lg:px-4"
+            className="flex flex-col w-full h-full gap-12 pt-10 pb-12 lg:flex-row lg:gap-20 lg:py-16 lg:px-4"
           >
             <HeaderFeedback />
             <FormFeedback />

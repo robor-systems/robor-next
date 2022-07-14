@@ -1,20 +1,23 @@
 import { ImageNext } from "components/Elements";
-import {
-  scaleVariants,
-  translateVariants,
-} from "constants/animations/variants.constant";
+import { translateVariants } from "constants/animations/variants.constant";
 import { motion } from "framer-motion";
 
 const ItemTechStack = ({ visible, ...props }) => {
   return (
     <motion.div
-      className="flex flex-1 justify-center"
+      className="flex justify-center flex-1"
       variants={translateVariants}
       initial="invisible"
       animate={visible ? "visible" : "invisible"}
       transition={{ duration: 1 }}
     >
-      <ImageNext {...props} className="w-12 h-12 sm:w-20 sm:h-20" />
+      {props.icon ? (
+        <div className="flex items-center justify-center w-12 h-12 sm:w-20 sm:h-20">
+          {props.icon}
+        </div>
+      ) : (
+        <ImageNext {...props} className="w-12 h-12 sm:w-20 sm:h-20" />
+      )}
     </motion.div>
   );
 };
