@@ -1,6 +1,6 @@
 import {
   FeaturesHome,
-  HeroHome,
+  // HeroHome,
   JoinTeam,
   OurClients,
   OurProcess,
@@ -10,8 +10,16 @@ import {
 import Feedback from "@/components/Templates/Home/Feedback/Feedback";
 import { useRouter } from "next/dist/client/router";
 import Head from "next/head";
-import { useEffect } from "react";
+import { lazy, useEffect } from "react";
 import { scroller } from "react-scroll";
+import dynamic from "next/dynamic";
+
+const HeroHome = dynamic(
+  () => import("@/components/Templates/Home/HeroHome/HeroHome"),
+  {
+    suspense: true,
+  }
+);
 
 const Home = () => {
   const router = useRouter();

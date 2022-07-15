@@ -58,6 +58,8 @@ const CardTeam = ({
         autoPlay
         playsInline
         style={{ pointerEvents: "none" }}
+        // * cache video for performance
+        preload="auto"
       ></video>
       {/* {hover && mounted && (
         <motion.div

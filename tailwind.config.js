@@ -1,3 +1,5 @@
+const colors = require("tailwindcss/colors");
+
 module.exports = {
   mode: "jit",
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
@@ -23,6 +25,7 @@ module.exports = {
           content: "#FEFEFE",
           formLabels: "#eaeaea",
         },
+        zinc: colors.zinc,
         shade: "#F3F7F9",
       },
       fontFamily: {

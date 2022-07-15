@@ -1,13 +1,8 @@
-import {
-  existanceVariants,
-  scaleVariants,
-} from "constants/animations/variants.constant";
+import { existanceVariants } from "constants/animations/variants.constant";
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import { FiX } from "react-icons/fi";
 import { animateScroll, scroller } from "react-scroll";
-
-const { Link } = require("@/components/Elements");
 
 const DialogSnackbar = ({ handleOpen }) => {
   const router = useRouter();
@@ -18,7 +13,7 @@ const DialogSnackbar = ({ handleOpen }) => {
       variants={existanceVariants}
       transition={{ duration: 0.5 }}
       exit="invisible"
-      className="relative flex flex-col gap-2 p-6 w-44 bg-white bg-opacity-70 border-double border-white rounded-2xl shadow-2xl backdrop-blur-lg backdrop-filter"
+      className="relative flex flex-col gap-2 p-6 bg-white border-white border-double shadow-2xl w-44 dark:bg-[#353844] bg-opacity-70 rounded-2xl backdrop-blur-lg backdrop-filter"
     >
       <motion.button
         whileHover={{
@@ -26,7 +21,7 @@ const DialogSnackbar = ({ handleOpen }) => {
         }}
         onClick={handleOpen}
         whileTap={{ scale: 0.9 }}
-        className="absolute z-40 right-0 top-0 m-4 p-2 bg-gray-100 hover:bg-gray-200 rounded-full"
+        className="absolute top-0 right-0 z-40 p-2 m-4 bg-gray-100 rounded-full hover:bg-gray-200 dark:bg-dark-bgSecondary"
       >
         <FiX />
       </motion.button>

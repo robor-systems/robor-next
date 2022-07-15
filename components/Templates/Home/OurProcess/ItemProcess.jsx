@@ -1,11 +1,8 @@
 import { motion } from "framer-motion";
 
-import { ImageNext } from "components/Elements";
 import { translateVariants } from "constants/animations/variants.constant";
-import { useTheme } from "next-themes";
 
 const ItemProcess = ({ visible, delay, ...props }) => {
-  const { theme } = useTheme();
   return (
     <motion.div
       variants={translateVariants}
@@ -21,12 +18,12 @@ const ItemProcess = ({ visible, delay, ...props }) => {
         }}
         whileHover={{
           boxShadow:
-            "3px 3px 6px 0px #ccdbe8 inset, -3px -3px 6px 1px rgba(255, 255, 255, 0.5) inset",
+            "3px 3px 6px 0px #ccdbe8 , -3px -3px 6px 1px rgba(255, 255, 255, 0.5)",
         }}
         transition={{ duration: 0.3 }}
-        className="p-4 bg-white rounded-2xl"
+        className="flex items-center justify-center p-4 bg-white rounded-2xl dark:bg-dark-bgPrimary"
       >
-        <ImageNext src={props.image} alt={props.title} className="w-20 h-20" />
+        {props.icon}
       </motion.div>
       <h3 className="text-2xl font-light text-light-content dark:text-dark-content">
         {props.title}

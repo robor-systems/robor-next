@@ -5,3 +5,7 @@ export { default as EmbeddedSysIcon } from "./EmbeddedSysIcon";
 export { default as DataEngIcon } from "./DataEngIcon";
 export { default as NextIcon } from "./NextIcon";
 export { default as RosIcon } from "./RosIcon";
+export { default as AnalyzeIcon } from "./AnalyzeIcon";
+export { default as DesignIcon } from "./DesignIcon";
+export { default as DevelopIcon } from "./DevelopIcon";
+export { default as DeployIcon } from "./DeployIcon";
