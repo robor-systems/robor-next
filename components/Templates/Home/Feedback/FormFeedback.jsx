@@ -1,7 +1,5 @@
 import { TextArea, TextField } from "@/components/Elements";
 import { motion } from "framer-motion";
-import { set, useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { useState } from "react";
 import { PROCESS_STATE } from "utils/constants";
