@@ -6,7 +6,6 @@ const seo = {
     url: "https://robor.systems",
     title: "Robor",
     description: "We ♥ building robust systems.",
-
     images: [
       {
         url: "https://robor-team.s3.eu-central-1.amazonaws.com/robor-card-img.png",

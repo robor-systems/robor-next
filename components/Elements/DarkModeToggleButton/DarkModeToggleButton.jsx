@@ -14,9 +14,6 @@ const DarkModeToggleButton = (variant) => {
     <button
       onClick={() => {
         setTheme(theme === THEME.DARK ? THEME.LIGHT : THEME.DARK);
-
-        // * set the prefers-color-scheme to the new theme
-        const prefersColorScheme = theme === THEME.DARK ? "dark" : "light";
       }}
       className={clsx(
         "border-secondary hover:border-primary focus:border-primary focus:outline-none inline-flex items-center justify-center overflow-hidden rounded-full border-2 transition",

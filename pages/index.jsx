@@ -17,7 +17,8 @@ import dynamic from "next/dynamic";
 const HeroHome = dynamic(
   () => import("@/components/Templates/Home/HeroHome/HeroHome"),
   {
-    suspense: true,
+    loading: () => <div>Loading...</div>,
+    ssr: false,
   }
 );
 
