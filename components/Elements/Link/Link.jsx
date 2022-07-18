@@ -2,7 +2,7 @@ import NextLink from "next/link";
 
 const Link = ({ href, children }) => {
   return (
-    <NextLink href={href}>
+    <NextLink href={href} passHref={true}>
       <a>{children}</a>
     </NextLink>
   );
