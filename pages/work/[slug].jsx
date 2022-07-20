@@ -21,8 +21,8 @@ const SpecificProjectPage = ({
       <ProjectInfo info={general} />
       {/* * Sections */}
       {sections
-        .sort((a, b) => a.position > b.position)
-        .map((item, index) => (
+        ?.sort((a, b) => a.position > b.position)
+        ?.map((item, index) => (
           <SectionCaseStudy index={index} key={item.id} {...item} />
         ))}
       {/* * Tech stack */}

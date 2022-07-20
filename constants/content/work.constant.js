@@ -140,7 +140,7 @@ const workProjects = [
         "A custodial NFT marketplace for a European client making NFTs accessible and allow any and everyone to purchase NFTs.",
       clientSize: "Startup",
       location: "Portugal, Lisbon",
-      Services: "Redesign | Technological Improvements | Frontend Development",
+      services: "Redesign | Technological Improvements | Frontend Development",
       //   * the header image will appear on a single case study page
       headerImage:
         "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric_header.png",
@@ -189,7 +189,7 @@ const workProjects = [
         "A custodial NFT marketplace for a European client making NFTs accessible and allow any and everyone to purchase NFTs.",
       clientSize: "Startup",
       location: "Portugal, Lisbon",
-      Services: "Redesign | Technological Improvements | Frontend Development",
+      services: "Redesign | Technological Improvements | Frontend Development",
       //   * the header image will appear on a single case study page
       headerImage:
         "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric_header.png",
@@ -239,7 +239,7 @@ const workProjects = [
         "A custodial NFT marketplace for a European client making NFTs accessible and allow any and everyone to purchase NFTs.",
       clientSize: "Startup",
       location: "Portugal, Lisbon",
-      Services: "Redesign | Technological Improvements | Frontend Development",
+      services: "Redesign | Technological Improvements | Frontend Development",
       //   * the header image will appear on a single case study page
       headerImage:
         "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric_header.png",
@@ -288,7 +288,7 @@ const workProjects = [
         "A custodial NFT marketplace for a European client making NFTs accessible and allow any and everyone to purchase NFTs.",
       clientSize: "Startup",
       location: "Portugal, Lisbon",
-      Services: "Redesign | Technological Improvements | Frontend Development",
+      services: "Redesign | Technological Improvements | Frontend Development",
       //   * the header image will appear on a single case study page
       headerImage:
         "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric_header.png",
