@@ -33,7 +33,7 @@
 
 @layer components {
   .navlink {
-    @apply uppercase tracking-wide pb-1 group-hover:text-black dark:group-hover:text-dark-content/90 text-gray-500 dark:text-dark-content text-base font-normal transition duration-300 ease-in-out;
+    @apply uppercase tracking-wide pb-1 group-hover:text-black dark:group-hover:text-dark-content/90 text-gray-500 dark:text-dark-content text-base font-medium transition duration-300 ease-in-out;
   }
 
   .menu-link {
