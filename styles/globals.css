@@ -43,6 +43,14 @@
   .icon-btn {
     @apply z-20 cursor-pointer;
   }
+
+  .project-info-heading {
+    @apply text-sm font-semibold tracking-wide uppercase;
+  }
+
+  .project-info-content {
+    @apply text-lg font-light text-light-content dark:text-dark-content;
+  }
 }
 
 @layer utilities {

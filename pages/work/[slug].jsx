@@ -1,7 +1,31 @@
+import {
+  HeroCaseStudy,
+  ProjectInfo,
+  RelatedProjectCaseStudy,
+  SectionCaseStudy,
+  TechStackCaseStudy,
+} from "@/components/Templates/CaseStudy";
 import workProjects from "constants/content/work.constant";
 
-const SpecificProjectPage = (props) => {
-  return <div>{props?.general?.title}</div>;
+const SpecificProjectPage = ({ general, sections, ...props }) => {
+  return (
+    <div className="min-h-screen pt-[6.75rem] ">
+      {/* * Header image */}
+      <HeroCaseStudy heroImage={general?.headerImage} title={general?.title} />
+      {/* * General info */}
+      <ProjectInfo info={general} />
+      {/* * Sections */}
+      {sections
+        .sort((a, b) => a.position > b.position)
+        .map((item, index) => (
+          <SectionCaseStudy index={index} key={item.id} {...item} />
+        ))}
+      {/* * Tech stack */}
+      <TechStackCaseStudy />
+      {/* * Related project */}
+      <RelatedProjectCaseStudy />
+    </div>
+  );
 };
 
 export async function getStaticPaths() {
@@ -17,6 +41,7 @@ export async function getStaticPaths() {
     fallback: true,
   };
 }
+
 // * this project will have a dynamic slug parameter
 export async function getStaticProps(context) {
   const { slug } = context.params;

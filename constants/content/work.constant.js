@@ -8,9 +8,10 @@ const workProjects = [
         "A custodial NFT marketplace for a European client making NFTs accessible and allow any and everyone to purchase NFTs.",
       clientSize: "Startup",
       location: "Portugal, Lisbon",
-      Services: "Redesign | Technological Improvements | Frontend Development",
+      services: "Redesign | Technological Improvements | Frontend Development",
       //   * the header image will appear on a single case study page
-      headerImage: "https://i.imgur.com/qXqQq.png",
+      headerImage:
+        "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric_header.png",
       // * the images will appear on the work page
       workPageImageCount: 2,
       workPageImages: [
@@ -57,9 +58,10 @@ const workProjects = [
         "A custodial NFT marketplace for a European client making NFTs accessible and allow any and everyone to purchase NFTs.",
       clientSize: "Startup",
       location: "Portugal, Lisbon",
-      Services: "Redesign | Technological Improvements | Frontend Development",
+      services: "Redesign | Technological Improvements | Frontend Development",
       //   * the header image will appear on a single case study page
-      headerImage: "https://i.imgur.com/qXqQq.png",
+      headerImage:
+        "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric_header.png",
       // * the images will appear on the work page
       workPageImageCount: 1,
       workPageImages: [
@@ -68,7 +70,18 @@ const workProjects = [
     },
     sections: [
       {
+        id: "agoric-about-client",
         position: 1,
+        header: "Agoric AMM",
+        subHeader: "About Client",
+        description:
+          "Agoric AMM is a - Built on Cosmos network, Agoric blockchain offers hardened JavaScript smart contracts. They're making waves in the blockchain industry and are led by some very smart individuals lorem ispum.",
+        imageCount: 0,
+        images: [],
+      },
+      {
+        id: "agoric-the-challenge",
+        position: 2,
         header: "Finding The Right Solution",
         subHeader: "The challenge",
         description:
@@ -107,7 +120,8 @@ const workProjects = [
       location: "Portugal, Lisbon",
       Services: "Redesign | Technological Improvements | Frontend Development",
       //   * the header image will appear on a single case study page
-      headerImage: "https://i.imgur.com/qXqQq.png",
+      headerImage:
+        "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric_header.png",
       // * the images will appear on the work page
       workPageImageCount: 1,
       workPageImages: [
@@ -155,7 +169,8 @@ const workProjects = [
       location: "Portugal, Lisbon",
       Services: "Redesign | Technological Improvements | Frontend Development",
       //   * the header image will appear on a single case study page
-      headerImage: "https://i.imgur.com/qXqQq.png",
+      headerImage:
+        "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric_header.png",
       // * the images will appear on the work page
       workPageImageCount: 2,
       workPageImages: [
@@ -204,7 +219,8 @@ const workProjects = [
       location: "Portugal, Lisbon",
       Services: "Redesign | Technological Improvements | Frontend Development",
       //   * the header image will appear on a single case study page
-      headerImage: "https://i.imgur.com/qXqQq.png",
+      headerImage:
+        "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric_header.png",
       // * the images will appear on the work page
       workPageImageCount: 1,
       workPageImages: [
@@ -252,7 +268,8 @@ const workProjects = [
       location: "Portugal, Lisbon",
       Services: "Redesign | Technological Improvements | Frontend Development",
       //   * the header image will appear on a single case study page
-      headerImage: "https://i.imgur.com/qXqQq.png",
+      headerImage:
+        "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric_header.png",
       // * the images will appear on the work page
       workPageImageCount: 1,
       workPageImages: [
