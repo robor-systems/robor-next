@@ -1,8 +1,9 @@
-const colors = require("tailwindcss/colors");
-
 module.exports = {
   mode: "jit",
-  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
   darkMode: "class",
   theme: {
     extend: {
@@ -17,6 +18,7 @@ module.exports = {
           bgPrimary: "#FFFFFF",
           bgSecondary: "#F3F7F9",
           content: "#202D50",
+          contentSecondary: "#484B55",
         },
         dark: {
           primary: "#00B7BF",
@@ -24,8 +26,8 @@ module.exports = {
           bgSecondary: "#2E3039",
           content: "#FEFEFE",
           formLabels: "#eaeaea",
+          contentSecondary: "#E5e5e5",
         },
-        zinc: colors.zinc,
         shade: "#F3F7F9",
       },
       fontFamily: {
@@ -48,7 +50,6 @@ module.exports = {
       },
     },
   },
-
   plugins: [
     require("@tailwindcss/typography"),
     require("@tailwindcss/forms"),

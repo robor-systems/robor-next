@@ -1,6 +1,5 @@
 import DarkModeToggleButton from "@/components/Elements/DarkModeToggleButton/DarkModeToggleButton";
 import RoborLogo from "@/components/Icons/RoborLogo";
-import { ImageNext } from "components/Elements";
 import { Link } from "components/Elements";
 import Container from "../Container/Container";
 import NavLink from "./NavLink";
@@ -15,12 +14,6 @@ const Header = () => {
           {/* * Left side will span 2 columns and have the link logo */}
           <div className="flex justify-between col-span-4 md:col-span-1 lg:col-span-2 xl:col-span-3 sm:justify-between">
             <Link href="/">
-              {/* <ImageNext
-                hideOn="dark"
-                className="w-16 h-16 cursor-pointer"
-                src="/assets/logos/robor-logo-new.svg"
-                alt="Robor logo"
-              /> */}
               <RoborLogo />
             </Link>
           </div>
