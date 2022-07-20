@@ -7,7 +7,12 @@ import {
 } from "@/components/Templates/CaseStudy";
 import workProjects from "constants/content/work.constant";
 
-const SpecificProjectPage = ({ general, sections, ...props }) => {
+const SpecificProjectPage = ({
+  general,
+  sections,
+  relatedProject,
+  ...props
+}) => {
   return (
     <div className="min-h-screen pt-[6.75rem] ">
       {/* * Header image */}
@@ -23,7 +28,7 @@ const SpecificProjectPage = ({ general, sections, ...props }) => {
       {/* * Tech stack */}
       <TechStackCaseStudy />
       {/* * Related project */}
-      <RelatedProjectCaseStudy />
+      <RelatedProjectCaseStudy {...relatedProject} />
     </div>
   );
 };

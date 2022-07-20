@@ -29,9 +29,9 @@ const workProjects = [
         // * imageCount will help us to know what image layout is needed for this section
         imageCount: 3,
         images: [
-          "https://i.imgur.com/qXqQq.png",
-          "https://i.imgur.com/qXqQq.png",
-          "https://i.imgur.com/qXqQq.png",
+          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-1.svg",
+          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-2.svg",
+          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-3.svg",
         ],
       },
     ],
@@ -43,8 +43,8 @@ const workProjects = [
       other: ["Cosmos SDK", "Git", "Github", "Heroku"],
     },
     relatedProject: {
-      title: "Tokapi",
-      slug: "tokapi",
+      title: "Agoric AMM",
+      slug: "agoric-amm",
       description:
         "A custodial NFT marketplace for a European client. The idea was to make NFTs accessible and allow any and everyone to purchase....",
     },
@@ -89,9 +89,31 @@ const workProjects = [
         // * imageCount will help us to know what image layout is needed for this section
         imageCount: 3,
         images: [
-          "https://i.imgur.com/qXqQq.png",
-          "https://i.imgur.com/qXqQq.png",
-          "https://i.imgur.com/qXqQq.png",
+          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-1.svg",
+          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-2.svg",
+          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-3.svg",
+        ],
+      },
+      {
+        id: "agoric-lorem-ipsum-1",
+        position: 1,
+        header: "Finding The Right Solution",
+        subHeader: "lorem ipsum",
+        description:
+          "The cosmos network based blockchain Agoric wanted us to build more DApps, so we decided to jump on the NFT bandwagon and develop a very simple baseball cards NFT marketplace. The creator could publish new projects, while users could trade the cards on the secondary marketplace.",
+        imageCount: 0,
+        images: [],
+      },
+      {
+        id: "agoric-lorem-ipsum-2",
+        position: 1,
+        header: "Finding The Right Solution",
+        subHeader: "lorem ipsum",
+        description:
+          "The cosmos network based blockchain Agoric wanted us to build more DApps, so we decided to jump on the NFT bandwagon and develop a very simple baseball cards NFT marketplace. The creator could publish new projects, while users could trade the cards on the secondary marketplace.",
+        imageCount: 1,
+        images: [
+          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-6.svg",
         ],
       },
     ],
@@ -138,9 +160,9 @@ const workProjects = [
         // * imageCount will help us to know what image layout is needed for this section
         imageCount: 3,
         images: [
-          "https://i.imgur.com/qXqQq.png",
-          "https://i.imgur.com/qXqQq.png",
-          "https://i.imgur.com/qXqQq.png",
+          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-1.svg",
+          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-1.svg",
+          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-1.svg",
         ],
       },
     ],
@@ -188,9 +210,9 @@ const workProjects = [
         // * imageCount will help us to know what image layout is needed for this section
         imageCount: 3,
         images: [
-          "https://i.imgur.com/qXqQq.png",
-          "https://i.imgur.com/qXqQq.png",
-          "https://i.imgur.com/qXqQq.png",
+          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-1.svg",
+          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-1.svg",
+          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-1.svg",
         ],
       },
     ],
@@ -237,9 +259,9 @@ const workProjects = [
         // * imageCount will help us to know what image layout is needed for this section
         imageCount: 3,
         images: [
-          "https://i.imgur.com/qXqQq.png",
-          "https://i.imgur.com/qXqQq.png",
-          "https://i.imgur.com/qXqQq.png",
+          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-1.svg",
+          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-1.svg",
+          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-1.svg",
         ],
       },
     ],
@@ -286,9 +308,9 @@ const workProjects = [
         // * imageCount will help us to know what image layout is needed for this section
         imageCount: 3,
         images: [
-          "https://i.imgur.com/qXqQq.png",
-          "https://i.imgur.com/qXqQq.png",
-          "https://i.imgur.com/qXqQq.png",
+          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-1.svg",
+          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-1.svg",
+          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-1.svg",
         ],
       },
     ],

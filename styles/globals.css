@@ -51,6 +51,10 @@
   .project-info-content {
     @apply text-lg font-light text-light-content dark:text-dark-content;
   }
+
+  .outline-link {
+    @apply flex items-center justify-center md:px-6 py-2 space-x-2 font-semibold uppercase border-2 px-3 md:py-4 md:text-lg text-base rounded-xl bg-light-bgPrimary dark:bg-dark-bgPrimary text-light-primary dark:text-dark-primary border-light-primary dark:border-dark-primary;
+  }
 }
 
 @layer utilities {
