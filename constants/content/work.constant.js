@@ -27,12 +27,8 @@ const workProjects = [
         description:
           "The cosmos network based blockchain Agoric wanted us to build more DApps, so we decided to jump on the NFT bandwagon and develop a very simple baseball cards NFT marketplace. The creator could publish new projects, while users could trade the cards on the secondary marketplace.",
         // * imageCount will help us to know what image layout is needed for this section
-        imageCount: 3,
-        images: [
+        image:
           "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-1.svg",
-          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-2.svg",
-          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-3.svg",
-        ],
       },
     ],
     techStack: {
@@ -76,8 +72,6 @@ const workProjects = [
         subHeader: "About Client",
         description:
           "Agoric AMM is a - Built on Cosmos network, Agoric blockchain offers hardened JavaScript smart contracts. They're making waves in the blockchain industry and are led by some very smart individuals lorem ispum.",
-        imageCount: 0,
-        images: [],
       },
       {
         id: "agoric-the-challenge",
@@ -87,12 +81,10 @@ const workProjects = [
         description:
           "The cosmos network based blockchain Agoric wanted us to build more DApps, so we decided to jump on the NFT bandwagon and develop a very simple baseball cards NFT marketplace. The creator could publish new projects, while users could trade the cards on the secondary marketplace.",
         // * imageCount will help us to know what image layout is needed for this section
-        imageCount: 3,
-        images: [
-          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-1.svg",
-          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-2.svg",
-          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-3.svg",
-        ],
+        image:
+          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-1.png",
+        blurImage:
+          "https://robor-team.s3.eu-central-1.amazonaws.com/work/blurred-agoric-1.png",
       },
       {
         id: "agoric-lorem-ipsum-1",
@@ -101,8 +93,10 @@ const workProjects = [
         subHeader: "lorem ipsum",
         description:
           "The cosmos network based blockchain Agoric wanted us to build more DApps, so we decided to jump on the NFT bandwagon and develop a very simple baseball cards NFT marketplace. The creator could publish new projects, while users could trade the cards on the secondary marketplace.",
-        imageCount: 0,
-        images: [],
+        image:
+          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-2.png",
+        blurImage:
+          "https://robor-team.s3.eu-central-1.amazonaws.com/work/blurred-agoric-1.png",
       },
       {
         id: "agoric-lorem-ipsum-2",
@@ -111,10 +105,10 @@ const workProjects = [
         subHeader: "lorem ipsum",
         description:
           "The cosmos network based blockchain Agoric wanted us to build more DApps, so we decided to jump on the NFT bandwagon and develop a very simple baseball cards NFT marketplace. The creator could publish new projects, while users could trade the cards on the secondary marketplace.",
-        imageCount: 1,
-        images: [
-          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-6.svg",
-        ],
+        image:
+          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-3.png",
+        blurImage:
+          "https://robor-team.s3.eu-central-1.amazonaws.com/work/blurred-agoric-1.png",
       },
     ],
     techStack: {

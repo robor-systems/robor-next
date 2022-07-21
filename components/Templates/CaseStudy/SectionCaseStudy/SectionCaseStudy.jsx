@@ -1,16 +1,17 @@
 import clsx from "clsx";
 import Image from "next/image";
-import { random } from "utils/utils";
+import { useEffect } from "react";
 
 const SectionCaseStudy = ({
   header,
   subHeader,
   index,
   description,
-  images,
-  imageCount,
+  image,
+  blurImage,
   ...props
 }) => {
+  useEffect(() => {}, []);
   return (
     <div
       className={clsx(
@@ -38,45 +39,18 @@ const SectionCaseStudy = ({
         </div>
       </div>
       {/* * bottom images div */}
-      {!!imageCount && (
-        <div className="relative flex h-[456px]">
-          {imageCount === 3 ? (
-            <>
-              <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-                <Image
-                  src={images[1]}
-                  alt={`image${index}`}
-                  width={700}
-                  height={600}
-                />
-              </div>
-              <div className="absolute top-[52.5%] left-[27.5%] translate-x-[-50%] translate-y-[-50%]">
-                <Image
-                  src={images[0]}
-                  alt={`image${index}`}
-                  width={300}
-                  height={700}
-                />
-              </div>
-              <div className="absolute top-[75.5%] right-[3.5%] translate-x-[-50%] translate-y-[-50%]">
-                <Image
-                  src={images[2]}
-                  alt={`image${index}`}
-                  width={300}
-                  height={700}
-                />
-              </div>
-            </>
-          ) : imageCount === 2 ? null : (
-            <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-              <Image
-                src={images[0]}
-                alt={`image${index}`}
-                width="820px"
-                height={1100}
-              />
-            </div>
-          )}
+      {!!image && (
+        <div className="flex items-center justify-center w-full h-[220px] md:h-[456px] m-auto">
+          <div className="relative w-full h-full">
+            <Image
+              src={image}
+              alt={header}
+              layout="fill"
+              objectFit="contain"
+              placeholder="blur"
+              blurDataURL={blurImage}
+            />
+          </div>
         </div>
       )}
     </div>
