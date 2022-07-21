@@ -6,6 +6,7 @@ import {
   TechStackCaseStudy,
 } from "@/components/Templates/CaseStudy";
 import workProjects from "constants/content/work.constant";
+// import { getPlaiceholder } from "plaiceholder";
 
 const SpecificProjectPage = ({
   general,
@@ -16,7 +17,11 @@ const SpecificProjectPage = ({
   return (
     <div className="min-h-screen pt-[6.75rem] ">
       {/* * Header image */}
-      <HeroCaseStudy heroImage={general?.headerImage} title={general?.title} />
+      <HeroCaseStudy
+        headerImage={general?.headerImage}
+        blurHeaderImage={general?.blurHeaderImage}
+        title={general?.title}
+      />
       {/* * General info */}
       <ProjectInfo info={general} />
       {/* * Sections */}
@@ -56,7 +61,7 @@ export async function getStaticProps(context) {
   );
 
   if (!slug || !foundProject) {
-    //   * redirect to 404 page if no slug is provided
+    //   * redirect to 404 pa ge if no slug is provided
     return {
       redirect: {
         destination: "/404",
@@ -66,7 +71,9 @@ export async function getStaticProps(context) {
   }
 
   return {
-    props: { ...foundProject },
+    props: {
+      ...foundProject,
+    },
   };
 }
 

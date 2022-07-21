@@ -47,8 +47,8 @@ const SectionCaseStudy = ({
               alt={header}
               layout="fill"
               objectFit="contain"
-              placeholder="blur"
-              blurDataURL={blurImage}
+              // placeholder="blur"
+              // blurDataURL={blurImage}
             />
           </div>
         </div>

@@ -27,11 +27,13 @@ const ImagesProject = ({ images, imageCount }) => {
             className="absolute right-[-50px] h-full"
           >
             <Image
-              src={images[0]}
+              src={images[0].imageUrl}
               width="650px"
               height="720px"
               alt="image"
               className="rounded-lg shadow-lg"
+              placeholder="blur"
+              blurDataURL={images[0].blurImageUrl}
             />
           </motion.div>
         </div>
@@ -46,11 +48,13 @@ const ImagesProject = ({ images, imageCount }) => {
             className="absolute left-0 z-10 shadow-lg top-60"
           >
             <Image
-              src={images[0]}
+              src={images[0].imageUrl}
               width="520px"
               height="1100px"
               alt="image"
               className="rounded-lg"
+              placeholder="blur"
+              blurDataURL={images[0].blurImageUrl}
             />
           </motion.div>
           {/* * Image two on bottom */}
@@ -62,11 +66,13 @@ const ImagesProject = ({ images, imageCount }) => {
             className="absolute right-[10px] shadow-lg top-[-210px]"
           >
             <Image
-              src={images[1]}
+              src={images[1].imageUrl}
               width="520px"
               height="1100px"
               alt="image"
               className="rounded-lg"
+              placeholder="blur"
+              blurDataURL={images[1].blurImageUrl}
             />
           </motion.div>
         </div>

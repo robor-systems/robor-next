@@ -12,11 +12,23 @@ const workProjects = [
       //   * the header image will appear on a single case study page
       headerImage:
         "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric_header.png",
+      blurHeaderImage:
+        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZklEQVQImWOIYWCIZWCIYGBY5hL79///U+s27Vuz/sru/U1xaStWrmSIZ2CoYJCJY2AoYZBaOWXmxPrmpuSsZ48eH92525dBDKQ1noEhjoEhlIGht6B0xdz57Wm5HVZ+4QysgQwMAN3iIt/UnT4AAAAAAElFTkSuQmCC",
       // * the images will appear on the work page
       workPageImageCount: 2,
       workPageImages: [
-        "https://robor-team.s3.eu-central-1.amazonaws.com/work/tokapi1.png",
-        "https://robor-team.s3.eu-central-1.amazonaws.com/work/tokapi2.png",
+        {
+          imageUrl:
+            "https://robor-team.s3.eu-central-1.amazonaws.com/work/tokapi1.png",
+          blurImageUrl:
+            "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAKCAIAAAAcmWhZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAjUlEQVQImQGCAH3/ABMAJRgAKA0WPAUGIgBIE2xOKWg+SGAbLz8A5Ljz1LneyK/IrJbLAJyWuoBof4xyhHdbfgDK2+S9wLzMyb3R0cgA+vT78e725+bl+Pb7AMav2KOPr4mAiMujvQD+///29vT29fL7/P0A7e7z6+vr7Ozr8vH5AB8WPSojRDQqTDocXHL0SYDj47v6AAAAAElFTkSuQmCC",
+        },
+        {
+          imageUrl:
+            "https://robor-team.s3.eu-central-1.amazonaws.com/work/tokapi2.png",
+          blurImageUrl:
+            "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAKCAIAAAAcmWhZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAjUlEQVQImQGCAH3/AA8APRkQTgoNRgAEPABaEYdsXJldY4pBUXoA+/D++/b79vX1///8AMi61b2yxc7Ky87CywDQsd7Gr8mym7zHttkAlImyiHGFeVx4r561AMDO1Lu7usTBueXm3wDm1uje1+Lh3eLk3+QAyLbVuq/Cy8LL0bvUACwoRjo0T0A1WEInYvxYSru4IFhbAAAAAElFTkSuQmCC",
+        },
       ],
     },
     sections: [
@@ -29,6 +41,8 @@ const workProjects = [
         // * imageCount will help us to know what image layout is needed for this section
         image:
           "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-1.svg",
+        blurImage:
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAeElEQVQImWWMQQ7DIAwE/f8vJpeiHqKkuK0gxngBV6W5dW6rWQ0RkbvXCZjBbCK/SUQUQtj3/TxPNxQRFRlmPsalU0qYjFe61xIbIOKGS6/repu0lB+ltNZcK8yA+di2LcaYc56B3J/vrgqg966q38A/y7Icx8HMH8y4jFg0wyWrAAAAAElFTkSuQmCC",
       },
     ],
     techStack: {
@@ -58,10 +72,17 @@ const workProjects = [
       //   * the header image will appear on a single case study page
       headerImage:
         "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric_header.png",
+      blurHeaderImage:
+        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZklEQVQImWOIYWCIZWCIYGBY5hL79///U+s27Vuz/sru/U1xaStWrmSIZ2CoYJCJY2AoYZBaOWXmxPrmpuSsZ48eH92525dBDKQ1noEhjoEhlIGht6B0xdz57Wm5HVZ+4QysgQwMAN3iIt/UnT4AAAAAAElFTkSuQmCC",
       // * the images will appear on the work page
       workPageImageCount: 1,
       workPageImages: [
-        "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-amm1.svg",
+        {
+          imageUrl:
+            "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-amm1.png",
+          blurImageUrl:
+            "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAmUlEQVQImVWOwQqCQBRFBb+vTzCoj2uftAmiSIgZDGWiAYfAasoWjq8nKUkwwqswkO7yHg4cR2ltSjQl5gDyu30ORfcorZ0MDBHthBh6HhFZa8/q8GoaIsrA/LA/9R3XnYW8qutoGTyr6g9vo2gwHk3Wq5sxfL54IPa4te0dMU6Sq76kx1McbHq7S8uhkLEIGQ8Zk1J2dZ+0NybtmrU9VPshAAAAAElFTkSuQmCC",
+        },
       ],
     },
     sections: [
@@ -82,9 +103,9 @@ const workProjects = [
           "The cosmos network based blockchain Agoric wanted us to build more DApps, so we decided to jump on the NFT bandwagon and develop a very simple baseball cards NFT marketplace. The creator could publish new projects, while users could trade the cards on the secondary marketplace.",
         // * imageCount will help us to know what image layout is needed for this section
         image:
-          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-1.png",
+          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-1.svg",
         blurImage:
-          "https://robor-team.s3.eu-central-1.amazonaws.com/work/blurred-agoric-1.png",
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAeElEQVQImWWMQQ7DIAwE/f8vJpeiHqKkuK0gxngBV6W5dW6rWQ0RkbvXCZjBbCK/SUQUQtj3/TxPNxQRFRlmPsalU0qYjFe61xIbIOKGS6/repu0lB+ltNZcK8yA+di2LcaYc56B3J/vrgqg966q38A/y7Icx8HMH8y4jFg0wyWrAAAAAElFTkSuQmCC",
       },
       {
         id: "agoric-lorem-ipsum-1",
@@ -94,9 +115,9 @@ const workProjects = [
         description:
           "The cosmos network based blockchain Agoric wanted us to build more DApps, so we decided to jump on the NFT bandwagon and develop a very simple baseball cards NFT marketplace. The creator could publish new projects, while users could trade the cards on the secondary marketplace.",
         image:
-          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-2.png",
+          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-amm2.svg",
         blurImage:
-          "https://robor-team.s3.eu-central-1.amazonaws.com/work/blurred-agoric-1.png",
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAYUlEQVQImVXNwQ3DMAxDUe+/T+cwskLPqYAAjSSKkVzEbQL0XXj4BzYAMdE9ItR9jNFuZsZMDRzkzshMTA68XM/smUKwSoiqGhcza6sZj4m//cvPbXssy/eo9y4i74uqfgBR2YJcZlmh+QAAAABJRU5ErkJggg==",
       },
       {
         id: "agoric-lorem-ipsum-2",
@@ -106,9 +127,9 @@ const workProjects = [
         description:
           "The cosmos network based blockchain Agoric wanted us to build more DApps, so we decided to jump on the NFT bandwagon and develop a very simple baseball cards NFT marketplace. The creator could publish new projects, while users could trade the cards on the secondary marketplace.",
         image:
-          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-3.png",
+          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-3.svg",
         blurImage:
-          "https://robor-team.s3.eu-central-1.amazonaws.com/work/blurred-agoric-1.png",
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAeklEQVQImX2OQQrCQAxFc1+XPYDLuiu4mzN4HN26EGyxlBFsEz6dkInMMDvBx9+9/0OIiNwdAJhjH2If3sczHhMAESEiEhH/IecMoGhOKZmpmbm3VIq+XG/3ZYHqrjoyzyKvbdu1lNu6HU+6dsPaDZ/DSZ9zrg8V/YcvgIl//aq4zhcAAAAASUVORK5CYII=",
       },
     ],
     techStack: {
@@ -138,10 +159,17 @@ const workProjects = [
       //   * the header image will appear on a single case study page
       headerImage:
         "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric_header.png",
+      blurHeaderImage:
+        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZklEQVQImWOIYWCIZWCIYGBY5hL79///U+s27Vuz/sru/U1xaStWrmSIZ2CoYJCJY2AoYZBaOWXmxPrmpuSsZ48eH92525dBDKQ1noEhjoEhlIGht6B0xdz57Wm5HVZ+4QysgQwMAN3iIt/UnT4AAAAAAElFTkSuQmCC",
       // * the images will appear on the work page
       workPageImageCount: 1,
       workPageImages: [
-        "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-amm1.svg",
+        {
+          imageUrl:
+            "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-amm1.svg",
+          blurImageUrl:
+            "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-amm1.svg",
+        },
       ],
     },
     sections: [
@@ -187,11 +215,23 @@ const workProjects = [
       //   * the header image will appear on a single case study page
       headerImage:
         "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric_header.png",
+      blurHeaderImage:
+        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZklEQVQImWOIYWCIZWCIYGBY5hL79///U+s27Vuz/sru/U1xaStWrmSIZ2CoYJCJY2AoYZBaOWXmxPrmpuSsZ48eH92525dBDKQ1noEhjoEhlIGht6B0xdz57Wm5HVZ+4QysgQwMAN3iIt/UnT4AAAAAAElFTkSuQmCC",
       // * the images will appear on the work page
       workPageImageCount: 2,
       workPageImages: [
-        "https://robor-team.s3.eu-central-1.amazonaws.com/work/tokapi1.png",
-        "https://robor-team.s3.eu-central-1.amazonaws.com/work/tokapi1.png",
+        {
+          imageUrl:
+            "https://robor-team.s3.eu-central-1.amazonaws.com/work/tokapi1.png",
+          blurImageUrl:
+            "https://robor-team.s3.eu-central-1.amazonaws.com/work/tokapi1.png",
+        },
+        {
+          imageUrl:
+            "https://robor-team.s3.eu-central-1.amazonaws.com/work/tokapi2.png",
+          blurImageUrl:
+            "https://robor-team.s3.eu-central-1.amazonaws.com/work/tokapi2.png",
+        },
       ],
     },
     sections: [
@@ -237,10 +277,17 @@ const workProjects = [
       //   * the header image will appear on a single case study page
       headerImage:
         "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric_header.png",
+      blurHeaderImage:
+        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZklEQVQImWOIYWCIZWCIYGBY5hL79///U+s27Vuz/sru/U1xaStWrmSIZ2CoYJCJY2AoYZBaOWXmxPrmpuSsZ48eH92525dBDKQ1noEhjoEhlIGht6B0xdz57Wm5HVZ+4QysgQwMAN3iIt/UnT4AAAAAAElFTkSuQmCC",
       // * the images will appear on the work page
       workPageImageCount: 1,
       workPageImages: [
-        "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-amm1.svg",
+        {
+          imageUrl:
+            "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-amm1.svg",
+          blurImageUrl:
+            "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-amm1.svg",
+        },
       ],
     },
     sections: [
@@ -286,10 +333,17 @@ const workProjects = [
       //   * the header image will appear on a single case study page
       headerImage:
         "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric_header.png",
+      blurHeaderImage:
+        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZklEQVQImWOIYWCIZWCIYGBY5hL79///U+s27Vuz/sru/U1xaStWrmSIZ2CoYJCJY2AoYZBaOWXmxPrmpuSsZ48eH92525dBDKQ1noEhjoEhlIGht6B0xdz57Wm5HVZ+4QysgQwMAN3iIt/UnT4AAAAAAElFTkSuQmCC",
       // * the images will appear on the work page
       workPageImageCount: 1,
       workPageImages: [
-        "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-amm1.svg",
+        {
+          imageUrl:
+            "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-amm1.svg",
+          blurImageUrl:
+            "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-amm1.svg",
+        },
       ],
     },
     sections: [
