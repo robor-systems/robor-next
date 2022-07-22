@@ -6,6 +6,7 @@ import {
   TechStackCaseStudy,
 } from "@/components/Templates/CaseStudy";
 import workProjects from "constants/content/work.constant";
+import { v4 } from "uuid";
 // import { getPlaiceholder } from "plaiceholder";
 
 const SpecificProjectPage = ({
@@ -29,7 +30,7 @@ const SpecificProjectPage = ({
       {sections
         ?.sort((a, b) => a.position > b.position)
         ?.map((item, index) => (
-          <SectionCaseStudy index={index} key={item.id} {...item} />
+          <SectionCaseStudy index={index} key={v4()} {...item} />
         ))}
       {/* * Tech stack */}
       <TechStackCaseStudy {...techStack} />

@@ -6,14 +6,6 @@ const workProjects = [
       title: "Tokapi",
       description:
         "A custodial NFT marketplace for a European client making NFTs accessible and allow any and everyone to purchase NFTs.",
-      clientSize: "Startup",
-      location: "Portugal, Lisbon",
-      services: "Redesign | Technological Improvements | Frontend Development",
-      //   * the header image will appear on a single case study page
-      headerImage:
-        "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric_header.png",
-      blurHeaderImage:
-        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZklEQVQImWOIYWCIZWCIYGBY5hL79///U+s27Vuz/sru/U1xaStWrmSIZ2CoYJCJY2AoYZBaOWXmxPrmpuSsZ48eH92525dBDKQ1noEhjoEhlIGht6B0xdz57Wm5HVZ+4QysgQwMAN3iIt/UnT4AAAAAAElFTkSuQmCC",
       // * the images will appear on the work page
       workPageImageCount: 2,
       workPageImages: [
@@ -30,6 +22,15 @@ const workProjects = [
             "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAKCAIAAAAcmWhZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAjUlEQVQImQGCAH3/AA8APRkQTgoNRgAEPABaEYdsXJldY4pBUXoA+/D++/b79vX1///8AMi61b2yxc7Ky87CywDQsd7Gr8mym7zHttkAlImyiHGFeVx4r561AMDO1Lu7usTBueXm3wDm1uje1+Lh3eLk3+QAyLbVuq/Cy8LL0bvUACwoRjo0T0A1WEInYvxYSru4IFhbAAAAAElFTkSuQmCC",
         },
       ],
+      // * case study page info
+      clientSize: "Startup",
+      location: "Portugal, Lisbon",
+      services: "Redesign | Technological Improvements | Frontend Development",
+      //   * the header image will appear on a single case study page
+      headerImage:
+        "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric_header.png",
+      blurHeaderImage:
+        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZklEQVQImWOIYWCIZWCIYGBY5hL79///U+s27Vuz/sru/U1xaStWrmSIZ2CoYJCJY2AoYZBaOWXmxPrmpuSsZ48eH92525dBDKQ1noEhjoEhlIGht6B0xdz57Wm5HVZ+4QysgQwMAN3iIt/UnT4AAAAAAElFTkSuQmCC",
     },
     sections: [
       {
@@ -66,6 +67,7 @@ const workProjects = [
       title: "Agoric AMM",
       description:
         "A custodial NFT marketplace for a European client making NFTs accessible and allow any and everyone to purchase NFTs.",
+      // * used in case study page
       clientSize: "Startup",
       location: "Portugal, Lisbon",
       services: "Redesign | Technological Improvements | Frontend Development",

@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import SectionTechStack from "./SectionTechStack";
 
 const TechStackCaseStudy = ({ description, frontend, backend, other }) => {
   return (
@@ -25,11 +26,11 @@ const TechStackCaseStudy = ({ description, frontend, backend, other }) => {
         {/* * Stack Grid */}
         <div className="grid grid-cols-3 gap-10">
           {/* * Frontend */}
-          <TechStackSection title="Frontend" stack={frontend} />
+          <SectionTechStack title="Frontend" stack={frontend} />
           {/* * Other */}
-          <TechStackSection title="Other" stack={other} />
+          <SectionTechStack title="Other" stack={other} />
           {/* * Backend */}
-          <TechStackSection title="Backend" stack={backend} />
+          <SectionTechStack title="Backend" stack={backend} />
         </div>
       </div>
     </div>
@@ -37,24 +38,3 @@ const TechStackCaseStudy = ({ description, frontend, backend, other }) => {
 };
 
 export default TechStackCaseStudy;
-
-const TechStackSection = ({ title, stack }) => {
-  return (
-    <div className="col-span-1 space-y-4 md:col-span-1">
-      <h5 className="font-semibold text-xl pb-[10px] border-b-2 text-light-content dark:text-dark-content border-[#A0A8BB]">
-        {title}
-      </h5>
-      {/* * stack */}
-      <ul className="list-none list-inside">
-        {stack.map((item, index) => (
-          <li
-            key={index}
-            className="text-sm font-light md:text-lg text-light-contentSecondary dark:text-dark-contentSecondary"
-          >
-            {item}
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-};
