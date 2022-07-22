@@ -11,7 +11,6 @@ const SectionCaseStudy = ({
   blurImage,
   ...props
 }) => {
-  useEffect(() => {}, []);
   return (
     <div
       className={clsx(

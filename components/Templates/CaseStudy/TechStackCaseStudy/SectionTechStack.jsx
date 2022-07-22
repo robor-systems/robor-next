@@ -8,14 +8,15 @@ const SectionTechStack = ({ title, stack }) => {
       </h5>
       {/* * stack */}
       <ul className="list-none list-inside">
-        {stack.map((item, index) => (
-          <li
-            key={v4()}
-            className="text-sm font-light md:text-lg text-light-contentSecondary dark:text-dark-contentSecondary"
-          >
-            {item}
-          </li>
-        ))}
+        {!!stack &&
+          stack?.map((item, index) => (
+            <li
+              key={v4()}
+              className="text-sm font-light md:text-lg text-light-contentSecondary dark:text-dark-contentSecondary"
+            >
+              {item}
+            </li>
+          ))}
       </ul>
     </div>
   );
