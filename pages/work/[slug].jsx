@@ -12,6 +12,7 @@ const SpecificProjectPage = ({
   general,
   sections,
   relatedProject,
+  techStack,
   ...props
 }) => {
   return (
@@ -31,7 +32,7 @@ const SpecificProjectPage = ({
           <SectionCaseStudy index={index} key={item.id} {...item} />
         ))}
       {/* * Tech stack */}
-      <TechStackCaseStudy />
+      <TechStackCaseStudy {...techStack} />
       {/* * Related project */}
       <RelatedProjectCaseStudy {...relatedProject} />
     </div>

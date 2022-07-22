@@ -23,8 +23,8 @@ const Header = () => {
               <NavLink href="services" id>
                 Services
               </NavLink>
-              <NavLink href="clients" id>
-                Clients
+              <NavLink href="work" id>
+                Work
               </NavLink>
               <NavLink href="team" id>
                 Team
