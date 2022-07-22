@@ -29,6 +29,11 @@
   textarea {
     @apply resize-none;
   }
+
+  ul li:before {
+    content: "\2014";
+    @apply inline-block font-bold w-4 h-8 mr-2 dark:text-dark-primary text-light-primary;
+  }
 }
 
 @layer components {

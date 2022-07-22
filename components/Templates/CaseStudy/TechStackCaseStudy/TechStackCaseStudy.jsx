@@ -45,7 +45,7 @@ const TechStackSection = ({ title, stack }) => {
         {title}
       </h5>
       {/* * stack */}
-      <ul className="list-disc list-inside">
+      <ul className="list-none list-inside">
         {stack.map((item, index) => (
           <li
             key={index}
