@@ -1,5 +1,10 @@
+import Slider from "@/components/Modules/Carousel/Slider";
 const SliderOurWork = () => {
-  return <div>Slider here</div>;
+  return (
+    <div>
+      <Slider />
+    </div>
+  );
 };
 
 export default SliderOurWork;

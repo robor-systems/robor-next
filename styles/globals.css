@@ -111,3 +111,25 @@
     @apply w-12 h-12 sm:w-20 sm:h-20;
   }
 }
+.slick-dots li.slick-active button:before {
+  color: #006a6f !important;
+  width: 30px !important;
+  height: 10px !important;
+  font-size: 18px !important;
+}
+
+.slick-dots li button:before {
+  width: 30px !important;
+  height: 10px !important;
+  font-size: 12px !important;
+  color: "#A0A8BB" !important;
+}
+.slick-prev:before,
+.slick-next:before {
+  width: 10px !important;
+  height: 10px !important;
+  font-size: 18px !important;
+}
+.slick-dots {
+  bottom: -46px;
+}
