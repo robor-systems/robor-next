@@ -6,10 +6,10 @@ const SlideItem = ({ general, index, content, ...props }) => {
   return (
     <section
       id={`project-${content.general.slug}`}
-      className={clsx("bg-light-bgSecondary dark:bg-dark-bgSecondary px-5")}
+      className={clsx(" dark:bg-dark-bgSecondary px-5")}
     >
       {/* * now we need a grid */}
-      <div className="grid  grid-cols-2 gap-10 h-[97vh]">
+      <div className="grid  grid-cols-2 gap-10 h-[85vh]">
         {/* * Left side will contain the project info */}
         <div className="col-span-full md:col-span-1">
           <ContentProject {...content.general} />

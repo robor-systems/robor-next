@@ -122,7 +122,12 @@
   text-indent: -99999px;
   margin-top: 4px;
 }
-
+.slick-dots li {
+  width: 15px !important;
+}
+li.slick-active{
+  width: 20px !important;
+}
 
 .slick-dots li button:before {
 
