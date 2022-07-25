@@ -3,7 +3,7 @@ import Slider from "react-slick";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-const InnerSlide = ({ slides, children }) => {
+const InnerSlide = ({ children }) => {
   var settings = {
     dots: true,
     infinite: true,
@@ -11,21 +11,18 @@ const InnerSlide = ({ slides, children }) => {
     slidesToScroll: 1,
     initialSlide: 0,
     arrows: false,
-     autoplay: true,
+    autoplay: true,
     speed: 500,
     autoplaySpeed: 2000,
     cssEase: "linear",
     appendDots: (dots) => <div>{dots}</div>,
+    className: "w-full h-full",
   };
   return (
-    <div key={children.key}>
+    <div key={children.key} className="w-full h-full">
       <Slider {...settings}>
         {children.map((item, index) => {
-          return (
-            <div className="cursor:pointer" key={index}>
-              {item}
-            </div>
-          );
+          return item;
         })}
       </Slider>
     </div>

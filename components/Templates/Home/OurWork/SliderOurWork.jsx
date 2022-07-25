@@ -1,7 +1,7 @@
 import Slider from "@/components/Modules/Carousel/Slider";
 const SliderOurWork = () => {
   return (
-    <div>
+    <div className="h-[607px] w-full">
       <Slider />
     </div>
   );

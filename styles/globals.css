@@ -111,30 +111,31 @@
     @apply w-12 h-12 sm:w-20 sm:h-20;
   }
 }
+
+/* carousel slides */
 .slick-dots li.slick-active button:before {
-  display:block !important;
+  display: block !important;
   color: #006a6f !important;
   width: 26px !important;
-
   font-size: 12px !important;
-  background-color:  #006a6f;
+  background-color: #006a6f;
   border-radius: 10px;
   text-indent: -99999px;
   margin-top: 4px;
 }
+
 .slick-dots li {
   width: 15px !important;
 }
-li.slick-active{
+li.slick-active {
   width: 20px !important;
 }
 
 .slick-dots li button:before {
-
   height: 10px !important;
   font-size: 12px !important;
   color: "#A0A8BB" !important;
-  display:inline-block;
+  display: inline-block;
 }
 .slick-prev:before,
 .slick-next:before {
@@ -145,6 +146,14 @@ li.slick-active{
 .slick-dots {
   bottom: -44px !important;
 }
-.slick-dots li button:hover:before{
-  color: #A0A8BB;
+.slick-dots li button:hover:before {
+  color: #a0a8bb;
+}
+
+/* added to set the slides to 100% of the height of the parent container */
+.slick-list,
+.slick-track,
+.slick-slide,
+.slick-slide > div {
+  height: 100%;
 }
