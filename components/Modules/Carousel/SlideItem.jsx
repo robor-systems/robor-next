@@ -4,7 +4,7 @@ import ContentProject from "@/components/Templates/Work/ContentProject";
 import ImagesProject from "@/components/Templates/Work/ImagesProject";
 const SlideItem = ({ general, index, content, ...props }) => {
   return (
-    <section
+    <div
       id={`project-${content.general.slug}`}
       className={clsx(" dark:bg-dark-bgSecondary px-5", "w-full h-full")}
     >
@@ -22,7 +22,7 @@ const SlideItem = ({ general, index, content, ...props }) => {
           />
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
