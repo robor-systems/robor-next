@@ -168,7 +168,7 @@ const workProjects = [
       workPageImages: [
         {
           imageUrl:
-            "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-amm1.svg",
+          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric+-+card+store.png",
           blurImageUrl:
             "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-amm1.svg",
         },
@@ -224,13 +224,13 @@ const workProjects = [
       workPageImages: [
         {
           imageUrl:
-            "https://robor-team.s3.eu-central-1.amazonaws.com/work/tokapi1.png",
+          "https://robor-team.s3.eu-central-1.amazonaws.com/work/Genesis+Plot.png",
           blurImageUrl:
             "https://robor-team.s3.eu-central-1.amazonaws.com/work/tokapi1.png",
         },
         {
           imageUrl:
-            "https://robor-team.s3.eu-central-1.amazonaws.com/work/tokapi2.png",
+          "https://robor-team.s3.eu-central-1.amazonaws.com/work/Genesis-Plot-2.png",
           blurImageUrl:
             "https://robor-team.s3.eu-central-1.amazonaws.com/work/tokapi2.png",
         },
@@ -286,7 +286,7 @@ const workProjects = [
       workPageImages: [
         {
           imageUrl:
-            "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-amm1.svg",
+          "https://robor-team.s3.eu-central-1.amazonaws.com/work/premium+voices.png",
           blurImageUrl:
             "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-amm1.svg",
         },
@@ -342,7 +342,7 @@ const workProjects = [
       workPageImages: [
         {
           imageUrl:
-            "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-amm1.svg",
+          "https://robor-team.s3.eu-central-1.amazonaws.com/work/kontractory.png",
           blurImageUrl:
             "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-amm1.svg",
         },
