@@ -1,12 +1,12 @@
-import React, { useEffect } from "react";
 import { useTheme } from "next-themes";
 
 import THEME, { SVG_COLORS } from "constants/theme/theme.constant";
+import { useIsomorphicLayoutEffect } from "utils/hooks";
 
 const DataEngIcon = () => {
   const { theme } = useTheme();
 
-  useEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     const dataEngIconPath = document.querySelectorAll(".dataeng-icon-path");
 
     // * apply fill color to saas-icon-path

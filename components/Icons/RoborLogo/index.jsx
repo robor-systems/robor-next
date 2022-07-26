@@ -1,12 +1,12 @@
-import React, { useEffect } from "react";
 import { useTheme } from "next-themes";
 
 import THEME from "constants/theme/theme.constant";
+import { useIsomorphicLayoutEffect } from "utils/hooks";
 
 const RoborLogo = () => {
   const { theme } = useTheme();
 
-  useEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     const TREE_BODY = theme === THEME.DARK ? "#fefefe" : "#284243";
     const TREE_LEAVES = theme === THEME.DARK ? "#00b7bf" : "#00747a";
 

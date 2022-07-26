@@ -8,7 +8,7 @@ const WorkPage = () => {
       <Head>
         <title>Our Work | Robor Systems</title>
       </Head>
-      <main className="min-h-screen pt-[6.75rem] snap-y flex flex-none flex-col snap-mandatory overflow-auto flex-nowrap">
+      <main className="min-h-screen pt-[6.75rem] snap-both flex flex-none flex-col snap-mandatory flex-nowrap overflow-y-scroll">
         {/* * We will loop over the projects and make a section for each project */}
         {workProjects.map((project, index) => (
           <ProjectWork key={project.general.slug} {...project} index={index} />

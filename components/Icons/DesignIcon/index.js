@@ -2,11 +2,12 @@ import React, { useEffect } from "react";
 import { useTheme } from "next-themes";
 
 import THEME, { SVG_COLORS } from "constants/theme/theme.constant";
+import { useIsomorphicLayoutEffect } from "utils/hooks";
 
 const DesignIcon = () => {
   const { theme } = useTheme();
 
-  useEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     const designIconPath = document.querySelectorAll(".design-icon-path");
 
     // * apply fill color to design-icon-path
