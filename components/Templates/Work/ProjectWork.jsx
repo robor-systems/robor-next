@@ -23,6 +23,7 @@ const ProjectWork = ({ general, index, ...props }) => {
         {/* * Right side will contain images*/}
         <div className="col-span-full md:col-span-1">
           <ImagesProject
+            slug={general.slug}
             images={general.workPageImages}
             imageCount={general.workPageImageCount}
           />

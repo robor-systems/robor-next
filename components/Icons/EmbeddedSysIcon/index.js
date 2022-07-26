@@ -1,12 +1,12 @@
-import React, { useEffect } from "react";
 import { useTheme } from "next-themes";
 
 import THEME, { SVG_COLORS } from "constants/theme/theme.constant";
+import { useIsomorphicLayoutEffect } from "utils/hooks";
 
 const EmbeddedSysIcon = () => {
   const { theme } = useTheme();
 
-  useEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     // * get the emsystem-icon-path class elements
     const emSystemIconPath = document.querySelectorAll(".emsystem-icon-path");
 

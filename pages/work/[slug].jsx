@@ -6,6 +6,7 @@ import {
   TechStackCaseStudy,
 } from "@/components/Templates/CaseStudy";
 import workProjects from "constants/content/work.constant";
+import Head from "next/head";
 import { v4 } from "uuid";
 // import { getPlaiceholder } from "plaiceholder";
 
@@ -17,26 +18,31 @@ const SpecificProjectPage = ({
   ...props
 }) => {
   return (
-    <div className="min-h-screen pt-[6.75rem] ">
-      {/* * Header image */}
-      <HeroCaseStudy
-        headerImage={general?.headerImage}
-        blurHeaderImage={general?.blurHeaderImage}
-        title={general?.title}
-      />
-      {/* * General info */}
-      <ProjectInfo info={general} />
-      {/* * Sections */}
-      {sections
-        ?.sort((a, b) => a.position > b.position)
-        ?.map((item, index) => (
-          <SectionCaseStudy index={index} key={v4()} {...item} />
-        ))}
-      {/* * Tech stack */}
-      <TechStackCaseStudy {...techStack} />
-      {/* * Related project */}
-      <RelatedProjectCaseStudy {...relatedProject} />
-    </div>
+    <>
+      <Head>
+        <title>{general?.title} | Robor Systems</title>
+      </Head>
+      <div className="min-h-screen pt-[6.75rem] ">
+        {/* * Header image */}
+        <HeroCaseStudy
+          headerImage={general?.headerImage}
+          blurHeaderImage={general?.blurHeaderImage}
+          title={general?.title}
+        />
+        {/* * General info */}
+        <ProjectInfo info={general} />
+        {/* * Sections */}
+        {sections
+          ?.sort((a, b) => a.position > b.position)
+          ?.map((item, index) => (
+            <SectionCaseStudy index={index} key={v4()} {...item} />
+          ))}
+        {/* * Tech stack */}
+        <TechStackCaseStudy {...techStack} />
+        {/* * Related project */}
+        <RelatedProjectCaseStudy {...relatedProject} />
+      </div>
+    </>
   );
 };
 

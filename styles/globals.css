@@ -74,8 +74,8 @@
   }
 
   .bg-hero {
-    background-image: url(https://robor-team.s3.eu-central-1.amazonaws.com/hero-bg-1.svg);
-
+    /*background-image: url(https://robor-team.s3.eu-central-1.amazonaws.com/hero-bg-1.svg);*/
+    background-image: url("/hero-bg-1.svg");
     @apply mt-12 bg-cover bg-center;
   }
   .bg-form {
