@@ -1,5 +1,5 @@
 const seo = {
-  title: "Robor",
+  title: "Robor Systems",
   description: "We ♥ building robust systems.",
   canonical: "https://robor.systems",
   openGraph: {

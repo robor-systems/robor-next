@@ -16,7 +16,9 @@ const RelatedProjectCaseStudy = ({ title, slug, description, ...props }) => {
         {/* * explore more heading */}
         <h4 className="project-info-heading ">Explore more</h4>
         {/* * project title */}
-        <h3 className="text-2xl font-bold text-gray-800">{title}</h3>
+        <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-50">
+          {title}
+        </h3>
         {/* * description */}
         <p className="text-base md:text-lg">{description}</p>
       </div>
