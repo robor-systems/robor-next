@@ -7,7 +7,7 @@ const ProjectWork = ({ general, index, ...props }) => {
     <section
       id={`project-${general.slug}`}
       className={clsx(
-        "h-[100vh] snap-start overflow-hidden",
+        "h-[100vh]  overflow-hidden",
         index % 2 === 0
           ? "bg-light-bgSecondary dark:bg-dark-bgSecondary"
           : "bg-light-bgPrimary dark:bg-dark-bgPrimary",
