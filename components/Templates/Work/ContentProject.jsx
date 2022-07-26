@@ -15,16 +15,16 @@ const ContentProject = ({ slug, title, description, ...props }) => {
       offset={{ bottom: 300 }}
     >
       <motion.div
-        className="flex flex-col justify-center h-full px-20 space-y-4"
+        className="flex flex-col justify-center h-full md:px-20 space-y-4 ml-[12px] sm:ml-0"
         initial="invisible"
         animate={visible ? "visible" : "invisible"}
         variants={opacityVariants}
         transition={{ duration: 1.5 }}
       >
         {/* * title */}
-        <h1 className="text-4xl font-bold">{title}</h1>
+        <h1 className="md:text-4xl font-bold">{title}</h1>
         {/* * description */}
-        <p className="text-lg text-light-contentSecondary dark:text-dark-contentSecondary">
+        <p className="md:text-lg text-light-contentSecondary dark:text-dark-contentSecondary">
           {description}
         </p>
         {/* * go to project page link */}

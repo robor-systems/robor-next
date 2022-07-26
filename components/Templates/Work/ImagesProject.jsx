@@ -17,14 +17,14 @@ const ImagesProject = ({ images, imageCount }) => {
       offset={{ bottom: 300 }}
     >
       {imageCount === 1 ? (
-        <div className="relative h-full overflow-hidden">
+        <div className="relative h-full md:overflow-hidden bottom-[151px] sm:bottom-0">
           {/* * Image container */}
           <motion.div
             initial="invisible"
             animate={visible ? "visible" : "invisible"}
             variants={singleImageVariant}
             transition={{ duration: 1 }}
-            className="absolute right-[-50px] h-full"
+            className="absolute sm:right-[-50px] h-full"
           >
             <Image
               src={images[0].imageUrl}
@@ -38,14 +38,14 @@ const ImagesProject = ({ images, imageCount }) => {
           </motion.div>
         </div>
       ) : (
-        <div className="relative h-full overflow-hidden">
+        <div className="relative h-full sm:overflow-hidden">
           {/* * Image one on top*/}
           <motion.div
             initial="invisible"
             animate={visible ? "visible" : "invisible"}
             variants={doubleImageVariant.topImage}
             transition={{ duration: 1.5 }}
-            className="absolute left-0 z-10 shadow-lg top-60"
+            className="absolute sm:left-0 left-[65px] z-10 shadow-lg  sm:top-60 top-[-63px] mr-[10px] sm:mr-0"
           >
             <Image
               src={images[0].imageUrl}
@@ -63,7 +63,7 @@ const ImagesProject = ({ images, imageCount }) => {
             animate={visible ? "visible" : "invisible"}
             variants={doubleImageVariant.bottomImage}
             transition={{ duration: 1.5 }}
-            className="absolute right-[10px] shadow-lg top-[-210px]"
+            className="absolute sm:right-[10px] right-[80px] shadow-lg  sm:top-[-210px] top-[17px] z-10 sm:z-0 ml-[10px]  sm:ml-0 "
           >
             <Image
               src={images[1].imageUrl}

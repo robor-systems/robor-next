@@ -7,11 +7,11 @@ const ProjectWork = ({ general, index, ...props }) => {
     <section
       id={`project-${general.slug}`}
       className={clsx(
-        "h-[100vh] snap-start ",
+        "h-[100vh] snap-start overflow-hidden",
         index % 2 === 0
           ? "bg-light-bgSecondary dark:bg-dark-bgSecondary"
           : "bg-light-bgPrimary dark:bg-dark-bgPrimary",
-        "px-5"
+        "md:px-5"
       )}
     >
       {/* * now we need a grid */}
