@@ -124,7 +124,7 @@ const ImagesProject = ({ images, imageCount, slug }) => {
             transition={{ duration: 1.5 }}
 
             className={clsx(
-             className="absolute lg:left-[200px] left-[80px] shadow-lg  lg:top-[-100px] md:top-[10px] top-[-150px]  mr-[10px] md:mr-0  ",
+            "absolute lg:left-[200px] left-[80px] shadow-lg  lg:top-[-100px]  top-[-150px]  mr-[10px] md:mr-0  ",
               `double-image-${slug}`
             )}
 
