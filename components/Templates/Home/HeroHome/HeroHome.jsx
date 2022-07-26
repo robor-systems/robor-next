@@ -21,7 +21,7 @@ const HeroHome = () => {
       >
         <>
           {/* <div className="absolute top-0 right-0 h-screen min-w-full bg-hero"></div> */}
-          <div className="absolute top-0 right-0 h-screen min-w-full">
+          <div className="absolute top-0 right-0 h-screen min-w-full overflow-hidden">
             <HeroBG />
           </div>
           <motion.div
