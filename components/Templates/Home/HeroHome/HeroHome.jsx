@@ -1,12 +1,13 @@
 import { BsChevronDown } from "react-icons/bs";
 import { opacityVariants } from "constants/animations/variants.constant";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import ReactVisibilitySensor from "react-visibility-sensor";
 import Container from "@/components/Modules/Container/Container";
 import NextLink from "next/link";
 import clsx from "clsx";
+import HeroBG from "@/components/Modules/HeroBG/HeroBG";
 
 const HeroHome = () => {
   const [visible, setVisible] = useState(false);
@@ -19,7 +20,10 @@ const HeroHome = () => {
         onChange={(isVisible) => isVisible && setVisible(isVisible)}
       >
         <>
-          <div className="absolute top-0 right-0 h-screen min-w-full bg-hero"></div>
+          {/* <div className="absolute top-0 right-0 h-screen min-w-full bg-hero"></div> */}
+          <div className="absolute top-0 right-0 h-screen min-w-full overflow-hidden">
+            <HeroBG />
+          </div>
           <motion.div
             className="relative flex flex-col items-center justify-center h-screen gap-6"
             initial="invisible"

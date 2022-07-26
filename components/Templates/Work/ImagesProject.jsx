@@ -5,10 +5,62 @@ import {
   doubleImageVariant,
   singleImageVariant,
 } from "constants/animations/variants.constant";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import clsx from "clsx";
 
-const ImagesProject = ({ images, imageCount }) => {
+gsap.registerPlugin(ScrollTrigger);
+
+const ImagesProject = ({ images, imageCount, slug }) => {
   const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    if (!slug) return;
+
+    // * animating the double-image-slug class with scrollTrigger
+    const doubleImage = document.querySelectorAll(`.double-image-${slug}`);
+    if (!doubleImage) return;
+
+    const [front, back] = Array.from(doubleImage);
+    if (!front || !back) return;
+
+    const tl = gsap.timeline();
+
+    if (visible) {
+      tl.from(front, {
+        top: "240px",
+      });
+      tl.to(front, {
+        scrollTrigger: {
+          trigger: front,
+          start: "top bottom",
+          end: "bottom bottom",
+          scrub: 1,
+        },
+        duration: 10,
+        y: "-240px",
+      });
+
+      tl.from(back, {
+        top: "-210px",
+      });
+      tl.to(back, {
+        scrollTrigger: {
+          trigger: front,
+          start: "top bottom",
+          end: "bottom bottom",
+          scrub: 1,
+        },
+        duration: 10,
+        y: "120px",
+      });
+    }
+
+    return () => {
+      tl.kill();
+    };
+  }, [slug, visible]);
 
   return (
     <ReactVisibilitySensor
@@ -20,18 +72,20 @@ const ImagesProject = ({ images, imageCount }) => {
         <div className="relative h-full md:overflow-hidden bottom-[151px]  md:bottom-0">
           {/* * Image container */}
           <motion.div
-            initial="invisible"
-            animate={visible ? "visible" : "invisible"}
-            variants={singleImageVariant}
-            transition={{ duration: 1 }}
-            className="absolute md:right-[-50px] h-full bottom-[30px]"
+
+            // initial="invisible"
+            // animate={visible ? "visible" : "invisible"}
+            // variants={singleImageVariant}
+            // transition={{ duration: 1 }}
+           className="absolute md:right-[-50px] h-full bottom-[30px]"
+
           >
             <Image
               src={images[0].imageUrl}
               width="650px"
               height="720px"
               alt="image"
-              className="rounded-lg shadow-lg"
+              className={clsx("rounded-lg shadow-lg", `single-image-${slug}`)}
               placeholder="blur"
               blurDataURL={images[0].blurImageUrl}
             />
@@ -45,7 +99,12 @@ const ImagesProject = ({ images, imageCount }) => {
             animate={visible ? "visible" : "invisible"}
             variants={doubleImageVariant.topImage}
             transition={{ duration: 1.5 }}
-            className="absolute md:left-0 right-[65px] z-10 shadow-lg lg:top-[200px] md:top-[240px] sm:top-[150px] top-[20px]  ml-[20px]  md:ml-0"
+
+            className={clsx(
+             "absolute md:left-0 right-[65px] z-10 shadow-lg lg:top-[200px] md:top-[240px] sm:top-[150px] top-[20px]  ml-[20px]  md:ml-0",
+              `double-image-${slug}`
+            )}
+
           >
             <Image
               src={images[0].imageUrl}
@@ -63,7 +122,12 @@ const ImagesProject = ({ images, imageCount }) => {
             animate={visible ? "visible" : "invisible"}
             variants={doubleImageVariant.bottomImage}
             transition={{ duration: 1.5 }}
-            className="absolute lg:left-[200px] left-[80px] shadow-lg  lg:top-[-100px] md:top-[10px] top-[-150px]  mr-[10px] md:mr-0  "
+
+            className={clsx(
+             className="absolute lg:left-[200px] left-[80px] shadow-lg  lg:top-[-100px] md:top-[10px] top-[-150px]  mr-[10px] md:mr-0  ",
+              `double-image-${slug}`
+            )}
+
           >
             <Image
               src={images[1].imageUrl}

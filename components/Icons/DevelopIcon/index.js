@@ -1,12 +1,12 @@
-import React, { useEffect } from "react";
 import { useTheme } from "next-themes";
 
 import THEME, { SVG_COLORS } from "constants/theme/theme.constant";
+import { useIsomorphicLayoutEffect } from "utils/hooks";
 
 const DevelopIcon = () => {
   const { theme } = useTheme();
 
-  useEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     const developIconPath = document.querySelectorAll(".develop-icon-path");
 
     // * apply fill color to develop-icon-path

@@ -40,7 +40,7 @@ const CardTeam = ({
       transition={{ duration: 0.5 }}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className="relative w-full overflow-hidden border border-1 h-96 rounded-3xl sm:h-72 dark:border-gray-700"
+      className="relative w-full overflow-hidden border border-1 h-96 rounded-3xl sm:h-72 dark:border-none"
       animate={
         hover
           ? {

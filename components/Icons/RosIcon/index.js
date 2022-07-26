@@ -1,12 +1,12 @@
-import React, { useEffect } from "react";
 import { useTheme } from "next-themes";
 
 import THEME, { SVG_COLORS } from "constants/theme/theme.constant";
+import { useIsomorphicLayoutEffect } from "utils/hooks";
 
 const RosIcon = () => {
   const { theme } = useTheme();
 
-  useEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     const rosIcon = document.querySelectorAll(".ros-icon-path");
 
     // * apply fill color to saas-icon-path
