@@ -20,7 +20,7 @@ const SpecificProjectPage = ({
   return (
     <>
       <Head>
-        <title>{general.title} | Robor Systems</title>
+        <title>{general?.title} | Robor Systems</title>
       </Head>
       <div className="min-h-screen pt-[6.75rem] ">
         {/* * Header image */}
