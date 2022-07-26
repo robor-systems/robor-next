@@ -15,7 +15,7 @@ const ContentProject = ({ slug, title, description, ...props }) => {
       offset={{ bottom: 300 }}
     >
       <motion.div
-        className="flex flex-col justify-center h-full md:px-20 space-y-4 ml-[12px] sm:ml-0"
+        className="flex flex-col mt-[30px] sm:justify-center h-full md:px-20 space-y-4 ml-[12px] sm:ml-0"
         initial="invisible"
         animate={visible ? "visible" : "invisible"}
         variants={opacityVariants}
