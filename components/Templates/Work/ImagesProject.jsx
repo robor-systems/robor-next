@@ -5,17 +5,19 @@ import {
   doubleImageVariant,
   singleImageVariant,
 } from "constants/animations/variants.constant";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import clsx from "clsx";
+import { useIsomorphicLayoutEffect } from "utils/hooks";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const ImagesProject = ({ images, imageCount, slug }) => {
   const [visible, setVisible] = useState(false);
 
-  useEffect(() => {
+  // * for double images
+  useIsomorphicLayoutEffect(() => {
     if (!slug) return;
 
     // * animating the double-image-slug class with scrollTrigger
@@ -69,13 +71,13 @@ const ImagesProject = ({ images, imageCount, slug }) => {
       offset={{ bottom: 300 }}
     >
       {imageCount === 1 ? (
-        <div className="relative h-full md:overflow-hidden bottom-[151px]  md:bottom-0">
+        <div className="relative h-full md:overflow-hidden bottom-[151px] md:bottom-0">
           {/* * Image container */}
           <motion.div
-            // initial="invisible"
-            // animate={visible ? "visible" : "invisible"}
-            // variants={singleImageVariant}
-            // transition={{ duration: 1 }}
+            initial="invisible"
+            animate={visible ? "visible" : "invisible"}
+            variants={singleImageVariant}
+            transition={{ duration: 1 }}
             className="absolute md:right-[-50px] h-full bottom-[30px]"
           >
             <Image
@@ -98,7 +100,7 @@ const ImagesProject = ({ images, imageCount, slug }) => {
             variants={doubleImageVariant.topImage}
             transition={{ duration: 1.5 }}
             className={clsx(
-              "absolute md:left-0 right-[65px] z-10 shadow-lg lg:top-[200px] md:top-[240px] sm:top-[150px] top-[20px]  ml-[20px]  md:ml-0",
+              "absolute md:left-0 right-[65px] z-10 overflow-hidden shadow-lg lg:top-[200px] md:top-[240px] sm:top-[150px] top-[20px] ml-[20px]  md:ml-0",
               `double-image-${slug}`
             )}
           >
@@ -119,7 +121,7 @@ const ImagesProject = ({ images, imageCount, slug }) => {
             variants={doubleImageVariant.bottomImage}
             transition={{ duration: 1.5 }}
             className={clsx(
-              "absolute lg:left-[200px] left-[80px] shadow-lg  lg:top-[-100px]  top-[-150px]  mr-[10px] md:mr-0  ",
+              "absolute lg:left-[200px] left-[80px] z-0 shadow-lg  lg:top-[-100px]  top-[-150px]  mr-[10px] md:mr-0  ",
               `double-image-${slug}`
             )}
           >
