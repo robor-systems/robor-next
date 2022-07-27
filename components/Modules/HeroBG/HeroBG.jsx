@@ -11,19 +11,15 @@ const HeroBG = () => {
     for (let i = 1; i <= lines; i++) {
       const paths = Array.from(document.querySelectorAll(`.path-${i}`));
       if (!paths) return;
-
       gsap.set(paths, {
         autoAlpha: 1,
       });
-
       paths.forEach((path, j) => {
         gsap.set(path, { xPercent: 100 * j });
       });
-
       const pathsWrap = gsap.utils.wrap(-100, (paths.length - 1) * 100);
       // const duration = paths.length * (Math.random() * 50 - 25 + 50);
-      const duration = paths.length * 100;
-
+      const duration = paths.length * 50;
       gsap.to(paths, {
         xPercent: `-=${paths.length * 100}`,
         duration,
@@ -50,7 +46,7 @@ const HeroBG = () => {
 
   return (
     <svg
-      className="bg-bilal absolute top-[40px] right-[-90vw]"
+      className="bg-bilal absolute top-[40px] left-[-10px]"
       xmlns="http://www.w3.org/2000/svg"
       width="2749"
       height="605"
@@ -106,12 +102,12 @@ const HeroBG = () => {
         />
 
         {/* * third line animation path */}
-        <path
+        {/* <path
           id="Path_19596"
           className="path-3"
           data-name="Path 19594"
           d="M-454.86,215.706c53.572-37.681,195.344-184.689,281.621-177.425C-1.1,37.224,94.045,352.036,266.184,384.1S524.391,261.656,696.531,249.323s265.44,246.886,425.042,204.682,281.212-238.269,458.451-243.354,293.9,223.373,401.64,248.316,177.261-7.68,287.711-100.489"
-          transform="translate(14048.417 18533.574) rotate(-3)"
+          // transform="translate(14048.417 18533.574) rotate(-3)"
           fill="none"
           stroke="#d2dfe0"
           strokeWidth="2"
@@ -121,11 +117,11 @@ const HeroBG = () => {
           className="path-3"
           data-name="Path 19594"
           d="M-454.86,215.706c53.572-37.681,195.344-184.689,281.621-177.425C-1.1,37.224,94.045,352.036,266.184,384.1S524.391,261.656,696.531,249.323s265.44,246.886,425.042,204.682,281.212-238.269,458.451-243.354,293.9,223.373,401.64,248.316,177.261-7.68,287.711-100.489"
-          transform="translate(14048.417 18533.574) rotate(-3)"
+          // transform="translate(14048.417 18533.574) rotate(-3)"
           fill="none"
           stroke="#d2dfe0"
           strokeWidth="2"
-        />
+        /> */}
 
         {/* * forth line animaiton path */}
         <path
@@ -154,9 +150,3 @@ const HeroBG = () => {
 };
 
 export default HeroBG;
-
-{
-  /* 
-        
- */
-}
