@@ -20,10 +20,7 @@ const SlideItem = ({ general, index, content, ...props }) => {
             slider={true}
             images={content.general.workPageImages}
             imageCount={content.general.workPageImageCount}
-            width={content.general.width}
-            height={content.general.height}
-            width_2={content.general.width_2}
-            height_2={content.general.height_2}
+        
           />
         </div>
       </div>

@@ -27,10 +27,7 @@ const ProjectWork = ({ general, index, ...props }) => {
             slug={general.slug}
             images={general.workPageImages}
             imageCount={general.workPageImageCount}
-            width={general.width}
-            height={general.height}
-            width_2={general.width_2}
-            height_2={general.height_2}
+        
           />
         </div>
       </div>

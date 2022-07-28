@@ -13,7 +13,7 @@ import { useIsomorphicLayoutEffect } from "utils/hooks";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const ImagesProject = ({ images, imageCount, slug , width , height ,width_2 , height_2 ,slider}) => {
+const ImagesProject = ({ images, imageCount, slug    ,slider}) => {
 
   const [visible, setVisible] = useState(false);
 
@@ -83,8 +83,8 @@ const ImagesProject = ({ images, imageCount, slug , width , height ,width_2 , he
           >
             <Image
               src={images[0].imageUrl}
-              width= {width}
-              height= {height}
+              width= {images[0].width}
+              height= {images[0].height}
               alt="image"
               className={clsx("rounded-lg shadow-lg", `single-image-${slug} `)}
               placeholder="blur"
@@ -111,8 +111,8 @@ const ImagesProject = ({ images, imageCount, slug , width , height ,width_2 , he
           >
             <Image
               src={images[0].imageUrl}
-              width={width}
-              height={height}
+              width={images[0].width}
+              height={images[0].height}
               alt="image"
               className="rounded-lg"
               placeholder="blur"
@@ -133,8 +133,8 @@ const ImagesProject = ({ images, imageCount, slug , width , height ,width_2 , he
           >
             <Image
               src={images[1].imageUrl}
-              width={width_2}
-              height={height_2}
+              width={images[1].width}
+              height={images[1].height}
               alt="image"
               className="rounded-lg"
               placeholder="blur"
