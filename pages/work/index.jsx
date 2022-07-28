@@ -8,14 +8,16 @@ const WorkPage = () => {
       <Head>
         <title>Our Work | Robor Systems</title>
       </Head>
-      {/* <main className="flex flex-none flex-col  flex-nowrap "> */}
+      {/* <main className="flex flex-col flex-none flex-nowrap "> */}
+
 
      
          <main className="h-[100vh] overflow-y-scroll snap snap-y snap-mandatory pt-[6.75rem] ">
          {workProjects.map((project, index) => (
+
           <ProjectWork key={project.general.slug} {...project} index={index} />
-        ))}   
-    </main>
+        ))}
+      </main>
     </>
   );
 };
