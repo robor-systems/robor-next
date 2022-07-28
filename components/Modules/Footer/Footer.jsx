@@ -1,29 +1,29 @@
-import {
-  FiGithub,
-  FiInstagram,
-  FiLinkedin,
-  FiMail,
-  FiTwitter,
-} from "react-icons/fi";
-import IconFooter from "./IconFooter";
 import Link from "next/link";
+import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
+
+import IconFooter from "./IconFooter";
 
 const Footer = () => {
   return (
-    <div className="w-full border flex justify-between p-8 items-center flex-col-reverse  gap-5 md:flex-row">
-      <div className=" text-lg sm:text-xl flex-1 whitespace-nowrap">
+    <div className="flex flex-col-reverse items-center justify-between w-full gap-5 p-8 border dark:border-gray-700 md:flex-row">
+      <div className="flex-1 text-lg sm:text-xl whitespace-nowrap">
         © Robor {new Date().getFullYear()}, All Rights Reserved
       </div>
-      <div className="text-xl flex  items-center gap-5">
-        <Link href="/qualityPolicy">Quality Policy</Link>
+      <div className="flex items-center gap-5 text-xl">
+        <Link
+          href="/qualityPolicy"
+          className="text-light-primary dark:text-dark-primary"
+        >
+          Quality Policy
+        </Link>
         <IconFooter link="https://github.com/robor-systems">
-          <FiGithub />
+          <FiGithub className="text-light-primary dark:text-dark-primary" />
         </IconFooter>
         <IconFooter link="https://www.linkedin.com/company/robor-systems">
-          <FiLinkedin />
+          <FiLinkedin className="text-light-primary dark:text-dark-primary" />
         </IconFooter>
         <IconFooter link="mailto:info@robor.systems">
-          <FiMail />
+          <FiMail className="text-light-primary dark:text-dark-primary" />
         </IconFooter>
         {/* <IconFooter>
           <FiTwitter />

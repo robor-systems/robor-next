@@ -40,7 +40,7 @@ const CardTeam = ({
       transition={{ duration: 0.5 }}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className="border-1 relative w-full h-96 rounded-3xl overflow-hidden sm:h-72 border "
+      className="relative w-full overflow-hidden border border-1 h-96 rounded-3xl sm:h-72 dark:border-none"
       animate={
         hover
           ? {
@@ -53,16 +53,18 @@ const CardTeam = ({
         ref={videoRef}
         poster={image}
         src={video}
-        className="w-full h-full object-cover p-3"
+        className="object-cover w-full h-full p-3"
         muted
         autoPlay
         playsInline
         style={{ pointerEvents: "none" }}
+        // * cache video for performance
+        preload="auto"
       ></video>
       {/* {hover && mounted && (
         <motion.div
           custom={mounted && "black"}
-          className="absolute left-0 top-0 w-full h-full"
+          className="absolute top-0 left-0 w-full h-full"
           variants={gradientVariants}
           initial="invisible"
           transition={{ duration: 0.4 }}
@@ -71,7 +73,7 @@ const CardTeam = ({
       )} */}
       {hover && (
         <motion.div
-          className="absolute right-0 top-0 flex flex-col gap-4 p-4 text-3xl sm:gap-3 sm:text-xl"
+          className="absolute top-0 right-0 flex flex-col gap-4 p-4 text-3xl sm:gap-3 sm:text-xl"
           variants={existanceVariants}
           initial="invisible"
           transition={{ duration: 0.5 }}
@@ -121,18 +123,18 @@ const CardTeam = ({
       )}
       <motion.div
         layout
-        className="absolute top-0 flex flex-col justify-end px-6 py-4 w-full h-full"
+        className="absolute top-0 flex flex-col justify-end w-full h-full px-6 py-4"
       >
         <motion.h3
           layout
-          className="text-black text-2xl font-semibold sm:text-xl"
+          className="text-2xl font-semibold text-black sm:text-xl"
         >
           {name}
         </motion.h3>
 
         {hover && (
           <motion.h4
-            className="text-black text-xl font-normal sm:text-lg"
+            className="text-xl font-normal text-black sm:text-lg"
             variants={existanceVariants}
             initial="invisible"
             transition={{ duration: 0.5 }}

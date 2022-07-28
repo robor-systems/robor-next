@@ -18,7 +18,7 @@
   }
 
   a {
-    @apply text-primary font-medium;
+    @apply text-light-primary font-medium dark:text-dark-primary;
   }
 
   input[type="text"],
@@ -29,18 +29,36 @@
   textarea {
     @apply resize-none;
   }
+
+  ul li:before {
+    content: "\2014";
+    @apply inline-block font-bold w-4 h-8 mr-2 dark:text-dark-primary text-light-primary;
+  }
 }
 
 @layer components {
   .navlink {
-    @apply pb-1 group-hover:text-black text-gray-500 text-base font-normal transition duration-300 ease-in-out;
+    @apply uppercase tracking-wide pb-1 group-hover:text-black dark:group-hover:text-dark-content/90 text-gray-500 dark:text-dark-content text-base font-medium transition duration-300 ease-in-out;
   }
+
   .menu-link {
-    @apply text-black hover:text-primary text-2xl font-light transition-all duration-300 cursor-pointer;
+    @apply text-black dark:text-dark-content hover:text-primary text-2xl font-light transition-all duration-300 cursor-pointer hover:text-light-primary dark:hover:text-dark-primary;
   }
 
   .icon-btn {
     @apply z-20 cursor-pointer;
+  }
+
+  .project-info-heading {
+    @apply text-sm font-semibold tracking-wide uppercase;
+  }
+
+  .project-info-content {
+    @apply text-lg font-light text-light-content dark:text-dark-content;
+  }
+
+  .outline-link {
+    @apply flex items-center justify-center md:px-6 py-2 space-x-2 font-semibold uppercase border-2 px-3 md:py-4 md:text-lg text-base rounded-xl bg-light-bgPrimary dark:bg-dark-bgPrimary text-light-primary dark:text-dark-primary border-light-primary dark:border-dark-primary;
   }
 }
 
@@ -56,8 +74,8 @@
   }
 
   .bg-hero {
-    background-image: url(https://robor-team.s3.eu-central-1.amazonaws.com/hero-bg-1.svg);
-
+    /*background-image: url(https://robor-team.s3.eu-central-1.amazonaws.com/hero-bg-1.svg);*/
+    background-image: url("/hero-bg-1.svg");
     @apply mt-12 bg-cover bg-center;
   }
   .bg-form {
@@ -88,4 +106,68 @@
   .input-valid {
     @apply border-gray-300 focus:ring-2  focus:ring-primary-light focus:border-primary-light;
   }
+
+  .techStackLogo {
+    @apply w-12 h-12 sm:w-20 sm:h-20;
+  }
+
+  /*snap-scroll*/
+  .snap {
+    scroll-snap-type: var(--scroll-snap-direction) var(--scroll-snap-constraint);
+  }
+  .snap-y {
+    --scroll-snap-direction: y;
+  }
+  .snap-mandatory {
+    --scroll-snap-constraint: mandatory;
+  }
+  .snap-start {
+    scroll-snap-align: start;
+  }
+}
+
+/* carousel slides */
+.slick-dots li.slick-active button:before {
+  display: block !important;
+  color: #006a6f !important;
+  width: 26px !important;
+  font-size: 12px !important;
+  background-color: #006a6f;
+  border-radius: 10px;
+  text-indent: -99999px;
+  margin-top: 4px;
+}
+
+.slick-dots li {
+  width: 15px !important;
+}
+li.slick-active {
+  width: 20px !important;
+}
+
+.slick-dots li button:before {
+  height: 10px !important;
+  font-size: 12px !important;
+  color: "#A0A8BB" !important;
+  display: inline-block;
+}
+.slick-prev:before,
+.slick-next:before {
+  width: 10px !important;
+  height: 10px !important;
+  font-size: 18px !important;
+}
+.slick-dots {
+  bottom: -44px !important;
+}
+.slick-dots li button:hover:before {
+  color: #a0a8bb;
+}
+
+/* added to set the slides to 100% of the height of the parent container */
+.slick-list,
+.slick-track,
+.slick-slide,
+.slick-slide > div {
+  height: 100%;
 }

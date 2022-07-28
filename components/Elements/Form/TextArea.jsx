@@ -6,7 +6,10 @@ const TextArea = ({ id, label, register, errors, placeholder, ...props }) => {
 
   return (
     <motion.div className="flex flex-col gap-2" layout>
-      <label htmlFor={id} className="text-gray-700 mx-1 text-lg">
+      <label
+        htmlFor={id}
+        className="mx-1 text-lg text-gray-700 dark:text-dark-formLabels"
+      >
         {label}
       </label>
 
@@ -15,11 +18,13 @@ const TextArea = ({ id, label, register, errors, placeholder, ...props }) => {
         id={id}
         placeholder={placeholder}
         rows="3"
-        className="input-valid"
-        // className={clsx(
-        //   Object.keys(errors[id] || {}).length ? "input-invalid" : "input-valid"
-        // )}
-        
+        className={clsx(
+          Object.keys(errors?.[id] || {}).length
+            ? "input-invalid"
+            : "input-valid",
+
+          "bg-light-bgPrimary dark:bg-dark-bgPrimary dark:border-gray-700"
+        )}
         // {...register(id)}
         {...props}
       />

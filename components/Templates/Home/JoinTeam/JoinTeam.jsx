@@ -15,7 +15,7 @@ const JoinTeam = () => {
       offset={{ bottom: 300 }}
     >
       <motion.div
-        className="text-blu flex flex-col gap-8 items-center  pb-12 pt-10 px-6 w-full bg-shade overflow-hidden"
+        className="flex flex-col items-center w-full gap-8 px-6 pt-10 pb-12 overflow-hidden text-blu bg-shade dark:bg-dark-bgSecondary"
         initial="invisible"
         animate={visible ? "visible" : "invisible"}
         variants={opacityVariants}
@@ -23,13 +23,14 @@ const JoinTeam = () => {
       >
         <SectionHeading>Join us</SectionHeading>
 
-        <div className="text-center text-xl">
+        <div className="text-xl text-center text-light-content dark:text-dark-formLabels">
           Want to be a part of our team? <br />
           Send your resumé for future opening at{" "}
           <a
             href="mailto:talent@robor.systems"
             target="_blank"
             rel="noreferrer"
+            className="text-light-primary dark:text-dark-primary"
           >
             talent@robor.systems
           </a>
