@@ -78,7 +78,7 @@ const ImagesProject = ({ images, imageCount, slug }) => {
             animate={visible ? "visible" : "invisible"}
             variants={singleImageVariant}
             transition={{ duration: 1 }}
-            className="absolute md:right-[-50px] h-full bottom-[30px]"
+            className="absolute md:right-[-50px] h-full top-[60px]"
           >
             <Image
               src={images[0].imageUrl}
@@ -100,7 +100,7 @@ const ImagesProject = ({ images, imageCount, slug }) => {
             variants={doubleImageVariant.topImage}
             transition={{ duration: 1.5 }}
             className={clsx(
-              "absolute md:left-0 right-[65px] z-10 overflow-hidden shadow-lg lg:top-[200px] md:top-[240px] sm:top-[150px] top-[20px] ml-[20px]  md:ml-0",
+              "absolute md:left-0 right-[65px] z-10 overflow-hidden shadow-lg lg:top-[300px] md:top-[240px] sm:top-[150px] top-[20px] ml-[20px]  md:ml-0",
               `double-image-${slug}`
             )}
           >
@@ -121,7 +121,7 @@ const ImagesProject = ({ images, imageCount, slug }) => {
             variants={doubleImageVariant.bottomImage}
             transition={{ duration: 1.5 }}
             className={clsx(
-              "absolute lg:left-[200px] left-[80px] z-0 shadow-lg  lg:top-[-100px]  top-[-150px]  mr-[10px] md:mr-0  ",
+              "absolute lg:left-[200px] left-[80px] z-0 shadow-lg  lg:top-[120px]  top-[-150px]  mr-[10px] md:mr-0  ",
               `double-image-${slug}`
             )}
           >

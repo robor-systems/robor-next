@@ -110,6 +110,20 @@
   .techStackLogo {
     @apply w-12 h-12 sm:w-20 sm:h-20;
   }
+
+  /*snap-scroll*/
+  .snap {
+    scroll-snap-type: var(--scroll-snap-direction) var(--scroll-snap-constraint);
+  }
+  .snap-y {
+    --scroll-snap-direction: y;
+  }
+  .snap-mandatory {
+    --scroll-snap-constraint: mandatory;
+  }
+  .snap-start {
+    scroll-snap-align: start;
+  }
 }
 
 /* carousel slides */
