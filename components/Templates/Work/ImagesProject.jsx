@@ -69,7 +69,7 @@ const ImagesProject = ({ images, imageCount, slug , width , height ,width_2 , he
     <ReactVisibilitySensor
       partialVisibility
       onChange={(isVisible) => isVisible && setVisible(isVisible)}
-      offset={{ bottom: 300 }}
+      offset={{ bottom: 100 }}
     >
       {imageCount === 1 ? (
         <div className="relative h-full md:overflow-hidden  md:bottom-0">
@@ -103,9 +103,9 @@ const ImagesProject = ({ images, imageCount, slug , width , height ,width_2 , he
             variants={doubleImageVariant.topImage}
             transition={{ duration: 1.5 }}
             className={clsx(
-              "absolute md:left-0 right-[65px] z-10 overflow-hidden shadow-lg  lg:top-[400px] md:top-[240px] sm:top-[150px] top-[20px] ml-[20px]  md:ml-0",
+              "absolute md:left-0 right-[65px] z-10 overflow-hidden shadow-lg  lg:top-[400px] md:top-[240px] sm:top-[250px] top-[20px] ml-[20px]  md:ml-0",
               `double-image-${slug}`,
-           
+              slider ? 'lg:top-[250px]': "lg:top-[400px]"
             )}
           
           >
@@ -128,7 +128,7 @@ const ImagesProject = ({ images, imageCount, slug , width , height ,width_2 , he
             className={clsx(
               "absolute lg:left-[300px] left-[80px] z-0 shadow-lg   top-[-150px]  mr-[10px] md:mr-0  ",
               `double-image-${slug}`,
-              slider ? 'lg:top-[0px]': "lg:top-[140px] "
+              slider ? 'lg:top-[0px]': "lg:top-[140px] sm:top-[100px]"
             )}
           >
             <Image
