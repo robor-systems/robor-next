@@ -13,7 +13,8 @@ import { useIsomorphicLayoutEffect } from "utils/hooks";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const ImagesProject = ({ images, imageCount, slug }) => {
+const ImagesProject = ({ images, imageCount, slug , width , height ,width_2 , height_2 ,slider}) => {
+
   const [visible, setVisible] = useState(false);
 
   // * for double images
@@ -71,23 +72,24 @@ const ImagesProject = ({ images, imageCount, slug }) => {
       offset={{ bottom: 300 }}
     >
       {imageCount === 1 ? (
-        <div className="relative h-full md:overflow-hidden bottom-[151px] md:bottom-0">
+        <div className="relative h-full md:overflow-hidden  md:bottom-0">
           {/* * Image container */}
           <motion.div
             initial="invisible"
             animate={visible ? "visible" : "invisible"}
             variants={singleImageVariant}
             transition={{ duration: 1 }}
-            className="absolute md:right-[-50px] h-full top-[60px]"
+            className="absolute md:right-[-50px] h-full sm:mt-[20px] md:top-[110px]"
           >
             <Image
               src={images[0].imageUrl}
-              width="650px"
-              height="720px"
+              width= {width}
+              height= {height}
               alt="image"
-              className={clsx("rounded-lg shadow-lg", `single-image-${slug}`)}
+              className={clsx("rounded-lg shadow-lg", `single-image-${slug} `)}
               placeholder="blur"
               blurDataURL={images[0].blurImageUrl}
+
             />
           </motion.div>
         </div>
@@ -95,19 +97,22 @@ const ImagesProject = ({ images, imageCount, slug }) => {
         <div className="relative h-full sm:overflow-hidden">
           {/* * Image one on top*/}
           <motion.div
+            
             initial="invisible"
             animate={visible ? "visible" : "invisible"}
             variants={doubleImageVariant.topImage}
             transition={{ duration: 1.5 }}
             className={clsx(
-              "absolute md:left-0 right-[65px] z-10 overflow-hidden shadow-lg lg:top-[300px] md:top-[240px] sm:top-[150px] top-[20px] ml-[20px]  md:ml-0",
-              `double-image-${slug}`
+              "absolute md:left-0 right-[65px] z-10 overflow-hidden shadow-lg  lg:top-[400px] md:top-[240px] sm:top-[150px] top-[20px] ml-[20px]  md:ml-0",
+              `double-image-${slug}`,
+           
             )}
+          
           >
             <Image
               src={images[0].imageUrl}
-              width="520px"
-              height="1100px"
+              width={width}
+              height={height}
               alt="image"
               className="rounded-lg"
               placeholder="blur"
@@ -121,14 +126,15 @@ const ImagesProject = ({ images, imageCount, slug }) => {
             variants={doubleImageVariant.bottomImage}
             transition={{ duration: 1.5 }}
             className={clsx(
-              "absolute lg:left-[200px] left-[80px] z-0 shadow-lg  lg:top-[120px]  top-[-150px]  mr-[10px] md:mr-0  ",
-              `double-image-${slug}`
+              "absolute lg:left-[300px] left-[80px] z-0 shadow-lg   top-[-150px]  mr-[10px] md:mr-0  ",
+              `double-image-${slug}`,
+              slider ? 'lg:top-[0px]': "lg:top-[140px] "
             )}
           >
             <Image
               src={images[1].imageUrl}
-              width="520px"
-              height="1100px"
+              width={width_2}
+              height={height_2}
               alt="image"
               className="rounded-lg"
               placeholder="blur"

@@ -11,7 +11,7 @@ const WorkPage = () => {
       {/* <main className="flex flex-none flex-col  flex-nowrap "> */}
 
      
-         <main class="h-[85vh] overflow-y-scroll snap snap-y snap-mandatory pt-[6.75rem]">
+         <main className="h-[100vh] overflow-y-scroll snap snap-y snap-mandatory pt-[6.75rem] ">
          {workProjects.map((project, index) => (
           <ProjectWork key={project.general.slug} {...project} index={index} />
         ))}   

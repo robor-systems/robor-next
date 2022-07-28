@@ -8,6 +8,10 @@ const workProjects = [
         "A custodial NFT marketplace for a European client making NFTs accessible and allow any and everyone to purchase NFTs.",
       // * the images will appear on the work page
       workPageImageCount: 2,
+      width:"520px",
+      height:"1100px",
+      width_2:"1920px",
+      height_2:"4477px",
       workPageImages: [
         {
           imageUrl:
@@ -78,6 +82,8 @@ const workProjects = [
         "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZklEQVQImWOIYWCIZWCIYGBY5hL79///U+s27Vuz/sru/U1xaStWrmSIZ2CoYJCJY2AoYZBaOWXmxPrmpuSsZ48eH92525dBDKQ1noEhjoEhlIGht6B0xdz57Wm5HVZ+4QysgQwMAN3iIt/UnT4AAAAAAElFTkSuQmCC",
       // * the images will appear on the work page
       workPageImageCount: 1,
+      width:'1414px',
+      height:'816px',
       workPageImages: [
         {
           imageUrl:
@@ -165,6 +171,9 @@ const workProjects = [
         "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZklEQVQImWOIYWCIZWCIYGBY5hL79///U+s27Vuz/sru/U1xaStWrmSIZ2CoYJCJY2AoYZBaOWXmxPrmpuSsZ48eH92525dBDKQ1noEhjoEhlIGht6B0xdz57Wm5HVZ+4QysgQwMAN3iIt/UnT4AAAAAAElFTkSuQmCC",
       // * the images will appear on the work page
       workPageImageCount: 1,
+      width:'1420px',
+      height:'2027px',
+      
       workPageImages: [
         {
           imageUrl:
@@ -221,6 +230,10 @@ const workProjects = [
         "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZklEQVQImWOIYWCIZWCIYGBY5hL79///U+s27Vuz/sru/U1xaStWrmSIZ2CoYJCJY2AoYZBaOWXmxPrmpuSsZ48eH92525dBDKQ1noEhjoEhlIGht6B0xdz57Wm5HVZ+4QysgQwMAN3iIt/UnT4AAAAAAElFTkSuQmCC",
       // * the images will appear on the work page
       workPageImageCount: 2,
+      width:'665px',
+      height:'746px',
+      width_2:'374',
+      height_2:'1838',
       workPageImages: [
         {
           imageUrl:
@@ -283,12 +296,20 @@ const workProjects = [
         "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZklEQVQImWOIYWCIZWCIYGBY5hL79///U+s27Vuz/sru/U1xaStWrmSIZ2CoYJCJY2AoYZBaOWXmxPrmpuSsZ48eH92525dBDKQ1noEhjoEhlIGht6B0xdz57Wm5HVZ+4QysgQwMAN3iIt/UnT4AAAAAAElFTkSuQmCC",
       // * the images will appear on the work page
       workPageImageCount: 1,
+     
+         width:'1414px',
+        height:'816px',
+     
+        width:'1414px',
+        height:'816px',
+   
       workPageImages: [
         {
           imageUrl:
           "https://robor-team.s3.eu-central-1.amazonaws.com/work/premium+voices.png",
           blurImageUrl:
             "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-amm1.svg",
+          
         },
       ],
     },
@@ -339,12 +360,15 @@ const workProjects = [
         "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZklEQVQImWOIYWCIZWCIYGBY5hL79///U+s27Vuz/sru/U1xaStWrmSIZ2CoYJCJY2AoYZBaOWXmxPrmpuSsZ48eH92525dBDKQ1noEhjoEhlIGht6B0xdz57Wm5HVZ+4QysgQwMAN3iIt/UnT4AAAAAAElFTkSuQmCC",
       // * the images will appear on the work page
       workPageImageCount: 1,
+      width:'1106px',
+      height:'765px',
       workPageImages: [
         {
           imageUrl:
           "https://robor-team.s3.eu-central-1.amazonaws.com/work/kontractory.png",
           blurImageUrl:
             "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-amm1.svg",
+          
         },
       ],
     },
