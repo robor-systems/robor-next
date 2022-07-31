@@ -26,7 +26,7 @@ const RelatedProjectCaseStudy = ({ title, slug, description, ...props }) => {
       <div className="flex items-center justify-start md:justify-end md:col-span-2 col-span-full">
         <Link href={`/work/${slug}`} passHref>
           <a className="outline-link">
-            <span>View Case</span>
+            <span>View Project</span>
             <FiArrowRight />
           </a>
         </Link>
