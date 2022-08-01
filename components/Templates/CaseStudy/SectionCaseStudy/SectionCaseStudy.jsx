@@ -60,7 +60,7 @@ tl.from(el_Right,{
   })
 
   tl.from(el_img,{
-    opacity:0.5,
+    opacity:0,
 
   })
   tl.to(el_img,{
