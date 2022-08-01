@@ -29,7 +29,7 @@ const ContentProject = ({ slug, title, description, ...props }) => {
         {/* * title */}
         <h1 className="font-bold md:text-4xl mt-[60px] sm:mt-[2px]">{title}</h1>
         {/* * description */}
-        <p className="md:text-lg text-light-contentSecondary dark:text-dark-contentSecondary">
+        <p className="md:text-lg text-light-contentSecondary dark:text-dark-contentSecondary break-words lg:w-[350px]">
           {description}
         </p>
         {/* * go to project page link */}
