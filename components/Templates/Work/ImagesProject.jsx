@@ -103,9 +103,9 @@ const ImagesProject = ({ images, imageCount, slug    ,slider}) => {
             variants={doubleImageVariant.topImage}
             transition={{ duration: 1.5 }}
             className={clsx(
-              "absolute md:left-0 right-[65px] z-10 overflow-hidden shadow-lg  lg:top-[400px] md:top-[240px] sm:top-[250px] top-[20px] ml-[20px]  md:ml-0",
+              "absolute md:left-0 right-[65px] z-10 overflow-hidden shadow-lg  lg:top-[400px] md:top-[240px]  top-[20px] ml-[20px]  md:ml-0",
               `double-image-${slug}`,
-              slider ? 'lg:top-[250px] lg:right-[150px]': "lg:top-[380px]"
+              slider ? ' xl:right-[160px] lg:top-[250px] md:top-[350px] sm:top-[130px] lg:right-[94px] md:right-[75px]  sm:right-[150px]': "lg:top-[380px]"
             )}
           
           >
@@ -126,9 +126,9 @@ const ImagesProject = ({ images, imageCount, slug    ,slider}) => {
             variants={doubleImageVariant.bottomImage}
             transition={{ duration: 1.5 }}
             className={clsx(
-              "absolute lg:left-[250px] left-[80px] z-0 shadow-lg     mr-[10px] md:mr-0  ",
+              "absolute left-[80px] z-0 shadow-lg     mr-[10px] md:mr-0  ",
               `double-image-${slug}`,
-              slider ? 'lg:top-[2px] top-[-100px] lg:left-[150px]': "top-[-150px] lg:top-[90px] sm:top-[100px] overflow-hidden "
+              slider ? 'xl:top-[2px] lg:top-[12px] md:top-[200px] sm:top-[10px] top-[-100px] xl:left-[114px] lg:left-[94px] ': "top-[-150px] lg:top-[90px] lg:left-[250px] sm:top-[100px] overflow-hidden "
             )}
           >
            <div className={!slider && (" relative  lg:top-[-270px] md:top-[-80px]")}>
