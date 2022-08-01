@@ -94,7 +94,7 @@ const ImagesProject = ({ images, imageCount, slug    ,slider}) => {
           </motion.div>
         </div>
       ) : (
-        <div className="relative h-full sm:overflow-hidden">
+        <div className="relative h-full sm:overflow-hidden ">
           {/* * Image one on top*/}
           <motion.div
             
@@ -105,7 +105,7 @@ const ImagesProject = ({ images, imageCount, slug    ,slider}) => {
             className={clsx(
               "absolute md:left-0 right-[65px] z-10 overflow-hidden shadow-lg  lg:top-[400px] md:top-[240px] sm:top-[250px] top-[20px] ml-[20px]  md:ml-0",
               `double-image-${slug}`,
-              slider ? 'lg:top-[250px]': "lg:top-[400px]"
+              slider ? 'lg:top-[250px]': "lg:top-[380px]"
             )}
           
           >
@@ -128,18 +128,20 @@ const ImagesProject = ({ images, imageCount, slug    ,slider}) => {
             className={clsx(
               "absolute lg:left-[300px] left-[80px] z-0 shadow-lg   top-[-150px]  mr-[10px] md:mr-0  ",
               `double-image-${slug}`,
-              slider ? 'lg:top-[0px]': "lg:top-[140px] sm:top-[100px]"
+              slider ? 'lg:top-[-340px]': "lg:top-[90px] sm:top-[100px] overflow-hidden "
             )}
           >
+           <div className={!slider && (" relative  lg:top-[-270px] md:top-[-80px]")}>
             <Image
               src={images[1].imageUrl}
               width={images[1].width}
               height={images[1].height}
               alt="image"
-              className="rounded-lg"
+              className="rounded-lg "
               placeholder="blur"
               blurDataURL={images[1].blurImageUrl}
             />
+           </div>
           </motion.div>
         </div>
       )}
