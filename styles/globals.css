@@ -126,7 +126,7 @@
   }
 }
 
-/* carousel slides */
+/* carousel dots */
 .slick-dots li.slick-active button:before {
   display: block !important;
   color: #006a6f !important;
@@ -148,7 +148,7 @@ li.slick-active {
 .slick-dots li button:before {
   height: 10px !important;
   font-size: 12px !important;
-  color: "#A0A8BB" !important;
+  color: #A0A8BB !important;
   display: inline-block;
 }
 .slick-prev:before,
