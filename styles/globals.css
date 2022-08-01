@@ -139,10 +139,10 @@
 }
 
 .slick-dots li {
-  width: 15px !important;
+  width: 10px !important;
 }
 li.slick-active {
-  width: 20px !important;
+  width: 22px !important;
 }
 
 .slick-dots li button:before {
