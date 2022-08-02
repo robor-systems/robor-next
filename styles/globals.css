@@ -136,6 +136,7 @@
   border-radius: 10px;
   text-indent: -99999px;
   margin-top: 4px;
+  margin-left: 3px;
 }
 
 .slick-dots li {
@@ -171,3 +172,4 @@ li.slick-active {
 .slick-slide > div {
   height: 100%;
 }
+
