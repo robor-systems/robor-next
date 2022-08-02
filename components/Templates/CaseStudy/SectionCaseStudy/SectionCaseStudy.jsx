@@ -79,7 +79,7 @@ useEffect(()=>{
         index % 2 === 0
           ? "bg-light-bgPrimary dark:bg-dark-bgPrimary"
           : "bg-light-bgSecondary dark:bg-dark-bgSecondary",
-        "md:py-24 py-16 md:px-24 px-8",
+        "md:py-24 py-16 px-8 md:px-24 lg:px-44",
         "space-y-10 md:space-y-10",
     
       )}

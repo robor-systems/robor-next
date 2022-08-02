@@ -111,7 +111,7 @@ const workProjects = [
       services: "Redesign | Technological Improvements | Frontend Development",
       //   * the header image will appear on a single case study page
       headerImage:
-        "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric_header.png",
+        "https://robor-team.s3.eu-central-1.amazonaws.com/work/Cover_-_Agoric.png",
       blurHeaderImage:
         "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZklEQVQImWOIYWCIZWCIYGBY5hL79///U+s27Vuz/sru/U1xaStWrmSIZ2CoYJCJY2AoYZBaOWXmxPrmpuSsZ48eH92525dBDKQ1noEhjoEhlIGht6B0xdz57Wm5HVZ+4QysgQwMAN3iIt/UnT4AAAAAAElFTkSuQmCC",
       // * the images will appear on the work page
