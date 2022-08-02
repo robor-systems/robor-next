@@ -24,7 +24,7 @@ const OurWork = () => {
       >
         <motion.section
           id="work"
-          className="flex flex-col items-center w-full gap-16 pt-16 pb-20 overflow-hidden"
+          className="flex flex-col items-center w-full gap-16 pt-52 pb-52  overflow-hidden"
           initial="invisible"
           animate={visible ? "visible" : "invisible"}
           variants={opacityVariants}
