@@ -3,15 +3,16 @@ import ContentProject from "./ContentProject";
 import ImagesProject from "./ImagesProject";
 
 const ProjectWork = ({ general, index, ...props }) => {
+
   return (
     <section
       id={`project-${general.slug}`}
       className={clsx(
-        "h-[100vh] snap-start overflow-hidden",
+        "h-[100vh] snap-start overflow-hidden lg:pl-[5vw]",
         index % 2 === 0
           ? "bg-light-bgSecondary dark:bg-dark-bgSecondary"
           : "bg-light-bgPrimary dark:bg-dark-bgPrimary",
-        "md:px-5"
+        "md:pl-5"
       )}
     >
       {/* * now we need a grid */}
@@ -26,6 +27,7 @@ const ProjectWork = ({ general, index, ...props }) => {
             slug={general.slug}
             images={general.workPageImages}
             imageCount={general.workPageImageCount}
+        
           />
         </div>
       </div>

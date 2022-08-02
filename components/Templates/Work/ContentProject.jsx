@@ -6,9 +6,9 @@ import { FiArrowRight } from "react-icons/fi";
 import { opacityVariants } from "constants/animations/variants.constant";
 import clsx from "clsx";
 
-const ContentProject = ({ slug, title, description, ...props }) => {
+const ContentProject = ({ slug, title, description,slider ,...props }) => {
   const [visible, setVisible] = useState(false);
-
+ 
   return (
     <ReactVisibilitySensor
       partialVisibility
@@ -19,7 +19,8 @@ const ContentProject = ({ slug, title, description, ...props }) => {
         className={clsx(
           "flex flex-col sm:justify-center h-full",
           // "md:px-20 space-y-4 ml-[12px] sm:ml-0"
-          "space-y-4 p-8"
+          "space-y-4 px-[20px] pt-[35px] sm:p-8",
+          slider ? "sm:p-8":"xl:p-24"
         )}
         initial="invisible"
         animate={visible ? "visible" : "invisible"}
@@ -27,9 +28,9 @@ const ContentProject = ({ slug, title, description, ...props }) => {
         transition={{ duration: 1.5 }}
       >
         {/* * title */}
-        <h1 className="font-bold md:text-4xl">{title}</h1>
+        <h1 className="font-bold md:text-4xl mt-[60px] sm:mt-[2px]">{title}</h1>
         {/* * description */}
-        <p className="md:text-lg text-light-contentSecondary dark:text-dark-contentSecondary">
+        <p className="md:text-lg text-light-contentSecondary dark:text-dark-contentSecondary break-words lg:w-[350px]">
           {description}
         </p>
         {/* * go to project page link */}
