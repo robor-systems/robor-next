@@ -29,7 +29,7 @@ useEffect(()=>{
   const el_img = imgRef.current;
  
   tl.from(el_Left,{
-    x : -200
+    x : -100
   })
   tl.to(el_Left,{
  
@@ -46,7 +46,7 @@ useEffect(()=>{
 )
 
 tl.from(el_Right,{
-  x : 200
+  x : 100
 })
   tl.to(el_Right,{
     scrollTrigger: {
