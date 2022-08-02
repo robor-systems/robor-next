@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const HeroCaseStudy = ({ headerImage, blurHeaderImage, title }) => {
   return (
-    <div className="relative w-full h-[227px] md:h-[427px]">
+    <div className="relative w-full h-[22vh] sm:h-[45vh] md:h-[48vh] lg:h-[60vh] xl:h-[78vh]">
       <Image
         className="object-left"
         src={headerImage}
