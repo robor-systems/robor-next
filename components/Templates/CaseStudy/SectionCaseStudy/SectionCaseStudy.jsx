@@ -18,7 +18,7 @@ const SectionCaseStudy = ({
 
   ...props
 }) => {
- 
+
 const leftTextRef = useRef(null)
 const rightTextRef = useRef(null)
 const imgRef = useRef(null)
@@ -27,10 +27,9 @@ useEffect(()=>{
   const el_Left=leftTextRef.current;
   const el_Right =rightTextRef.current;
   const el_img = imgRef.current;
- 
-  tl.from(el_Left,{
-    x : -100
-  })
+
+
+  tl.from(el_Left,{ x : -50})
   tl.to(el_Left,{
  
     scrollTrigger: {
@@ -40,14 +39,12 @@ useEffect(()=>{
       scrub: 1,
       toggleActions: 'play none none reverse'
     },
-    duration: 10,
+
     x: 0,
   },
 )
 
-tl.from(el_Right,{
-  x : 100
-})
+  tl.from(el_Right,{ x : 50})
   tl.to(el_Right,{
     scrollTrigger: {
       trigger:el_Right,
@@ -59,23 +56,18 @@ tl.from(el_Right,{
     x : 0
   })
 
-  tl.from(el_img,{
-    opacity:0,
-
-  })
+  tl.from(el_img,{ opacity:0 })
   tl.to(el_img,{
     
     delay:1,
       scrollTrigger: {
         trigger:el_img,
-
         start: "top center",
-         end: "top bottom",
-         toggleActions: 'play none none reset'
+        end: "top bottom",
+        toggleActions: 'play none none reset'
       },
       opacity:1,
-     
-      duration:4,
+      duration:3,
      
   })
  
