@@ -12,7 +12,7 @@ const SlideItem = ({ general, index, content, ...props }) => {
       <div className="grid h-full grid-cols-2 md:gap-10 " >
         {/* * Left side will contain the project info */}
         <div className="col-span-full md:col-span-1">
-          <ContentProject {...content.general} />
+          <ContentProject { ...content.general} slider={true}/>
         </div>
         {/* * Right side will contain images*/}
         <div className="col-span-full md:col-span-1">

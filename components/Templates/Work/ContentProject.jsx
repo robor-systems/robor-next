@@ -6,9 +6,9 @@ import { FiArrowRight } from "react-icons/fi";
 import { opacityVariants } from "constants/animations/variants.constant";
 import clsx from "clsx";
 
-const ContentProject = ({ slug, title, description, ...props }) => {
+const ContentProject = ({ slug, title, description,slider ,...props }) => {
   const [visible, setVisible] = useState(false);
-
+ 
   return (
     <ReactVisibilitySensor
       partialVisibility
@@ -19,7 +19,8 @@ const ContentProject = ({ slug, title, description, ...props }) => {
         className={clsx(
           "flex flex-col sm:justify-center h-full",
           // "md:px-20 space-y-4 ml-[12px] sm:ml-0"
-          "space-y-4 px-[20px] pt-[35px] sm:p-8"
+          "space-y-4 px-[20px] pt-[35px] sm:p-8",
+          slider ? "sm:p-8":"xl:p-24"
         )}
         initial="invisible"
         animate={visible ? "visible" : "invisible"}
