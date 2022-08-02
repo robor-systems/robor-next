@@ -126,9 +126,9 @@ const ImagesProject = ({ images, imageCount, slug    ,slider}) => {
             variants={doubleImageVariant.bottomImage}
             transition={{ duration: 1.5 }}
             className={clsx(
-              "absolute left-[80px] z-0 shadow-lg    mr-[10px] md:mr-0  ",
+              "absolute left-[80px] z-0 shadow-lg    mr-[10px] md:mr-8  ",
               `double-image-${slug}`,
-              slider ? 'xl:top-[-112px] lg:top-[-90px] md:top-[200px] sm:top-[10px] top-[-100px] xl:left-[214px] lg:left-[94px] ': " xl:top-[150px] lg:top-[90px]  sm:top-[100px] top-[-150px] xl:left-[310px] lg:left-[140px]  overflow-hidden "
+              slider ? 'xl:top-[-85px] lg:top-[-90px] md:top-[200px] sm:top-[10px] top-[-100px] xl:left-[214px] lg:left-[94px] lg:rounded-r-lg': " xl:top-[150px] lg:top-[90px]  sm:top-[100px] top-[-150px] xl:left-[310px] lg:left-[140px]  overflow-hidden "
             )}
           >
            <div className={!slider ? (" relative xl:top-[-170px] lg:top-[-90px] md:top-[-60px]"):""}>

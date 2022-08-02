@@ -6,7 +6,7 @@ const SlideItem = ({ general, index, content, ...props }) => {
   return (
     <div
       id={`project-${content.general.slug}`}
-      className={clsx(" dark:bg-dark-bgSecondary ", "w-full h-full pl-[1rem] sm:pl-[1rem] md:pl-[4rem] lg:pl-[1rem] xl:pl-[2rem]")}
+      className={clsx(" dark:bg-dark-bgSecondary  rounded-3xl", "w-full h-full pl-[1rem] sm:pl-[1rem] md:pl-[4rem] lg:pl-[1rem] xl:pl-[2rem]")}
     >
       {/* * now we need a grid */}
       <div className="grid h-full grid-cols-2 md:gap-10 " >
