@@ -23,7 +23,7 @@ const Contact = () => {
         onChange={(isVisible) => isVisible && setVisible(isVisible)}
       >
         <motion.div
-          className="flex justify-center pt-20 bg-form "
+          className="flex justify-center pt-20 bg-form dark:bg-form-dark "
           initial="invisible"
           animate={visible ? "visible" : "invisible"}
           variants={opacityVariants}
