@@ -19,8 +19,8 @@ const ContentProject = ({ slug, title, description,slider ,...props }) => {
         className={clsx(
           "flex flex-col sm:justify-center h-full",
           // "md:px-20 space-y-4 ml-[12px] sm:ml-0"
-          "space-y-4 px-[20px] pt-[35px] sm:p-8",
-          slider ? "sm:p-8":"xl:p-24"
+          "space-y-4 pl-[20px] pt-[35px] ",
+          slider ? " pt-[80px] xl:pl-[70px] lg:pl-[30px]":"xl:p-24 sm:p-8 pt-[80px]"
         )}
         initial="invisible"
         animate={visible ? "visible" : "invisible"}
