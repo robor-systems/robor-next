@@ -149,7 +149,7 @@ li.slick-active {
 .slick-dots li button:before {
   height: 10px !important;
   font-size: 12px !important;
-  color: #A0A8BB !important;
+  color: #a0a8bb !important;
   display: inline-block;
 }
 .slick-prev:before,
@@ -172,4 +172,3 @@ li.slick-active {
 .slick-slide > div {
   height: 100%;
 }
-

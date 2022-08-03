@@ -10,11 +10,11 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import clsx from "clsx";
 import { useIsomorphicLayoutEffect } from "utils/hooks";
-import { useMediaQuery } from 'react-responsive'
+import { useMediaQuery } from "react-responsive";
 gsap.registerPlugin(ScrollTrigger);
 
-const ImagesProject = ({ images, imageCount, slug    ,slider}) => {
-  const isBigScreen = useMediaQuery({ query: '(min-width: 768px)' })
+const ImagesProject = ({ images, imageCount, slug, slider }) => {
+  const isBigScreen = useMediaQuery({ query: "(min-width: 768px)" });
   const [visible, setVisible] = useState(false);
 
   // * for double images
@@ -83,13 +83,12 @@ const ImagesProject = ({ images, imageCount, slug    ,slider}) => {
           >
             <Image
               src={images[0].imageUrl}
-              width= {images[0].width}
-              height= {images[0].height}
+              width={images[0].width}
+              height={images[0].height}
               alt="image"
               className={clsx("rounded-lg shadow-lg", `single-image-${slug} `)}
               placeholder="blur"
               blurDataURL={images[0].blurImageUrl}
-
             />
           </motion.div>
         </div>
@@ -97,7 +96,6 @@ const ImagesProject = ({ images, imageCount, slug    ,slider}) => {
         <div className="relative h-full sm:overflow-hidden ">
           {/* * Image one on top*/}
           <motion.div
-            
             initial="invisible"
             animate={visible ? "visible" : "invisible"}
             variants={doubleImageVariant.topImage}
@@ -105,9 +103,10 @@ const ImagesProject = ({ images, imageCount, slug    ,slider}) => {
             className={clsx(
               "absolute md:left-0 right-[65px] z-10 overflow-hidden shadow-lg  lg:top-[400px]   top-[20px] ml-[20px]  ",
               `double-image-${slug}`,
-              slider ? ' lg:top-[298px] md:top-[395px] sm:top-[130px] xl:right-[120px]  lg:right-[94px] md:right-[56px]  sm:right-[150px] md:ml-[-19px]': "lg:top-[380px] md:top-[440px] xl:right-[94] md:left-[-35px]"
+              slider
+                ? " lg:top-[298px] md:top-[395px] sm:top-[130px] xl:right-[120px]  lg:right-[94px] md:right-[56px]  sm:right-[150px] md:ml-[-19px]"
+                : "lg:top-[380px] md:top-[440px] xl:right-[94] md:left-[-35px]"
             )}
-          
           >
             <Image
               src={images[0].imageUrl}
@@ -128,20 +127,28 @@ const ImagesProject = ({ images, imageCount, slug    ,slider}) => {
             className={clsx(
               "absolute left-[80px] z-0 shadow-lg    mr-[10px] md:mr-8  ",
               `double-image-${slug}`,
-              slider ? 'xl:top-[-100px] lg:top-[-12px] md:top-[164px] sm:top-[10px] top-[-95px] xl:left-[121px] lg:left-[94px] lg:rounded-r-lg overflow-hidden': " xl:top-[150px] lg:top-[90px]  sm:top-[100px] top-[-150px] xl:left-[310px] lg:left-[140px]  overflow-hidden "
+              slider
+                ? "xl:top-[-100px] lg:top-[-12px] md:top-[164px] sm:top-[10px] top-[-95px] xl:left-[121px] lg:left-[94px] lg:rounded-r-lg overflow-hidden"
+                : " xl:top-[150px] lg:top-[90px]  sm:top-[100px] top-[-150px] xl:left-[310px] lg:left-[140px]  overflow-hidden "
             )}
           >
-           <div className={!slider ? (" relative xl:top-[-170px] lg:top-[-90px] md:top-[-60px]"):" relative top-[-93px] lg:top-[2px]"}>
-            <Image
-              src={images[1].imageUrl}
-              width={images[1].width}
-              height={images[1].height}
-              alt="image"
-              className="rounded-lg "
-              placeholder="blur"
-              blurDataURL={images[1].blurImageUrl}
-            />
-           </div>
+            <div
+              className={
+                !slider
+                  ? " relative xl:top-[-170px] lg:top-[-90px] md:top-[-60px]"
+                  : " relative top-[-93px] lg:top-[2px]"
+              }
+            >
+              <Image
+                src={images[1].imageUrl}
+                width={images[1].width}
+                height={images[1].height}
+                alt="image"
+                className="rounded-lg "
+                placeholder="blur"
+                blurDataURL={images[1].blurImageUrl}
+              />
+            </div>
           </motion.div>
         </div>
       )}

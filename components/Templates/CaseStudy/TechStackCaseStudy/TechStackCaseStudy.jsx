@@ -1,4 +1,4 @@
-import {  useRef , useEffect } from "react";
+import { useRef, useEffect } from "react";
 import clsx from "clsx";
 import SectionTechStack from "./SectionTechStack";
 import { gsap } from "gsap";
@@ -8,45 +8,38 @@ gsap.registerPlugin(ScrollTrigger);
 const tl = gsap.timeline();
 
 const TechStackCaseStudy = ({ description, frontend, backend, other }) => {
-  const leftTextRef = useRef(null)
-const rightTextRef = useRef(null)
-useEffect(()=>{
-  const el_Left=leftTextRef.current;
-  const el_Right =rightTextRef.current;
+  const leftTextRef = useRef(null);
+  const rightTextRef = useRef(null);
+  useEffect(() => {
+    const el_Left = leftTextRef.current;
+    const el_Right = rightTextRef.current;
 
+    tl.from(el_Left, { x: -50 });
+    tl.to(el_Left, {
+      scrollTrigger: {
+        trigger: el_Left,
+        start: "left right",
+        end: " right left",
+        scrub: 1,
+        toggleActions: "play none none reverse",
+      },
+      delay: 1,
+      x: 0,
+    });
 
-  tl.from(el_Left,{ x : -50})
-  tl.to(el_Left,{
- 
-    scrollTrigger: {
-      trigger: el_Left,
-      start: "left right",
-      end: " right left",
-      scrub: 1,
-      toggleActions: 'play none none reverse'
-    },
-    delay:1,
-    x: 0,
-  },
-)
-
-  tl.from(el_Right,{ x : 50})
-  tl.to(el_Right,{
-    scrollTrigger: {
-      trigger:el_Right,
-      start: " right left",
-      end: "left right",
-      scrub: 1,
-      toggleActions: 'play none none reverse'
-    },
-    delay:1,
-    x : 0
-  })
-
- 
- 
-
-},[])
+    tl.from(el_Right, { x: 50 });
+    tl.to(el_Right, {
+      scrollTrigger: {
+        trigger: el_Right,
+        start: " right left",
+        end: "left right",
+        scrub: 1,
+        toggleActions: "play none none reverse",
+      },
+      delay: 1,
+      x: 0,
+    });
+  }, []);
   return (
     <div
       className={clsx(
@@ -56,7 +49,10 @@ useEffect(()=>{
       )}
     >
       {/* * left content */}
-      <div  ref={leftTextRef} className="flex flex-col space-y-4 col-span-full md:col-span-1 text-light-contentSecondary dark:text-dark-contentSecondary">
+      <div
+        ref={leftTextRef}
+        className="flex flex-col space-y-4 col-span-full md:col-span-1 text-light-contentSecondary dark:text-dark-contentSecondary"
+      >
         {/* * explore more heading */}
         <h4 className="project-info-heading ">Technology Stack</h4>
         {/* * project title */}
@@ -65,7 +61,10 @@ useEffect(()=>{
         </h1>
       </div>
       {/* * right content */}
-      <div ref={rightTextRef} className="flex flex-col space-y-6 md:justify-end md:col-span-1 col-span-full">
+      <div
+        ref={rightTextRef}
+        className="flex flex-col space-y-6 md:justify-end md:col-span-1 col-span-full"
+      >
         {/* * Description */}
         <p className="font-light text-md md:text-lg">{description}</p>
         {/* * Stack Grid */}
