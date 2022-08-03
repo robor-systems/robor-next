@@ -36,8 +36,8 @@ const ContentProject = ({ slug, title, description,slider ,...props }) => {
         {/* * go to project page link */}
         <Link href={`/work/${slug}`} passHref>
           <a className="flex items-center space-x-4 uppercase text-light-primary dark:text-dark-primary">
-            <span>View Project</span>
-            <FiArrowRight className="text-xl" />
+            <span className="flex justify-between w-[140px]">View Project <FiArrowRight className="text-2xl" /></span>
+            
           </a>
         </Link>
       </motion.div>
