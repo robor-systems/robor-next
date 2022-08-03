@@ -32,7 +32,7 @@ const Header = () => {
               <NavLink href="contact">Contact</NavLink>
             </div>
             <div className="flex">
-              <DarkModeToggleButton variant="icon" />
+              <DarkModeToggleButton />
             </div>
           </div>
         </div>
