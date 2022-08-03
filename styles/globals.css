@@ -83,6 +83,9 @@
 
     @apply bg-cover bg-center;
   }
+  .bg-form-dark {
+    background-image: url(https://robor-team.s3.eu-central-1.amazonaws.com/form-bg-image.svg);
+  }
   .text-blu {
     color: rgb(35, 45, 78);
   }
@@ -148,7 +151,7 @@ li.slick-active {
 .slick-dots li button:before {
   height: 10px !important;
   font-size: 12px !important;
-  color: #A0A8BB !important;
+  color: #a0a8bb !important;
   display: inline-block;
 }
 .slick-prev:before,
