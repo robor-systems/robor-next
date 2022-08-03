@@ -39,7 +39,7 @@ useEffect(()=>{
       scrub: 1,
       toggleActions: 'play none none reverse'
     },
-
+    delay:1,
     x: 0,
   },
 )
@@ -53,6 +53,7 @@ useEffect(()=>{
       scrub: 1,
       toggleActions: 'play none none reverse'
     },
+    delay:1,
     x : 0
   })
 
