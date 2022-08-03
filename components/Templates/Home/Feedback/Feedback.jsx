@@ -15,7 +15,7 @@ const Feedback = () => {
       onChange={(isVisible) => isVisible && setVisible(isVisible)}
       offset={{ bottom: 0 }}
     >
-      <div className="w-full h-full bg-form dark:bg-dark-bgPrimary">
+      <div className="w-full h-full bg-form dark:bg-form-dark dark:bg-dark-bgPrimary">
         <Container>
           <motion.div
             initial="invisible"
