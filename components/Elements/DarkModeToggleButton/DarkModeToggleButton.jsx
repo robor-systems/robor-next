@@ -8,7 +8,7 @@ import THEME from "constants/theme/theme.constant";
 
 const iconTransformOrigin = { transformOrigin: "50% 100px" };
 
-const DarkModeToggleButton = ({ float }) => {
+const DarkModeToggleButton = ({ floatingBtn }) => {
   const { theme, setTheme } = useTheme();
 
   return (
@@ -19,7 +19,7 @@ const DarkModeToggleButton = ({ float }) => {
       className={clsx(
         "border-secondary hover:border-primary focus:border-primary focus:outline-none inline-flex items-center justify-center overflow-hidden rounded-full border-2 transition",
         "w-12 h-12  p-1",
-        float ? "fixed z-32 bottom-28 right-12 " : ""
+        floatingBtn ? "fixed z-32 bottom-28 right-12 " : ""
       )}
     >
       {/* note that the duration is longer then the one on body, controlling the bg-color */}

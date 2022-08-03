@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
       <Header />
       {children}
       <div className="flex-col">
-        {scroll > 2 ? <DarkModeToggleButton float={true} /> : ""}
+        {scroll > 2 ? <DarkModeToggleButton floatingBtn={true} /> : ""}
         <Snackbar />
       </div>
 
