@@ -13,7 +13,7 @@ import { useIsomorphicLayoutEffect } from "utils/hooks";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const ImagesProject = ({ images, imageCount, slug    ,slider}) => {
+const ImagesProject = ({ images, imageCount, slug ,slider}) => {
 
   const [visible, setVisible] = useState(false);
 
