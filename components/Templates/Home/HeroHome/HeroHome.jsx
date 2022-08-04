@@ -51,7 +51,7 @@ const HeroHome = () => {
             </h2>
             <NextLink href="/contact">
               <motion.button
-                className="mt-4 px-[24px] !important btn-primary btn-large"
+                className="mt-4 !px-[34px]  btn-primary btn-large"
                 whileHover={{
                   scale: 1.1,
                 }}
