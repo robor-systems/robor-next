@@ -147,7 +147,7 @@ const FormFeedback = () => {
           type="submit"
           disabled={process.state === PROCESS_STATE.LOADING}
         >
-          Send Message
+          SEND MESSAGE
         </motion.button>
         {(process.state === PROCESS_STATE.SUCCESS ||
           process.state === PROCESS_STATE.ERROR) && (
