@@ -154,6 +154,7 @@ li.slick-active {
   font-size: 12px !important;
   color: #a0a8bb !important;
   display: inline-block;
+  opacity: 1 !important;
 }
 .slick-prev:before,
 .slick-next:before {
@@ -163,9 +164,6 @@ li.slick-active {
 }
 .slick-dots {
   bottom: -44px !important;
-}
-.slick-dots li button:hover:before {
-  color: #a0a8bb;
 }
 
 /* added to set the slides to 100% of the height of the parent container */
