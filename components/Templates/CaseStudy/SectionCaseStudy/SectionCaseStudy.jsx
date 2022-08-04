@@ -26,7 +26,7 @@ const SectionCaseStudy = ({
     const el_Right = rightTextRef.current;
     const el_img = imgRef.current;
 
-    tl.from(el_Left, { x: -50 });
+    tl.from(el_Left, { x: -100 });
     tl.to(el_Left, {
       scrollTrigger: {
         trigger: el_Left,
@@ -39,7 +39,7 @@ const SectionCaseStudy = ({
       x: 0,
     });
 
-    tl.from(el_Right, { x: 50 });
+    tl.from(el_Right, { x: 100 });
     tl.to(el_Right, {
       scrollTrigger: {
         trigger: el_Right,
@@ -105,14 +105,7 @@ const SectionCaseStudy = ({
           className="flex items-center justify-center w-full h-[220px] md:h-[456px] m-auto"
         >
           <motion.div className="relative w-full h-full" ref={imgRef}>
-            <Image
-              src={image}
-              alt={header}
-              layout="fill"
-              objectFit="contain"
-              // placeholder="blur"
-              // blurDataURL={blurImage}
-            />
+            <Image src={image} alt={header} layout="fill" objectFit="contain" />
           </motion.div>
         </div>
       )}

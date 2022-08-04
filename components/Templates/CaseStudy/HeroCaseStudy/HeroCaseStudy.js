@@ -11,8 +11,6 @@ const HeroCaseStudy = ({ headerImage, title }) => {
           alt={title}
           layout="fill"
           objectFit="contain"
-          // blurDataURL={blurHeaderImage}
-          // placeholder="blur"
         />
       </div>
     </div>

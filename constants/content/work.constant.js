@@ -116,11 +116,11 @@ const workProjects = [
       workPageImages: [
         {
           imageUrl:
-            "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-work-page.png",
+            "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric.png",
           blurImageUrl:
             "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAmUlEQVQImVWOwQqCQBRFBb+vTzCoj2uftAmiSIgZDGWiAYfAasoWjq8nKUkwwqswkO7yHg4cR2ltSjQl5gDyu30ORfcorZ0MDBHthBh6HhFZa8/q8GoaIsrA/LA/9R3XnYW8qutoGTyr6g9vo2gwHk3Wq5sxfL54IPa4te0dMU6Sq76kx1McbHq7S8uhkLEIGQ8Zk1J2dZ+0NybtmrU9VPshAAAAAElFTkSuQmCC",
-          width: "825px",
-          height: "478px",
+          width: "1146px",
+          height: "816px",
         },
       ],
     },
