@@ -395,7 +395,7 @@ const workProjects = [
           blurImageUrl:
             "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-amm1.svg",
           width: "1414px",
-          height: "816px",
+          height: "1016px",
         },
       ],
     },

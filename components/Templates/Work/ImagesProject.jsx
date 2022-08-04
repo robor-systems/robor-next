@@ -80,7 +80,7 @@ const ImagesProject = ({ images, imageCount, slug, slider }) => {
             animate={visible ? "visible" : "invisible"}
             variants={singleImageVariant}
             transition={{ duration: 1 }}
-            className="absolute md:right-[-50px] h-full sm:mt-[20px] md:top-[210px]"
+            className="absolute md:right-[-50px] h-full sm:mt-[20px] md:mt-[0] md:top-[210px] lg:top-[120px] xl:top-[95px]"
           >
             <Image
               src={images[0].imageUrl}
@@ -105,7 +105,7 @@ const ImagesProject = ({ images, imageCount, slug, slider }) => {
               "absolute md:left-0 right-[65px] z-10 overflow-hidden shadow-lg  lg:top-[400px]   top-[20px] ml-[20px]  ",
               `double-image-${slug}`,
               slider
-                ? " lg:top-[298px] md:top-[395px] sm:top-[130px] xl:right-[120px]  lg:right-[94px] md:right-[56px]  sm:right-[150px] md:ml-[-19px]"
+                ? " lg:top-[245px] md:top-[395px] sm:top-[130px] xl:right-[120px]  lg:right-[94px] md:right-[56px]  sm:right-[150px] md:ml-[-19px]"
                 : "lg:top-[380px] md:top-[440px] xl:right-[94] md:left-[-35px]"
             )}
           >
