@@ -21,7 +21,7 @@ const ContentProject = ({ slug, title, description, slider, ...props }) => {
           // "md:px-20 space-y-4 ml-[12px] sm:ml-0"
           "space-y-4 pl-[20px]  ",
           slider
-            ? "lg:pt-[0px] xl:pl-[70px] lg:pl-[30px] "
+            ? " xl:pl-[70px] lg:pl-[30px] "
             : "xl:p-24 sm:p-8 pt-[80px] lg:pt-[0px]"
         )}
         initial="invisible"
