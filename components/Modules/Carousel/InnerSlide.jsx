@@ -14,7 +14,7 @@ const InnerSlide = ({ children }) => {
     arrows: false,
     autoplay: true,
     speed: 500,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 3000,
     cssEase: "linear",
     appendDots: (dots) => <div>{dots}</div>,
     className: "w-full h-full",
