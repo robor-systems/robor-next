@@ -8,25 +8,24 @@ const workProjects = [
         "A custodial NFT marketplace for a European client making NFTs accessible and allow any and everyone to purchase NFTs.",
       // * the images will appear on the work page
       workPageImageCount: 2,
-     
+
       workPageImages: [
         {
           imageUrl:
             "https://robor-team.s3.eu-central-1.amazonaws.com/work/tokapi1.png",
           blurImageUrl:
             "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAKCAIAAAAcmWhZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAjUlEQVQImQGCAH3/ABMAJRgAKA0WPAUGIgBIE2xOKWg+SGAbLz8A5Ljz1LneyK/IrJbLAJyWuoBof4xyhHdbfgDK2+S9wLzMyb3R0cgA+vT78e725+bl+Pb7AMav2KOPr4mAiMujvQD+///29vT29fL7/P0A7e7z6+vr7Ozr8vH5AB8WPSojRDQqTDocXHL0SYDj47v6AAAAAElFTkSuQmCC",
-            width:"520px",
-            height:"1100px",
-           
-          },
+          width: "520px",
+          height: "1100px",
+        },
         {
           imageUrl:
             "https://robor-team.s3.eu-central-1.amazonaws.com/work/tokapi2.png",
           blurImageUrl:
             "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAKCAIAAAAcmWhZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAjUlEQVQImQGCAH3/AA8APRkQTgoNRgAEPABaEYdsXJldY4pBUXoA+/D++/b79vX1///8AMi61b2yxc7Ky87CywDQsd7Gr8mym7zHttkAlImyiHGFeVx4r561AMDO1Lu7usTBueXm3wDm1uje1+Lh3eLk3+QAyLbVuq/Cy8LL0bvUACwoRjo0T0A1WEInYvxYSru4IFhbAAAAAElFTkSuQmCC",
-            width:"1920px",
-            height:"4477px",
-          },
+          width: "1920px",
+          height: "4477px",
+        },
       ],
       // * case study page info
       clientSize: "Startup",
@@ -35,8 +34,6 @@ const workProjects = [
       //   * the header image will appear on a single case study page
       headerImage:
         "https://robor-team.s3.eu-central-1.amazonaws.com/work/tokapi-header-cover.png",
-      blurHeaderImage:
-        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZklEQVQImWOIYWCIZWCIYGBY5hL79///U+s27Vuz/sru/U1xaStWrmSIZ2CoYJCJY2AoYZBaOWXmxPrmpuSsZ48eH92525dBDKQ1noEhjoEhlIGht6B0xdz57Wm5HVZ+4QysgQwMAN3iIt/UnT4AAAAAAElFTkSuQmCC",
     },
     sections: [
       {
@@ -112,20 +109,19 @@ const workProjects = [
       //   * the header image will appear on a single case study page
       headerImage:
         "https://robor-team.s3.eu-central-1.amazonaws.com/work/Cover_-_Agoric.png",
-      blurHeaderImage:
-        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZklEQVQImWOIYWCIZWCIYGBY5hL79///U+s27Vuz/sru/U1xaStWrmSIZ2CoYJCJY2AoYZBaOWXmxPrmpuSsZ48eH92525dBDKQ1noEhjoEhlIGht6B0xdz57Wm5HVZ+4QysgQwMAN3iIt/UnT4AAAAAAElFTkSuQmCC",
+
       // * the images will appear on the work page
       workPageImageCount: 1,
-    
+
       workPageImages: [
         {
           imageUrl:
-            "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-work-page.png",
+            "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric.png",
           blurImageUrl:
             "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAmUlEQVQImVWOwQqCQBRFBb+vTzCoj2uftAmiSIgZDGWiAYfAasoWjq8nKUkwwqswkO7yHg4cR2ltSjQl5gDyu30ORfcorZ0MDBHthBh6HhFZa8/q8GoaIsrA/LA/9R3XnYW8qutoGTyr6g9vo2gwHk3Wq5sxfL54IPa4te0dMU6Sq76kx1McbHq7S8uhkLEIGQ8Zk1J2dZ+0NybtmrU9VPshAAAAAElFTkSuQmCC",
-            width:'825px',
-            height:'478px',
-          },
+          width: "1146px",
+          height: "816px",
+        },
       ],
     },
     sections: [
@@ -202,21 +198,19 @@ const workProjects = [
       //   * the header image will appear on a single case study page
       headerImage:
         "https://robor-team.s3.eu-central-1.amazonaws.com/work/Agoric_BCS-cover-header.png",
-      blurHeaderImage:
-        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZklEQVQImWOIYWCIZWCIYGBY5hL79///U+s27Vuz/sru/U1xaStWrmSIZ2CoYJCJY2AoYZBaOWXmxPrmpuSsZ48eH92525dBDKQ1noEhjoEhlIGht6B0xdz57Wm5HVZ+4QysgQwMAN3iIt/UnT4AAAAAAElFTkSuQmCC",
+
       // * the images will appear on the work page
       workPageImageCount: 1,
-     
-      
+
       workPageImages: [
         {
           imageUrl:
-          "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric+-+card+store.png",
+            "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric+-+card+store.png",
           blurImageUrl:
             "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-amm1.svg",
-            width:'1420px',
-            height:'2027px',
-          },
+          width: "1420px",
+          height: "2027px",
+        },
       ],
     },
     sections: [
@@ -293,28 +287,26 @@ const workProjects = [
       //   * the header image will appear on a single case study page
       headerImage:
         "https://robor-team.s3.eu-central-1.amazonaws.com/work/Genesis_Plots-header-cover.png",
-      blurHeaderImage:
-        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZklEQVQImWOIYWCIZWCIYGBY5hL79///U+s27Vuz/sru/U1xaStWrmSIZ2CoYJCJY2AoYZBaOWXmxPrmpuSsZ48eH92525dBDKQ1noEhjoEhlIGht6B0xdz57Wm5HVZ+4QysgQwMAN3iIt/UnT4AAAAAAElFTkSuQmCC",
+
       // * the images will appear on the work page
       workPageImageCount: 2,
-  
-    
+
       workPageImages: [
         {
           imageUrl:
-          "https://robor-team.s3.eu-central-1.amazonaws.com/work/Genesis+Plot.png",
+            "https://robor-team.s3.eu-central-1.amazonaws.com/work/Genesis+Plot.png",
           blurImageUrl:
             "https://robor-team.s3.eu-central-1.amazonaws.com/work/tokapi1.png",
-            width:'665px',
-            height:'746px',
+          width: "665px",
+          height: "946px",
         },
         {
           imageUrl:
-          "https://robor-team.s3.eu-central-1.amazonaws.com/work/Genesis-Plot-2.png",
+            "https://robor-team.s3.eu-central-1.amazonaws.com/work/Genesis-Plot-2.png",
           blurImageUrl:
             "https://robor-team.s3.eu-central-1.amazonaws.com/work/tokapi2.png",
-            width:'374',
-            height:'1838',
+          width: "374",
+          height: "1838",
         },
       ],
     },
@@ -392,23 +384,18 @@ const workProjects = [
       //   * the header image will appear on a single case study page
       headerImage:
         "https://robor-team.s3.eu-central-1.amazonaws.com/work/Premium_Voices-header-cover.png",
-      blurHeaderImage:
-        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZklEQVQImWOIYWCIZWCIYGBY5hL79///U+s27Vuz/sru/U1xaStWrmSIZ2CoYJCJY2AoYZBaOWXmxPrmpuSsZ48eH92525dBDKQ1noEhjoEhlIGht6B0xdz57Wm5HVZ+4QysgQwMAN3iIt/UnT4AAAAAAElFTkSuQmCC",
+
       // * the images will appear on the work page
       workPageImageCount: 1,
-     
-        
-     
-   
+
       workPageImages: [
         {
           imageUrl:
-          "https://robor-team.s3.eu-central-1.amazonaws.com/work/premium+voices.png",
+            "https://robor-team.s3.eu-central-1.amazonaws.com/work/premium+voices.png",
           blurImageUrl:
             "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-amm1.svg",
-            width:'1414px',
-            height:'816px',
-         
+          width: "1414px",
+          height: "1016px",
         },
       ],
     },
@@ -486,19 +473,18 @@ const workProjects = [
       //   * the header image will appear on a single case study page
       headerImage:
         "https://robor-team.s3.eu-central-1.amazonaws.com/work/kontractory-header-cover.png",
-      blurHeaderImage:
-        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAIAAAAlXwkiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZklEQVQImWOIYWCIZWCIYGBY5hL79///U+s27Vuz/sru/U1xaStWrmSIZ2CoYJCJY2AoYZBaOWXmxPrmpuSsZ48eH92525dBDKQ1noEhjoEhlIGht6B0xdz57Wm5HVZ+4QysgQwMAN3iIt/UnT4AAAAAAElFTkSuQmCC",
+
       // * the images will appear on the work page
       workPageImageCount: 1,
- 
+
       workPageImages: [
         {
           imageUrl:
-          "https://robor-team.s3.eu-central-1.amazonaws.com/work/kontractory.png",
+            "https://robor-team.s3.eu-central-1.amazonaws.com/work/kontractory.png",
           blurImageUrl:
             "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-amm1.svg",
-            width:'1106px',
-            height:'765px',
+          width: "1106px",
+          height: "765px",
         },
       ],
     },

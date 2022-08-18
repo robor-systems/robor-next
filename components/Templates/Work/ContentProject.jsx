@@ -6,9 +6,9 @@ import { FiArrowRight } from "react-icons/fi";
 import { opacityVariants } from "constants/animations/variants.constant";
 import clsx from "clsx";
 
-const ContentProject = ({ slug, title, description,slider ,...props }) => {
+const ContentProject = ({ slug, title, description, slider, ...props }) => {
   const [visible, setVisible] = useState(false);
- 
+
   return (
     <ReactVisibilitySensor
       partialVisibility
@@ -19,8 +19,10 @@ const ContentProject = ({ slug, title, description,slider ,...props }) => {
         className={clsx(
           "flex flex-col sm:justify-center h-full",
           // "md:px-20 space-y-4 ml-[12px] sm:ml-0"
-          "space-y-4 pl-[20px] pt-[35px] ",
-          slider ? " pt-[80px] xl:pl-[70px] lg:pl-[30px]":"xl:p-24 sm:p-8 pt-[80px]"
+          "space-y-4 pl-[20px]  ",
+          slider
+            ? " xl:pl-[70px] lg:pl-[30px] "
+            : "xl:p-24 sm:p-8 pt-[80px] lg:pt-[0px]"
         )}
         initial="invisible"
         animate={visible ? "visible" : "invisible"}
@@ -36,8 +38,9 @@ const ContentProject = ({ slug, title, description,slider ,...props }) => {
         {/* * go to project page link */}
         <Link href={`/work/${slug}`} passHref>
           <a className="flex items-center space-x-4 uppercase text-light-primary dark:text-dark-primary">
-            <span className="flex justify-between w-[140px]">View Project <FiArrowRight className="text-2xl" /></span>
-            
+            <span className="flex justify-between w-[140px]">
+              View Project <FiArrowRight className="text-2xl" />
+            </span>
           </a>
         </Link>
       </motion.div>

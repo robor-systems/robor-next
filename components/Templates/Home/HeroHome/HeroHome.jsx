@@ -51,13 +51,13 @@ const HeroHome = () => {
             </h2>
             <NextLink href="/contact">
               <motion.button
-                className="mt-4 btn-primary btn-large"
+                className="mt-4 !px-[34px]  btn-primary btn-large"
                 whileHover={{
                   scale: 1.1,
                 }}
                 whileTap={{ scale: 0.9 }}
               >
-                Let&apos;s Talk!
+                BOOK FREE CONSULTATION
               </motion.button>
             </NextLink>
 

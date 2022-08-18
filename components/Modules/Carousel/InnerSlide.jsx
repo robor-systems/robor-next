@@ -14,13 +14,13 @@ const InnerSlide = ({ children }) => {
     arrows: false,
     autoplay: true,
     speed: 500,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     cssEase: "linear",
     appendDots: (dots) => <div>{dots}</div>,
     className: "w-full h-full",
   };
   return (
-    <div  key={v4()} className="w-full h-full">
+    <div key={v4()} className="w-full h-full">
       <Slider {...settings}>
         {children.map((item, index) => {
           return item;
