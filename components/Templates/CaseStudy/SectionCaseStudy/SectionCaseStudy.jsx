@@ -6,7 +6,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
-const tl = gsap.timeline();
+const timeline = gsap.timeline();
 const SectionCaseStudy = ({
   header,
   subHeader,
@@ -26,8 +26,8 @@ const SectionCaseStudy = ({
     const el_Right = rightTextRef.current;
     const el_img = imgRef.current;
 
-    tl.from(el_Left, { x: -100 });
-    tl.to(el_Left, {
+    timeline.from(el_Left, { x: -100 });
+    timeline.to(el_Left, {
       scrollTrigger: {
         trigger: el_Left,
         start: "left right",
@@ -39,8 +39,8 @@ const SectionCaseStudy = ({
       x: 0,
     });
 
-    tl.from(el_Right, { x: 100 });
-    tl.to(el_Right, {
+    timeline.from(el_Right, { x: 100 });
+    timeline.to(el_Right, {
       scrollTrigger: {
         trigger: el_Right,
         start: " right left",
@@ -52,17 +52,18 @@ const SectionCaseStudy = ({
       x: 0,
     });
 
-    tl.from(el_img, { opacity: 0 });
-    tl.to(el_img, {
-      delay: 1,
+    timeline.from(el_img, { opacity: 0 });
+    timeline.to(el_img, {
+      delay: 0,
       scrollTrigger: {
         trigger: el_img,
         start: "top center",
-        end: "top bottom",
+        end: "top center",
         toggleActions: "play none none reset",
       },
       opacity: 1,
-      duration: 3,
+      duration: 1,
+      ease: "power4.easeInOut",
     });
   }, []);
   return (
