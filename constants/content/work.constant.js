@@ -298,7 +298,7 @@ const workProjects = [
           blurImageUrl:
             "https://robor-team.s3.eu-central-1.amazonaws.com/work/tokapi1.png",
           width: "665px",
-          height: "946px",
+          height: "746px",
         },
         {
           imageUrl:
@@ -395,7 +395,7 @@ const workProjects = [
           blurImageUrl:
             "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-amm1.svg",
           width: "1414px",
-          height: "1016px",
+          height: "816px",
         },
       ],
     },

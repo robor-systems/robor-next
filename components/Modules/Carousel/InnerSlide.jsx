@@ -12,7 +12,7 @@ const InnerSlide = ({ children }) => {
     slidesToScroll: 1,
     initialSlide: 0,
     arrows: false,
-    autoplay: true,
+    // autoplay: true,
     speed: 500,
     autoplaySpeed: 3000,
     cssEase: "linear",
