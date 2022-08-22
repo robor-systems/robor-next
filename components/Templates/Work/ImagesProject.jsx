@@ -106,7 +106,7 @@ const ImagesProject = ({ images, imageCount, slug, slider }) => {
               `double-image-${slug}`,
               slider
                 ? "xl:top-[190px] lg:top-[245px] md:top-[395px] sm:top-[130px] lg:right-[90px] md:right-[56px]  sm:right-[150px] md:ml-[-19px]"
-                : "lg:top-[380px] md:top-[440px] xl:right-[94] md:left-[-35px]"
+                : "lg:top-[350px] md:top-[440px] xl:right-[94] md:left-[-35px]"
             )}
           >
             <Image

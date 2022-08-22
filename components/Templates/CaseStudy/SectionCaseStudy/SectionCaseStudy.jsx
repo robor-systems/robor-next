@@ -4,9 +4,10 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-
+import { useMediaQuery } from "react-responsive";
 gsap.registerPlugin(ScrollTrigger);
 const timeline = gsap.timeline();
+
 const SectionCaseStudy = ({
   header,
   subHeader,
@@ -17,6 +18,8 @@ const SectionCaseStudy = ({
 
   ...props
 }) => {
+  const isBigScreen = useMediaQuery({ query: "(min-width: 768px)" });
+
   const leftTextRef = useRef(null);
   const rightTextRef = useRef(null);
   const imgRef = useRef(null);
@@ -25,47 +28,47 @@ const SectionCaseStudy = ({
     const el_Left = leftTextRef.current;
     const el_Right = rightTextRef.current;
     const el_img = imgRef.current;
-
-    timeline.from(el_Left, { x: -100 });
+    let rightVal = isBigScreen ? 130 : 10;
+    timeline.from(el_Left, { x: -200 });
     timeline.to(el_Left, {
-      scrollTrigger: {
-        trigger: el_Left,
-        start: "left right",
-        end: " right left",
-        scrub: 1,
-        toggleActions: "play none none reverse",
-      },
+      // scrollTrigger: {
+      //   trigger: el_Left,
+      //   // start: "left right",
+      //   // end: " right left",
+      //   // scrub: 1,
+      //   // toggleActions: "play none none reverse",
+      // },
       delay: 1,
       x: 0,
     });
 
-    timeline.from(el_Right, { x: 100 });
+    timeline.from(el_Right, { x: rightVal });
     timeline.to(el_Right, {
-      scrollTrigger: {
-        trigger: el_Right,
-        start: " right left",
-        end: "left right",
-        scrub: 1,
-        toggleActions: "play none none reverse",
-      },
+      // scrollTrigger: {
+      //   trigger: el_Right,
+      //   // start: " right left",
+      //   // end: "left right",
+      //   // scrub: 1,
+      //   // toggleActions: "play none none reverse",
+      // },
       delay: 1,
       x: 0,
     });
 
     timeline.from(el_img, { opacity: 0 });
     timeline.to(el_img, {
-      delay: 0,
-      scrollTrigger: {
-        trigger: el_img,
-        start: "top center",
-        end: "top center",
-        toggleActions: "play none none reset",
-      },
+      delay: 0.5,
+      // scrollTrigger: {
+      //   trigger: el_img,
+      //   // start: "top center",
+      //   // end: "top center",
+      //   // toggleActions: "play none none reset",
+      // },
       opacity: 1,
-      duration: 1,
+      // duration: 1,
       ease: "power4.easeInOut",
     });
-  }, []);
+  }, [isBigScreen]);
   return (
     <div
       className={clsx(

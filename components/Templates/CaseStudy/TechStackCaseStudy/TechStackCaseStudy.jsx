@@ -3,17 +3,19 @@ import clsx from "clsx";
 import SectionTechStack from "./SectionTechStack";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-
+import { useMediaQuery } from "react-responsive";
 gsap.registerPlugin(ScrollTrigger);
 const tl = gsap.timeline();
 
 const TechStackCaseStudy = ({ description, frontend, backend, other }) => {
+  const isBigScreen = useMediaQuery({ query: "(min-width: 768px)" });
+
   const leftTextRef = useRef(null);
   const rightTextRef = useRef(null);
   useEffect(() => {
     const el_Left = leftTextRef.current;
     const el_Right = rightTextRef.current;
-
+    let rightVal = isBigScreen ? 50 : 20;
     tl.from(el_Left, { x: -50 });
     tl.to(el_Left, {
       scrollTrigger: {
@@ -27,7 +29,7 @@ const TechStackCaseStudy = ({ description, frontend, backend, other }) => {
       x: 0,
     });
 
-    tl.from(el_Right, { x: 50 });
+    tl.from(el_Right, { x: rightVal });
     tl.to(el_Right, {
       scrollTrigger: {
         trigger: el_Right,
@@ -39,7 +41,7 @@ const TechStackCaseStudy = ({ description, frontend, backend, other }) => {
       delay: 1,
       x: 0,
     });
-  }, []);
+  }, [isBigScreen]);
   return (
     <div
       className={clsx(
