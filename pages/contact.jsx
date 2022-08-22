@@ -36,7 +36,7 @@ const Contact = () => {
                   Book Free Consultation
                 </h1>
 
-                <h2 className="text-xl font-light text-center sm:text-2xl lg:text-2xl">
+                <h2 className="  text-center text-lg">
                   Whether you want to talk about ideas, get a quote for a
                   work-item or just have a cup of joe, we&apos;re here to help.
                 </h2>

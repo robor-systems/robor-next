@@ -5,7 +5,7 @@ const HeaderFeedback = () => {
         We would love to hear from you.
       </h1>
 
-      <p className="text-lg font-light leading-7 sm:text-2xl">
+      <p className="text-lg  leading-7 sm:text-2xl">
         Whether you want to talk about ideas, get a quote for a work-item or
         just have a cup of joe, we&apos;re here to help.
       </p>
