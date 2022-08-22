@@ -80,7 +80,7 @@ const ImagesProject = ({ images, imageCount, slug, slider }) => {
             animate={visible ? "visible" : "invisible"}
             variants={singleImageVariant}
             transition={{ duration: 1 }}
-            className="absolute md:right-[-50px] h-full  sm:mt-[20px] md:mt-[0] md:top-[210px] lg:top-[120px] xl:top-[95px]"
+            className="absolute md:right-[-50px] h-full mt-[-90px]  sm:mt-[20px] md:mt-[0] md:top-[210px] lg:top-[120px] xl:top-[95px]"
           >
             <Image
               src={images[0].imageUrl}
