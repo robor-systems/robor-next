@@ -14,6 +14,7 @@ import { useMediaQuery } from "react-responsive";
 gsap.registerPlugin(ScrollTrigger);
 
 const ImagesProject = ({ images, imageCount, slug, slider }) => {
+  let genesis = images[0].genesis;
   const isBigScreen = useMediaQuery({ query: "(min-width: 768px)" });
 
   const [visible, setVisible] = useState(false);
@@ -102,10 +103,11 @@ const ImagesProject = ({ images, imageCount, slug, slider }) => {
             variants={doubleImageVariant.topImage}
             transition={{ duration: 1.5 }}
             className={clsx(
-              "absolute md:left-0 right-[65px] z-10 overflow-hidden shadow-lg  lg:top-[400px]   top-[20px] ml-[20px]  ",
+              "absolute md:left-0 right-[65px] z-10 overflow-hidden shadow-lg  lg:top-[400px]   top-[20px]  ",
               `double-image-${slug}`,
+              genesis ? "lg:right-[10px]" : "lg:right-[120px]",
               slider
-                ? "xl:top-[190px] lg:top-[245px] md:top-[395px] sm:top-[130px] lg:right-[90px] md:right-[56px]  sm:right-[150px] md:ml-[-19px]"
+                ? "xl:top-[160px] lg:top-[245px] md:top-[395px] sm:top-[130px]  md:right-[56px]  sm:right-[150px] "
                 : "lg:top-[350px] md:top-[440px] xl:right-[94] md:left-[-35px]"
             )}
           >
@@ -129,15 +131,15 @@ const ImagesProject = ({ images, imageCount, slug, slider }) => {
               "absolute left-[80px] z-0 shadow-lg    mr-[10px] md:mr-8  ",
               `double-image-${slug}`,
               slider
-                ? "xl:top-[-100px] lg:top-[-12px] md:top-[164px] sm:top-[10px] top-[-95px] xl:left-[121px] lg:left-[94px] lg:rounded-r-lg overflow-hidden"
+                ? "xl:top-[-124px] lg:top-[-12px] md:top-[164px] sm:top-[10px] top-[-95px] xl:left-[121px] lg:left-[94px] lg:rounded-r-lg overflow-hidden"
                 : " xl:top-[150px] lg:top-[90px]  sm:top-[100px] top-[-150px] xl:left-[310px] lg:left-[140px]  overflow-hidden "
             )}
           >
             <div
               className={
                 !slider
-                  ? " relative xl:top-[-170px] lg:top-[-90px] md:top-[-60px]"
-                  : " relative top-[-93px] lg:top-[-115px]"
+                  ? " relative xl:top-[-170px] lg:top-[-90px] md:top-[-60px] top-[-160px]"
+                  : " relative top-[-160px] lg:top-[-115px]"
               }
             >
               <Image

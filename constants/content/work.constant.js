@@ -207,7 +207,7 @@ const workProjects = [
           imageUrl:
             "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric+-+card+store.png",
           blurImageUrl:
-            "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric-amm1.svg",
+            "https://robor-team.s3.eu-central-1.amazonaws.com/work/agoric+-+card+store.png",
           width: "1420px",
           height: "2027px",
         },
@@ -296,17 +296,19 @@ const workProjects = [
           imageUrl:
             "https://robor-team.s3.eu-central-1.amazonaws.com/work/Genesis+Plot.png",
           blurImageUrl:
-            "https://robor-team.s3.eu-central-1.amazonaws.com/work/tokapi1.png",
+            "https://robor-team.s3.eu-central-1.amazonaws.com/work/Genesis+Plot.png",
           width: "665px",
           height: "746px",
+          genesis: true,
         },
         {
           imageUrl:
-            "https://robor-team.s3.eu-central-1.amazonaws.com/work/Genesis-Plot-2.png",
+            "https://robor-team.s3.eu-central-1.amazonaws.com/work/genesis-new-image.png",
           blurImageUrl:
-            "https://robor-team.s3.eu-central-1.amazonaws.com/work/tokapi2.png",
-          width: "374",
-          height: "1838",
+            "https://robor-team.s3.eu-central-1.amazonaws.com/work/genesis-image-bg.png",
+          width: "399",
+          height: "1769",
+          genesis: true,
         },
       ],
     },
@@ -354,7 +356,7 @@ const workProjects = [
         image:
           "https://robor-team.s3.eu-central-1.amazonaws.com/work/genesis-plots-section-3.png",
         blurImage:
-          "https://robor-team.s3.eu-central-1.amazonaws.com/work/blurred-agoric-1.png",
+          "https://robor-team.s3.eu-central-1.amazonaws.com/work/genesis-plots-section-3.png",
       },
     ],
     techStack: {
