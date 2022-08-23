@@ -38,34 +38,21 @@ const SectionCaseStudy = ({
       //   // scrub: 1,
       //   // toggleActions: "play none none reverse",
       // },
-      delay: 1,
+      // delay: 1,
       x: 0,
     });
 
     timeline.from(el_Right, { x: rightVal });
     timeline.to(el_Right, {
-      // scrollTrigger: {
-      //   trigger: el_Right,
-      //   // start: " right left",
-      //   // end: "left right",
-      //   // scrub: 1,
-      //   // toggleActions: "play none none reverse",
-      // },
-      delay: 1,
       x: 0,
     });
 
     timeline.from(el_img, { opacity: 0 });
     timeline.to(el_img, {
       delay: 0.5,
-      // scrollTrigger: {
-      //   trigger: el_img,
-      //   // start: "top center",
-      //   // end: "top center",
-      //   // toggleActions: "play none none reset",
-      // },
+
       opacity: 1,
-      // duration: 1,
+
       ease: "power4.easeInOut",
     });
   }, [isBigScreen]);
@@ -80,7 +67,7 @@ const SectionCaseStudy = ({
       )}
     >
       {/* * Top content */}
-      <div className={clsx("grid grid-cols-2 gap-10")}>
+      <div className={clsx("grid grid-cols-2 gap-2 md:gap-10")}>
         {/* * left content */}
         <motion.div
           className="flex flex-col justify-center space-y-2 md:col-span-1 col-span-full text-light-contentSecondary dark:text-dark-contentSecondary"
