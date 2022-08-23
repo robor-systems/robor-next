@@ -70,7 +70,7 @@ const TechStackCaseStudy = ({ description, frontend, backend, other }) => {
         {/* * Description */}
         <p className="font-light text-md md:text-lg">{description}</p>
         {/* * Stack Grid */}
-        <div className="grid grid-cols-3 gap-10">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
           {/* * Frontend */}
           <SectionTechStack title="Frontend" stack={frontend} />
           {/* * Other */}
