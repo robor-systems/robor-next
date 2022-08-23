@@ -12,13 +12,12 @@ const ItemProcess = ({ visible, delay, ...props }) => {
       transition={{ duration: 1, delay }}
     >
       <motion.div
-      
         transition={{ duration: 0.3 }}
         className="flex items-center justify-center p-4 bg-white rounded-2xl dark:bg-dark-bgPrimary"
       >
         {props.icon}
       </motion.div>
-      <h3 className="text-2xl font-light text-light-content dark:text-dark-content">
+      <h3 className="text-lg  text-light-contentSecondary dark:text-dark-content">
         {props.title}
       </h3>
     </motion.div>

@@ -139,7 +139,7 @@ const ImagesProject = ({ images, imageCount, slug, slider }) => {
               className={
                 !slider
                   ? " relative xl:top-[-170px] lg:top-[-90px] md:top-[-60px] top-[-160px]"
-                  : " relative top-[-160px] lg:top-[-115px]"
+                  : " relative top-[-160px] lg:top-[-88px]"
               }
             >
               <Image
