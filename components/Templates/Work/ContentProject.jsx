@@ -19,10 +19,10 @@ const ContentProject = ({ slug, title, description, slider, ...props }) => {
         className={clsx(
           "flex flex-col sm:justify-center h-full",
           // "md:px-20 space-y-4 ml-[12px] sm:ml-0"
-          "space-y-4 pl-[20px]  ",
+          "space-y-4   ",
           slider
-            ? " xl:pl-[70px] lg:pl-[30px] "
-            : "xl:p-24 sm:p-8 pt-[80px] lg:pt-[0px]"
+            ? " xl:pl-[70px] lg:pl-[30px] pl-[8px]"
+            : "xl:p-24 sm:p-8 pt-[80px] lg:pt-[0px] "
         )}
         initial="invisible"
         animate={visible ? "visible" : "invisible"}
@@ -30,7 +30,9 @@ const ContentProject = ({ slug, title, description, slider, ...props }) => {
         transition={{ duration: 1.5 }}
       >
         {/* * title */}
-        <h1 className="font-bold md:text-4xl mt-[60px] sm:mt-[2px]">{title}</h1>
+        <h1 className="font-bold text-xl md:text-4xl mt-[30px] sm:mt-[2px] leading-[1.25rem]">
+          {title}
+        </h1>
         {/* * description */}
         <p className="md:text-lg text-light-contentSecondary dark:text-dark-contentSecondary break-words lg:w-[350px]">
           {description}

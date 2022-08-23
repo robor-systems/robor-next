@@ -103,7 +103,7 @@ const ImagesProject = ({ images, imageCount, slug, slider }) => {
             variants={doubleImageVariant.topImage}
             transition={{ duration: 1.5 }}
             className={clsx(
-              "absolute md:left-0 right-[65px] z-10 overflow-hidden shadow-lg  lg:top-[400px]   top-[20px]  ",
+              "absolute md:left-0 right-[65px] z-10 overflow-hidden shadow-lg  lg:top-[400px]   top-[-20px]  ",
               `double-image-${slug}`,
               genesis ? "lg:right-[10px]" : "lg:right-[120px]",
               slider
