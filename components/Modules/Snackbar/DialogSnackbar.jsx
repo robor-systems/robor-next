@@ -77,6 +77,18 @@ const DialogSnackbar = ({ handleOpen }) => {
       >
         Team
       </motion.div>
+      <motion.div
+        className="menu-link"
+        whileTap={{ scale: 0.9 }}
+        onClick={() => {
+          if (router.pathname === "/contact")
+            scroller.scrollTo("contact", { smooth: true });
+          router.push("/contact");
+          handleOpen();
+        }}
+      >
+        Contact
+      </motion.div>
     </motion.div>
   );
 };

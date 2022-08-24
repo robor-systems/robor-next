@@ -20,7 +20,7 @@ const Snackbar = () => {
   });
   const handleOpen = () => setOpened(!opened);
 
-  if (scroll <= 98)
+  if (scroll <= 101)
     return (
       <motion.div className={"fixed z-30 bottom-10 right-10 "} layout>
         {opened ? (

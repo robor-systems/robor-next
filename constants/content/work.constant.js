@@ -398,6 +398,7 @@ const workProjects = [
             "https://robor-team.s3.eu-central-1.amazonaws.com/work/premium+voices.png",
           width: "1414px",
           height: "816px",
+          premium: "true",
         },
       ],
     },

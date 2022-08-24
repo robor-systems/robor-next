@@ -84,7 +84,7 @@
     @apply bg-cover bg-center;
   }
   .bg-form-dark {
-    background-image: url(https://robor-team.s3.eu-central-1.amazonaws.com/form-bg-image.svg);
+    background-image: url(https://robor-team.s3.eu-central-1.amazonaws.com/hero-bg-2.svg);
   }
   .text-blu {
     color: rgb(35, 45, 78);
