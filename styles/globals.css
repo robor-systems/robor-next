@@ -165,6 +165,9 @@ li.slick-active {
 .slick-dots {
   bottom: -44px !important;
 }
+.slick-initialized {
+  background-color: #1f2028;
+}
 
 /* added to set the slides to 100% of the height of the parent container */
 .slick-list,
