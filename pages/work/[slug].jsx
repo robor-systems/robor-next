@@ -50,10 +50,10 @@ export async function getStaticPaths() {
   return {
     paths: [
       "/work/tokapi",
-      "/work/agoric-amm",
-      "/work/agoric-baseball",
+      // "/work/agoric-amm",
+      // "/work/agoric-baseball",
       "/work/premium-voices",
-      "/work/genesis-plot",
+      // "/work/genesis-plot",
       "/work/kontractory",
     ],
     fallback: true,
