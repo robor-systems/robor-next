@@ -38,13 +38,16 @@ const ContentProject = ({ slug, title, description, slider, ...props }) => {
           {description}
         </p>
         {/* * go to project page link */}
-        <Link href={`/work/${slug}`} passHref>
-          <a className="flex items-center space-x-4 uppercase text-light-primary dark:text-dark-primary">
-            <span className="flex justify-between w-[140px]">
-              View Project <FiArrowRight className="text-2xl" />
-            </span>
-          </a>
-        </Link>
+        <div className="relative group">
+          <Link href={`/work/${slug}`} passHref>
+            <a className="flex items-center space-x-4 uppercase text-light-primary dark:text-dark-primary">
+              <span className="flex justify-between w-[140px]">
+                View Project <FiArrowRight className="text-2xl" />
+              </span>
+            </a>
+          </Link>
+          <div className="absolute  w-0 group-hover:w-[108px] h-1 bg-primary rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out"></div>
+        </div>
       </motion.div>
     </ReactVisibilitySensor>
   );
