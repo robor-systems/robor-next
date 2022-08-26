@@ -37,3 +37,26 @@ export const gradientVariants = {
     background: `linear-gradient(to top right, ${bg} ,transparent)`,
   }),
 };
+export const singleImageVariant = {
+  invisible: { opacity: 0, x: 200 },
+  visible: {
+    opacity: 1,
+    x: 0,
+  },
+};
+export const doubleImageVariant = {
+  topImage: {
+    invisible: { opacity: 0.5, y: 200 },
+    visible: {
+      opacity: 1,
+      y: 0,
+    },
+  },
+  bottomImage: {
+    invisible: { opacity: 0, y: -200 },
+    visible: {
+      opacity: 1,
+      y: 0,
+    },
+  },
+};

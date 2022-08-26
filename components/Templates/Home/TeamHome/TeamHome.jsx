@@ -19,7 +19,7 @@ const TeamHome = () => {
       >
         <motion.div
           id="team"
-          className="flex flex-col gap-16 items-center  pb-20 pt-16"
+          className="flex flex-col gap-16 items-center  pb-52 pt-52"
           initial="invisible"
           animate={visible ? "visible" : "invisible"}
           variants={opacityVariants}

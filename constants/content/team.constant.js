@@ -22,29 +22,29 @@ const team = [
       github: "https://github.com/usamahabib95",
     },
   },
-  {
-    name: "M.Ahmed",
-    position: "Front-End Engineer",
-    image:
-      "https://robor-team.s3.eu-central-1.amazonaws.com/team/ahmed-poster.jpg",
-    video: "https://robor-team.s3.eu-central-1.amazonaws.com/team/ahmed.mp4",
-    socials: {
-      linkedin: "https://www.linkedin.com/in/mahmedtan/",
-      github: "https://github.com/mahmedtan",
-    },
-  },
-  {
-    name: "Bilal Afzal",
-    position: "Full-Stack Engineer",
-    image:
-      "https://robor-team.s3.eu-central-1.amazonaws.com/team/robor-logo.png",
-    video:
-      "https://robor-team.s3.eu-central-1.amazonaws.com/team/robor-logo-animation.mp4",
-    socials: {
-      linkedin: "https://www.linkedin.com/in/bilal-afzal-01/",
-      github: "https://github.com/bilalafzal01",
-    },
-  },
+  // {
+  //   name: "M.Ahmed",
+  //   position: "Front-End Engineer",
+  //   image:
+  //     "https://robor-team.s3.eu-central-1.amazonaws.com/team/ahmed-poster.jpg",
+  //   video: "https://robor-team.s3.eu-central-1.amazonaws.com/team/ahmed.mp4",
+  //   socials: {
+  //     linkedin: "https://www.linkedin.com/in/mahmedtan/",
+  //     github: "https://github.com/mahmedtan",
+  //   },
+  // },
+  // {
+  //   name: "Bilal Afzal",
+  //   position: "Full-Stack Engineer",
+  //   image:
+  //     "https://robor-team.s3.eu-central-1.amazonaws.com/team/robor-logo.png",
+  //   video:
+  //     "https://robor-team.s3.eu-central-1.amazonaws.com/team/robor-logo-animation.mp4",
+  //   socials: {
+  //     linkedin: "https://www.linkedin.com/in/bilal-afzal-01/",
+  //     github: "https://github.com/bilalafzal01",
+  //   },
+  // },
   {
     name: "Hussain Rizvi",
     position: "Full-Stack Engineer",

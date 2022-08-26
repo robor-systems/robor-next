@@ -20,7 +20,7 @@ const Snackbar = () => {
   });
   const handleOpen = () => setOpened(!opened);
 
-  if (scroll <= 98)
+  if (scroll <= 101)
     return (
       <motion.div className={"fixed z-30 bottom-10 right-10 "} layout>
         {opened ? (
@@ -37,7 +37,7 @@ const Snackbar = () => {
             }}
             onClick={handleOpen}
             whileTap={{ scale: 0.9 }}
-            className="relative hover:bg-gray-50 bg-white rounded-full shadow-xl cursor-pointer"
+            className="relative bg-white rounded-full shadow-xl cursor-pointer hover:bg-gray-50 dark:hover:bg-dark-bgSecondary/80 dark:bg-dark-bgSecondary"
           >
             <div className="absolute flex items-center justify-center w-full h-full">
               <FiMenu className="text-2xl" />

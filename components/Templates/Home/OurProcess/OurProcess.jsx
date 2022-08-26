@@ -22,7 +22,7 @@ const OurProcess = () => {
     >
       <motion.div
         id="projects"
-        className="text-blu flex flex-col gap-16 items-center pb-20 pt-16 w-full bg-shade overflow-hidden"
+        className="flex flex-col items-center w-full gap-16 pt-16 pb-20 overflow-hidden text-blu bg-shade dark:bg-dark-bgSecondary"
         initial="invisible"
         animate={visible ? "visible" : "invisible"}
         variants={opacityVariants}
@@ -33,7 +33,7 @@ const OurProcess = () => {
           subtitle="We lead your idea from inception to completion."
         />
 
-        <div className="grid gap-6 grid-cols-1 px-16 max-w-screen-lg md:gap-3 md:grid-cols-7">
+        <div className="grid max-w-screen-lg grid-cols-1 gap-6 px-16 md:gap-3 md:grid-cols-7">
           {process.map((item, index) => (
             <ItemProcess
               key={v4()}
@@ -44,31 +44,31 @@ const OurProcess = () => {
             />
           ))}
           <motion.div
-            className=" col-span-1 col-start-1 md:col-start-2  row-start-2  md:row-start-1"
+            className="col-span-1 col-start-1 row-start-2 md:col-start-2 md:row-start-1"
             variants={translateVariants}
             initial="invisible"
             animate={visible ? "visible" : "invisible"}
             transition={{ duration: 1, delay: 0 }}
           >
-            <FiArrowRight className="md:mt-10  w-full text-3xl rotate-90 md:transform-none" />
+            <FiArrowRight className="w-full text-3xl rotate-90 md:mt-10 md:transform-none text-light-content dark:text-dark-content" />
           </motion.div>
           <motion.div
-            className=" col-span-1 col-start-1 md:col-start-4 row-start-4 md:row-start-1"
+            className="col-span-1 col-start-1 row-start-4 md:col-start-4 md:row-start-1"
             variants={translateVariants}
             initial="invisible"
             animate={visible ? "visible" : "invisible"}
             transition={{ duration: 1, delay: 0.25 }}
           >
-            <FiArrowRight className="md:mt-10 w-full text-3xl rotate-90 md:transform-none" />
+            <FiArrowRight className="w-full text-3xl rotate-90 md:mt-10 md:transform-none text-light-content dark:text-dark-content" />
           </motion.div>
           <motion.div
-            className=" col-span-1 col-start-1 md:col-start-6 row-start-6 md:row-start-1 "
+            className="col-span-1 col-start-1 row-start-6 md:col-start-6 md:row-start-1"
             variants={translateVariants}
             initial="invisible"
             animate={visible ? "visible" : "invisible"}
             transition={{ duration: 1, delay: 0.5 }}
           >
-            <FiArrowRight className="md:mt-10 w-full text-3xl rotate-90 md:transform-none" />
+            <FiArrowRight className="w-full text-3xl rotate-90 md:mt-10 md:transform-none text-light-content dark:text-dark-content" />
           </motion.div>
         </div>
       </motion.div>

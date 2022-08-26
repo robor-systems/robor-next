@@ -1,3 +1,5 @@
+import { NextIcon, RosIcon } from "@/components/Icons";
+
 const techStack = [
   {
     src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/nodejs-icon.svg",
@@ -10,6 +12,7 @@ const techStack = [
   {
     src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/Nextjs-logo.svg",
     alt: "NextJS Logo",
+    icon: <NextIcon className="techStackLogo" />,
   },
   {
     src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/tailwindcss-icon.svg",
@@ -38,6 +41,7 @@ const techStack = [
   {
     src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/ros.svg",
     alt: "ROS Logo",
+    icon: <RosIcon className="techStackLogo" />,
   },
   {
     src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/amazon_aws-icon.svg",

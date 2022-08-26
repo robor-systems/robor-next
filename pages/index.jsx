@@ -4,12 +4,12 @@ import {
   JoinTeam,
   OurClients,
   OurProcess,
+  OurWork,
   TeamHome,
   TechStackHome,
 } from "@/components/Templates/Home";
 import Feedback from "@/components/Templates/Home/Feedback/Feedback";
 import { useRouter } from "next/dist/client/router";
-import Head from "next/head";
 import { useEffect } from "react";
 import { scroller } from "react-scroll";
 
@@ -22,19 +22,17 @@ const Home = () => {
   }, [router]);
 
   return (
-    <div>
-      <main className="flex flex-col  items-center ">
-        <HeroHome />
-        <FeaturesHome />
-
-        <TechStackHome />
-        <OurClients />
-        <OurProcess />
-        <TeamHome />
-        <JoinTeam />
-        <Feedback />
-      </main>
-    </div>
+    <main className="flex flex-col items-center">
+      <HeroHome />
+      <FeaturesHome />
+      <TechStackHome />
+      <OurWork />
+      {/* <OurClients /> */}
+      <OurProcess />
+      <TeamHome />
+      <JoinTeam />
+      <Feedback />
+    </main>
   );
 };
 

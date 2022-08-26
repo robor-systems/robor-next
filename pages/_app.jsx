@@ -1,15 +1,18 @@
-import Layout from "@/components/Modules/Layout/Layout";
 import { DefaultSeo } from "next-seo";
+import { ThemeProvider } from "next-themes";
 import "styles/globals.css";
+
+import Layout from "@/components/Modules/Layout/Layout";
 import seo from "utils/seo";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
-      <DefaultSeo {...seo} />
-
-      <Component {...pageProps} />
-    </Layout>
+    <ThemeProvider attribute="class">
+      <Layout>
+        <DefaultSeo {...seo} />
+        <Component {...pageProps} />
+      </Layout>
+    </ThemeProvider>
   );
 }
 

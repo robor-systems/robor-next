@@ -1,7 +1,5 @@
 import { TextArea, TextField } from "@/components/Elements";
 import { motion } from "framer-motion";
-import { set, useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { useState } from "react";
 import { PROCESS_STATE } from "utils/constants";
@@ -90,7 +88,7 @@ const FormFeedback = () => {
   return (
     <motion.div
       layout
-      className="w-full flex-1 min-h-full rounded-2xl shadow-xl border border-gray-100  bg-white"
+      className="flex-1 w-full min-h-full bg-white border border-gray-100 shadow-xl dark:border-gray-700 rounded-2xl dark:bg-dark-bgSecondary"
     >
       <form
         name="feedback-form"
@@ -141,7 +139,7 @@ const FormFeedback = () => {
         />
 
         <motion.button
-          className="btn-primary btn-md my-2  disabled:bg-gray-500 disabled:cursor-not-allowed focus:outline-none focus:ring-4 focus:ring-primary-light"
+          className="my-2 btn-primary btn-md disabled:bg-gray-500 disabled:cursor-not-allowed focus:outline-none focus:ring-4 focus:ring-primary-light"
           whileHover={{
             scale: 1.02,
           }}
@@ -149,7 +147,7 @@ const FormFeedback = () => {
           type="submit"
           disabled={process.state === PROCESS_STATE.LOADING}
         >
-          Send Message
+          SEND MESSAGE
         </motion.button>
         {(process.state === PROCESS_STATE.SUCCESS ||
           process.state === PROCESS_STATE.ERROR) && (

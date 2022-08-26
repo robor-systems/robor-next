@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const IconFooter = ({ children, link }) => {
   return (
     <motion.div
-      className="text-2xl hover:bg-gray-100 p-2 rounded-full cursor-pointer"
+      className="p-2 text-2xl rounded-full cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 "
       whileTap={{ scale: 0.9 }}
     >
       <a href={link} target="_blank" rel="noopener noreferrer">

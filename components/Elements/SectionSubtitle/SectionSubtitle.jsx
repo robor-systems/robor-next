@@ -1,6 +1,8 @@
 const SectionSubtitle = ({ children }) => {
   return (
-    <h3 className="text-lg font-light sm:text-xl text-center">{children}</h3>
+    <h3 className=" text-center md:text-lg text-light-contentSecondary dark:text-dark-content">
+      {children}
+    </h3>
   );
 };
 
