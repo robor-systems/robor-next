@@ -68,7 +68,7 @@ const TechStackCaseStudy = ({ description, frontend, backend, other }) => {
         className="flex flex-col space-y-6 md:justify-end md:col-span-1 col-span-full"
       >
         {/* * Description */}
-        <p className="font-light text-md md:text-lg">{description}</p>
+        <p className=" text-md md:text-lg">{description}</p>
         {/* * Stack Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
           {/* * Frontend */}

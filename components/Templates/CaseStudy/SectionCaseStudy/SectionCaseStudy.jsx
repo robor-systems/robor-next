@@ -82,7 +82,7 @@ const SectionCaseStudy = ({
         </motion.div>
         {/* * right content */}
         <motion.div
-          className="font-light text-md md:text-lg md:col-span-1 col-span-full"
+          className=" text-md md:text-lg md:col-span-1 col-span-full"
           ref={rightTextRef}
         >
           {description}

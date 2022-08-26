@@ -42,7 +42,7 @@
   }
 
   .menu-link {
-    @apply text-black dark:text-dark-content hover:text-primary text-2xl font-light transition-all duration-300 cursor-pointer hover:text-light-primary dark:hover:text-dark-primary;
+    @apply text-light-contentSecondary dark:text-dark-content hover:text-primary text-xl  transition-all duration-300 cursor-pointer hover:text-light-primary dark:hover:text-dark-primary;
   }
 
   .icon-btn {
@@ -54,7 +54,7 @@
   }
 
   .project-info-content {
-    @apply text-lg font-light text-light-content dark:text-dark-content;
+    @apply text-lg  text-light-content dark:text-dark-content;
   }
 
   .outline-link {
