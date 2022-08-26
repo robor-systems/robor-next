@@ -11,6 +11,11 @@ module.exports = {
       "upload.wikimedia.org",
     ],
   },
+  experimental: {
+    images: {
+      unoptimized: true,
+    },
+  },
   async headers() {
     return [
       {
