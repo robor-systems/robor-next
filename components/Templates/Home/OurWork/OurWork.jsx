@@ -46,7 +46,7 @@ const OurWork = () => {
               initial="invisible"
               animate={visible ? "visible" : "invisible"}
               transition={{ duration: 1 }}
-              className="rounded-xl font-semibold flex items-center justify-center px-6 py-4 space-x-2 border-[3px] hover:bg-light-primary hover:text-[#fff] dark:border-dark-primary border-light-primary text-light-primary dark:text-dark-primary"
+              className="rounded-xl font-semibold flex items-center justify-center px-6 py-4 space-x-2 border-[3px] hover:bg-light-primary hover:dark:bg-dark-primary hover:dark:text-[#fff]  hover:text-[#fff] dark:border-dark-primary border-light-primary text-light-primary dark:text-dark-primary"
             >
               <span className="uppercase">View All Projects</span>
               <FiArrowRight className="text-xl" />
