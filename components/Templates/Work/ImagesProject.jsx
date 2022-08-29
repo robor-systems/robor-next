@@ -83,7 +83,8 @@ const ImagesProject = ({ images, imageCount, slug, slider }) => {
             transition={{ duration: 1 }}
             className={clsx(
               images[0].premium ? "lg:mt-[40px]" : "",
-              "absolute md:right-[-50px] h-full mt-[-90px]  sm:mt-[20px] md:mt-[0] md:top-[210px] lg:top-[120px] xl:top-[95px]"
+              "absolute md:right-[-50px] h-full   sm:mt-[20px] md:mt-[0] md:top-[210px] lg:top-[120px] xl:top-[95px]",
+              !slider ? "mt-[-140px]" : "mt-[-90px]"
             )}
           >
             <Image
