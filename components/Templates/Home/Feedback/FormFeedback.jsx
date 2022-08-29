@@ -139,7 +139,7 @@ const FormFeedback = () => {
         />
 
         <motion.button
-          className="my-2 btn-primary btn-md disabled:bg-gray-500 disabled:cursor-not-allowed focus:outline-none focus:ring-4 focus:ring-primary-light"
+          className="my-2 btn-primary btn-md disabled:bg-gray-500 disabled:cursor-not-allowed focus:outline-none focus:ring-4 focus:ring-primary-light dark:bg-dark-primary"
           whileHover={{
             scale: 1.02,
           }}
