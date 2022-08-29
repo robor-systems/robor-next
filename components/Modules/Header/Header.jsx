@@ -10,7 +10,7 @@ const Header = () => {
       <Container>
         {/* * we want to use css grid that has a logo on the left side */}
         {/* * and the content on the right side */}
-        <div className="grid grid-cols-5 gap-2 p-6">
+        <div className="grid grid-cols-5 gap-2 px-6">
           {/* * Left side will span 2 columns and have the link logo */}
           <div className="flex justify-between col-span-4 md:col-span-1 lg:col-span-2 xl:col-span-3 sm:justify-between">
             <Link href="/">

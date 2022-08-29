@@ -19,8 +19,7 @@ const HeroHome = () => {
         offset={{ top: 400 }}
         onChange={(isVisible) => isVisible && setVisible(isVisible)}
       >
-        <>
-          {/* <div className="absolute top-0 right-0 h-screen min-w-full bg-hero"></div> */}
+        <div className=" mt-[50px]">
           <div className="absolute top-0 right-0 h-screen min-w-full overflow-hidden">
             <HeroBG />
           </div>
@@ -37,7 +36,8 @@ const HeroHome = () => {
                 "text-4xl sm:text-5xl md:text-6xl"
               )}
             >
-              Building Robust Systems &#9829;
+              Building <span className="text-light-primary"> Robust</span>{" "}
+              Systems
             </h1>
             <h2
               className={clsx(
@@ -51,7 +51,7 @@ const HeroHome = () => {
             </h2>
             <NextLink href="/contact">
               <motion.button
-                className="mt-4 !px-[34px]  btn-primary btn-large"
+                className="mt-8 !px-[34px]  btn-primary btn-large"
                 whileHover={{
                   scale: 1.1,
                 }}
@@ -67,7 +67,7 @@ const HeroHome = () => {
               </Link>
             </div>
           </motion.div>
-        </>
+        </div>
       </ReactVisibilitySensor>
     </Container>
   );
