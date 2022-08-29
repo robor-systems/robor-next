@@ -159,10 +159,10 @@ const workProjects = [
           "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAYUlEQVQImVXNwQ3DMAxDUe+/T+cwskLPqYAAjSSKkVzEbQL0XXj4BzYAMdE9ItR9jNFuZsZMDRzkzshMTA68XM/smUKwSoiqGhcza6sZj4m//cvPbXssy/eo9y4i74uqfgBR2YJcZlmh+QAAAABJRU5ErkJggg==",
       },
       {
-        id: "the-solutiom",
+        id: "the-solution",
         position: 4,
         header: "Building The Right Solution",
-        subHeader: "The Innovation",
+        subHeader: "The Solution",
         description:
           "Following the guidelines provided by the client, we developed a Next.js based SPA, allowing us to use TypeScript, making the app less prone to bugs and more robust. We built a smart caching system that cached voices of paragraphs on AWS S3, making conversions faster and testing easier. The team at Christchurch has been very happy to use the system.",
         image:
