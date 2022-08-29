@@ -111,7 +111,7 @@ const ImagesProject = ({ images, imageCount, slug, slider }) => {
               genesis ? "lg:right-[10px]" : "lg:right-[120px]",
               slider
                 ? "xl:top-[160px] lg:top-[245px] md:top-[395px] sm:top-[130px]  md:right-[56px]  sm:right-[150px] "
-                : "lg:top-[350px] md:top-[440px] xl:right-[94] md:left-[-35px]"
+                : "lg:top-[350px] md:top-[440px] xl:right-[94] "
             )}
           >
             <Image

@@ -17,7 +17,7 @@ const InnerSlide = ({ children }) => {
     autoplaySpeed: 3000,
     cssEase: "linear",
     appendDots: (dots) => <div>{dots}</div>,
-    className: "w-full h-full",
+    className: "w-full h-full dark:bg-dark-bgPrimary",
   };
   return (
     <div key={v4()} className="w-full h-full">
