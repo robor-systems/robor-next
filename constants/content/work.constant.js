@@ -45,7 +45,7 @@ const workProjects = [
           "A custodial backed NFT marketplace with the goal of making NFTs accessible by allowing enthusiasts to purchase NFTs using credit cards.",
       },
       {
-        position: 1,
+        position: 2,
         header: "What Do We Want?",
         subHeader: "The Idea",
         description: `"An NFT marketplace, which is secure, easy to use, fast, and reliable." These were the instructions given to us while starting. This was a challenge...`,
@@ -57,7 +57,7 @@ const workProjects = [
       },
       {
         id: "the-challenge",
-        position: 1,
+        position: 3,
         header: "Finding The Right Solution",
         subHeader: "The Challenge",
         description:
@@ -69,7 +69,7 @@ const workProjects = [
       },
       {
         id: "the-solution",
-        position: 1,
+        position: 4,
         header: "From an Idea to a Reality",
         subHeader: "The Solution",
         description:
@@ -148,7 +148,7 @@ const workProjects = [
       },
       {
         id: "the-challenge",
-        position: 1,
+        position: 3,
         header: "Finding The Right Solution",
         subHeader: "The Challenge",
         description:
@@ -160,7 +160,7 @@ const workProjects = [
       },
       {
         id: "the-solutiom",
-        position: 1,
+        position: 4,
         header: "Building The Right Solution",
         subHeader: "The Innovation",
         description:
@@ -236,7 +236,7 @@ const workProjects = [
       },
       {
         id: "the-challenge",
-        position: 1,
+        position: 3,
         header: "Finding The Right Solution",
         subHeader: "The Challenge",
         description:
@@ -248,7 +248,7 @@ const workProjects = [
       },
       {
         id: "the-solution",
-        position: 1,
+        position: 4,
         header: "Grinding to Success",
         subHeader: "The Solution",
         description:
