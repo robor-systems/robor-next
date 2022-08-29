@@ -5,16 +5,20 @@ import clsx from "clsx";
 
 import { MoonIcon, SunIcon } from "@/components/Icons";
 import THEME from "constants/theme/theme.constant";
+import { useEffect } from "react";
 
 const iconTransformOrigin = { transformOrigin: "50% 100px" };
 
 const DarkModeToggleButton = ({ floatingBtn }) => {
   const { theme, setTheme } = useTheme();
-
+  useEffect(() => {
+    setTheme(theme === "system" ? THEME.LIGHT : theme);
+  }, []);
   return (
     <button
       onClick={() => {
-        setTheme(theme === THEME.LIGHT ? THEME.DARK : THEME.LIGHT);
+        setTheme(theme === "light" ? THEME.DARK : THEME.LIGHT);
+        console.log(theme);
       }}
       className={clsx(
         "border-secondary hover:border-primary  focus:outline-none inline-flex items-center justify-center overflow-hidden rounded-full border-2 transition",
