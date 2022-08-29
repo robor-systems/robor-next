@@ -36,7 +36,11 @@ const HeroHome = () => {
                 "text-4xl sm:text-5xl md:text-6xl"
               )}
             >
-              Building <span className="text-light-primary"> Robust</span>{" "}
+              Building{" "}
+              <span className="text-light-primary dark:text-dark-primary">
+                {" "}
+                Robust
+              </span>{" "}
               Systems
             </h1>
             <h2
