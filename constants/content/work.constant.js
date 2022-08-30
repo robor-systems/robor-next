@@ -20,7 +20,7 @@ const workProjects = [
         },
         {
           imageUrl:
-            "https://robor-team.s3.eu-central-1.amazonaws.com/work/tokapi2.png",
+            "https://robor-team.s3.eu-central-1.amazonaws.com/work/premium-section-2.png",
           blurImageUrl:
             "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAKCAIAAAAcmWhZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAjUlEQVQImQGCAH3/AA8APRkQTgoNRgAEPABaEYdsXJldY4pBUXoA+/D++/b79vX1///8AMi61b2yxc7Ky87CywDQsd7Gr8mym7zHttkAlImyiHGFeVx4r561AMDO1Lu7usTBueXm3wDm1uje1+Lh3eLk3+QAyLbVuq/Cy8LL0bvUACwoRjo0T0A1WEInYvxYSru4IFhbAAAAAElFTkSuQmCC",
           width: "1920px",
