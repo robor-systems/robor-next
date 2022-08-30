@@ -20,12 +20,9 @@ const TechStackCaseStudy = ({ description, frontend, backend, other }) => {
     tl.to(el_Left, {
       scrollTrigger: {
         trigger: el_Left,
-        // start: "left right",
-        // end: " right left",
-        // scrub: 1,
-        // toggleActions: "play none none reverse",
+        start: "left right",
       },
-      delay: 1,
+
       x: 0,
     });
 
@@ -33,12 +30,9 @@ const TechStackCaseStudy = ({ description, frontend, backend, other }) => {
     tl.to(el_Right, {
       scrollTrigger: {
         trigger: el_Right,
-        // start: " right left",
-        // end: "left right",
-        // scrub: 1,
-        // toggleActions: "play none none reverse",
+        start: " right left",
       },
-      delay: 1,
+
       x: 0,
     });
   }, [isBigScreen]);

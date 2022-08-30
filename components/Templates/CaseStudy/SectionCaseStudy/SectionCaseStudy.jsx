@@ -29,21 +29,22 @@ const SectionCaseStudy = ({
     const el_Right = rightTextRef.current;
     const el_img = imgRef.current;
     let rightVal = isBigScreen ? 130 : 10;
-    timeline.from(el_Left, { x: -200 });
+    timeline.from(el_Left, { x: -150 });
     timeline.to(el_Left, {
-      // scrollTrigger: {
-      //   trigger: el_Left,
-      //   // start: "left right",
-      //   // end: " right left",
-      //   // scrub: 1,
-      //   // toggleActions: "play none none reverse",
-      // },
+      scrollTrigger: {
+        trigger: el_Left,
+        start: "left right",
+      },
       // delay: 1,
       x: 0,
     });
 
     timeline.from(el_Right, { x: rightVal });
     timeline.to(el_Right, {
+      scrollTrigger: {
+        trigger: el_Right,
+        start: "right left",
+      },
       x: 0,
     });
 
