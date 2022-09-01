@@ -48,7 +48,7 @@ const TechStackCaseStudy = ({ description, frontend, backend, other }) => {
   return (
     <ReactVisibilitySensor
       partialVisibility
-      offset={{ top: 400, bottom: 400 }}
+      offset={{ bottom: 100 }}
       onChange={(isVisible) => isVisible && setVisible(isVisible)}
     >
       <div

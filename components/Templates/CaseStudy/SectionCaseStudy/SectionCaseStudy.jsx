@@ -30,28 +30,26 @@ const SectionCaseStudy = ({
     const el_Left = leftTextRef.current;
     const el_Right = rightTextRef.current;
     const el_img = imgRef.current;
-    let rightVal = isBigScreen ? 130 : 10;
+    let rightVal = isBigScreen ? 130 : 20;
+    let leftVal = isBigScreen ? -130 : -20;
     if (visible) {
-      timeline.from(el_Left, { x: -150 });
+      timeline.from(el_Left, { x: leftVal });
       timeline.to(el_Left, {
         // scrollTrigger: {
         //   trigger: el_Left,
         //   start: "left right",
         // },
-        duration: 0.5,
+
         x: 0,
       });
 
       timeline.from(el_Right, { x: rightVal });
       timeline.to(el_Right, {
-        duration: 0.5,
         x: 0,
       });
 
       timeline.from(el_img, { opacity: 0 });
       timeline.to(el_img, {
-        delay: 0.5,
-        duration: 0.5,
         opacity: 1,
 
         ease: "power4.easeInOut",
@@ -61,7 +59,7 @@ const SectionCaseStudy = ({
   return (
     <ReactVisibilitySensor
       partialVisibility
-      offset={{ top: 400, bottom: 400 }}
+      offset={{ top: -100 }}
       onChange={(isVisible) => isVisible && setVisible(isVisible)}
     >
       <div
