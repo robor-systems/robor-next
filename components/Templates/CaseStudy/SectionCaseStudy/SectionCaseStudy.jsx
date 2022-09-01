@@ -44,10 +44,6 @@ const SectionCaseStudy = ({
 
       timeline.from(el_Right, { x: rightVal });
       timeline.to(el_Right, {
-        // scrollTrigger: {
-        //   trigger: el_Right,
-        //   start: "right left",
-        // },
         duration: 0.5,
         x: 0,
       });
