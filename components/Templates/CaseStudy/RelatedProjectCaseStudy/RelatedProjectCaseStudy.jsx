@@ -23,9 +23,9 @@ const RelatedProjectCaseStudy = ({ title, slug, description, ...props }) => {
         <p className="text-base md:text-lg">{description}</p>
       </div>
       {/* * right content */}
-      <div className="flex items-center justify-start md:justify-end md:col-span-2 col-span-full">
+      <div className="flex items-center justify-start md:justify-end md:col-span-2 col-span-full ">
         <Link href={`/work/${slug}`} passHref>
-          <a className="outline-link">
+          <a className="outline-link hover:bg-light-primary hover:dark:bg-dark-primary hover:text-[#fff]">
             <span>View Project</span>
             <FiArrowRight />
           </a>
