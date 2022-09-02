@@ -22,7 +22,7 @@ const ContentProject = ({ slug, title, description, slider, ...props }) => {
           "space-y-4   ",
           slider
             ? " xl:pl-[70px] lg:pl-[30px] pl-[8px]"
-            : "xl:p-24 sm:p-8 pt-[110px] lg:pt-[0px] "
+            : "xl:p-24 3xl:p-[11rem] sm:p-8 pt-[110px] lg:pt-[0px] "
         )}
         initial="invisible"
         animate={visible ? "visible" : "invisible"}

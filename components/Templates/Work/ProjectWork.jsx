@@ -15,7 +15,7 @@ const ProjectWork = ({ general, index, ...props }) => {
       )}
     >
       {/* * now we need a grid */}
-      <div className="grid h-full grid-cols-2 sm:gap-2 md:gap-10 px-[20px]">
+      <div className="grid h-full grid-cols-2 sm:gap-2 md:gap-10 px-[20px] 3xl:pl-[400px] 3xl:pr-[500px]">
         {/* * Left side will contain the project info */}
         <div className="col-span-full md:col-span-1">
           <ContentProject {...general} />
