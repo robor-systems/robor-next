@@ -22,7 +22,7 @@ const Snackbar = () => {
 
   if (scroll <= 101)
     return (
-      <motion.div className={"fixed z-30 bottom-10 right-10 "} layout>
+      <motion.div className={"fixed z-30 bottom-10 right-5 md:right-10"} layout>
         {opened ? (
           <DialogSnackbar handleOpen={handleOpen} />
         ) : (

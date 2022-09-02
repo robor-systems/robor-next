@@ -20,7 +20,7 @@ const workProjects = [
         },
         {
           imageUrl:
-            "https://robor-team.s3.eu-central-1.amazonaws.com/work/tokapi2.png",
+            "https://robor-team.s3.eu-central-1.amazonaws.com/work/tokapi-potrait.png",
           blurImageUrl:
             "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAKCAIAAAAcmWhZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAjUlEQVQImQGCAH3/AA8APRkQTgoNRgAEPABaEYdsXJldY4pBUXoA+/D++/b79vX1///8AMi61b2yxc7Ky87CywDQsd7Gr8mym7zHttkAlImyiHGFeVx4r561AMDO1Lu7usTBueXm3wDm1uje1+Lh3eLk3+QAyLbVuq/Cy8LL0bvUACwoRjo0T0A1WEInYvxYSru4IFhbAAAAAElFTkSuQmCC",
           width: "1920px",
@@ -45,7 +45,7 @@ const workProjects = [
           "A custodial backed NFT marketplace with the goal of making NFTs accessible by allowing enthusiasts to purchase NFTs using credit cards.",
       },
       {
-        position: 1,
+        position: 2,
         header: "What Do We Want?",
         subHeader: "The Idea",
         description: `"An NFT marketplace, which is secure, easy to use, fast, and reliable." These were the instructions given to us while starting. This was a challenge...`,
@@ -57,7 +57,7 @@ const workProjects = [
       },
       {
         id: "the-challenge",
-        position: 1,
+        position: 3,
         header: "Finding The Right Solution",
         subHeader: "The Challenge",
         description:
@@ -69,7 +69,7 @@ const workProjects = [
       },
       {
         id: "the-solution",
-        position: 1,
+        position: 4,
         header: "From an Idea to a Reality",
         subHeader: "The Solution",
         description:
@@ -148,7 +148,7 @@ const workProjects = [
       },
       {
         id: "the-challenge",
-        position: 1,
+        position: 3,
         header: "Finding The Right Solution",
         subHeader: "The Challenge",
         description:
@@ -159,10 +159,10 @@ const workProjects = [
           "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAYUlEQVQImVXNwQ3DMAxDUe+/T+cwskLPqYAAjSSKkVzEbQL0XXj4BzYAMdE9ItR9jNFuZsZMDRzkzshMTA68XM/smUKwSoiqGhcza6sZj4m//cvPbXssy/eo9y4i74uqfgBR2YJcZlmh+QAAAABJRU5ErkJggg==",
       },
       {
-        id: "the-solutiom",
-        position: 1,
+        id: "the-solution",
+        position: 4,
         header: "Building The Right Solution",
-        subHeader: "The Innovation",
+        subHeader: "The Solution",
         description:
           "Following the guidelines provided by the client, we developed a Next.js based SPA, allowing us to use TypeScript, making the app less prone to bugs and more robust. We built a smart caching system that cached voices of paragraphs on AWS S3, making conversions faster and testing easier. The team at Christchurch has been very happy to use the system.",
         image:
@@ -236,7 +236,7 @@ const workProjects = [
       },
       {
         id: "the-challenge",
-        position: 1,
+        position: 3,
         header: "Finding The Right Solution",
         subHeader: "The Challenge",
         description:
@@ -248,7 +248,7 @@ const workProjects = [
       },
       {
         id: "the-solution",
-        position: 1,
+        position: 4,
         header: "Grinding to Success",
         subHeader: "The Solution",
         description:

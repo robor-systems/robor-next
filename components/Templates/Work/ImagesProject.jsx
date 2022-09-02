@@ -83,7 +83,10 @@ const ImagesProject = ({ images, imageCount, slug, slider }) => {
             transition={{ duration: 1 }}
             className={clsx(
               images[0].premium ? "lg:mt-[40px]" : "",
-              "absolute md:right-[-50px] h-full mt-[-90px]  sm:mt-[20px] md:mt-[0] md:top-[210px] lg:top-[120px] xl:top-[95px]"
+              "absolute  h-full   sm:mt-[20px] md:mt-[0] md:top-[210px] lg:top-[120px] xl:top-[95px] ",
+              !slider
+                ? "mt-[-140px] 3xl:top-[250px] "
+                : "mt-[-90px] md:right-[-50px]"
             )}
           >
             <Image
@@ -111,7 +114,7 @@ const ImagesProject = ({ images, imageCount, slug, slider }) => {
               genesis ? "lg:right-[10px]" : "lg:right-[120px]",
               slider
                 ? "xl:top-[160px] lg:top-[245px] md:top-[395px] sm:top-[130px]  md:right-[56px]  sm:right-[150px] "
-                : "lg:top-[350px] md:top-[440px] xl:right-[94] md:left-[-35px]"
+                : "3xl:top-[540px] lg:top-[350px] md:top-[440px] xl:right-[94] "
             )}
           >
             <Image
@@ -141,7 +144,7 @@ const ImagesProject = ({ images, imageCount, slug, slider }) => {
             <div
               className={
                 !slider
-                  ? " relative xl:top-[-170px] lg:top-[-90px] md:top-[-60px] top-[-160px]"
+                  ? " relative 3xl:top-[54px] xl:top-[-170px] lg:top-[-90px] md:top-[-60px] top-[-160px]"
                   : " relative top-[-160px] lg:top-[-88px]"
               }
             >

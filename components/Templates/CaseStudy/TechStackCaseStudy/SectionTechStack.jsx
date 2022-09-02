@@ -12,7 +12,7 @@ const SectionTechStack = ({ title, stack }) => {
           stack?.map((item, index) => (
             <li
               key={v4()}
-              className="text-sm font-light md:text-lg text-light-contentSecondary dark:text-dark-contentSecondary"
+              className="text-sm  md:text-lg text-light-contentSecondary dark:text-dark-contentSecondary"
             >
               {item}
             </li>
