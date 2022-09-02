@@ -17,8 +17,7 @@ const DarkModeToggleButton = ({ floatingBtn }) => {
   return (
     <button
       onClick={() => {
-        setTheme(theme === "light" ? THEME.DARK : THEME.LIGHT);
-        console.log(theme);
+        setTheme(theme === THEME.LIGHT ? THEME.DARK : THEME.LIGHT);
       }}
       className={clsx(
         "border-secondary hover:border-primary  focus:outline-none inline-flex items-center justify-center overflow-hidden rounded-full border-2 transition",

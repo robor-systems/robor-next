@@ -1,13 +1,8 @@
+import Image from "next/image";
 const HeroCaseStudy = ({ headerImage, title }) => {
   return (
-    <div>
-      <img
-        src={headerImage}
-        alt={title}
-        layout="fill"
-        objectFit="contain"
-        className="w-full"
-      />
+    <div className="h-[22vh] sm:h-[45vh] md:h-[45vh] lg:h-[380px] xl:h-[77vh] relative">
+      <Image src={headerImage} alt={title} layout="fill" className="w-full" />
     </div>
   );
 };
