@@ -6,7 +6,7 @@ const RelatedProjectCaseStudy = ({ title, slug, description, ...props }) => {
   return (
     <div
       className={clsx(
-        "md:py-24 py-16 md:px-24 px-8",
+        "md:py-24 py-16 md:px-44 px-8",
         "grid grid-cols-5 gap-10",
         "bg-light-bgSecondary dark:bg-dark-bgSecondary"
       )}

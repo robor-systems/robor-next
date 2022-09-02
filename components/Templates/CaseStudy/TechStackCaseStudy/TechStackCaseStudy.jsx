@@ -53,7 +53,7 @@ const TechStackCaseStudy = ({ description, frontend, backend, other }) => {
     >
       <div
         className={clsx(
-          "md:py-24 py-16 md:px-24 px-8",
+          "md:py-24 py-16  md:px-44 px-8",
           "grid grid-cols-2 gap-10",
           "bg-light-bgPrimary dark:bg-dark-bgPrimary"
         )}
