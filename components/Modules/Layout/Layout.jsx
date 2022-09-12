@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
   });
 
   return (
-    <div className="relative min-h-screen bg-light-bgPrimary dark:bg-dark-bgPrimary">
+    <div className="relative min-h-screen bg-light-bgPrimary dark:bg-dark-bgPrimary overflow-hidden">
       <Header />
       {children}
       <div className="flex-col">
