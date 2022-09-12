@@ -7,18 +7,18 @@ const SlideItem = ({ general, index, content, ...props }) => {
     <div
       id={`project-${content.general.slug}`}
       className={clsx(
-        " dark:bg-dark-bgSecondary rounded-xl xl:rounded-3xl",
-        "w-full h-full px-[1rem] md:pr-0 sm:pl-[2rem] md:pl-[4rem] lg:pl-[1.5rem] xl:pl-[2rem]"
+        " dark:bg-dark-bgSecondary rounded-xl xl:rounded-3xl ",
+        "w-full h-full py-6 px-6 sm:py-10  md:px-10 md:py-10 lg:px-16 lg:py-16 xl:px-16 xl:py-16 3xl:px-16 3xl:py-16"
       )}
     >
       {/* * now we need a grid */}
-      <div className="grid h-full grid-cols-2 md:gap-8 lg:gap-8">
+      <div className="h-full md:grid grid-cols-2 items-center  md:gap-8 lg:gap-8">
         {/* * Left side will contain the project info */}
-        <div className="col-span-full md:col-span-1">
+        <div className="px-0 lg:px-2 ">
           <ContentProject {...content.general} slider={true} />
         </div>
         {/* * Right side will contain images*/}
-        <div className="col-span-full md:col-span-1">
+        <div className="md:w-full mt-5 h-full">
           <ImagesProject
             slider={true}
             images={content.general.workPageImages}
