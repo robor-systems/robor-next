@@ -1,14 +1,14 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import clsx from "clsx";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useMediaQuery } from "react-responsive";
-import { useIsomorphicLayoutEffect } from "utils/hooks";
 import ReactVisibilitySensor from "react-visibility-sensor";
-gsap.registerPlugin(ScrollTrigger);
-const timeline = gsap.timeline();
+import {
+  leftTranslateVariant,
+  rightTranslateVariant,
+  singleImageVariant,
+} from "constants/animations/variants.constant";
 
 const SectionCaseStudy = ({
   header,
@@ -20,46 +20,12 @@ const SectionCaseStudy = ({
 
   ...props
 }) => {
-  const isBigScreen = useMediaQuery({ query: "(min-width: 768px)" });
   const [visible, setVisible] = useState(false);
-  const leftTextRef = useRef(null);
-  const rightTextRef = useRef(null);
-  const imgRef = useRef(null);
-  const imgContainer = useRef(null);
-  useIsomorphicLayoutEffect(() => {
-    const el_Left = leftTextRef.current;
-    const el_Right = rightTextRef.current;
-    const el_img = imgRef.current;
-    let rightVal = isBigScreen ? 130 : 20;
-    let leftVal = isBigScreen ? -130 : -20;
-    if (visible) {
-      timeline.from(el_Left, { x: leftVal });
-      timeline.to(el_Left, {
-        // scrollTrigger: {
-        //   trigger: el_Left,
-        //   start: "left right",
-        // },
 
-        x: 0,
-      });
-
-      timeline.from(el_Right, { x: rightVal });
-      timeline.to(el_Right, {
-        x: 0,
-      });
-
-      timeline.from(el_img, { opacity: 0 });
-      timeline.to(el_img, {
-        opacity: 1,
-
-        ease: "power4.easeInOut",
-      });
-    }
-  }, [isBigScreen, visible]);
   return (
     <ReactVisibilitySensor
       partialVisibility
-      offset={{ top: -100 }}
+      offset={{ bottom: 200 }}
       onChange={(isVisible) => isVisible && setVisible(isVisible)}
     >
       <div
@@ -76,7 +42,10 @@ const SectionCaseStudy = ({
           {/* * left content */}
           <motion.div
             className="flex flex-col justify-center space-y-2 md:col-span-1 col-span-full text-light-contentSecondary dark:text-dark-contentSecondary"
-            ref={leftTextRef}
+            initial="invisible"
+            variants={leftTranslateVariant}
+            animate={visible ? "visible" : "invisible"}
+            transition={{ duration: 1 }}
           >
             {/* * subheader */}
             <h4 className="project-info-heading ">{subHeader}</h4>
@@ -88,7 +57,10 @@ const SectionCaseStudy = ({
           {/* * right content */}
           <motion.div
             className=" text-md md:text-lg md:col-span-1 col-span-full"
-            ref={rightTextRef}
+            initial="invisible"
+            variants={rightTranslateVariant}
+            animate={visible ? "visible" : "invisible"}
+            transition={{ duration: 1 }}
           >
             {description}
           </motion.div>
@@ -96,11 +68,14 @@ const SectionCaseStudy = ({
         {/* * bottom images div */}
 
         {!!image && (
-          <div
-            ref={imgContainer}
-            className="flex items-center justify-center w-full h-[220px] md:h-[456px] m-auto"
-          >
-            <motion.div className="relative w-full h-full" ref={imgRef}>
+          <div className="flex items-center justify-center w-full h-[220px] md:h-[456px] m-auto">
+            <motion.div
+              className="relative w-full h-full"
+              initial="invisible"
+              variants={singleImageVariant}
+              animate={visible ? "visible" : "invisible"}
+              transition={{ duration: 1 }}
+            >
               <Image
                 src={image}
                 alt={header}
