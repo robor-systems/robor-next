@@ -35,11 +35,11 @@ const ContentProject = ({ slug, title, description, slider, ...props }) => {
             <a className="flex items-center space-x-4 uppercase text-light-primary dark:text-dark-primary">
               <span className="flex justify-between  items-center  text-sm md:text-base ">
                 View Project{" "}
-                <FiArrowRight className="ml-6 text-sm md:text-2xl" />
+                <FiArrowRight className="ml-3 text-sm md:text-2xl" />
               </span>
             </a>
           </Link>
-          <div className="absolute  w-0 group-hover:w-[108px] h-1 bg-primary rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out"></div>
+          <div className="absolute  w-0 group-hover:w-[108px] h-1 bg-light-primary dark:bg-dark-primary rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out"></div>
         </div>
       </motion.div>
     </ReactVisibilitySensor>
