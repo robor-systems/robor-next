@@ -13,8 +13,7 @@ const WorkPage = () => {
     const handleScroll = (y) => {
       setScroll(y * 100);
     };
-    scrollYProgress.onChange(handleScroll);
-
+    const unsubscribeY = scrollYProgress.onChange(handleScroll);
     return () => {
       unsubscribeY();
     };
