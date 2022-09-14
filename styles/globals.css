@@ -142,6 +142,11 @@
   margin-left: 3px;
 }
 
+.dark .slick-dots li.slick-active button:before {
+  background: #00b7bf;
+  color: #00b7bf !important;
+}
+
 .slick-dots li {
   width: 10px !important;
 }
