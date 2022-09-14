@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
       {children}
       <div className="flex-col">
         {scroll > 2 ? <DarkModeToggleButton floatingBtn={true} /> : ""}
-        <Snackbar />
+        {pathname !== "/work" && <Snackbar scrollProgress={scroll} />}
       </div>
 
       {pathname !== "/work" && <Footer />}
