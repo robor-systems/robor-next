@@ -1,26 +1,16 @@
 import { existanceVariants } from "constants/animations/variants.constant";
-import { motion, useViewportScroll } from "framer-motion";
-import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import { useState } from "react";
 import DialogSnackbar from "./DialogSnackbar";
 import { FiMenu } from "react-icons/fi";
 import { ProgressCircle } from "@/components/Elements";
 
-const Snackbar = () => {
+const Snackbar = ({ scrollProgress }) => {
   const [opened, setOpened] = useState(false);
-  const { scrollYProgress } = useViewportScroll();
-  const [scroll, setScroll] = useState(0);
 
-  useEffect(() => {
-    const handleScroll = (y) => setScroll(y * 100);
-    const unsubscribeY = scrollYProgress.onChange(handleScroll);
-
-    return () => {
-      unsubscribeY();
-    };
-  });
   const handleOpen = () => setOpened(!opened);
 
-  if (scroll <= 101)
+  if (scrollProgress > 2)
     return (
       <motion.div className={"fixed z-30 bottom-10 right-5 md:right-10"} layout>
         {opened ? (
@@ -43,7 +33,7 @@ const Snackbar = () => {
               <FiMenu className="text-2xl" />
             </div>
 
-            <ProgressCircle radius={30} stroke={4} progress={scroll} />
+            <ProgressCircle radius={30} stroke={4} progress={scrollProgress} />
           </motion.div>
         )}
       </motion.div>
