@@ -37,8 +37,8 @@ const ImagesProject = ({ images, imageCount, slug, slider }) => {
             <div
               className={clsx(
                 slider
-                  ? "h-[230px]  sm:h-[250px] w-full  md:h-[250px] xl:h-[300px] 2xl:h-[100%] relative max-w-3xl ml-auto"
-                  : "h-[40vh] 3xl:h-[50vh]  md:h-[56vh] relative w-full"
+                  ? "h-[230px]  sm:h-[250px] w-full  md:h-[250px] xl:h-[300px] 2xl:[300px]  4xl:h-[100%] relative max-w-3xl ml-auto"
+                  : "h-[180px]  3xl:h-[45vh]  md:h-[250px] lg:h-[56vh]  relative"
               )}
             >
               <Image
@@ -97,7 +97,7 @@ const ImagesProject = ({ images, imageCount, slug, slider }) => {
               "absolute left-[80px] z-0 shadow-lg   ",
               slider
                 ? "top-[-15%] sm:top-[-20%] md:top-[-12%] lg:top-[-10%] xl:top-[-10%] xl:left-[121px] lg:left-[94px] lg:rounded-r-lg overflow-hidden"
-                : "top-[-15%] sm:top-[-20%] md:top-[-12%] lg:top-[-10%] xl:top-[-10%]"
+                : "top-[-15%] sm:top-[-20%] md:top-[-12%] lg:top-[-6%] xl:top-[-10%] lg:left-[200px] xl:left-[240px]"
             )}
           >
             <div className={!slider ? " relative top-0" : " relative top-0"}>
