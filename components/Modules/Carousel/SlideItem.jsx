@@ -8,7 +8,7 @@ const SlideItem = ({ general, index, content, ...props }) => {
       id={`project-${content.general.slug}`}
       className={clsx(
         " dark:bg-dark-bgSecondary rounded-xl xl:rounded-3xl ",
-        "w-full h-full py-6 px-6 sm:py-10  md:px-10 md:py-10 lg:px-16 lg:py-16 xl:px-16 xl:py-16 3xl:px-16 3xl:py-16"
+        "w-full h-full py-6 px-6 sm:py-10  md:px-10 md:py-10 lg:px-5 lg:py-0 xl:px-16 xl:py-16 3xl:px-16 3xl:py-16"
       )}
     >
       {/* * now we need a grid */}
