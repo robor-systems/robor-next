@@ -87,11 +87,17 @@ const workProjects = [
       backend: ["Node.js", "AWS Amplify", "GraphQL", "AWS Lambdas"],
       other: ["GitHub", "Kanban"],
     },
+    // relatedProject: {
+    //   title: "Kontractory",
+    //   slug: "kontractory",
+    //   description:
+    //     "Dealing with lawyers can be excruciating. Kontractory makes it simpler by digitising the whole process of finding the right laywer for legal...",
+    // },
     relatedProject: {
-      title: "Kontractory",
-      slug: "kontractory",
+      title: "Premium Voices",
+      slug: "premium-voices",
       description:
-        "Dealing with lawyers can be excruciating. Kontractory makes it simpler by digitising the whole process of finding the right laywer for legal...",
+        "A tool for converting textual content into natural sounding voices using the latest Neural networks provided by Google and AWS.",
     },
   },
   // * Premium Voices
@@ -178,11 +184,12 @@ const workProjects = [
       backend: ["Node.js", "TypeScript", "AWS Amplify"],
       other: ["AWS Cognito", "AWS AppSync", "AWS DynamoDB", "AWS S3", "Github"],
     },
+
     relatedProject: {
-      title: "Tokapi",
-      slug: "tokapi",
+      title: "Kontractory",
+      slug: "kontractory",
       description:
-        "A custodial NFT marketplace for a European client. The idea was to make NFTs accessible and allow any and everyone to purchase....",
+        "Dealing with lawyers can be excruciating. Kontractory makes it simpler by digitising the whole process of finding the right laywer for legal advise OR skipping the lawyer altogether thorugh the updated contract generator.",
     },
   },
   // * Kontractory
