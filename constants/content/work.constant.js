@@ -87,12 +87,7 @@ const workProjects = [
       backend: ["Node.js", "AWS Amplify", "GraphQL", "AWS Lambdas"],
       other: ["GitHub", "Kanban"],
     },
-    // relatedProject: {
-    //   title: "Kontractory",
-    //   slug: "kontractory",
-    //   description:
-    //     "Dealing with lawyers can be excruciating. Kontractory makes it simpler by digitising the whole process of finding the right laywer for legal...",
-    // },
+
     relatedProject: {
       title: "Premium Voices",
       slug: "premium-voices",

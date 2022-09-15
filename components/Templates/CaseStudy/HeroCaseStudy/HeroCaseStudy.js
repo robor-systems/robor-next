@@ -14,5 +14,3 @@ const HeroCaseStudy = ({ headerImage, title }) => {
 };
 
 export default HeroCaseStudy;
-
-//  h-[30vh] sm:h-[45vh] md:h-[60vh] lg:h-[380px] xl:h-[77vh]
