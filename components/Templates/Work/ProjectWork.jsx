@@ -22,7 +22,7 @@ const ProjectWork = ({ general, index, ...props }) => {
             <ContentProject {...general} />
           </div>
           {/* * Right side will contain images*/}
-          <div className="md:w-full  lg:max-w-2xl 3xl:max-w-3xl ml-auto ">
+          <div className="md:w-full  lg:max-w-2xl 3xl:max-w-3xl ml-auto  h-full">
             <ImagesProject
               slug={general.slug}
               images={general.workPageImages}
