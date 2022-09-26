@@ -29,6 +29,10 @@ class MyDocument extends Document {
           />
           <link rel="manifest" href="/favicons/site.webmanifest" />
           <meta name="theme-color" content="#202d50" />
+          <meta
+            name="google-site-verification"
+            content="B4NYlti1F66ymARigLBt8Qr4f-F3mP8Rg-adcqXLH74"
+          />
         </Head>
         <body>
           <Main />
