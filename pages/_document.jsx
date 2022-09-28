@@ -52,6 +52,10 @@ class MyDocument extends Document {
             name="google-site-verification"
             content="B4NYlti1F66ymARigLBt8Qr4f-F3mP8Rg-adcqXLH74"
           />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
         </Head>
         <body>
           <Main />
