@@ -69,18 +69,18 @@ const team = [
   //     github: "https://github.com/haseebasim",
   //   },
   // },
-  {
-    name: "Iqra Fareed",
-    position: "Front-End Engineer",
-    image:
-      "https://robor-team.s3.eu-central-1.amazonaws.com/team/robor-logo.png",
-    video:
-      "https://robor-team.s3.eu-central-1.amazonaws.com/team/robor-logo-animation.mp4",
-    socials: {
-      linkedin: "https://www.linkedin.com/in/iqra-fareed-2701871a5/",
-      github: "https://github.com/IqraFareed",
-    },
-  },
+  // {
+  //   name: "Iqra Fareed",
+  //   position: "Front-End Engineer",
+  //   image:
+  //     "https://robor-team.s3.eu-central-1.amazonaws.com/team/robor-logo.png",
+  //   video:
+  //     "https://robor-team.s3.eu-central-1.amazonaws.com/team/robor-logo-animation.mp4",
+  //   socials: {
+  //     linkedin: "https://www.linkedin.com/in/iqra-fareed-2701871a5/",
+  //     github: "https://github.com/IqraFareed",
+  //   },
+  // },
   {
     name: "Malaika Afridi",
     position: "Front-End Engineer",
