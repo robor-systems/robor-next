@@ -18,7 +18,7 @@ const Header = () => {
             </Link>
           </div>
           {/* * Right content will have links and the dark mode toggle button */}
-          <div className="flex items-center justify-end col-span-1 md:col-span-4 xl:col-span-2 md:justify-between md:space-x-12 lg:col-span-3">
+          <div className="flex items-center justify-end col-span-1 md:col-span-4 xl:col-span-2  md:space-x-12 lg:col-span-3">
             <div className="hidden md:gap-8 lg:gap-12 md:flex">
               <NavLink href="services" id>
                 Services

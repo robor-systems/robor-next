@@ -37,7 +37,7 @@ const SectionCaseStudy = ({
           "space-y-10 md:space-y-10"
         )}
       >
-        <div className="container mx-auto">
+        <div className="container mx-auto flex flex-col gap-y-16">
           {/* * Top content */}
           <div className={clsx("grid grid-cols-2 gap-2 md:gap-10")}>
             {/* * left content */}

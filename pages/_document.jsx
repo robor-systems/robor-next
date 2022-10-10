@@ -10,6 +10,25 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          {/* Global Site Tag (gtag.js) - Google Analytics */}
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+              page_path: window.location.pathname,
+            });
+          `,
+            }}
+          />
+          {/* Global Site Tag (gtag.js) - Google Analytics */}
+
           <link
             rel="apple-touch-icon"
             sizes="180x180"
@@ -32,6 +51,10 @@ class MyDocument extends Document {
           <meta
             name="google-site-verification"
             content="B4NYlti1F66ymARigLBt8Qr4f-F3mP8Rg-adcqXLH74"
+          />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
           />
         </Head>
         <body>

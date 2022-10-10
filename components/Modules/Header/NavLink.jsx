@@ -13,9 +13,9 @@ const NavLink = ({ href, children, id }) => {
       }}
       className="cursor-pointer"
     >
-      <div className="group relative flex flex-col gap-2 items-center">
+      <div className="group w-fit relative flex flex-col gap-2 items-center">
         <div className="navlink">{children}</div>
-        <div className="absolute -bottom-2 w-0 group-hover:w-16 h-1 bg-light-primary dark:bg-dark-primary rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out"></div>
+        <div className="absolute -bottom-2 w-0 group-hover:w-full h-1 bg-light-primary dark:bg-dark-primary rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out"></div>
       </div>
     </div>
   );
