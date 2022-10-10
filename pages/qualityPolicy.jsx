@@ -5,7 +5,7 @@ const qualityPolicy = () => {
   return (
     <>
       <Head>
-        <title>Our Work | Robor Systems</title>
+        <title>Quality Policy | Robor Systems</title>
         <link rel="canonical" href="https://robor.systems/qualityPolicy"></link>
       </Head>
       <Container>
