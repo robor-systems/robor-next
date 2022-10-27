@@ -2,8 +2,10 @@ import clsx from "clsx";
 import ContentProject from "./ContentProject";
 import Container from "@/components/Modules/Container/Container";
 import ImagesProject from "./ImagesProject";
+import { useRouter } from "next/router";
 
 const ProjectWork = ({ general, index, ...props }) => {
+  const router = useRouter();
   return (
     <section
       id={`project-${general.slug}`}
@@ -19,7 +21,11 @@ const ProjectWork = ({ general, index, ...props }) => {
         <div className="h-full md:grid grid-cols-2 items-center sm:gap-2 md:gap-10 px-[20px] ">
           {/* * Left side will contain the project info */}
           <div className="px-0 xl:px-20 3xl:px-0">
-            <ContentProject {...general} />
+            <ContentProject
+              slug={`${router.pathname}/${general.slug}`}
+              title={general.title}
+              description={general.description}
+            />
           </div>
           {/* * Right side will contain images*/}
           <div className="md:w-full  lg:max-w-2xl 3xl:max-w-3xl ml-auto  h-full">
