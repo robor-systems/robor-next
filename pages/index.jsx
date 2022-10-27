@@ -5,6 +5,7 @@ import {
   OurClients,
   OurProcess,
   OurWork,
+  SolutionsHome,
   TeamHome,
   TechStackHome,
 } from "@/components/Templates/Home";
@@ -27,6 +28,7 @@ const Home = () => {
       <FeaturesHome />
       <TechStackHome />
       <OurWork />
+      <SolutionsHome />
       {/* <OurClients /> */}
       <OurProcess />
       <TeamHome />
