@@ -21,8 +21,8 @@ const WorkPage = () => {
   return (
     <>
       <Head>
-        <title>Our Work | Robor Systems</title>
-        <link rel="canonical" href="https://robor.systems/work"></link>
+        <title>Our Clients | Robor Systems</title>
+        <link rel="canonical" href="https://robor.systems/clients"></link>
       </Head>
       <main
         ref={ref}
