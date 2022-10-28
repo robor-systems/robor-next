@@ -40,7 +40,7 @@ const OurWork = () => {
           <SliderOurWork />
 
           {/* * View all projects button */}
-          <Link href="/work" passHref>
+          <Link href="/clients" passHref>
             <motion.a
               variants={existanceVariants}
               initial="invisible"
