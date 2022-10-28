@@ -1,7 +1,7 @@
 const solutions = [
   {
     general: {
-      slug: "image-detector",
+      slug: "image-generator",
       title: "AI Image Generator",
       description:
         "Machine Learning application that detects objects from images. Duis a odio est. In pulvinar consequat lacus, in dictum turpis molestie et. Sed eu tortor, duis dui magna.",
