@@ -7,6 +7,7 @@ import { BsDownload } from "react-icons/bs";
 import { PROCESS_STATE } from "utils/constants";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import clsx from "clsx";
 
 const ImageGenerator = () => {
   const [previewImage, setPreviewImage] = useState("");
@@ -47,13 +48,13 @@ const ImageGenerator = () => {
   };
 
   return (
-    <div className="w-full">
+    <div className="w-full mx-auto max-w-sm sm:max-w-full ">
       <SolutionHeader
         heading="AI Image Generator"
         subHeading="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ex ipsum, rhoncus sed sollicitudin eget, cursus ultricies magna. "
         className="text-light-content"
       />
-      <div>
+      <div className="px-2 sm:px-0">
         <p className="text-light-contentSecondary dark:text-dark-content text-lg mb-2 mt-10">
           Describe the image you want to create:
         </p>
@@ -69,7 +70,7 @@ const ImageGenerator = () => {
           {process.error && <p className="text-red-500">{process.error}</p>}
         </motion.div>
         <button
-          className="disabled:opacity-50 flex items-center rounded-lg my-8 btn-md btn-primary dark:bg-dark-primary w-full text-center !px-6"
+          className="disabled:opacity-50 flex items-center rounded-lg mt-2 mb-8 btn-md btn-primary dark:bg-dark-primary w-full text-center !px-6"
           onClick={handleClick}
           disabled={(process.status === PROCESS_STATE.LOADING) | !message}
         >
@@ -84,17 +85,27 @@ const ImageGenerator = () => {
         </button>
       </div>
       {previewImage ? (
-        <div className="h-[600px] w-full relative">
+        <div className="pt-[89.4%] w-full relative">
           <Image src={previewImage} layout="fill" alt="generated-image" />
         </div>
       ) : (
-        <div className="h-[600px] w-full bg-light-bgSecondary dark:bg-dark-bgSecondary rounded-[2px] flex items-center justify-center">
-          <span className="text-[#AEAEAE]">Your masterpiece here</span>
-        </div>
+        <>
+          <div className="relative">
+            <div className="pt-[89.4%] w-full bg-light-bgSecondary dark:bg-dark-bgSecondary rounded-[2px] flex items-center justify-center"></div>
+            <span className="text-[#AEAEAE] absolute h-fit w-fit top-0 bottom-0 left-0 right-0 m-auto">
+              Your masterpiece here
+            </span>
+          </div>
+        </>
       )}
 
-      <div className="flex group  cursor-pointer  mt-4 font-semibold opacity-50 items-center gap-x-2 text-lg text-light-primary dark:text-dark-primary">
-        <BsDownload className="font-bold text-xl text-light-primary dark:text-dark-primary" />
+      <div className="flex group  cursor-pointer  mt-4 font-semibold  items-center gap-x-2 text-lg text-light-primary dark:text-dark-primary">
+        <BsDownload
+          className={clsx(
+            !previewImage ? "opacity-50" : "opacity-100",
+            "font-bold text-xl text-light-primary dark:text-dark-primary"
+          )}
+        />
         <div className="w-fit relative flex">
           {previewImage ? (
             <a
