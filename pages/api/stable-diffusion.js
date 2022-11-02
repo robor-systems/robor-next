@@ -1,11 +1,17 @@
 import { generateAsync } from "stability-client";
+import { limiter, runMiddleware } from "utils/utils";
 
 export default async function handler(req, response) {
-  const { message } = req.body;
+  const { prompt } = req.body;
+  try {
+    await runMiddleware(req, response, limiter);
+  } catch (err) {
+    return response.status(429).send(err.message);
+  }
   try {
     const { res, images } = await generateAsync({
       noStore: true,
-      prompt: message,
+      prompt: prompt,
       apiKey: process.env.DREAMSTUDIO_API_KEY,
     });
     const buffer = images[0].buffer;

@@ -21,7 +21,7 @@ export default SolutionPage;
 
 export async function getStaticPaths() {
   return {
-    paths: ["/solutions/image-generator"],
+    paths: ["/solutions/stable-diffusion"],
     fallback: true,
   };
 }
