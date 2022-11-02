@@ -33,27 +33,18 @@ const ImageGenerator = () => {
 
   const handleClick = async () => {
     const apiCount = cookies.rate_limit_count;
-
-    // On api call set feedback msg to GENERATING IMAGE
-    setLoadingFeedback("Generating Image...");
+    // Change the loading feedback message after 30 secs
+    const timer = setTimeout(() => {
+      setLoadingFeedback(
+        "lorem ispum lorem ispum lorem ispum lorem ispum lorem ispum"
+      );
+    }, 30000);
     setProcess({
       error: "",
       status: PROCESS_STATE.LOADING,
     });
-    // AFTER 2secs set loading feedback message to PROCESSING
-    setTimeout(() => {
-      setLoadingFeedback("Processing...");
-    }, 2000);
+
     try {
-      // After 4secs set loading feedback message to LOADING SCREEN,
-      //it'll be shown until the api send  a response
-
-      // API takes around 5-8 secs
-
-      setTimeout(() => {
-        setLoadingFeedback("Loading screen...");
-      }, 4000);
-
       const { data } = await axios.post(
         "/api/stable-diffusion",
         { prompt },
@@ -83,6 +74,7 @@ const ImageGenerator = () => {
         error: "",
         status: PROCESS_STATE.SUCCESS,
       });
+      clearTimeout(timer);
     } catch (e) {
       const decoder = new TextDecoder();
       const errorMsg = decoder.decode(e.response.data);
@@ -141,15 +133,6 @@ const ImageGenerator = () => {
               "input-valid w-full bg-light-bgPrimary dark:bg-dark-bgPrimary dark:border-gray-700"
             }
           />
-          {process.error && cookies.rate_limit_count !== 5 ? (
-            <p className="text-red-500">{process.error}</p>
-          ) : (
-            parseInt(cookies.rate_limit_count) >= 5 && (
-              <p className="text-red-500">
-                We&apos;ve reached our limit for now, please come back later.
-              </p>
-            )
-          )}
         </motion.div>
         <motion.div layout className="mt-2 mb-8">
           <button
@@ -163,7 +146,7 @@ const ImageGenerator = () => {
           >
             {process.status === PROCESS_STATE.LOADING ? (
               <>
-                <span className="inline-block w-full">{loadingFeedback}</span>
+                <span className="inline-block w-full">GENERATING IMAGE...</span>
                 <AiOutlineLoading3Quarters className="animate-spin" />
               </>
             ) : (
@@ -172,9 +155,20 @@ const ImageGenerator = () => {
           </button>
           {process.status === PROCESS_STATE.LOADING && (
             <p className="mt-2 text-[#6B7280] text-base2 dark:text-dark-content">
-              Please wait with us while we’re generating the image, this might
-              take 5-30 seconds.
+              {loadingFeedback
+                ? loadingFeedback
+                : `Please wait with us while we’re generating the image, this might
+              take 5-30 seconds.`}
             </p>
+          )}
+          {process.error && cookies.rate_limit_count !== 5 ? (
+            <p className="text-red-500 mt-2">{process.error}</p>
+          ) : (
+            parseInt(cookies.rate_limit_count) >= 5 && (
+              <p className="text-red-500 mt-2">
+                We&apos;ve reached our limit for now, please come back later.
+              </p>
+            )
           )}
         </motion.div>
 
@@ -193,10 +187,10 @@ const ImageGenerator = () => {
           </>
         )}
 
-        <div className="flex group  cursor-pointer  mt-4 font-semibold  items-center gap-x-2 text-lg text-light-primary dark:text-dark-primary">
+        <div className="flex group    mt-4 font-semibold  items-center gap-x-2 text-lg text-light-primary dark:text-dark-primary">
           <BsDownload
             className={clsx(
-              !previewImage ? "opacity-50" : "opacity-100",
+              !previewImage ? "opacity-50" : "opacity-100 cursor-pointer",
               "font-bold text-xl text-light-primary dark:text-dark-primary"
             )}
           />
