@@ -21,13 +21,11 @@ const getIP = (request) =>
   request.headers["x-real-ip"] ||
   request.connection.remoteAddress;
 
-const limit = 5;
-const windowMs = 24 * 24 * 60 * 60 * 1000;
-
 export const limiter = rateLimit({
   keyGenerator: getIP,
-  windowMs,
-  max: limit,
+  windowMs: 24 * 24 * 60 * 60 * 1000,
+  max: 5,
+  standardHeaders: true,
   skipFailedRequests: true,
   message: "We've reached our limit for now, please come back later",
 });
