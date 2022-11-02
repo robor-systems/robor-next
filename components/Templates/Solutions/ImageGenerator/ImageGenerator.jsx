@@ -68,12 +68,12 @@ const ImageGenerator = () => {
       if (apiCount) {
         setCookie("rate_limit_count", countInt, {
           expires: expiryDate,
-          domain: "robor.systems",
+          // domain: "robor.systems",
         });
       } else {
         setCookie("rate_limit_count", 1, {
           expires: expiryDate,
-          domain: "robor.systems",
+          // domain: "robor.systems",
         });
       }
       const url = URL.createObjectURL(blob);
