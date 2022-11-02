@@ -1,8 +1,11 @@
 import rateLimit from "express-rate-limit";
-
+import { Redis } from "@upstash/redis";
+import { Ratelimit } from "@upstash/ratelimit";
 export const random = (min, max) => {
   return Math.random() * (max - min) + min;
 };
+
+// EXPRESS RATE LIMIT
 
 export function runMiddleware(req, res, fn) {
   return new Promise((resolve, reject) => {
@@ -19,6 +22,7 @@ const getIP = (request) =>
   request.ip ||
   request.headers["x-forwarded-for"] ||
   request.headers["x-real-ip"] ||
+  "127.0.0.1" ||
   request.connection.remoteAddress;
 
 export const limiter = rateLimit({
@@ -28,4 +32,16 @@ export const limiter = rateLimit({
   standardHeaders: true,
   skipFailedRequests: true,
   message: "We've reached our limit for now, please come back later",
+});
+
+// UPSTASH RATE LIMIT
+
+const redis = new Redis({
+  url: process.env.UPSTASH_REDIS_REST_URL,
+  token: process.env.UPSTASH_REDIS_REST_TOKEN,
+});
+
+export const ratelimit = new Ratelimit({
+  redis: redis,
+  limiter: Ratelimit.slidingWindow(6, "30 d"),
 });

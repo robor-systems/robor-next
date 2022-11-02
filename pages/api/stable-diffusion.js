@@ -1,40 +1,30 @@
 import { generateAsync } from "stability-client";
-import rateLimit from "express-rate-limit";
-// import { limiter, runMiddleware } from "utils/utils";
-
-function runMiddleware(req, res, fn) {
-  return new Promise((resolve, reject) => {
-    fn(req, res, (result) => {
-      if (result instanceof Error) {
-        return reject(result);
-      }
-      return resolve(result);
-    });
-  });
-}
-
-const getIP = (request) =>
-  request.ip ||
-  request.headers["x-forwarded-for"] ||
-  request.headers["x-real-ip"] ||
-  request.connection.remoteAddress;
-
-const limiter = rateLimit({
-  keyGenerator: getIP,
-  windowMs: 24 * 24 * 60 * 60 * 1000,
-  max: 5,
-  standardHeaders: true,
-  skipFailedRequests: true,
-  message: "We've reached our limit for now, please come back later",
-});
+import { ratelimit } from "utils/utils";
 
 export default async function handler(req, response) {
   const { prompt } = req.body;
-  try {
-    await runMiddleware(req, response, limiter);
-  } catch (err) {
-    return response.status(429).send(err.message);
+
+  const ip =
+    req.ip ||
+    req.headers["x-forwarded-for"] ||
+    req.headers["x-real-ip"] ||
+    req.connection.remoteAddress ||
+    "127.0.0.1";
+
+  const { success, limit, reset, remaining } = await ratelimit.limit(
+    `mw_${ip}`
+  );
+
+  if (success) {
+    response.setHeader("X-RateLimit-Limit", limit.toString());
+    response.setHeader("X-RateLimit-Remaining", remaining.toString());
+    response.setHeader("X-RateLimit-Reset", reset.toString());
+  } else if (!success) {
+    return response
+      .status(429)
+      .send("We've reached our limit for now, please come back later.");
   }
+
   try {
     const { res, images } = await generateAsync({
       noStore: true,
