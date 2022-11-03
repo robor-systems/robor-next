@@ -36,12 +36,7 @@ export const limiter = rateLimit({
 
 // UPSTASH RATE LIMIT
 
-const redis = new Redis({
-  url: process.env.UPSTASH_REDIS_REST_URL,
-  token: process.env.UPSTASH_REDIS_REST_TOKEN,
-});
-
 export const ratelimit = new Ratelimit({
   redis: redis,
-  limiter: Ratelimit.slidingWindow(6, "24 h"),
+  limiter: Ratelimit.slidingWindow(6, "48 h"),
 });
