@@ -33,10 +33,3 @@ export const limiter = rateLimit({
   skipFailedRequests: true,
   message: "We've reached our limit for now, please come back later",
 });
-
-// UPSTASH RATE LIMIT
-
-export const ratelimit = new Ratelimit({
-  redis: redis,
-  limiter: Ratelimit.slidingWindow(6, "48 h"),
-});
