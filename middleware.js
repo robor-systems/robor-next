@@ -13,7 +13,7 @@ const ratelimit = new Ratelimit({
 });
 
 export default async function middleware(request, event) {
-  const ip = "127.0.1.1";
+  const ip = "127.0.2.1";
   console.log("ip", ip);
   const { success, pending, limit, reset, remaining } = await ratelimit.limit(
     `mw_${ip}`
