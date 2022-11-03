@@ -13,7 +13,12 @@ const ratelimit = new Ratelimit({
 });
 
 export default async function middleware(request, event) {
-  const ip = request.ip ?? "127.0.0.1";
+  const ip =
+    request.ip ||
+    request.headers["x-forwarded-for"] ||
+    request.headers["x-real-ip"] ||
+    request.connection.remoteAddress ||
+    "127.0.0.1";
   const { success, pending, limit, reset, remaining } = await ratelimit.limit(
     `mw_${ip}`
   );
