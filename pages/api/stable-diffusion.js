@@ -15,6 +15,7 @@ export default async function handler(req, response) {
     `mw_${ip}`
   );
 
+  console.log("reset", reset);
   if (success) {
     response.setHeader("X-RateLimit-Limit", limit.toString());
     response.setHeader("X-RateLimit-Remaining", remaining.toString());
