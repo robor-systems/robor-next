@@ -74,10 +74,8 @@ const ImageGenerator = () => {
         error: "",
         status: PROCESS_STATE.SUCCESS,
       });
-      console.log("data", data);
       clearTimeout(timer);
     } catch (e) {
-      console.log("err", e);
       const decoder = new TextDecoder();
       const errorMsg = decoder.decode(e.response.data);
       setLoadingFeedback("");

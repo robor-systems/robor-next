@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { Ratelimit } from "@upstash/ratelimit";
 import { Redis } from "@upstash/redis";
 
@@ -9,14 +9,13 @@ const redis = new Redis({
 
 const ratelimit = new Ratelimit({
   redis: redis,
-  limiter: Ratelimit.slidingWindow(6, "30 d"),
+  limiter: Ratelimit.slidingWindow(6, "20 m"),
 });
 
 export default async function middleware(request, event) {
   const ip =
+    request.headers.get("x-nf-client-connection-ip") ||
     request.ip ||
-    request.headers["x-forwarded-for"] ||
-    request.headers["x-real-ip"] ||
     "127.0.0.1";
   const { success, pending, limit, reset, remaining } = await ratelimit.limit(
     `mw_${ip}`
