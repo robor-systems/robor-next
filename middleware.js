@@ -9,11 +9,11 @@ const redis = new Redis({
 
 const ratelimit = new Ratelimit({
   redis: redis,
-  limiter: Ratelimit.slidingWindow(6, "48 h"),
+  limiter: Ratelimit.slidingWindow(6, "2 m"),
 });
 
 export default async function middleware(request, event) {
-  const ip = request.ip ?? "127.0.0.1";
+  const ip = "127.0.1.1";
   console.log("ip", ip);
   const { success, pending, limit, reset, remaining } = await ratelimit.limit(
     `mw_${ip}`
