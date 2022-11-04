@@ -6,7 +6,7 @@ export default async function handler(req, response) {
   try {
     const { res, images } = await generateAsync({
       noStore: true,
-      prompt: "",
+      prompt: prompt,
       apiKey: process.env.DREAMSTUDIO_API_KEY,
     });
     const buffer = images[0].buffer;
