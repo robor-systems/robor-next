@@ -23,10 +23,8 @@ const Header = () => {
               <NavLink href="services" id>
                 Services
               </NavLink>
-              <NavLink href="work">Work</NavLink>
-              <NavLink href="team" id>
-                Team
-              </NavLink>
+              <NavLink href="clients">Clients</NavLink>
+              <NavLink href="solutions">Solutions</NavLink>
               <NavLink href="contact">Contact</NavLink>
             </div>
             <div className="flex">

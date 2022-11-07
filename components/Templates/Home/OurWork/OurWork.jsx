@@ -23,7 +23,7 @@ const OurWork = () => {
         offset={{ bottom: 300 }}
       >
         <motion.section
-          id="work"
+          id="clients"
           className="flex flex-col items-center w-full gap-16 pt-52 pb-52  overflow-hidden"
           initial="invisible"
           animate={visible ? "visible" : "invisible"}
@@ -40,7 +40,7 @@ const OurWork = () => {
           <SliderOurWork />
 
           {/* * View all projects button */}
-          <Link href="/work" passHref>
+          <Link href="/clients" passHref>
             <motion.a
               variants={existanceVariants}
               initial="invisible"

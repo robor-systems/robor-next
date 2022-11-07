@@ -31,7 +31,7 @@ const ContentProject = ({ slug, title, description, slider, ...props }) => {
         </p>
         {/* * go to project page link */}
         <div className="relative group">
-          <Link href={`/work/${slug}`} passHref>
+          <Link href={`${slug}`} passHref>
             <a className="flex items-center space-x-4 uppercase text-light-primary dark:text-dark-primary">
               <span className="flex justify-between  items-center  text-sm md:text-base ">
                 View Project{" "}

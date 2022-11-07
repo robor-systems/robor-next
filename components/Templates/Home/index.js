@@ -6,3 +6,4 @@ export { default as OurProcess } from "./OurProcess/OurProcess";
 export { default as OurClients } from "./OurClients/OurClients";
 export { default as JoinTeam } from "./JoinTeam/JoinTeam";
 export { default as OurWork } from "./OurWork/OurWork";
+export { default as SolutionsHome } from "./SolutionsHome/SolutionsHome";
