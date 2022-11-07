@@ -2,9 +2,9 @@ const solutions = [
   {
     general: {
       slug: "stable-diffusion",
-      title: "AI Image Generator",
+      title: "Stable Diffusion Artist",
       description:
-        "Machine Learning application that detects objects from images. Duis a odio est. In pulvinar consequat lacus, in dictum turpis molestie et. Sed eu tortor, duis dui magna.",
+        "Check out our latest solution for creating artwork through prompts. You just need to enter a legible query and our Machine Learning model will churn out an appropriate artwork for you.",
 
       workPageImageCount: 1,
 

@@ -36,7 +36,7 @@ const ImageGenerator = () => {
     // Change the loading feedback message after 30 secs
     const timer = setTimeout(() => {
       setLoadingFeedback(
-        "lorem ispum lorem ispum lorem ispum lorem ispum lorem ispum"
+        "This is taking longer than anticipated. We're working on it... "
       );
     }, 30000);
     setProcess({
@@ -101,8 +101,8 @@ const ImageGenerator = () => {
     <>
       <div className="w-full mx-auto max-w-xs sm:max-w-[600px] ">
         <SolutionHeader
-          heading="AI Image Generator"
-          subHeading="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ex ipsum, rhoncus sed sollicitudin eget, cursus ultricies magna. "
+          heading="Stable Diffusion Artist"
+          subHeading="Get creative and transform your ideas into novel artistic art pieces by using our latest Stable Diffusion API that takes in a prompt and converts it into a picture."
           className="text-light-content"
         />
 
@@ -157,8 +157,7 @@ const ImageGenerator = () => {
             <p className="mt-2 text-[#6B7280] text-base2 dark:text-dark-content">
               {loadingFeedback
                 ? loadingFeedback
-                : `Please wait with us while we’re generating the image, this might
-              take 5-30 seconds.`}
+                : `The artist is busy generating the image, might take up to 30 seconds.`}
             </p>
           )}
           {process.error && cookies.rate_limit_count !== 5 ? (
