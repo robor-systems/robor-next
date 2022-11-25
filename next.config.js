@@ -25,4 +25,19 @@ module.exports = {
       },
     ];
   },
+
+  async redirects() {
+    return [
+      {
+        source: "/work",
+        destination: "/clients",
+        permanent: true,
+      },
+      {
+        source: "/work/:slug",
+        destination: "/clients/:slug", // Matched parameters can be used in the destination
+        permanent: true,
+      },
+    ];
+  },
 };
