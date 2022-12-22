@@ -33,7 +33,7 @@ const OurWork = () => {
           {/* * Heading */}
           <SectionHeader
             title="Our Work"
-            subtitle="A peak of what we have delivered to our amazing customers."
+            subtitle="A peek of what we have delivered to our amazing customers."
           />
 
           {/* * Projects Slider */}

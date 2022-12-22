@@ -184,7 +184,7 @@ const workProjects = [
       title: "Kontractory",
       slug: "kontractory",
       description:
-        "Dealing with lawyers can be excruciating. Kontractory makes it simpler by digitising the whole process of finding the right laywer for legal advise OR skipping the lawyer altogether thorugh the updated contract generator.",
+        "Dealing with lawyers can be excruciating. Kontractory makes it simpler by digitising the whole process of finding the right laywer for legal advise OR skipping the lawyer altogether through  the updated contract generator.",
     },
   },
   // * Kontractory
@@ -193,7 +193,7 @@ const workProjects = [
       slug: "kontractory",
       title: "Kontractory",
       description:
-        "Dealing with lawyers can be excruciating. Kontractory makes it simpler by digitising the whole process of finding the right laywer for legal advise OR skipping the lawyer altogether thorugh the updated contract generator.",
+        "Dealing with lawyers can be excruciating. Kontractory makes it simpler by digitising the whole process of finding the right laywer for legal advise OR skipping the lawyer altogether through  the updated contract generator.",
       clientSize: "Startup",
       location: "Vienna, Austria",
       services: "Redesign | Technological Improvements | Frontend Development",
@@ -222,7 +222,7 @@ const workProjects = [
         header: "Kontractory",
         subHeader: "About Client",
         description:
-          "Dealing with lawyers can be excruciating. Kontractory makes it simpler by digitising the whole process of finding the right laywer for legal advise OR skipping the lawyer altogether thorugh the updated contract generator.",
+          "Dealing with lawyers can be excruciating. Kontractory makes it simpler by digitising the whole process of finding the right laywer for legal advise OR skipping the lawyer altogether through the updated contract generator.",
       },
       {
         id: "the-idea",
