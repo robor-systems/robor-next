@@ -82,15 +82,15 @@ const team = [
   //   },
   // },
   {
-    name: "Malaika Afridi",
-    position: "Front-End Engineer",
+    name: "Ahmad Tufail",
+    position: "Full-Stack Engineer",
     image:
-      "https://robor-team.s3.eu-central-1.amazonaws.com/team/robor-logo.png",
+        "https://robor-team.s3.eu-central-1.amazonaws.com/team/robor-logo.png",
     video:
-      "https://robor-team.s3.eu-central-1.amazonaws.com/team/robor-logo-animation.mp4",
+        "https://robor-team.s3.eu-central-1.amazonaws.com/team/robor-logo-animation.mp4",
     socials: {
-      linkedin: "https://www.linkedin.com/in/malaika-afridi-4799541b4/",
-      github: "https://github.com/malaika22",
+      linkedin: "https://www.linkedin.com/in/ahmadkhudai/",
+      github: "https://github.com/ahmadkhudai",
     },
   },
   {
