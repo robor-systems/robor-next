@@ -22,7 +22,6 @@ const SolutionsPage = () => {
     <>
       <Head>
         <title>Solutions | Robor Systems</title>
-        <link rel="canonical" href="https://robor.systems/solutions"></link>
       </Head>
       <main
         ref={ref}

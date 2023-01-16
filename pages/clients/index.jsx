@@ -22,7 +22,6 @@ const WorkPage = () => {
     <>
       <Head>
         <title>Our Clients | Robor Systems</title>
-        <link rel="canonical" href="https://robor.systems/clients"></link>
       </Head>
       <main
         ref={ref}
