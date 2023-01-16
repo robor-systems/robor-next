@@ -6,13 +6,15 @@ import Layout from "@/components/Modules/Layout/Layout";
 import { pageview } from "utils/google-analytics";
 import seo from "utils/seo";
 import { useRouter } from "next/router";
-import { useEffect } from "react";
+import {useEffect, useState} from "react";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
+  const [seoData, setSeoData] = useState(seo);
 
   useEffect(() => {
     const handleRouteChange = (url) => {
+      setSeoData({...seoData, canonical: "https://robor.systems" + url});
       pageview(url);
     };
     //When the component is mounted, subscribe to router changes
@@ -28,7 +30,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider attribute="class">
       <Layout>
-        <DefaultSeo {...seo} />
+        <DefaultSeo {...seoData} />
         <Component {...pageProps} />
       </Layout>
     </ThemeProvider>
