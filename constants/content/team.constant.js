@@ -1,7 +1,7 @@
 const team = [
   {
     name: "Danish Yasin",
-    position: "Founder",
+    position: "Software Engineer",
     image:
       "https://robor-team.s3.eu-central-1.amazonaws.com/team/danish-poster.png",
     video:
@@ -85,9 +85,9 @@ const team = [
     name: "Ahmad Tufail",
     position: "Full-Stack Engineer",
     image:
-        "https://robor-team.s3.eu-central-1.amazonaws.com/team/robor-logo.png",
+      "https://robor-team.s3.eu-central-1.amazonaws.com/team/robor-logo.png",
     video:
-        "https://robor-team.s3.eu-central-1.amazonaws.com/team/robor-logo-animation.mp4",
+      "https://robor-team.s3.eu-central-1.amazonaws.com/team/robor-logo-animation.mp4",
     socials: {
       linkedin: "https://www.linkedin.com/in/ahmadkhudai/",
       github: "https://github.com/ahmadkhudai",
