@@ -46,15 +46,15 @@ const team = [
   //   },
   // },
   {
-    name: "Hussain Rizvi",
+    name: "Ashbal Sohail",
     position: "Full-Stack Engineer",
     image:
       "https://robor-team.s3.eu-central-1.amazonaws.com/team/robor-logo.png",
     video:
       "https://robor-team.s3.eu-central-1.amazonaws.com/team/robor-logo-animation.mp4",
     socials: {
-      linkedin: "https://www.linkedin.com/in/smhussainrizvi/",
-      github: "https://github.com/Hussain-7",
+      linkedin: "https://www.linkedin.com/in/ashbal/",
+      github: "https://github.com/ashbal",
     },
   },
   // {
@@ -82,26 +82,27 @@ const team = [
   //   },
   // },
   {
-    name: "Ahmad Tufail",
+    name: "Ajwad Masood",
     position: "Full-Stack Engineer",
     image:
       "https://robor-team.s3.eu-central-1.amazonaws.com/team/robor-logo.png",
     video:
       "https://robor-team.s3.eu-central-1.amazonaws.com/team/robor-logo-animation.mp4",
     socials: {
-      linkedin: "https://www.linkedin.com/in/ahmadkhudai/",
-      github: "https://github.com/ahmadkhudai",
+      linkedin: "https://www.linkedin.com/in/ajwad-masood-3a40a7125",
+      github: "https://github.com/ajwadmasood",
     },
   },
   {
-    name: "Aamna Sarosh",
+    name: "Maryam Suhail",
     position: "UI Designer",
     image:
-      "https://robor-team.s3.eu-central-1.amazonaws.com/team/aamna-poster.jpg",
-    video: "https://robor-team.s3.eu-central-1.amazonaws.com/team/aamna.mp4",
+      "https://robor-team.s3.eu-central-1.amazonaws.com/team/robor-logo.png",
+    video:
+      "https://robor-team.s3.eu-central-1.amazonaws.com/team/robor-logo-animation.mp4",
     socials: {
-      linkedin: "https://www.linkedin.com/in/aamnasarosh/",
-      github: "https://github.com/aamnasarosh",
+      linkedin: "#",
+      github: "#",
     },
   },
   {
