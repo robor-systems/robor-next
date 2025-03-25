@@ -28,10 +28,8 @@ const Home = () => {
       <FeaturesHome />
       <TechStackHome />
       <OurWork />
-      <SolutionsHome />
       {/* <OurClients /> */}
       <OurProcess />
-      <TeamHome />
       <JoinTeam />
       <Feedback />
     </main>
