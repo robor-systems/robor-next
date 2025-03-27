@@ -49,7 +49,7 @@ const SpecificProjectPage = ({
 export async function getStaticPaths() {
   return {
     paths: [
-      "/clients/tokapi",
+      "/clients/odown",
       // "/work/agoric-amm",
       // "/work/agoric-baseball",
       "/clients/premium-voices",
