@@ -22,27 +22,27 @@ const techStack = [
     src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/python.svg",
     alt: "Python Logo",
   },
-  {
-    src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/selenium.svg",
-    alt: "Selenium Logo",
-  },
-  {
-    src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/scrapy.webp",
-    alt: "Scrapy Logo",
-  },
-  {
-    src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/tensorflow.svg",
-    alt: "Tensorflow Logo",
-  },
+  // {
+  //   src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/selenium.svg",
+  //   alt: "Selenium Logo",
+  // },
+  // {
+  //   src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/scrapy.webp",
+  //   alt: "Scrapy Logo",
+  // },
+  // {
+  //   src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/tensorflow.svg",
+  //   alt: "Tensorflow Logo",
+  // },
   {
     src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/cplusplus.svg",
     alt: "C++ Logo",
   },
-  {
-    src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/ros.svg",
-    alt: "ROS Logo",
-    icon: <RosIcon className="techStackLogo" />,
-  },
+  // {
+  //   src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/ros.svg",
+  //   alt: "ROS Logo",
+  //   icon: <RosIcon className="techStackLogo" />,
+  // },
   {
     src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/amazon_aws-icon.svg",
     alt: "AWS Logo",
