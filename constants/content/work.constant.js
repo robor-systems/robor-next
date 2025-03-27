@@ -1,4 +1,45 @@
 const workProjects = [
+  // * Odown
+  {
+    general: {
+      slug: "odown",
+      title: "Odown",
+      description:
+        "Use Odown to monitor webapps, APIs and a whole lot of other things. Get notified when something goes wrong.",
+      clientSize: "Startup",
+      location: "Europe",
+      services:
+        "Redesign | Full-Stack Development | Maintenance ",
+      //   * the header image will appear on a single case study page
+      headerImage:
+        "https://robor-team.s3.eu-central-1.amazonaws.com/work/odown-home-page.png",
+
+      // * the images will appear on the work page
+      workPageImageCount: 1,
+
+      workPageImages: [
+        {
+          imageUrl:
+            "https://robor-team.s3.eu-central-1.amazonaws.com/work/odown-dashboard-homepage.png",
+          blurImageUrl:
+            "https://robor-team.s3.eu-central-1.amazonaws.com/work/odown-dashboard-homepage-blurred.jpeg",
+          width: "1414px",
+          height: "816px",
+          premium: "true",
+        },
+      ],
+    },
+    sections: [
+      {
+        id: "odown-moniotring",
+        position: 1,
+        header: "Monitoring web applications",
+        subHeader: "About Client",
+        description:
+          "Providing a competitive, reliable and easy to use monitoring service for web applications. Focused on Europe, the platform complies with GDPR regulations and is built with privacy in mind. Can be viewed at Odown.com",
+      },
+    ]
+  },
   // * Premium Voices
   {
     general: {
