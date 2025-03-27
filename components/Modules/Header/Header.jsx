@@ -24,7 +24,6 @@ const Header = () => {
                 Services
               </NavLink>
               <NavLink href="clients">Clients</NavLink>
-              <NavLink href="solutions">Solutions</NavLink>
               <NavLink href="contact">Contact</NavLink>
             </div>
             <div className="flex">

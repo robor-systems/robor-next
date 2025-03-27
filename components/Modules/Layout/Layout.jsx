@@ -26,12 +26,10 @@ const Layout = ({ children }) => {
       {children}
       <div className="flex-col">
         {scroll > 2 ? <DarkModeToggleButton floatingBtn={true} /> : ""}
-        {pathname !== "/clients" && pathname !== "/solutions" && (
-          <Snackbar scrollProgress={scroll} />
-        )}
+        {pathname !== "/clients" && <Snackbar scrollProgress={scroll} />}
       </div>
 
-      {pathname !== "/clients" && pathname !== "/solutions" && <Footer />}
+      {pathname !== "/clients" && <Footer />}
     </div>
   );
 };

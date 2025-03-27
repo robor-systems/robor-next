@@ -5,7 +5,6 @@ import {
   OurClients,
   OurProcess,
   OurWork,
-  SolutionsHome,
   TeamHome,
   TechStackHome,
 } from "@/components/Templates/Home";
