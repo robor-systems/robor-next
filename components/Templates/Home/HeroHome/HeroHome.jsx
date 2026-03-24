@@ -1,5 +1,5 @@
 import { BsChevronDown } from "react-icons/bs";
-import { opacityVariants } from "constants/animations/variants.constant";
+import { opacityVariants } from "@/constants/animations/variants.constant";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Link } from "react-scroll";

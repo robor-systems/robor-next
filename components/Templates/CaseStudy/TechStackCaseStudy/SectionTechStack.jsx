@@ -1,4 +1,3 @@
-import { v4 } from "uuid";
 
 const SectionTechStack = ({ title, stack }) => {
   return (
@@ -11,7 +10,7 @@ const SectionTechStack = ({ title, stack }) => {
         {!!stack &&
           stack?.map((item, index) => (
             <li
-              key={v4()}
+              key={index}
               className="text-sm  md:text-lg text-light-contentSecondary dark:text-dark-contentSecondary"
             >
               {item}

@@ -1,10 +1,10 @@
-import { SectionHeading } from "components/Elements";
-import { opacityVariants } from "constants/animations/variants.constant";
-import clients from "constants/content/clients.constant";
+import { SectionHeading } from "@/components/Elements";
+import { opacityVariants } from "@/constants/animations/variants.constant";
+import clients from "@/constants/content/clients.constant";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { InView } from "react-intersection-observer";
-import { v4 } from "uuid";
+
 import ItemClients from "./ItemClients";
 
 const OurClients = () => {
@@ -27,7 +27,7 @@ const OurClients = () => {
 
         <div className="flex gap-12  px-12 max-w-screen-lg md:gap-16 flex-wrap justify-center ">
           {clients.map((item, index) => (
-            <ItemClients key={v4()} {...item} visible={visible} />
+            <ItemClients key={index} {...item} visible={visible} />
           ))}
         </div>
       </motion.div>

@@ -1,5 +1,5 @@
 module.exports = {
-  reactStrictMode: false,
+  reactStrictMode: true,
   devIndicators: false,
   images: {
     remotePatterns: [
@@ -20,7 +20,7 @@ module.exports = {
         headers: [
           {
             key: "Cache-Control",
-            value: "public, max-age=9999999999, must-revalidate",
+            value: "public, max-age=31536000, must-revalidate",
           },
         ],
       },

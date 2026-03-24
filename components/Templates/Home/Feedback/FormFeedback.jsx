@@ -2,7 +2,7 @@ import { TextArea, TextField } from "@/components/Elements";
 import { motion } from "framer-motion";
 import * as yup from "yup";
 import { useState } from "react";
-import { PROCESS_STATE } from "utils/constants";
+import { PROCESS_STATE } from "@/utils/constants";
 
 const schema = yup.object().shape({
   fullName: yup
@@ -71,6 +71,7 @@ const FormFeedback = () => {
 
       fetch("/", options)
         .then((res) => {
+          if (!res.ok) throw new Error("Submission failed");
           setFormValues(initialValues);
           setProcess({
             message: "Response sent! Someone will contact you shortly.",
@@ -81,7 +82,6 @@ const FormFeedback = () => {
           setProcess({ message: error.message, state: PROCESS_STATE.ERROR })
         );
     } catch (error) {
-      console.log(error);
       setProcess({ message: error.message, state: PROCESS_STATE.ERROR });
     }
   };

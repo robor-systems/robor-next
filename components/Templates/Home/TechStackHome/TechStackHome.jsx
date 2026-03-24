@@ -1,11 +1,11 @@
-import { SectionHeader } from "components/Elements";
-import Container from "components/Modules/Container/Container";
-import { opacityVariants } from "constants/animations/variants.constant";
-import techStack from "constants/content/techStack.constant";
+import { SectionHeader } from "@/components/Elements";
+import Container from "@/components/Modules/Container/Container";
+import { opacityVariants } from "@/constants/animations/variants.constant";
+import techStack from "@/constants/content/techStack.constant";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { InView } from "react-intersection-observer";
-import { v4 } from "uuid";
+
 import ItemTechStack from "./ItemTechStack";
 
 const TechStackHome = () => {
@@ -31,8 +31,8 @@ const TechStackHome = () => {
         />
 
         <div className="flex flex-wrap w-full gap-8 px-8 sm:gap-16 sm:max-w-screen-md md:gap-20">
-          {techStack.map((item) => (
-            <ItemTechStack key={v4()} {...item} visible={visible} />
+          {techStack.map((item, index) => (
+            <ItemTechStack key={index} {...item} visible={visible} />
           ))}
         </div>
       </motion.div>

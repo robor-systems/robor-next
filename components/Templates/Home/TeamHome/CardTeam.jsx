@@ -1,4 +1,4 @@
-import { existanceVariants } from "constants/animations/variants.constant";
+import { existanceVariants } from "@/constants/animations/variants.constant";
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { FiGithub, FiMail, FiLinkedin, FiTwitter } from "react-icons/fi";
@@ -58,8 +58,7 @@ const CardTeam = ({
         autoPlay
         playsInline
         style={{ pointerEvents: "none" }}
-        // * cache video for performance
-        preload="auto"
+        preload="none"
       ></video>
       {/* {hover && mounted && (
         <motion.div

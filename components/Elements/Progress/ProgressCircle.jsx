@@ -1,4 +1,4 @@
-import THEME from "constants/theme/theme.constant";
+import THEME from "@/constants/theme/theme.constant";
 import { useTheme } from "next-themes";
 import { useEffect, useRef } from "react";
 

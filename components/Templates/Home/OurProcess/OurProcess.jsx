@@ -1,13 +1,13 @@
-import { SectionHeader } from "components/Elements";
+import { SectionHeader } from "@/components/Elements";
 import {
   opacityVariants,
   translateVariants,
-} from "constants/animations/variants.constant";
-import process from "constants/content/process.constant";
+} from "@/constants/animations/variants.constant";
+import process from "@/constants/content/process.constant";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { InView } from "react-intersection-observer";
-import { v4 } from "uuid";
+
 import ItemProcess from "./ItemProcess";
 import { FiArrowRight } from "react-icons/fi";
 
@@ -35,7 +35,7 @@ const OurProcess = () => {
         <div className="grid max-w-screen-lg grid-cols-1 gap-6 px-16 md:gap-3 md:grid-cols-7">
           {process.map((item, index) => (
             <ItemProcess
-              key={v4()}
+              key={index}
               {...item}
               visible={visible}
               order={index * 2}

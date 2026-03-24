@@ -1,7 +1,7 @@
 import { useTheme } from "next-themes";
 
-import THEME from "constants/theme/theme.constant";
-import { useIsomorphicLayoutEffect } from "utils/hooks";
+import THEME from "@/constants/theme/theme.constant";
+import { useIsomorphicLayoutEffect } from "@/utils/hooks";
 
 const RoborLogo = () => {
   const { theme } = useTheme();

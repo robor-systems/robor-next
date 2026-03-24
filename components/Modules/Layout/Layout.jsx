@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import DarkModeToggleButton from "@/components/Elements/DarkModeToggleButton/DarkModeToggleButton";
 import { useScroll } from "framer-motion";
-import Footer from "components/Modules/Footer/Footer";
-import Header from "components/Modules/Header/Header";
+import Footer from "@/components/Modules/Footer/Footer";
+import Header from "@/components/Modules/Header/Header";
 
 const Layout = ({ children }) => {
   const { pathname } = useRouter();

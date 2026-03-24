@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import {
   leftTranslateVariant,
   rightTranslateVariant,
-} from "constants/animations/variants.constant";
+} from "@/constants/animations/variants.constant";
 
 const TechStackCaseStudy = ({ description, frontend, backend, other }) => {
   const [visible, setVisible] = useState(false);

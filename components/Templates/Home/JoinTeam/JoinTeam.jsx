@@ -1,6 +1,6 @@
 import Container from "@/components/Modules/Container/Container";
-import { SectionHeading } from "components/Elements";
-import { opacityVariants } from "constants/animations/variants.constant";
+import { SectionHeading } from "@/components/Elements";
+import { opacityVariants } from "@/constants/animations/variants.constant";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { InView } from "react-intersection-observer";

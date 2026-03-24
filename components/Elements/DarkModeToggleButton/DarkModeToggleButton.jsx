@@ -4,7 +4,7 @@ import { useTheme } from "next-themes";
 import clsx from "clsx";
 
 import { MoonIcon, SunIcon } from "@/components/Icons";
-import THEME from "constants/theme/theme.constant";
+import THEME from "@/constants/theme/theme.constant";
 import { useEffect } from "react";
 
 const iconTransformOrigin = { transformOrigin: "50% 100px" };
@@ -13,7 +13,7 @@ const DarkModeToggleButton = ({ floatingBtn }) => {
   const { theme, setTheme } = useTheme();
   useEffect(() => {
     setTheme(theme === "system" ? THEME.LIGHT : theme);
-  }, []);
+  }, [theme, setTheme]);
   return (
     <button
       onClick={() => {

@@ -1,8 +1,8 @@
-import { ImageNext } from "components/Elements";
+import { ImageNext } from "@/components/Elements";
 import {
   opacityVariants,
   translateVariants,
-} from "constants/animations/variants.constant";
+} from "@/constants/animations/variants.constant";
 import { motion } from "framer-motion";
 
 const ItemClients = ({ visible, delay, ...props }) => {

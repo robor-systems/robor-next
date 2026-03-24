@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { v4 } from "uuid";
+
 import { InView } from "react-intersection-observer";
 
-import { opacityVariants } from "constants/animations/variants.constant";
-import features from "constants/content/features.constant";
-import { SectionHeading } from "components/Elements";
-import Container from "components/Modules/Container/Container";
+import { opacityVariants } from "@/constants/animations/variants.constant";
+import features from "@/constants/content/features.constant";
+import { SectionHeading } from "@/components/Elements";
+import Container from "@/components/Modules/Container/Container";
 
 import CardFeaturesHome from "./CardFeaturesHome";
 
@@ -32,8 +32,8 @@ const FeaturesHome = () => {
 
           <div className="h-auto">
             <div className="flex flex-col flex-wrap w-full min-h-full gap-12 sm:flex-row">
-              {features.map((feature) => (
-                <CardFeaturesHome key={v4()} {...feature} isVisible={visible}>
+              {features.map((feature, index) => (
+                <CardFeaturesHome key={index} {...feature} isVisible={visible}>
                   {feature.child}
                 </CardFeaturesHome>
               ))}

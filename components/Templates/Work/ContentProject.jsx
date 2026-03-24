@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { InView } from "react-intersection-observer";
 import { useState } from "react";
 import { FiArrowRight } from "react-icons/fi";
-import { opacityVariants } from "constants/animations/variants.constant";
+import { opacityVariants } from "@/constants/animations/variants.constant";
 import clsx from "clsx";
 
 const ContentProject = ({ slug, title, description, slider, ...props }) => {

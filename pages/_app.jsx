@@ -3,9 +3,10 @@ import { generateDefaultSeo } from "next-seo/pages";
 import { ThemeProvider } from "next-themes";
 import "styles/globals.css";
 
+import ErrorBoundary from "@/components/Elements/ErrorBoundary/ErrorBoundary";
 import Layout from "@/components/Modules/Layout/Layout";
-import { pageview } from "utils/google-analytics";
-import seo from "utils/seo";
+import { pageview } from "@/utils/google-analytics";
+import seo from "@/utils/seo";
 import { useRouter } from "next/router";
 import {useEffect, useState} from "react";
 
@@ -15,25 +16,22 @@ function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
     const handleRouteChange = (url) => {
-      setSeoData({...seoData, canonical: "https://robor.systems" + url});
+      setSeoData((prev) => ({...prev, canonical: "https://robor.systems" + url}));
       pageview(url);
     };
-    //When the component is mounted, subscribe to router changes
-    //and log those page views
     router.events.on("routeChangeComplete", handleRouteChange);
-
-    // If the component is unmounted, unsubscribe
-    // from the event with the `off` method
     return () => {
       router.events.off("routeChangeComplete", handleRouteChange);
     };
   }, [router.events]);
   return (
     <ThemeProvider attribute="class">
-      <Layout>
-        <Head>{generateDefaultSeo(seoData)}</Head>
-        <Component {...pageProps} />
-      </Layout>
+      <ErrorBoundary>
+        <Layout>
+          <Head>{generateDefaultSeo(seoData)}</Head>
+          <Component {...pageProps} />
+        </Layout>
+      </ErrorBoundary>
     </ThemeProvider>
   );
 }

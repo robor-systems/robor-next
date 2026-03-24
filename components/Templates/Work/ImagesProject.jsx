@@ -4,11 +4,11 @@ import { InView } from "react-intersection-observer";
 import {
   doubleImageVariant,
   singleImageVariant,
-} from "constants/animations/variants.constant";
+} from "@/constants/animations/variants.constant";
 import { useState } from "react";
 import clsx from "clsx";
 
-const ImagesProject = ({ images, imageCount, slug, slider }) => {
+const ImagesProject = ({ images, imageCount, slug, slider, title }) => {
   let genesis = images[0].genesis;
   const [visible, setVisible] = useState(false);
 
@@ -46,7 +46,7 @@ const ImagesProject = ({ images, imageCount, slug, slider }) => {
                 src={images[0].imageUrl}
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
-                alt="image"
+                alt={title || "Project screenshot"}
                 className={clsx(
                   "rounded-lg shadow-lg",
                   // "md:object-fill object-contain",
@@ -84,7 +84,7 @@ const ImagesProject = ({ images, imageCount, slug, slider }) => {
               src={images[0].imageUrl}
               width={images[0].width}
               height={images[0].height}
-              alt="image"
+              alt={title || "Project screenshot"}
               className="rounded-lg"
               placeholder="blur"
               blurDataURL={images[0].blurImageUrl}
@@ -109,7 +109,7 @@ const ImagesProject = ({ images, imageCount, slug, slider }) => {
                 width={images[1].width}
                 height={images[1].height}
                 // layout="fill"
-                alt="image"
+                alt={title || "Project screenshot"}
                 className="rounded-lg object-cover"
                 placeholder="blur"
                 blurDataURL={images[1].blurImageUrl}

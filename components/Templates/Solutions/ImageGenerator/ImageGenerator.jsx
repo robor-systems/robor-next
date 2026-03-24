@@ -4,7 +4,7 @@ import TextareaAutosize from "react-textarea-autosize";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import SolutionHeader from "../SolutionHeader";
 import { BsDownload } from "react-icons/bs";
-import { PROCESS_STATE } from "utils/constants";
+import { PROCESS_STATE } from "@/utils/constants";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import clsx from "clsx";
@@ -139,9 +139,9 @@ const ImageGenerator = () => {
             className="disabled:opacity-50 flex items-center rounded-lg  btn-md btn-primary dark:bg-dark-primary w-full text-center !px-6"
             onClick={handleClick}
             disabled={
-              (process.status === PROCESS_STATE.LOADING) |
-              !prompt |
-              (cookies.rate_limit_count >= 5)
+              process.status === PROCESS_STATE.LOADING ||
+              !prompt ||
+              cookies.rate_limit_count >= 5
             }
           >
             {process.status === PROCESS_STATE.LOADING ? (

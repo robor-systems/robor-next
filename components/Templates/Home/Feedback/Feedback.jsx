@@ -1,5 +1,5 @@
 import Container from "@/components/Modules/Container/Container";
-import { opacityVariants } from "constants/animations/variants.constant";
+import { opacityVariants } from "@/constants/animations/variants.constant";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { InView } from "react-intersection-observer";

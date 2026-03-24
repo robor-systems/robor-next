@@ -31,6 +31,7 @@ const ProjectWork = ({ general, index, ...props }) => {
           <div className="md:w-full  lg:max-w-2xl 3xl:max-w-3xl ml-auto  h-full">
             <ImagesProject
               slug={general.slug}
+              title={general.title}
               images={general.workPageImages}
               imageCount={general.workPageImageCount}
             />

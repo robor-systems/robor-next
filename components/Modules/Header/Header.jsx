@@ -1,6 +1,6 @@
 import DarkModeToggleButton from "@/components/Elements/DarkModeToggleButton/DarkModeToggleButton";
 import RoborLogo from "@/components/Icons/RoborLogo";
-import { Link } from "components/Elements";
+import { Link } from "@/components/Elements";
 import Container from "../Container/Container";
 import NavLink from "./NavLink";
 

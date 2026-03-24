@@ -1,5 +1,5 @@
-import { ImageNext } from "components/Elements";
-import { translateVariants } from "constants/animations/variants.constant";
+import { ImageNext } from "@/components/Elements";
+import { translateVariants } from "@/constants/animations/variants.constant";
 import { motion } from "framer-motion";
 
 const ItemTechStack = ({ visible, ...props }) => {

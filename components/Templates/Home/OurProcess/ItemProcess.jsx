@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import { translateVariants } from "constants/animations/variants.constant";
+import { translateVariants } from "@/constants/animations/variants.constant";
 
 const ItemProcess = ({ visible, delay, ...props }) => {
   return (

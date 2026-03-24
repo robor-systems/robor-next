@@ -26,6 +26,7 @@ const SlideItem = ({ general, index, content, ...props }) => {
         <div className="md:w-full mt-5 h-full">
           <ImagesProject
             slider={true}
+            title={content.general.title}
             images={content.general.workPageImages}
             imageCount={content.general.workPageImageCount}
           />

@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { ProjectWork } from "@/components/Templates/Work";
-import workProjects from "constants/content/work.constant";
+import workProjects from "@/constants/content/work.constant";
 import { useEffect, useRef, useState } from "react";
 import { useScroll } from "framer-motion";
 import Snackbar from "@/components/Modules/Snackbar/Snackbar";

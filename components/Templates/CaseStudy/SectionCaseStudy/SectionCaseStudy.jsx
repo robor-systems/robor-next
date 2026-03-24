@@ -8,7 +8,7 @@ import {
   leftTranslateVariant,
   rightTranslateVariant,
   singleImageVariant,
-} from "constants/animations/variants.constant";
+} from "@/constants/animations/variants.constant";
 
 const SectionCaseStudy = ({
   header,

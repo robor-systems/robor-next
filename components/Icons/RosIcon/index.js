@@ -1,7 +1,7 @@
 import { useTheme } from "next-themes";
 
-import THEME, { SVG_COLORS } from "constants/theme/theme.constant";
-import { useIsomorphicLayoutEffect } from "utils/hooks";
+import THEME, { SVG_COLORS } from "@/constants/theme/theme.constant";
+import { useIsomorphicLayoutEffect } from "@/utils/hooks";
 
 const RosIcon = () => {
   const { theme } = useTheme();

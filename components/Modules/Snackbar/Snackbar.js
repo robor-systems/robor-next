@@ -1,4 +1,4 @@
-import { existanceVariants } from "constants/animations/variants.constant";
+import { existanceVariants } from "@/constants/animations/variants.constant";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import DialogSnackbar from "./DialogSnackbar";

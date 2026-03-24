@@ -2,7 +2,7 @@ import { InView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-import { opacityVariants } from "constants/animations/variants.constant";
+import { opacityVariants } from "@/constants/animations/variants.constant";
 import Container from "@/components/Modules/Container/Container";
 import Head from "next/head";
 import FormFeedback from "@/components/Templates/Home/Feedback/FormFeedback";

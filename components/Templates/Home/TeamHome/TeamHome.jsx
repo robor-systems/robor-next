@@ -1,11 +1,11 @@
-import { SectionHeader } from "components/Elements";
-import Container from "components/Modules/Container/Container";
-import { opacityVariants } from "constants/animations/variants.constant";
-import team from "constants/content/team.constant";
+import { SectionHeader } from "@/components/Elements";
+import Container from "@/components/Modules/Container/Container";
+import { opacityVariants } from "@/constants/animations/variants.constant";
+import team from "@/constants/content/team.constant";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { InView } from "react-intersection-observer";
-import { v4 } from "uuid";
+
 import CardTeam from "./CardTeam";
 
 const TeamHome = () => {
@@ -29,8 +29,8 @@ const TeamHome = () => {
             subtitle="The 🧠 🧠 🧠 behind this venture:"
           />
           <div className="grid-cols-16 grid gap-8 w-full max-w-xs sm:grid-cols-2 sm:max-w-lg md:grid-cols-3 md:max-w-3xl">
-            {team.map((member) => (
-              <CardTeam key={v4()} {...member} />
+            {team.map((member, index) => (
+              <CardTeam key={index} {...member} />
             ))}
           </div>
         </motion.div>

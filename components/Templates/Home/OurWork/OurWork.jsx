@@ -5,7 +5,7 @@ import { InView } from "react-intersection-observer";
 import {
   existanceVariants,
   opacityVariants,
-} from "constants/animations/variants.constant";
+} from "@/constants/animations/variants.constant";
 import { SectionHeader } from "@/components/Elements";
 import { FiArrowRight } from "react-icons/fi";
 import SliderOurWork from "./SliderOurWork";
