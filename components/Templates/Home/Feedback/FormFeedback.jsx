@@ -21,14 +21,6 @@ const schema = yup.object().shape({
 });
 
 const FormFeedback = () => {
-  // const {
-  //   register,
-  //   handleSubmit,
-  //   formState: { errors },
-  // } = useForm({
-  //   resolver: yupResolver(schema),
-  // });
-
   const initialValues = { fullName: "", email: "", subject: "", message: "" };
 
   const [formValues, setFormValues] = useState(initialValues);
@@ -47,40 +39,26 @@ const FormFeedback = () => {
     setFormValues({ ...formValues, [name]: value });
   };
 
-  const encode = (data) => {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  };
-
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     setProcess({
       message: "",
       state: PROCESS_STATE.LOADING,
     });
-    const options = {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "feedback-form", ...formValues }),
-    };
     try {
-      const valid = await schema.validate(formValues);
+      await schema.validate(formValues);
 
-      fetch("/", options)
-        .then((res) => {
-          if (!res.ok) throw new Error("Submission failed");
-          setFormValues(initialValues);
-          setProcess({
-            message: "Response sent! Someone will contact you shortly.",
-            state: PROCESS_STATE.SUCCESS,
-          });
-        })
-        .catch((error) =>
-          setProcess({ message: error.message, state: PROCESS_STATE.ERROR })
-        );
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formValues),
+      });
+      if (!res.ok) throw new Error("Submission failed");
+      setFormValues(initialValues);
+      setProcess({
+        message: "Response sent! Someone will contact you shortly.",
+        state: PROCESS_STATE.SUCCESS,
+      });
     } catch (error) {
       setProcess({ message: error.message, state: PROCESS_STATE.ERROR });
     }
@@ -91,19 +69,13 @@ const FormFeedback = () => {
       className="flex-1 w-full min-h-full bg-white border border-gray-100 shadow-xl dark:border-gray-700 rounded-2xl dark:bg-dark-bgSecondary"
     >
       <form
-        name="feedback-form"
         className="flex flex-col gap-3 p-4 sm:p-6 lg:p-8"
-        data-netlify="true"
         onSubmit={handleFormSubmit}
       >
-        <input type="hidden" name="form-name" value="feedback-form" />
-
         <TextField
           id="fullName"
           label="Name"
           placeholder="Tony Stark"
-          //register={register}
-          //errors={errors}
           value={formValues.fullName}
           onChange={handleChange}
         />
@@ -112,8 +84,6 @@ const FormFeedback = () => {
           id="email"
           label="Email"
           placeholder="ironman@stark.com"
-          //register={register}
-          //errors={errors}
           value={formValues.email}
           onChange={handleChange}
         />
@@ -122,8 +92,6 @@ const FormFeedback = () => {
           id="subject"
           label="Subject"
           placeholder="Working with Robor"
-          //register={register}
-          //errors={errors}
           value={formValues.subject}
           onChange={handleChange}
         />
@@ -132,8 +100,6 @@ const FormFeedback = () => {
           id="message"
           label="Message"
           placeholder="Let's build another Iron Man."
-          //register={register}
-          //errors={errors}
           value={formValues.message}
           onChange={handleChange}
         />

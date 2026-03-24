@@ -1,3 +1,9 @@
+const { initOpenNextCloudflareForDev } = require("@opennextjs/cloudflare");
+
+if (process.env.NODE_ENV === "development") {
+  initOpenNextCloudflareForDev();
+}
+
 module.exports = {
   reactStrictMode: true,
   devIndicators: false,
