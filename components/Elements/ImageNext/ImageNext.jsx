@@ -9,6 +9,7 @@ const ImageNext = ({
   objectFit = "contain",
   blur,
   forwardedRef,
+  priority,
 }) => {
   return (
     <div className={clsx("relative", className)} ref={forwardedRef}>
@@ -16,8 +17,10 @@ const ImageNext = ({
         placeholder={blur ? "blur" : "empty"}
         src={src}
         alt={alt}
-        layout="fill"
-        objectFit={objectFit}
+        fill
+        sizes="(max-width: 768px) 100vw, 50vw"
+        style={{ objectFit }}
+        priority={priority}
       />
     </div>
   );

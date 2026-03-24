@@ -3,16 +3,15 @@ import { SectionHeading } from "components/Elements";
 import { opacityVariants } from "constants/animations/variants.constant";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import ReactVisibilitySensor from "react-visibility-sensor";
+import { InView } from "react-intersection-observer";
 
 const JoinTeam = () => {
   const [visible, setVisible] = useState(false);
 
   return (
-    <ReactVisibilitySensor
-      partialVisibility
-      onChange={(isVisible) => isVisible && setVisible(isVisible)}
-      offset={{ bottom: 300 }}
+    <InView
+      triggerOnce
+      onChange={(inView) => inView && setVisible(inView)}
     >
       <motion.div
         className="flex flex-col items-center w-full gap-8 px-6 pt-10 pb-12 overflow-hidden text-blu bg-shade dark:bg-dark-bgSecondary"
@@ -36,7 +35,7 @@ const JoinTeam = () => {
           </a>
         </div>
       </motion.div>
-    </ReactVisibilitySensor>
+    </InView>
   );
 };
 

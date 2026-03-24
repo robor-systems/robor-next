@@ -2,7 +2,7 @@ import Container from "@/components/Modules/Container/Container";
 import { opacityVariants } from "constants/animations/variants.constant";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import ReactVisibilitySensor from "react-visibility-sensor";
+import { InView } from "react-intersection-observer";
 import FormFeedback from "./FormFeedback";
 import HeaderFeedback from "./HeaderFeedback";
 
@@ -10,10 +10,9 @@ const Feedback = () => {
   const [visible, setVisible] = useState(false);
 
   return (
-    <ReactVisibilitySensor
-      partialVisibility
-      onChange={(isVisible) => isVisible && setVisible(isVisible)}
-      offset={{ bottom: 0 }}
+    <InView
+      triggerOnce
+      onChange={(inView) => inView && setVisible(inView)}
     >
       <div className="w-full h-full bg-form dark:bg-form-dark dark:bg-dark-bgPrimary">
         <Container>
@@ -29,7 +28,7 @@ const Feedback = () => {
           </motion.div>
         </Container>
       </div>
-    </ReactVisibilitySensor>
+    </InView>
   );
 };
 

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { v4 } from "uuid";
-import ReactVisibilitySensor from "react-visibility-sensor";
+import { InView } from "react-intersection-observer";
 
 import { opacityVariants } from "constants/animations/variants.constant";
 import features from "constants/content/features.constant";
@@ -15,10 +15,9 @@ const FeaturesHome = () => {
 
   return (
     <Container>
-      <ReactVisibilitySensor
-        partialVisibility
-        offset={{ top: 400, bottom: 400 }}
-        onChange={(isVisible) => isVisible && setVisible(isVisible)}
+      <InView
+        triggerOnce
+        onChange={(inView) => inView && setVisible(inView)}
       >
         <motion.div
           layout
@@ -41,7 +40,7 @@ const FeaturesHome = () => {
             </div>
           </div>
         </motion.div>
-      </ReactVisibilitySensor>
+      </InView>
     </Container>
   );
 };

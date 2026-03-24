@@ -3,7 +3,7 @@ import { opacityVariants } from "constants/animations/variants.constant";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
-import ReactVisibilitySensor from "react-visibility-sensor";
+import { InView } from "react-intersection-observer";
 import Container from "@/components/Modules/Container/Container";
 import NextLink from "next/link";
 import clsx from "clsx";
@@ -14,10 +14,9 @@ const HeroHome = () => {
 
   return (
     <Container>
-      <ReactVisibilitySensor
-        partialVisibility
-        offset={{ top: 400 }}
-        onChange={(isVisible) => isVisible && setVisible(isVisible)}
+      <InView
+        triggerOnce
+        onChange={(inView) => inView && setVisible(inView)}
       >
         <div className=" mt-[50px]">
           <div className="absolute top-20 right-0 h-screen min-w-full overflow-hidden">
@@ -72,7 +71,7 @@ const HeroHome = () => {
             </div>
           </motion.div>
         </div>
-      </ReactVisibilitySensor>
+      </InView>
     </Container>
   );
 };

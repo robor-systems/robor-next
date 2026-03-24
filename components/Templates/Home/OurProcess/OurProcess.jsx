@@ -6,7 +6,7 @@ import {
 import process from "constants/content/process.constant";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import ReactVisibilitySensor from "react-visibility-sensor";
+import { InView } from "react-intersection-observer";
 import { v4 } from "uuid";
 import ItemProcess from "./ItemProcess";
 import { FiArrowRight } from "react-icons/fi";
@@ -15,10 +15,9 @@ const OurProcess = () => {
   const [visible, setVisible] = useState(false);
 
   return (
-    <ReactVisibilitySensor
-      partialVisibility
-      onChange={(isVisible) => isVisible && setVisible(isVisible)}
-      offset={{ bottom: 300 }}
+    <InView
+      triggerOnce
+      onChange={(inView) => inView && setVisible(inView)}
     >
       <motion.div
         id="projects"
@@ -72,7 +71,7 @@ const OurProcess = () => {
           </motion.div>
         </div>
       </motion.div>
-    </ReactVisibilitySensor>
+    </InView>
   );
 };
 

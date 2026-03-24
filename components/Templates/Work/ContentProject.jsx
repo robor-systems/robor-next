@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
-import ReactVisibilitySensor from "react-visibility-sensor";
+import { InView } from "react-intersection-observer";
 import { useState } from "react";
 import { FiArrowRight } from "react-icons/fi";
 import { opacityVariants } from "constants/animations/variants.constant";
@@ -10,10 +10,9 @@ const ContentProject = ({ slug, title, description, slider, ...props }) => {
   const [visible, setVisible] = useState(false);
 
   return (
-    <ReactVisibilitySensor
-      partialVisibility
-      onChange={(isVisible) => isVisible && setVisible(isVisible)}
-      offset={{ bottom: 300 }}
+    <InView
+      triggerOnce
+      onChange={(inView) => inView && setVisible(inView)}
     >
       <motion.div
         initial="invisible"
@@ -31,18 +30,16 @@ const ContentProject = ({ slug, title, description, slider, ...props }) => {
         </p>
         {/* * go to project page link */}
         <div className="relative group">
-          <Link href={`${slug}`} passHref>
-            <a className="flex items-center space-x-4 uppercase text-light-primary dark:text-dark-primary">
+          <Link href={`${slug}`} className="flex items-center space-x-4 uppercase text-light-primary dark:text-dark-primary">
               <span className="flex justify-between  items-center  text-sm md:text-base ">
                 View Project{" "}
                 <FiArrowRight className="ml-3 text-sm md:text-2xl" />
               </span>
-            </a>
           </Link>
           <div className="absolute  w-0 group-hover:w-[108px] h-1 bg-light-primary dark:bg-dark-primary rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out"></div>
         </div>
       </motion.div>
-    </ReactVisibilitySensor>
+    </InView>
   );
 };
 

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import clsx from "clsx";
 import SectionTechStack from "./SectionTechStack";
-import ReactVisibilitySensor from "react-visibility-sensor";
+import { InView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import {
   leftTranslateVariant,
@@ -12,10 +12,9 @@ const TechStackCaseStudy = ({ description, frontend, backend, other }) => {
   const [visible, setVisible] = useState(false);
 
   return (
-    <ReactVisibilitySensor
-      partialVisibility
-      offset={{ bottom: 200 }}
-      onChange={(isVisible) => isVisible && setVisible(isVisible)}
+    <InView
+      triggerOnce
+      onChange={(inView) => inView && setVisible(inView)}
     >
       <div
         className={clsx(
@@ -62,7 +61,7 @@ const TechStackCaseStudy = ({ description, frontend, backend, other }) => {
           </motion.div>
         </div>
       </div>
-    </ReactVisibilitySensor>
+    </InView>
   );
 };
 

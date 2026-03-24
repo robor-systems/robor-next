@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
-import ReactVisibilitySensor from "react-visibility-sensor";
+import { InView } from "react-intersection-observer";
 import {
   doubleImageVariant,
   singleImageVariant,
@@ -13,10 +13,9 @@ const ImagesProject = ({ images, imageCount, slug, slider }) => {
   const [visible, setVisible] = useState(false);
 
   return (
-    <ReactVisibilitySensor
-      partialVisibility
-      onChange={(isVisible) => isVisible && setVisible(isVisible)}
-      offset={{ bottom: 100 }}
+    <InView
+      triggerOnce
+      onChange={(inView) => inView && setVisible(inView)}
     >
       {imageCount === 1 ? (
         <div
@@ -39,14 +38,14 @@ const ImagesProject = ({ images, imageCount, slug, slider }) => {
             <div
               className={clsx(
                 slider
-                  ? "h-[230px] w-full  md:h-full relative max-w-3xl ml-auto"
-                  : // : "h-[180px]  3xl:h-[35vh]  md:h-[250px] lg:h-[56vh]  relative"
-                    "h-[180px] md:h-full relative"
+                  ? "h-[230px] w-full md:h-[350px] lg:h-[400px] relative max-w-3xl ml-auto"
+                  : "h-[180px] md:h-[250px] lg:h-[56vh] relative"
               )}
             >
               <Image
                 src={images[0].imageUrl}
-                layout="fill"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 alt="image"
                 className={clsx(
                   "rounded-lg shadow-lg",
@@ -111,16 +110,15 @@ const ImagesProject = ({ images, imageCount, slug, slider }) => {
                 height={images[1].height}
                 // layout="fill"
                 alt="image"
-                className="rounded-lg "
+                className="rounded-lg object-cover"
                 placeholder="blur"
-                objectFit="cover"
                 blurDataURL={images[1].blurImageUrl}
               />
             </div>
           </motion.div>
         </div>
       )}
-    </ReactVisibilitySensor>
+    </InView>
   );
 };
 

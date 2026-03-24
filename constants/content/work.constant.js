@@ -23,8 +23,8 @@ const workProjects = [
             "https://robor-team.s3.eu-central-1.amazonaws.com/work/odown-dashboard-homepage.png",
           blurImageUrl:
             "https://robor-team.s3.eu-central-1.amazonaws.com/work/odown-dashboard-homepage-blurred.jpeg",
-          width: "1414px",
-          height: "816px",
+          width: 1414,
+          height: 816,
           premium: "true",
         },
       ],
@@ -64,8 +64,8 @@ const workProjects = [
             "https://robor-team.s3.eu-central-1.amazonaws.com/work/premium+voices.png",
           blurImageUrl:
             "https://robor-team.s3.eu-central-1.amazonaws.com/work/premium+voices.png",
-          width: "1414px",
-          height: "816px",
+          width: 1414,
+          height: 816,
           premium: "true",
         },
       ],
@@ -155,8 +155,8 @@ const workProjects = [
             "https://robor-team.s3.eu-central-1.amazonaws.com/work/kontractory.png",
           blurImageUrl:
             "https://robor-team.s3.eu-central-1.amazonaws.com/work/kontractory.png",
-          width: "1106px",
-          height: "765px",
+          width: 1106,
+          height: 765,
         },
       ],
     },

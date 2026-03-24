@@ -4,7 +4,7 @@ import { opacityVariants } from "constants/animations/variants.constant";
 import techStack from "constants/content/techStack.constant";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import ReactVisibilitySensor from "react-visibility-sensor";
+import { InView } from "react-intersection-observer";
 import { v4 } from "uuid";
 import ItemTechStack from "./ItemTechStack";
 
@@ -13,10 +13,9 @@ const TechStackHome = () => {
 
   return (
     // <Container>
-    <ReactVisibilitySensor
-      partialVisibility
-      onChange={(isVisible) => isVisible && setVisible(isVisible)}
-      offset={{ bottom: 300 }}
+    <InView
+      triggerOnce
+      onChange={(inView) => inView && setVisible(inView)}
     >
       <motion.div
         id="features-home"
@@ -37,7 +36,7 @@ const TechStackHome = () => {
           ))}
         </div>
       </motion.div>
-    </ReactVisibilitySensor>
+    </InView>
     // </Container>
   );
 };

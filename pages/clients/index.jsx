@@ -2,18 +2,18 @@ import Head from "next/head";
 import { ProjectWork } from "@/components/Templates/Work";
 import workProjects from "constants/content/work.constant";
 import { useEffect, useRef, useState } from "react";
-import { useElementScroll } from "framer-motion";
+import { useScroll } from "framer-motion";
 import Snackbar from "@/components/Modules/Snackbar/Snackbar";
 
 const WorkPage = () => {
   const ref = useRef(null);
   const [scroll, setScroll] = useState(0);
-  const { scrollYProgress } = useElementScroll(ref);
+  const { scrollYProgress } = useScroll({ container: ref });
   useEffect(() => {
     const handleScroll = (y) => {
       setScroll(y * 100);
     };
-    const unsubscribeY = scrollYProgress.onChange(handleScroll);
+    const unsubscribeY = scrollYProgress.on("change", handleScroll);
     return () => {
       unsubscribeY();
     };

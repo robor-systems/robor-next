@@ -1,13 +1,11 @@
-import ReactVisibilitySensor from "react-visibility-sensor";
+import { InView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
 import { opacityVariants } from "constants/animations/variants.constant";
 import Container from "@/components/Modules/Container/Container";
 import Head from "next/head";
-const {
-  default: FormFeedback,
-} = require("@/components/Templates/Home/Feedback/FormFeedback");
+import FormFeedback from "@/components/Templates/Home/Feedback/FormFeedback";
 
 const Contact = () => {
   const [visible, setVisible] = useState(false);
@@ -17,10 +15,9 @@ const Contact = () => {
       <Head>
         <title>Contact Us | Robor Systems</title>
       </Head>
-      <ReactVisibilitySensor
-        partialVisibility
-        offset={{ top: 400 }}
-        onChange={(isVisible) => isVisible && setVisible(isVisible)}
+      <InView
+        triggerOnce
+        onChange={(inView) => inView && setVisible(inView)}
       >
         <motion.div
           className="flex justify-center pt-20 bg-form dark:bg-form-dark "
@@ -45,7 +42,7 @@ const Contact = () => {
             </div>
           </Container>
         </motion.div>
-      </ReactVisibilitySensor>
+      </InView>
     </>
   );
 };

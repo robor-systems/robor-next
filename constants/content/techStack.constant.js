@@ -4,23 +4,28 @@ const techStack = [
   {
     src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/nodejs-icon.svg",
     alt: "NodeJS Logo",
+    priority: true,
   },
   {
     src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/reactjs-icon.svg",
     alt: "React Logo",
+    priority: true,
   },
   {
     src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/Nextjs-logo.svg",
     alt: "NextJS Logo",
     icon: <NextIcon className="techStackLogo" />,
+    priority: true,
   },
   {
     src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/tailwindcss-icon.svg",
     alt: "Tailwind Logo",
+    priority: true,
   },
   {
     src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/python.svg",
     alt: "Python Logo",
+    priority: true,
   },
   // {
   //   src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/selenium.svg",
@@ -37,6 +42,7 @@ const techStack = [
   {
     src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/cplusplus.svg",
     alt: "C++ Logo",
+    priority: true,
   },
   // {
   //   src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/ros.svg",
@@ -46,10 +52,12 @@ const techStack = [
   {
     src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/amazon_aws-icon.svg",
     alt: "AWS Logo",
+    priority: true,
   },
   {
     src: "https://robor-team.s3.eu-central-1.amazonaws.com/tech-stack/graphql-icon.svg",
     alt: "GraphQL Logo",
+    priority: true,
   },
 ];
 

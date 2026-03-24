@@ -2,18 +2,18 @@ import Snackbar from "../Snackbar/Snackbar";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import DarkModeToggleButton from "@/components/Elements/DarkModeToggleButton/DarkModeToggleButton";
-import { useViewportScroll } from "framer-motion";
-const { default: Footer } = require("components/Modules/Footer/Footer");
-const { default: Header } = require("components/Modules/Header/Header");
+import { useScroll } from "framer-motion";
+import Footer from "components/Modules/Footer/Footer";
+import Header from "components/Modules/Header/Header";
 
 const Layout = ({ children }) => {
   const { pathname } = useRouter();
-  const { scrollYProgress } = useViewportScroll();
+  const { scrollYProgress } = useScroll();
   const [scroll, setScroll] = useState(0);
 
   useEffect(() => {
     const handleScroll = (y) => setScroll(y * 100);
-    const unsubscribeY = scrollYProgress.onChange(handleScroll);
+    const unsubscribeY = scrollYProgress.on("change", handleScroll);
 
     return () => {
       unsubscribeY();

@@ -22,7 +22,7 @@ const Home = () => {
   }, [router]);
 
   return (
-    <main className="flex flex-col items-center">
+    <main className="flex flex-col items-stretch">
       <HeroHome />
       <FeaturesHome />
       <TechStackHome />

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import ReactVisibilitySensor from "react-visibility-sensor";
+import { InView } from "react-intersection-observer";
 
 import {
   existanceVariants,
@@ -17,10 +17,9 @@ const OurWork = () => {
 
   return (
     <Container>
-      <ReactVisibilitySensor
-        partialVisibility
-        onChange={(isVisible) => isVisible && setVisible(isVisible)}
-        offset={{ bottom: 300 }}
+      <InView
+        triggerOnce
+        onChange={(inView) => inView && setVisible(inView)}
       >
         <motion.section
           id="clients"
@@ -40,20 +39,19 @@ const OurWork = () => {
           <SliderOurWork />
 
           {/* * View all projects button */}
-          <Link href="/clients" passHref>
-            <motion.a
-              variants={existanceVariants}
-              initial="invisible"
-              animate={visible ? "visible" : "invisible"}
-              transition={{ duration: 1 }}
-              className="rounded-xl font-semibold flex items-center justify-center px-6 py-4 space-x-2 border-[3px] hover:bg-light-primary hover:dark:bg-dark-primary hover:dark:text-[#fff]  hover:text-[#fff] dark:border-dark-primary border-light-primary text-light-primary dark:text-dark-primary"
-            >
+          <motion.div
+            variants={existanceVariants}
+            initial="invisible"
+            animate={visible ? "visible" : "invisible"}
+            transition={{ duration: 1 }}
+          >
+            <Link href="/clients" className="rounded-xl font-semibold flex items-center justify-center px-6 py-4 space-x-2 border-[3px] hover:bg-light-primary hover:dark:bg-dark-primary hover:dark:text-[#fff]  hover:text-[#fff] dark:border-dark-primary border-light-primary text-light-primary dark:text-dark-primary">
               <span className="uppercase">View All Projects</span>
               <FiArrowRight className="text-xl" />
-            </motion.a>
-          </Link>
+            </Link>
+          </motion.div>
         </motion.section>
-      </ReactVisibilitySensor>
+      </InView>
     </Container>
   );
 };

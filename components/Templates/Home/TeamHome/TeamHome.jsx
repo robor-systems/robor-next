@@ -4,7 +4,7 @@ import { opacityVariants } from "constants/animations/variants.constant";
 import team from "constants/content/team.constant";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import ReactVisibilitySensor from "react-visibility-sensor";
+import { InView } from "react-intersection-observer";
 import { v4 } from "uuid";
 import CardTeam from "./CardTeam";
 
@@ -12,10 +12,9 @@ const TeamHome = () => {
   const [visible, setVisible] = useState(false);
   return (
     <Container>
-      <ReactVisibilitySensor
-        partialVisibility
-        onChange={(isVisible) => isVisible && setVisible(isVisible)}
-        offset={{ bottom: 400 }}
+      <InView
+        triggerOnce
+        onChange={(inView) => inView && setVisible(inView)}
       >
         <motion.div
           id="team"
@@ -35,7 +34,7 @@ const TeamHome = () => {
             ))}
           </div>
         </motion.div>
-      </ReactVisibilitySensor>
+      </InView>
     </Container>
   );
 };

@@ -1,4 +1,4 @@
-const { AnimatePresence, motion } = require("framer-motion");
+import { AnimatePresence, motion } from "framer-motion";
 import { AiOutlineClose } from "react-icons/ai";
 import { BiError } from "react-icons/bi";
 const notificationVariants = {

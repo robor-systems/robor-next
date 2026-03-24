@@ -3,7 +3,7 @@ import { opacityVariants } from "constants/animations/variants.constant";
 import clients from "constants/content/clients.constant";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import ReactVisibilitySensor from "react-visibility-sensor";
+import { InView } from "react-intersection-observer";
 import { v4 } from "uuid";
 import ItemClients from "./ItemClients";
 
@@ -11,10 +11,9 @@ const OurClients = () => {
   const [visible, setVisible] = useState(false);
 
   return (
-    <ReactVisibilitySensor
-      partialVisibility
-      onChange={(isVisible) => isVisible && setVisible(isVisible)}
-      offset={{ bottom: 300 }}
+    <InView
+      triggerOnce
+      onChange={(inView) => inView && setVisible(inView)}
     >
       <motion.div
         id="clients"
@@ -32,7 +31,7 @@ const OurClients = () => {
           ))}
         </div>
       </motion.div>
-    </ReactVisibilitySensor>
+    </InView>
   );
 };
 

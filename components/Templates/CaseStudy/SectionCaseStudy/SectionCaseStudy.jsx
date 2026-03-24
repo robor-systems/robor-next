@@ -3,7 +3,7 @@ import clsx from "clsx";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
-import ReactVisibilitySensor from "react-visibility-sensor";
+import { InView } from "react-intersection-observer";
 import {
   leftTranslateVariant,
   rightTranslateVariant,
@@ -23,10 +23,9 @@ const SectionCaseStudy = ({
   const [visible, setVisible] = useState(false);
 
   return (
-    <ReactVisibilitySensor
-      partialVisibility
-      offset={{ bottom: 200 }}
-      onChange={(isVisible) => isVisible && setVisible(isVisible)}
+    <InView
+      triggerOnce
+      onChange={(inView) => inView && setVisible(inView)}
     >
       <div
         className={clsx(
@@ -80,15 +79,16 @@ const SectionCaseStudy = ({
                 <Image
                   src={image}
                   alt={header}
-                  layout="fill"
-                  objectFit="contain"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 80vw"
+                  className="object-contain"
                 />
               </motion.div>
             </div>
           )}
         </div>
       </div>
-    </ReactVisibilitySensor>
+    </InView>
   );
 };
 

@@ -5,9 +5,9 @@ const HeroCaseStudy = ({ headerImage, title }) => {
       <Image
         src={headerImage}
         alt={title}
-        layout="fill"
-        className="w-full"
-        objectFit="cover"
+        fill
+        sizes="100vw"
+        className="w-full object-cover"
       />
     </div>
   );

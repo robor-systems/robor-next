@@ -1,4 +1,5 @@
-import { DefaultSeo } from "next-seo";
+import Head from "next/head";
+import { generateDefaultSeo } from "next-seo/pages";
 import { ThemeProvider } from "next-themes";
 import "styles/globals.css";
 
@@ -30,7 +31,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider attribute="class">
       <Layout>
-        <DefaultSeo {...seoData} />
+        <Head>{generateDefaultSeo(seoData)}</Head>
         <Component {...pageProps} />
       </Layout>
     </ThemeProvider>

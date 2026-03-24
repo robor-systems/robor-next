@@ -173,7 +173,7 @@ const ImageGenerator = () => {
 
         {previewImage ? (
           <div className="pt-[100%] w-full relative">
-            <Image src={previewImage} layout="fill" alt="generated-image" />
+            <Image src={previewImage} fill sizes="(max-width: 640px) 100vw, 600px" alt="generated-image" />
           </div>
         ) : (
           <>
