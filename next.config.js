@@ -7,6 +7,7 @@ if (process.env.NODE_ENV === "development") {
 module.exports = {
   reactStrictMode: true,
   devIndicators: false,
+  bundlePagesRouterDependencies: true,
   images: {
     remotePatterns: [
       { hostname: "images.unsplash.com" },
