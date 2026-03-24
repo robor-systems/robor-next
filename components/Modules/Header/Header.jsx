@@ -24,7 +24,7 @@ const Header = () => {
                 Services
               </NavLink>
               <NavLink href="clients">Clients</NavLink>
-              <NavLink href="contact">Contact</NavLink>
+              {/* <NavLink href="contact">Contact</NavLink> */}
             </div>
             <div className="flex">
               <DarkModeToggleButton />

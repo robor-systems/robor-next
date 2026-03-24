@@ -65,7 +65,7 @@ const DialogSnackbar = ({ handleOpen }) => {
         Clients
       </motion.div>
 
-      <motion.div
+      {/* <motion.div
         className="menu-link"
         whileTap={{ scale: 0.9 }}
         onClick={() => {
@@ -76,7 +76,7 @@ const DialogSnackbar = ({ handleOpen }) => {
         }}
       >
         Contact
-      </motion.div>
+      </motion.div> */}
     </motion.div>
   );
 };
