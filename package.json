@@ -1,5 +1,6 @@
 {
   "name": "robor-next",
+  "packageManager": "yarn@1.22.22",
   "author": {
     "name": "Ahmed",
     "email": "m.ahmed@robor.systems"
