@@ -8,7 +8,7 @@ import {
   TeamHome,
   TechStackHome,
 } from "@/components/Templates/Home";
-import Feedback from "@/components/Templates/Home/Feedback/Feedback";
+
 import { useRouter } from "next/dist/client/router";
 import { useEffect } from "react";
 import { scroller } from "react-scroll";
@@ -30,7 +30,6 @@ const Home = () => {
       {/* <OurClients /> */}
       <OurProcess />
       <JoinTeam />
-      <Feedback />
     </main>
   );
 };
