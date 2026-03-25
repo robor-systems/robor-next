@@ -14,10 +14,7 @@ const HeroHome = () => {
 
   return (
     <Container>
-      <InView
-        triggerOnce
-        onChange={(inView) => inView && setVisible(inView)}
-      >
+      <InView triggerOnce onChange={(inView) => inView && setVisible(inView)}>
         <div className=" mt-[50px]">
           <div className="absolute top-20 right-0 h-screen min-w-full overflow-hidden">
             <HeroBG />
@@ -32,7 +29,7 @@ const HeroHome = () => {
             <h1
               className={clsx(
                 "font-bold text-center dark:text-dark-content text-shadow text-light-content",
-                "text-4xl sm:text-5xl md:text-6xl"
+                "text-4xl sm:text-5xl md:text-6xl",
               )}
             >
               Building{" "}
@@ -45,14 +42,14 @@ const HeroHome = () => {
             <h2
               className={clsx(
                 "font-normal text-center dark:text-dark-content text-shadow text-light-content",
-                "max-w-2xl text-xl sm:text-2xl md:text-2xl"
+                "max-w-2xl text-xl sm:text-2xl md:text-2xl",
               )}
             >
               We can help build your next great idea.
               {/* We specialise in developing cloud based applications that help you
               build and scale your business. */}
             </h2>
-            <NextLink href="/contact">
+            {/* <NextLink href="/contact">
               <motion.button
                 className="mt-20 !px-[34px]  btn-primary btn-large dark:bg-dark-primary"
                 whileHover={{
@@ -62,7 +59,7 @@ const HeroHome = () => {
               >
                 BOOK FREE CONSULTATION
               </motion.button>
-            </NextLink>
+            </NextLink> */}
 
             <div className="absolute bottom-20">
               <Link to="services" smooth offset={-50} href="#">
